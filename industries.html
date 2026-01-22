@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+  <title>Industries - Shuroq</title>
+  <link rel="icon" href="logo.png" sizes="44x44" type="image/png">
+  <link rel="stylesheet" href="css/industries.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+  <!-- Navigation Bar (Same as Homepage) -->
+  <nav>
+    <div class="nav-container">
+    <div class="logo">
+      <a href="index.html">
+        <span class="logo-text">Shur</span>
+        <img src="logo.png" alt="logo" class="logo-img">
+        <span class="logo-text">q</span>
+      </a>
+    </div>
+      <ul class="nav-links">
+        <li><a href="aboutus.html"data-i18n="nav_aboutus">About Us</a></li>
+        <li class="services-dropdown">
+          <a href="services.html" class="services-link" aria-haspopup="true" aria-expanded="false"data-i18n="nav_services">Services <i class="fas fa-chevron-down"></i></a>
+          <div class="dropdown-menu" role="menu">
+            <a href="cuttingedge.html"><i class="fas fa-rocket"></i> Cutting Edge</a>
+            <a href="assurance.html"><i class="fas fa-shield-alt"></i> Assurance</a>
+            <a href="automate.html"><i class="fas fa-cogs"></i> Automate</a>
+            <a href="vision.html"><i class="fas fa-chart-line"></i> Vision</a>
+          </div>
+        </li>
+        <li><a href="industries.html"data-i18n="nav_industries">Industries</a></li>
+        <li><a href="resources.html"data-i18n="nav_resources">Resources</a></li>
+        <li><a href="careers.html"data-i18n="nav_careers">Careers</a></li>
+        <div id="contact-btn"><li><a href="contact.html" data-i18n="nav_contact">Contact-Us</a></li></div>
+      </ul>
+      <div class="lang-btn-container">
+        <button id="langBtn">🌐~lang</button>
+        <!-- Dropdown Menu -->
+        <div id="langMenu">
+          <div onclick="changeLanguage('en')">English</div>
+          <div onclick="changeLanguage('ar')">العربية</div>
+        </div>
+      </div>
+      <button class="mobile-menu-btn">☰</button>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div id="main">
+    <!-- Hero Section -->
+    <section class="industries-hero">
+      <div class="hero-content">
+        <h1 data-i18n="industries_hero_title">Industries We Serve</h1>
+        <p data-i18n="industries_hero_description">Empowering diverse sectors with cutting-edge technology solutions</p>
+      </div>
+    </section>
+
+    <!-- Industries Grid -->
+    <section class="industries-grid">
+      <div class="container">
+        
+        <!-- Telecom Industry -->
+        <div class="industry-card">
+          <div class="industry-icon">
+            <i class="fas fa-satellite-dish"></i>
+          </div>
+          <div class="industry-content">
+            <h3 data-i18n="telecom_title">Telecom</h3>
+            <p data-i18n="telecom_description">We support telecom providers with scalable digital solutions that enhance network operations, optimize customer experiences, and enable data-driven decision-making. Our comprehensive telecom expertise covers 5G implementation, network optimization, and digital transformation strategies.</p>
+            
+            <div class="industry-details">
+              <h4 data-i18n="key_solutions_title">Key Solutions:</h4>
+              <ul>
+                <li><strong data-i18n="telecom_solution1_title">5G Network Implementation:</strong> <span data-i18n="telecom_solution1_desc">End-to-end deployment and optimization of 5G infrastructure with 99.9% uptime guarantee</span></li>
+                <li><strong data-i18n="telecom_solution2_title">Network Virtualization:</strong> <span data-i18n="telecom_solution2_desc">SD-WAN and NFV solutions reducing operational costs by up to 40%</span></li>
+                <li><strong data-i18n="telecom_solution3_title">Customer Experience Platforms:</strong> <span data-i18n="telecom_solution3_desc">AI-powered analytics improving customer satisfaction by 35%</span></li>
+                <li><strong data-i18n="telecom_solution4_title">IoT Integration:</strong> <span data-i18n="telecom_solution4_desc">Connected device management supporting 10M+ concurrent connections</span></li>
+              </ul>
+              
+              <h4 data-i18n="industry_impact_title">Industry Impact:</h4>
+              <ul>
+                <li data-i18n="telecom_impact1">Supported 50+ telecom operators across 15 countries</li>
+                <li data-i18n="telecom_impact2">Reduced network downtime by 60% through predictive maintenance</li>
+                <li data-i18n="telecom_impact3">Increased data processing speeds by 300% with edge computing</li>
+                <li data-i18n="telecom_impact4">Enabled $2B+ in new revenue streams through digital services</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Automotive Industry -->
+        <div class="industry-card">
+          <div class="industry-icon">
+            <i class="fas fa-car"></i>
+          </div>
+          <div class="industry-content">
+            <h3 data-i18n="automotive_title">Automotive</h3>
+            <p data-i18n="automotive_description">We enable greater efficiency, visibility, and agility throughout the automotive value chain. From connected vehicles to manufacturing automation, we deliver solutions that drive innovation and operational excellence in the automotive sector.</p>
+            
+            <div class="industry-details">
+              <h4 data-i18n="key_solutions_title">Key Solutions:</h4>
+              <ul>
+                <li><strong data-i18n="automotive_solution1_title">Connected Vehicle Platforms:</strong> <span data-i18n="automotive_solution1_desc">IoT-enabled telematics processing 1B+ data points daily</span></li>
+                <li><strong data-i18n="automotive_solution2_title">Manufacturing Automation:</strong> <span data-i18n="automotive_solution2_desc">Smart factory solutions increasing production efficiency by 45%</span></li>
+                <li><strong data-i18n="automotive_solution3_title">Supply Chain Optimization:</strong> <span data-i18n="automotive_solution3_desc">Real-time tracking reducing inventory costs by 30%</span></li>
+                <li><strong data-i18n="automotive_solution4_title">Autonomous Driving Systems:</strong> <span data-i18n="automotive_solution4_desc">AI-powered computer vision with 99.7% accuracy</span></li>
+              </ul>
+              
+              <h4 data-i18n="industry_impact_title">Industry Impact:</h4>
+              <ul>
+                <li data-i18n="automotive_impact1">Partnered with 25+ automotive manufacturers globally</li>
+                <li data-i18n="automotive_impact2">Reduced vehicle development cycles by 40% through digital twins</li>
+                <li data-i18n="automotive_impact3">Improved manufacturing quality control by 85% with AI inspection</li>
+                <li data-i18n="automotive_impact4">Enabled 500K+ connected vehicles with advanced telematics</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- BFSI Industry -->
+        <div class="industry-card">
+          <div class="industry-icon">
+            <i class="fas fa-university"></i>
+          </div>
+          <div class="industry-content">
+            <h3 data-i18n="bfsi_title">BFSI</h3>
+            <p data-i18n="bfsi_description">Our expertise supports digital banking, risk management, data analytics, and operational automation while ensuring regulatory adherence and customer trust. We help financial institutions modernize their infrastructure and enhance customer experiences.</p>
+            
+            <div class="industry-details">
+              <h4 data-i18n="key_solutions_title">Key Solutions:</h4>
+              <ul>
+                <li><strong data-i18n="bfsi_solution1_title">Digital Banking Platforms:</strong> <span data-i18n="bfsi_solution1_desc">Mobile-first solutions serving 10M+ customers with 99.95% uptime</span></li>
+                <li><strong data-i18n="bfsi_solution2_title">Risk Management Systems:</strong> <span data-i18n="bfsi_solution2_desc">AI-powered fraud detection reducing false positives by 70%</span></li>
+                <li><strong data-i18n="bfsi_solution3_title">Regulatory Compliance:</strong> <span data-i18n="bfsi_solution3_desc">Automated compliance reporting saving 200+ hours monthly</span></li>
+                <li><strong data-i18n="bfsi_solution4_title">Blockchain Integration:</strong> <span data-i18n="bfsi_solution4_desc">Secure transaction processing with 3-second settlement times</span></li>
+              </ul>
+              
+              <h4 data-i18n="industry_impact_title">Industry Impact:</h4>
+              <ul>
+                <li data-i18n="bfsi_impact1">Transformed 40+ banks and financial institutions</li>
+                <li data-i18n="bfsi_impact2">Reduced operational costs by 35% through automation</li>
+                <li data-i18n="bfsi_impact3">Improved loan processing speed by 80% with AI underwriting</li>
+                <li data-i18n="bfsi_impact4">Enhanced security preventing $500M+ in potential fraud</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Healthcare Industry -->
+        <div class="industry-card">
+          <div class="industry-icon">
+            <i class="fas fa-heartbeat"></i>
+          </div>
+          <div class="industry-content">
+            <h3 data-i18n="healthcare_title">Healthcare</h3>
+            <p data-i18n="healthcare_description">We enable healthcare organizations to improve patient outcomes and operational efficiency through secure, data-driven solutions. Our approach supports interoperability, digital workflows, analytics, and compliance with healthcare standards.</p>
+            
+            <div class="industry-details">
+              <h4 data-i18n="key_solutions_title">Key Solutions:</h4>
+              <ul>
+                <li><strong data-i18n="healthcare_solution1_title">Electronic Health Records (EHR):</strong> <span data-i18n="healthcare_solution1_desc">Integrated systems managing 50M+ patient records with HIPAA compliance</span></li>
+                <li><strong data-i18n="healthcare_solution2_title">Telemedicine Platforms:</strong> <span data-i18n="healthcare_solution2_desc">Virtual care solutions facilitating 100K+ daily consultations</span></li>
+                <li><strong data-i18n="healthcare_solution3_title">AI Diagnostics:</strong> <span data-i18n="healthcare_solution3_desc">Machine learning models achieving 94% accuracy in medical imaging analysis</span></li>
+                <li><strong data-i18n="healthcare_solution4_title">Hospital Management Systems:</strong> <span data-i18n="healthcare_solution4_desc">End-to-end workflow automation reducing admin time by 60%</span></li>
+              </ul>
+              
+              <h4 data-i18n="industry_impact_title">Industry Impact:</h4>
+              <ul>
+                <li data-i18n="healthcare_impact1">Served 200+ hospitals and healthcare providers</li>
+                <li data-i18n="healthcare_impact2">Reduced patient wait times by 45% through optimized scheduling</li>
+                <li data-i18n="healthcare_impact3">Improved diagnostic accuracy by 30% with AI assistance</li>
+                <li data-i18n="healthcare_impact4">Enabled $1B+ in cost savings through operational efficiency</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Finance Industry -->
+        <div class="industry-card">
+          <div class="industry-icon">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <div class="industry-content">
+            <h3 data-i18n="finance_title">Finance</h3>
+            <p data-i18n="finance_description">We help financial enterprises modernize systems, streamline operations, and gain real-time insights through scalable and secure technology solutions. Our services include fintech development, blockchain integration, and financial analytics.</p>
+            
+            <div class="industry-details">
+              <h4 data-i18n="key_solutions_title">Key Solutions:</h4>
+              <ul>
+                <li><strong data-i18n="finance_solution1_title">Trading Platforms:</strong> <span data-i18n="finance_solution1_desc">High-frequency systems processing 1M+ transactions per second</span></li>
+                <li><strong data-i18n="finance_solution2_title">Risk Analytics:</strong> <span data-i18n="finance_solution2_desc">Real-time portfolio analysis with 99.8% accuracy in risk prediction</span></li>
+                <li><strong data-i18n="finance_solution3_title">Wealth Management:</strong> <span data-i18n="finance_solution3_desc">Robo-advisory platforms managing $10B+ in assets</span></li>
+                <li><strong data-i18n="finance_solution4_title">RegTech Solutions:</strong> <span data-i18n="finance_solution4_desc">Automated compliance monitoring reducing violations by 90%</span></li>
+              </ul>
+              
+              <h4 data-i18n="industry_impact_title">Industry Impact:</h4>
+              <ul>
+                <li data-i18n="finance_impact1">Partnered with 30+ financial institutions and investment firms</li>
+                <li data-i18n="finance_impact2">Increased trading efficiency by 70% through algorithmic optimization</li>
+                <li data-i18n="finance_impact3">Reduced compliance costs by 50% with automated monitoring</li>
+                <li data-i18n="finance_impact4">Enhanced customer portfolio returns by 25% through AI-driven insights</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+      <div class="cta-content">
+        <h2 data-i18n="cta_title">Transform Your Industry</h2>
+        <p data-i18n="cta_description">Let's discuss how our industry-specific solutions can drive your digital transformation</p>
+        <button><a href="contact.html" data-i18n="cta_button">Contact Us</a></button>
+      </div>
+    </section>
+  </div>
+
+
+  <!-- Footer (Same as Homepage) -->
+  <footer>
+    <div id="footbox">
+      <div id="footabout">
+        <div id="footlogo">
+          <span class="logo_text">shur</span>
+          <img src="logo.png" alt="">
+          <span class="logo_text">q</span>
+        </div>
+        <h2 id="footabout_title">Technology Services <br>
+          & Digital Engineering <br>
+          Company</h2>
+        <div id="footnav">
+          <div id="footnav1">
+            <a href="index.html">Home</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="index.htmlwhyus">Why Us</a>
+            <a href="index.html#engagement-model">Engagement Models</a>
+          </div>
+          <div id="footnav2">
+            <a href="service.html">services</a>
+            <a href="industries.html">Industries</a>
+            <a href="resources.html">Resources</a>
+            <a href="careers.html">Careers</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/industries_lang.js"></script>
+</body>
+</html>

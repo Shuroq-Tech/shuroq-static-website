@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+  <title>Services - Shuroq</title>
+  <link rel="icon" href="logo.png" sizes="44x44" type="image/png">
+  <link rel="stylesheet" href="css/services.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+  <!-- Navigation Bar with Services Dropdown -->
+  <nav>
+    <div class="nav-container">
+    <div class="logo">
+      <a href="index.html">
+        <span class="logo-text">Shur</span>
+        <img src="logo.png" alt="logo" class="logo-img">
+        <span class="logo-text">q</span>
+      </a>
+    </div>
+      <ul class="nav-links">
+        <li><a href="aboutus.html" data-i18n="nav_aboutus">About Us</a></li>
+        <li class="services-dropdown">
+          <a href="services.html" class="services-link" aria-haspopup="true" aria-expanded="false"data-i18n="nav_services">Services <i class="fas fa-chevron-down"></i></a>
+          <div class="dropdown-menu" role="menu">
+            <a href="cuttingedge.html"><i class="fas fa-rocket"></i> Cutting Edge</a>
+            <a href="assurance.html"><i class="fas fa-shield-alt"></i> Assurance</a>
+            <a href="automate.html"><i class="fas fa-cogs"></i> Automate</a>
+            <a href="vision.html"><i class="fas fa-chart-line"></i> Vision</a>
+          </div>
+        </li>
+        <li><a href="industries.html" data-i18n="nav_industries">Industries</a></li>
+        <li><a href="resources.html" data-i18n="nav_resources">Resources</a></li>
+        <li><a href="careers.html"data-i18n="nav_careers">Careers</a></li>
+        <div id="contact-btn"><li><a href="contact.html"data-i18n="nav_contact">Contact-Us</a></li></div>
+      </ul>
+      <div class="lang-btn-container">
+        <button id="langBtn">🌐~lang</button>
+        <!-- Dropdown Menu -->
+        <div id="langMenu">
+          <div onclick="changeLanguage('en')">English</div>
+          <div onclick="changeLanguage('ar')">العربية</div>
+        </div>
+      </div>
+      <button class="mobile-menu-btn">☰</button>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div id="main">
+    <!-- Hero Section -->
+    <section class="services-hero">
+      <div class="hero-content">
+        <h1 data-i18n="servicetitle">Our Services</h1>
+        <p data-i18n="services_hero_description">Comprehensive technology solutions designed to transform your business and accelerate digital innovation</p>
+      </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section class="services-overview">
+      <div class="container">
+        
+        <!-- Cutting Edge Section -->
+        <div class="service-card cutting-edge">
+          <div class="service-icon">
+            <i class="fas fa-rocket"></i>
+          </div>
+          <div class="service-content">
+            <h2 data-i18n="cutting_edge_title">Cutting Edge</h2>
+            <h3 data-i18n="cutting_edge_subtitle">Innovative Technology Solutions for Modern Enterprises</h3>
+            <p data-i18n="cutting_edge_description">We deliver cutting-edge technology solutions that push the boundaries of innovation and drive business transformation.</p>
+            
+            <div class="sub-services">
+              <div class="sub-service">
+                <i class="fas fa-database"></i>
+                <h4 data-i18n="cutting_edge_erp">ERP</h4>
+                <p data-i18n="cutting_edge_erp_desc">Enterprise Resource Planning solutions</p>
+              </div>
+              <div class="sub-service">
+                <i class="fas fa-lightbulb"></i>
+                <h4 data-i18n="cutting_edge_product">Product Engineering</h4>
+                <p data-i18n="cutting_edge_product_desc">End-to-end product development</p>
+              </div>
+              <div class="sub-service">
+                <i class="fas fa-mobile-alt"></i>
+                <h4 data-i18n="cutting_edge_digital">Digital Innovation</h4>
+                <p data-i18n="cutting_edge_digital_desc">Transformative digital solutions</p>
+              </div>
+              <div class="sub-service">
+                <i class="fas fa-cloud"></i>
+                <h4 data-i18n="cutting_edge_cloud">Cloud Services</h4>
+                <p data-i18n="cutting_edge_cloud_desc">Scalable cloud infrastructure</p>
+              </div>
+            </div>
+            
+            <button class="service-btn"><a href="cuttingedge.html" data-i18n="cutting_edge_button">Explore Cutting Edge Services</a></button>
+          </div>
+        </div>
+
+        <!-- Assurance Section -->
+        <div class="service-card assurance">
+          <div class="service-icon">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <div class="service-content">
+            <h2 data-i18n="assurance_title">Assurance</h2>
+            <h3 data-i18n="assurance_subtitle">Quality at Every Step</h3>
+            <p data-i18n="assurance_description">We ensure excellence through comprehensive quality engineering and testing services that guarantee reliability and performance.</p>
+            
+            <div class="sub-services">
+              <div class="sub-service">
+                <i class="fas fa-check-circle"></i>
+                <h4 data-i18n="assurance_quality">Quality Engineering</h4>
+                <p data-i18n="assurance_quality_desc">Comprehensive testing and quality assurance</p>
+              </div>
+            </div>
+            
+            <button class="service-btn"><a href="assurance.html" data-i18n="assurance_button">Explore Assurance Services</a></button>
+          </div>
+        </div>
+
+        <!-- Automate Section -->
+        <div class="service-card automate">
+          <div class="service-icon">
+            <i class="fas fa-cogs"></i>
+          </div>
+          <div class="service-content">
+            <h2 data-i18n="automate_title">Automate</h2>
+            <h3 data-i18n="automate_subtitle">Streamline and Accelerate Your Operations</h3>
+            <p data-i18n="automate_description">We transform your business processes through intelligent automation and DevOps practices that drive efficiency and innovation.</p>
+            
+            <div class="sub-services">
+              <div class="sub-service">
+                <i class="fas fa-code-branch"></i>
+                <h4 data-i18n="automate_devops">DevOps</h4>
+                <p data-i18n="automate_devops_desc">Continuous integration and deployment</p>
+              </div>
+              <div class="sub-service">
+                <i class="fas fa-sync-alt"></i>
+                <h4 data-i18n="automate_agile">Agile Methodology</h4>
+                <p data-i18n="automate_agile_desc">Adaptive project management</p>
+              </div>
+              <div class="sub-service">
+                <i class="fas fa-robot"></i>
+                <h4 data-i18n="automate_process">Process Automation</h4>
+                <p data-i18n="automate_process_desc">Intelligent workflow optimization</p>
+              </div>
+            </div>
+            
+            <button class="service-btn"><a href="automate.html" data-i18n="automate_button">Explore Automation Services</a></button>
+          </div>
+        </div>
+
+        <!-- Vision Section -->
+        <div class="service-card vision">
+          <div class="service-icon">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <div class="service-content">
+            <h2 data-i18n="vision_title">Vision</h2>
+            <h3 data-i18n="vision_subtitle">Data-Driven Insights for Strategic Decisions</h3>
+            <p data-i18n="vision_description">We unlock the power of your data through advanced analytics and business intelligence that drive strategic decision-making.</p>
+            
+            <div class="sub-services">
+              <div class="sub-service">
+                <i class="fas fa-chart-bar"></i>
+                <h4 data-i18n="vision_analytics">Data Analytics</h4>
+                <p data-i18n="vision_analytics_desc">Advanced analytics and business intelligence</p>
+              </div>
+            </div>
+            
+            <button class="service-btn"><a href="vision.html" data-i18n="vision_button">Explore Vision Services</a></button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+      <div class="cta-content">
+        <h2 data-i18n="cta_title">Transform Your Business with Our Services</h2>
+        <p data-i18n="cta_description">Let's discuss how our comprehensive service offerings can accelerate your digital transformation journey</p>
+        <button><a href="contact.html" data-i18n="cta_button">Contact Us</a></button>
+      </div>
+    </section>
+  </div>
+
+  <!-- Footer (Same as Homepage) -->
+  <footer>
+    <div id="footbox">
+      <div id="footabout">
+        <div id="footlogo">
+          <span class="logo_text">shur</span>
+          <img src="logo.png" alt="">
+          <span class="logo_text">q</span>
+        </div>
+        <h2 id="footabout_title">Technology Services <br>
+          & Digital Engineering <br>
+          Company</h2>
+        <div id="footnav">
+          <div id="footnav1">
+            <a href="index.html">Home</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="index.html#why-us">Why Us</a>
+            <a href="index.html#engagement-model">Engagement Models</a>
+          </div>
+          <div id="footnav2">
+            <a href="services.html">services</a>
+            <a href="industries.html">Industries</a>
+            <a href="resources.html">Resources</a>
+            <a href="careers.html">Careers</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/service_lang.js"></script>
+</body>
+</html>
