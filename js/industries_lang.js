@@ -1,0 +1,326 @@
+const translations = {
+  en: {
+    nav_aboutus: "About Us",
+    nav_services: "Services",
+    nav_industries: "Industries",
+    nav_resources: "Resources",
+    nav_careers: "Careers",
+    nav_contact: "Contact",
+    industries_hero_title: "Industries We Serve",
+  industries_hero_description: "Empowering diverse sectors with cutting-edge technology solutions",
+  telecom_title: "Telecom",
+  telecom_description: "We support telecom providers with scalable digital solutions that enhance network operations, optimize customer experiences, and enable data-driven decision-making. Our comprehensive telecom expertise covers 5G implementation, network optimization, and digital transformation strategies.",
+  key_solutions_title: "Key Solutions:",
+  telecom_solution1_title: "5G Network Implementation:",
+  telecom_solution1_desc: "End-to-end deployment and optimization of 5G infrastructure with 99.9% uptime guarantee",
+  telecom_solution2_title: "Network Virtualization:",
+  telecom_solution2_desc: "SD-WAN and NFV solutions reducing operational costs by up to 40%",
+  telecom_solution3_title: "Customer Experience Platforms:",
+  telecom_solution3_desc: "AI-powered analytics improving customer satisfaction by 35%",
+  telecom_solution4_title: "IoT Integration:",
+  telecom_solution4_desc: "Connected device management supporting 10M+ concurrent connections",
+  industry_impact_title: "Industry Impact:",
+  telecom_impact1: "Supported 50+ telecom operators across 15 countries",
+  telecom_impact2: "Reduced network downtime by 60% through predictive maintenance",
+  telecom_impact3: "Increased data processing speeds by 300% with edge computing",
+  telecom_impact4: "Enabled $2B+ in new revenue streams through digital services",
+  automotive_title: "Automotive",
+  automotive_description: "We enable greater efficiency, visibility, and agility throughout the automotive value chain. From connected vehicles to manufacturing automation, we deliver solutions that drive innovation and operational excellence in the automotive sector.",
+  automotive_solution1_title: "Connected Vehicle Platforms:",
+  automotive_solution1_desc: "IoT-enabled telematics processing 1B+ data points daily",
+  automotive_solution2_title: "Manufacturing Automation:",
+  automotive_solution2_desc: "Smart factory solutions increasing production efficiency by 45%",
+  automotive_solution3_title: "Supply Chain Optimization:",
+  automotive_solution3_desc: "Real-time tracking reducing inventory costs by 30%",
+  automotive_solution4_title: "Autonomous Driving Systems:",
+  automotive_solution4_desc: "AI-powered computer vision with 99.7% accuracy",
+  automotive_impact1: "Partnered with 25+ automotive manufacturers globally",
+  automotive_impact2: "Reduced vehicle development cycles by 40% through digital twins",
+  automotive_impact3: "Improved manufacturing quality control by 85% with AI inspection",
+  automotive_impact4: "Enabled 500K+ connected vehicles with advanced telematics",
+  bfsi_title: "BFSI",
+  bfsi_description: "Our expertise supports digital banking, risk management, data analytics, and operational automation while ensuring regulatory adherence and customer trust. We help financial institutions modernize their infrastructure and enhance customer experiences.",
+  bfsi_solution1_title: "Digital Banking Platforms:",
+  bfsi_solution1_desc: "Mobile-first solutions serving 10M+ customers with 99.95% uptime",
+  bfsi_solution2_title: "Risk Management Systems:",
+  bfsi_solution2_desc: "AI-powered fraud detection reducing false positives by 70%",
+  bfsi_solution3_title: "Regulatory Compliance:",
+  bfsi_solution3_desc: "Automated compliance reporting saving 200+ hours monthly",
+  bfsi_solution4_title: "Blockchain Integration:",
+  bfsi_solution4_desc: "Secure transaction processing with 3-second settlement times",
+  bfsi_impact1: "Transformed 40+ banks and financial institutions",
+  bfsi_impact2: "Reduced operational costs by 35% through automation",
+  bfsi_impact3: "Improved loan processing speed by 80% with AI underwriting",
+  bfsi_impact4: "Enhanced security preventing $500M+ in potential fraud",
+  healthcare_title: "Healthcare",
+  healthcare_description: "We enable healthcare organizations to improve patient outcomes and operational efficiency through secure, data-driven solutions. Our approach supports interoperability, digital workflows, analytics, and compliance with healthcare standards.",
+  healthcare_solution1_title: "Electronic Health Records (EHR):",
+  healthcare_solution1_desc: "Integrated systems managing 50M+ patient records with HIPAA compliance",
+  healthcare_solution2_title: "Telemedicine Platforms:",
+  healthcare_solution2_desc: "Virtual care solutions facilitating 100K+ daily consultations",
+  healthcare_solution3_title: "AI Diagnostics:",
+  healthcare_solution3_desc: "Machine learning models achieving 94% accuracy in medical imaging analysis",
+  healthcare_solution4_title: "Hospital Management Systems:",
+  healthcare_solution4_desc: "End-to-end workflow automation reducing admin time by 60%",
+  healthcare_impact1: "Served 200+ hospitals and healthcare providers",
+  healthcare_impact2: "Reduced patient wait times by 45% through optimized scheduling",
+  healthcare_impact3: "Improved diagnostic accuracy by 30% with AI assistance",
+  healthcare_impact4: "Enabled $1B+ in cost savings through operational efficiency",
+  finance_title: "Finance",
+  finance_description: "We help financial enterprises modernize systems, streamline operations, and gain real-time insights through scalable and secure technology solutions. Our services include fintech development, blockchain integration, and financial analytics.",
+  finance_solution1_title: "Trading Platforms:",
+  finance_solution1_desc: "High-frequency systems processing 1M+ transactions per second",
+  finance_solution2_title: "Risk Analytics:",
+  finance_solution2_desc: "Real-time portfolio analysis with 99.8% accuracy in risk prediction",
+  finance_solution3_title: "Wealth Management:",
+  finance_solution3_desc: "Robo-advisory platforms managing $10B+ in assets",
+  finance_solution4_title: "RegTech Solutions:",
+  finance_solution4_desc: "Automated compliance monitoring reducing violations by 90%",
+  finance_impact1: "Partnered with 30+ financial institutions and investment firms",
+  finance_impact2: "Increased trading efficiency by 70% through algorithmic optimization",
+  finance_impact3: "Reduced compliance costs by 50% with automated monitoring",
+  finance_impact4: "Enhanced customer portfolio returns by 25% through AI-driven insights",
+  cta_title: "Transform Your Industry",
+  cta_description: "Let's discuss how our industry-specific solutions can drive your digital transformation",
+  cta_button: "Contact Us",
+
+  },
+  ar:{
+    nav_aboutus: "معلومات عنا",
+    nav_services:"الخدمات",
+    nav_industries:"الصناعات",
+    nav_resources: "الموارد",
+    nav_careers:"وظائف",
+    nav_contact: "اتصل بنا",
+    visiontitle:"الرؤية وتحليلات البيانات",
+    industries_hero_title: "القطاعات التي نخدمها",
+  industries_hero_description: "تمكين قطاعات متنوعة بحلول تكنولوجية متطورة",
+  telecom_title: "الاتصالات",
+  telecom_description: "ندعم مزودي الاتصالات بحلول رقمية قابلة للتطوير تعزز عمليات الشبكة وتحسن تجارب العملاء وتمكن اتخاذ القرارات القائمة على البيانات. تشمل خبرتنا الشاملة في الاتصالات تنفيذ 5G وتحسين الشبكة واستراتيجيات التحول الرقمي.",
+  key_solutions_title: "الحلول الرئيسية:",
+  telecom_solution1_title: "تنفيذ شبكات 5G:",
+  telecom_solution1_desc: "نشر وتحسين البنية التحتية لشبكات 5G من البداية للنهاية مع ضمان وقت تشغيل بنسبة 99.9%",
+  telecom_solution2_title: "تخيل الشبكة:",
+  telecom_solution2_desc: "حلول SD-WAN وNFV تقلل التكاليف التشغيلية بنسبة تصل إلى 40%",
+  telecom_solution3_title: "منصات تجربة العملاء:",
+  telecom_solution3_desc: "تحليلات مدعومة بالذكاء الاصطناعي تحسن رضا العملاء بنسبة 35%",
+  telecom_solution4_title: "تكامل إنترنت الأشياء:",
+  telecom_solution4_desc: "إدارة الأجهزة المتصلة تدعم 10 مليون+ اتصال متزامن",
+  industry_impact_title: "التأثير على القطاع:",
+  telecom_impact1: "دعمنا 50+ مشغل اتصالات في 15 دولة",
+  telecom_impact2: "خفضنا وقت توقف الشبكة بنسبة 60% من خلال الصيانة التنبؤية",
+  telecom_impact3: "زادنا سرعة معالجة البيانات بنسبة 300% باستخدام الحوسبة الطرفية",
+  telecom_impact4: "مكننا تيارات إيرادات جديدة بقيمة 2 مليار دولار+ من خلال الخدمات الرقمية",
+  automotive_title: "السيارات",
+  automotive_description: "نمكن كفاءة ورؤية ومرونة أكبر عبر سلسلة القيمة في قطاع السيارات. من المركبات المتصلة إلى أتمتة التصنيع، نقدم حلولاً تدفع الابتكار والتميز التشغيلي في قطاع السيارات.",
+  automotive_solution1_title: "منصات المركبات المتصلة:",
+  automotive_solution1_desc: "تليماتيكس مدعومة بإنترنت الأشياء تعالج 1 مليار+ نقطة بيانات يومياً",
+  automotive_solution2_title: "أتمتة التصنيع:",
+  automotive_solution2_desc: "حلول المصانع الذكية تزيد كفاءة الإنتاج بنسبة 45%",
+  automotive_solution3_title: "تحسين سلسلة التوريد:",
+  automotive_solution3_desc: "تتبع فوري يخفض تكاليف المخزون بنسبة 30%",
+  automotive_solution4_title: "أنظمة القيادة الذاتية:",
+  automotive_solution4_desc: "رؤية حاسوبية مدعومة بالذكاء الاصطناعي بدقة 99.7%",
+  automotive_impact1: "شراكتنا مع 25+ مصنع سيارات عالمياً",
+  automotive_impact2: "خفضنا دورات تطوير المركبات بنسبة 40% من خلال التوائم الرقمية",
+  automotive_impact3: "حسّنا مراقبة جودة التصنيع بنسبة 85% باستخدام الفحص بالذكاء الاصطناعي",
+  automotive_impact4: "مكننا 500 ألف+ مركبة متصلة بتليماتيكس متقدمة",
+  bfsi_title: "الخدمات المصرفية والمالية والتأمينية",
+  bfsi_description: "تدعم خبرتنا الخدمات المصرفية الرقمية وإدارة المخاطر وتحليلات البيانات والأتمتة التشغيلية مع ضمان الالتزام التنظيمي وثقة العملاء. نساعد المؤسسات المالية على تحديث بنيتها التحتية وتحسين تجارب العملاء.",
+  bfsi_solution1_title: "منصات الخدمات المصرفية الرقمية:",
+  bfsi_solution1_desc: "حلول تركز على الجوال تخدم 10 مليون+ عميل مع وقت تشغيل بنسبة 99.95%",
+  bfsi_solution2_title: "أنظمة إدارة المخاطر:",
+  bfsi_solution2_desc: "كشف احتيال مدعوم بالذكاء الاصطناعي يخفض الإيجابيات الكاذبة بنسبة 70%",
+  bfsi_solution3_title: "الامتثال التنظيمي:",
+  bfsi_solution3_desc: "تقارير امتثال مؤتمنة توفر 200+ ساعة شهرياً",
+  bfsi_solution4_title: "تكامل بلوكشين:",
+  bfsi_solution4_desc: "معالجة معاملات آمنة بأوقات تسوية 3 ثوانٍ",
+  bfsi_impact1: "حولنا 40+ بنك ومؤسسة مالية",
+  bfsi_impact2: "خفضنا التكاليف التشغيلية بنسبة 35% من خلال الأتمتة",
+  bfsi_impact3: "حسّنا سرعة معالجة القروض بنسبة 80% باستخدام الاكتتاب بالذكاء الاصطناعي",
+  bfsi_impact4: "عززنا الأمن ومنعنا 500 مليون دولار+ من الاحتيال المحتمل",
+  healthcare_title: "الرعاية الصحية",
+  healthcare_description: "نمكن مؤسسات الرعاية الصحية من تحسين نتائج المرضى والكفاءة التشغيلية من خلال حلول آمنة قائمة على البيانات. يدعم نهجنا التوافقية وسير العمل الرقمية والتحليلات والامتثال لمعايير الرعاية الصحية.",
+  healthcare_solution1_title: "السجلات الصحية الإلكترونية:",
+  healthcare_solution1_desc: "أنظمة متكاملة تدير 50 مليون+ سجل مريض مع الامتثال لـ HIPAA",
+  healthcare_solution2_title: "منصات الطب عن بعد:",
+  healthcare_solution2_desc: "حلول رعاية افتراضية تسهل 100 ألف+ استشارة يومياً",
+  healthcare_solution3_title: "تشخيص بالذكاء الاصطناعي:",
+  healthcare_solution3_desc: "نماذج تعلم آلي تحقق دقة 94% في تحليل التصوير الطبي",
+  healthcare_solution4_title: "أنظمة إدارة المستشفيات:",
+  healthcare_solution4_desc: "أتمتة سير العمل من البداية للنهاية تخفض وقت الإدارة بنسبة 60%",
+  healthcare_impact1: "خدمنا 200+ مستشفى ومزود رعاية صحية",
+  healthcare_impact2: "خفضنا أوقات انتظار المرضى بنسبة 45% من خلال الجدولة المحسنة",
+  healthcare_impact3: "حسّنا دقة التشخيص بنسبة 30% بمساعدة الذكاء الاصطناعي",
+  healthcare_impact4: "مكننا توفير تكاليف بقيمة 1 مليار دولار+ من خلال الكفاءة التشغيلية",
+  finance_title: "المالية",
+  finance_description: "نساعد المؤسسات المالية على تحديث الأنظمة وتبسيط العمليات والحصول على رؤى فورية من خلال حلول تكنولوجية قابلة للتطوير وآمنة. تشمل خدماتنا تطوير التكنولوجيا المالية وتكامل بلوكشين وتحليلات مالية.",
+  finance_solution1_title: "منصات التداول:",
+  finance_solution1_desc: "أنظمة عالية التردد تعالج 1 مليون+ معاملة في الثانية",
+  finance_solution2_title: "تحليلات المخاطر:",
+  finance_solution2_desc: "تحليل محفظة فوري بدقة 99.8% في التنبؤ بالمخاطر",
+  finance_solution3_title: "إدارة الثروات:",
+  finance_solution3_desc: "منصات مستشار آلي تدير 10 مليار دولار+ في الأصول",
+  finance_solution4_title: "حلول تكنولوجيا التنظيم:",
+  finance_solution4_desc: "مراقبة امتثال مؤتمنة تخفض المخالفات بنسبة 90%",
+  finance_impact1: "شراكتنا مع 30+ مؤسسة مالية وشركة استثمار",
+  finance_impact2: "زادنا كفاءة التداول بنسبة 70% من خلال التحسين الخوارزمي",
+  finance_impact3: "خفضنا تكاليف الامتثال بنسبة 50% بالمراقبة المؤتمتة",
+  finance_impact4: "حسّنا عوائد محفظة العملاء بنسبة 25% من خلال رؤى مدعومة بالذكاء الاصطناعي",
+  cta_title: "حوّل قطاعك",
+  cta_description: "لنتناقش حول كيف يمكن لحلولنا الخاصة بالقطاع دفع تحولك الرقمي",
+  cta_button: "اتصل بنا",
+  }
+}
+
+// Toggle dropdown visibility
+document.getElementById("langBtn").addEventListener("click", () => {
+  const langMenu = document.getElementById("langMenu");
+  langMenu.style.display = langMenu.style.display === "block" ? "none" : "block";
+});
+
+
+
+
+// Change language function
+function changeLanguage(lang){
+  // Update text content based on selected language
+  document.querySelectorAll("[data-i18n]").forEach(element=>{
+    const key = element.getAttribute("data-i18n");
+    element.textContent = translations[lang][key];
+  });
+
+  // Apply RTL for Arabic
+  if (lang === "ar") {
+    document.body.classList.add("rtl");
+  } else {
+    document.body.classList.remove("rtl");
+  }
+
+  // Close dropdown after selection
+  document.getElementById("langMenu").style.display = "none";
+}
+
+
+// Load English by default
+changeLanguage("en");
+
+(() => {
+  const init = () => {
+    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+    const navLinks = document.querySelector('.nav-links');
+    const servicesDropdown = document.querySelector('.services-dropdown');
+    const servicesLink = servicesDropdown?.querySelector('.services-link');
+    const dropdownMenu = servicesDropdown?.querySelector('.dropdown-menu');
+
+    if (servicesLink) {
+      servicesLink.setAttribute('aria-haspopup', 'true');
+      servicesLink.setAttribute('aria-expanded', 'false');
+    }
+
+    if (dropdownMenu) {
+      dropdownMenu.setAttribute('role', 'menu');
+    }
+
+    if (!mobileMenuBtn || !navLinks) {
+      return;
+    }
+
+    const setMenuOpen = (open) => {
+      document.body.classList.toggle('nav-open', open);
+      mobileMenuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      mobileMenuBtn.classList.toggle('is-open', open);
+      mobileMenuBtn.textContent = open ? '✕' : '☰';
+
+      if (!open && servicesDropdown) {
+        servicesDropdown.classList.remove('submenu-open');
+        if (servicesLink) {
+          servicesLink.setAttribute('aria-expanded', 'false');
+        }
+      }
+    };
+
+    const isMobileViewport = () => window.matchMedia('(max-width: 768px)').matches;
+
+    mobileMenuBtn.setAttribute('aria-label', 'Toggle navigation menu');
+    mobileMenuBtn.setAttribute('aria-expanded', 'false');
+    mobileMenuBtn.setAttribute('type', 'button');
+
+    mobileMenuBtn.addEventListener('click', (event) => {
+      event.preventDefault();
+      setMenuOpen(!document.body.classList.contains('nav-open'));
+    });
+
+    if (servicesLink && servicesDropdown) {
+      servicesLink.addEventListener('click', (event) => {
+        if (!isMobileViewport()) {
+          return;
+        }
+
+        event.preventDefault();
+        event.stopPropagation();
+        servicesDropdown.classList.toggle('submenu-open');
+        servicesLink.setAttribute(
+          'aria-expanded',
+          servicesDropdown.classList.contains('submenu-open') ? 'true' : 'false'
+        );
+      });
+    }
+
+    // document.addEventListener('click', (event) => {
+    //   if (!document.body.classList.contains('nav-open')) {
+    //     return;
+    //   }
+
+    //   const target = event.target;
+    //   if (!(target instanceof Element)) {
+    //     return;
+    //   }
+
+    //   const clickedInsideNav = !!target.closest('nav');
+    //   if (!clickedInsideNav) {
+    //     setMenuOpen(false);
+    //   }
+    // });
+document.addEventListener('click', (event) => {
+  if (!document.body.classList.contains('nav-open')) return;
+
+  const target = event.target;
+  if (!(target instanceof Element)) return;
+
+  const clickedInsideNav = target.closest('nav');
+
+  // ✅ Close ONLY if clicked OUTSIDE nav
+  if (!clickedInsideNav) {
+    setMenuOpen(false);
+  }
+});
+    navLinks.addEventListener('click', (event) => {
+      const target = event.target;
+      if (!(target instanceof Element)) {
+        return;
+      }
+
+      const link = target.closest('a');
+      if (!link) {
+        return;
+      }
+
+      if (isMobileViewport()) {
+        setMenuOpen(false);
+      }
+    });
+
+    window.addEventListener('resize', () => {
+      if (!isMobileViewport()) {
+        setMenuOpen(false);
+      }
+    });
+  };
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
