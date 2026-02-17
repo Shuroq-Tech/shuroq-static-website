@@ -26,79 +26,74 @@ nav{
 }
 
 .nav-container{
-    width: 100%;
+    width: 89%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #E4E6F4;
-    padding: 10px 20px;
-    padding-left: 90px;
+    padding: 10px 32px;
+    margin-left:2.5%;
+}
+
+.logo{
+    margin-left:10%;
 }
 
 .logo a {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: #000;
-    transition: transform 0.3s ease;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #000;
+  transition: transform 0.3s ease;
 }
 
 .logo a:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .logo-text {
-    font-family: "poppins", sans-serif;
-    font-weight: 800;
-    font-size: 22px;
-    color: #000;
-    letter-spacing: -1px;
+  font-family: "poppins", sans-serif;
+  font-weight: 800;
+  font-size: 22px;
+  color: #000;
+  letter-spacing: -1px;
 }
 
 .logo-img {
-    width: 32px;
+    width: 92px;
     object-fit: contain;
     filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
     padding-top: 3px;
+    display: block;
+    margin-top: 2vh;
+    padding: 0
 }
 
 .logo-img:hover {
-    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
-    object-fit: contain;
+ 
+  object-fit: contain;
 }
 
-
-
-
 .nav-links {
-    color: black;
+    color: #1F2933;
     list-style: none;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 4rem;
-    margin-left: 24vw;
-}
-
-
-.nav-links {
-    color: black;
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: clamp(1.5rem, 3vw, 3.25rem);
+    gap: clamp(1.2rem, 2vw, 2.5rem);
     margin-left: auto;   /* let links push to the right instead of fixed vw offset */
 }
+
 .nav-links li a {
     text-decoration: none;
-    color: #000000;
-    font-weight: 500;
+    font-weight: 600;
+    color: #1F2933;
     transition: color 0.3s ease;
 }
+
 .nav-links li a:hover {
-    color: rgb(59, 207, 230);
+    color: #2563EB;
 }
+
 #contact-btn{
     width: 120px;
     height: 30px;
@@ -1348,7 +1343,7 @@ footer{
     height: 5vh;
     width: 10vw;
     font-size: 22px;
-    margin-top: -8vh;
+    margin-top: -4vh;
     letter-spacing: -1px;
     color: white;
     display: flex;
@@ -1357,7 +1352,7 @@ footer{
 }
 
 #footabout img {
-    width: 32px;
+    width: 72px;
     object-fit: contain;
     filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
 }
@@ -1379,21 +1374,62 @@ footer{
         padding-left: 20px;
     }
 
+    .mobile-menu-btn {
+        display: inline-flex;
+        margin-left: 12px;
+    }
+
     .nav-links {
-        gap: 1rem;
-        margin-left: 0;
-    }
-
-    .dropdown-menu {
         position: fixed;
-        top: 60px;
-        left: 0;
+        top: 0;
         right: 0;
-        width: 100%;
-        border-radius: 0;
-        margin-top: 0;
+        bottom: 0;
+        width: min(320px, 86vw);
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.25rem;
+        background-color: #E4E6F4;
+        padding: 90px 24px 24px;
+        margin-left: 0;
+        transform: translateX(110%);
+        transition: transform 0.3s ease;
+        z-index: 1001;
+        box-shadow: -12px 0 30px rgba(0, 0, 0, 0.12);
     }
 
+    .nav-links li a {
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+    .nav-links li,
+    #contact-btn {
+        width: 40%;
+    }
+
+    #contact-btn {
+        justify-content: flex-start;
+        align-items: center;
+        padding-left: 16px;
+        height: 46px;
+    }
+
+    #contact-btn a {
+        width: 100%;
+    }
+
+    .nav-open .nav-links {
+        transform: translateX(0);
+    }
+
+    .nav-open::before {
+        content: '';
+        position: fixed;
+        inset: 0;
+        background: rgba(6, 7, 20, 0.35);
+        z-index: 1000;
+    }
+    
     .hero-content h1 {
         font-size: 2.5rem;
     }
@@ -1431,25 +1467,6 @@ footer{
         font-size: 2rem;
     }
 
-    .nav-links {
-        position: fixed;
-        top: 60px;
-        left: 0;
-        right: 0;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 1.5rem;
-        background-color: #E4E6F4;
-        padding: 20px;
-        margin-left: 0;
-        display: none;
-        z-index: 1000;
-    }
-
-    .nav-open .nav-links {
-        display: flex;
-    }
-
     .services-dropdown .dropdown-menu {
         position: static;
         box-shadow: none;
@@ -1459,6 +1476,11 @@ footer{
         margin-top: 0.5rem;
         display: none;
         width: 100%;
+        background: transparent;
+    }
+
+    .services-dropdown .dropdown-menu a {
+        padding-left: 32px;
     }
 
     .services-dropdown.submenu-open .dropdown-menu {
@@ -1472,13 +1494,10 @@ footer{
 
 @media (max-width: 480px) {
     .nav-links {
-        display: none;
+        width: min(300px, 90vw);
+        padding: 84px 20px 20px;
     }
-
-    .mobile-menu-btn {
-        display: block;
-    }
-
+    
     .hero-content h1 {
         font-size: 2rem;
     }
@@ -1513,15 +1532,12 @@ footer{
         margin: 0.5rem 0.2rem;
     }
 
-    .nav-links {
-        padding: 16px;
-    
+    #footlogo {
+        justify-content: center;
     }
-    
     
     #footbox{
         height: 70vh;
-        
     }
     #footbox h2{
         margin-left: -50px;
@@ -1538,13 +1554,42 @@ footer{
 @media (min-width: 768px) and (max-width: 1024px) {
     /* Navigation adjustments */
     .nav-container {
-        padding-left: clamp(20px, 5vw, 90px);
+        width: 95%;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-left: 2.5%;
     }
     
     .nav-links {
-    margin-left: 3vw;              /* 🔥 REMOVE the cause */
-    gap: clamp(1rem, 2vw, 2.5rem);
-
-    justify-content: center;
-  }
+        margin-left: auto;
+        gap: clamp(1rem, 2vw, 2rem);
+        justify-content: flex-end;
+    }
+    
+    .logo {
+        margin-left: 3%;
+        margin-right: auto;
+    }
+    
+    /* Navigation adjustments for tablets/iPads */
+    .nav-links {
+        gap: clamp(1rem, 1.5vw, 2rem);
+    }
+    
+    .nav-links li a {
+        font-size: 0.85rem;
+    }
+    
+    #contact-btn {
+        width: 100px;
+        font-size: 0.8rem;
+    }
+    
+    .lang-btn-container {
+        width: 100px;
+    }
+    
+    .lang-btn-container button {
+        font-size: 13px;
+    }
 }

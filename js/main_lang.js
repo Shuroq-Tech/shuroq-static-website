@@ -5,7 +5,7 @@ const translations = {
     nav_industries: "Industries",
     nav_resources: "Resources",
     nav_careers: "Careers",
-    nav_contact: "Contact",
+    nav_contact: "Contact-Us",
     herotitle: "We provide the best digital solutions and services in ",
     whatwedo: "What We Do",
     Delivery: "Delivering Trusted Technology Solutions for Modern Enterprises",
@@ -20,6 +20,11 @@ const translations = {
     Learnabout:"LEARN ABOUT SHUROQ",
     aboutuspara:"Shuroq is a service-based technology company delivering reliable, scalable, and future-ready digital solutions for enterprises and growing businesses. We specialize in DevOps, Cloud, AI, data, and digital engineering services that enable organizations to modernize platforms, automate operations, and accelerate innovation.",
     aboutbtn:"Learn More",
+    vision_title: "Our Vision",
+    vision_description: "At Shuroq, our vision is to become a trusted engineering partner for ambitious startups and growing enterprises worldwide — enabling them to scale with confidence through resilient, intelligent, and future-ready technology foundations. We envision a digital ecosystem where businesses are empowered by infrastructure that is secure, automated, and built for long-term sustainability rather than short-term survival.",
+    mission_title: "Our Mission",
+    mission_description: "Our mission is to bridge the gap between complex engineering and practical execution by delivering scalable cloud infrastructure, robust DevOps practices, and high-performance platform engineering solutions. We work closely with founders and product teams to design, automate, and optimize systems that reduce operational overhead, enhance reliability, and accelerate innovation — transforming ideas into production-ready platforms that support sustainable growth.",
+
     industriesheading:"Industries We Serve",
     industry1:"Telecom Industry ",
     industry1_data:"We support telecom providers with scalable digital solutions that enhance network operations, optimize customer experiences, and enable data-driven decision-making",
@@ -52,8 +57,8 @@ const translations = {
     consultingpara:"Expert guidance to help you make informed technology and business decisions.We assess, strategize, and recommend solutions aligned with your goals.",
     contacthead: "Move Forward with US",
     contactqoute: "From vision to execution — we deliver digital excellence",
-    contactbutton: "Contact Us",
-
+    contactbutton: "Contact Us"
+    
   },
   ar: {
     nav_aboutus: "معلومات عنا",
@@ -77,6 +82,11 @@ const translations = {
     Learnabout:" shuroq تعرف على ",
     aboutuspara:"شروق هي شركة تكنولوجيا قائمة على الخدمات تقدم حلولًا رقمية موثوقة وقابلة للتوسع وجاهزة للمستقبل للمؤسسات والشركات النامية. نحن متخصصون في خدمات DevOps والسحابة والذكاء الاصطناعي والبيانات والهندسة الرقمية التي تمكن المؤسسات من تحديث المنصات وأتمتة العمليات وتسريع الابتكار.",
     aboutbtn:"اعرف أكثر",
+     vision_title: "رؤيتنا",
+    vision_description:"في شروق، تتمثل رؤيتنا في أن نكون الشريك الهندسي الموثوق للشركات الناشئة والطموحة والمؤسسات المتنامية حول العالم، من خلال تمكينها من التوسع بثقة عبر بنية تقنية مرنة وذكية وجاهزة للمستقبل. نطمح إلى بناء منظومة رقمية تعتمد على أسس هندسية قوية تضمن الاستدامة طويلة المدى، بدلاً من الحلول المؤقتة قصيرة الأجل.",
+    mission_title: "مهمتنا",
+    mission_description:"مهمتنا هي سد الفجوة بين الهندسة المعقدة والتنفيذ العملي من خلال تقديم بنية تحتية سحابية قابلة للتوسع، وممارسات DevOps قوية، وحلول هندسة منصات عالية الأداء. نعمل بشكل وثيق مع المؤسسين والفرق المنتجة لتصميم وأتمتة وتحسين الأنظمة التي تقلل النفقات التشغيلية، وتعزز الموثوقية، وتسرع الابتكار — محولين الأفكار إلى منصات جاهزة للإنتاج التي تدعم النمو المستدام.",
+    
     industriesheading:"الصناعات التي نخدمها",
     industry1:"صناعة الاتصالات",
     industry1_data:"ندعم مزودي خدمات الاتصالات بحلول رقمية قابلة للتوسع تعزز عمليات الشبكة، وتحسن تجارب العملاء، وتمكّن اتخاذ القرارات المستندة إلى البيانات",
@@ -109,8 +119,8 @@ const translations = {
     consultingpara:"إرشادات خبراء لمساعدتك في اتخاذ قرارات مستنيرة بشأن التكنولوجيا والأعمال. نقوم بالتقييم، ووضع الاستراتيجيات، والتوصية بحلول تتماشى مع أهدافك.",
     contacthead: "المضي قدمًا معنا",
     contactqoute: "من الرؤية إلى التنفيذ - نحن نقدم التميز الرقمي",
-    contactbutton: "اتصل بنا",
-    
+    contactbutton: "اتصل بنا"
+   
   }
 };
 

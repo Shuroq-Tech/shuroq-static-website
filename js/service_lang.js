@@ -5,7 +5,7 @@ const translations = {
     nav_industries: "Industries",
     nav_resources: "Resources",
     nav_careers: "Careers",
-    nav_contact: "Contact",
+    nav_contact: "Contact-Us",
     servicetitle:"Our Services",
     services_hero_description: "Comprehensive technology solutions designed to transform your business and accelerate digital innovation",
   cutting_edge_title: "Cutting Edge",

@@ -26,13 +26,16 @@ nav {
 }
 
 .nav-container {
-    width: 100%;
+    width: 89%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #E4E6F4;
-    padding: 10px 20px;
-    padding-left: 90px;
+    padding: 10px 32px;
+    margin-left:2.5%;
+}
+
+.logo{
+    margin-left:10%;
 }
 
 .logo a {
@@ -56,14 +59,17 @@ nav {
 }
 
 .logo-img {
-    width: 32px;
+    width: 92px;
     object-fit: contain;
     filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
     padding-top: 3px;
+    display: block;
+    margin-top: 2vh;
+    padding: 0
 }
 
 .logo-img:hover {
-    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+    
     object-fit: contain;
 }
 
@@ -76,31 +82,16 @@ nav {
     gap: clamp(1.5rem, 3vw, 3.25rem);
     margin-left: auto;   /* let links push to the right instead of fixed vw offset */
 }
+
 .nav-links li a {
     text-decoration: none;
-    color: #000000;
-    font-weight: 500;
+    font-weight: 600;
+    color: #1F2933;
     transition: color 0.3s ease;
 }
 
-
-.nav-links {
-    color: black;
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: clamp(1.5rem, 3vw, 3.25rem);
-    margin-left: auto;   /* let links push to the right instead of fixed vw offset */
-}
-.nav-links li a {
-    text-decoration: none;
-    color: #000000;
-    font-weight: 500;
-    transition: color 0.3s ease;
-}
 .nav-links li a:hover {
-    color: rgb(59, 207, 230);
+    color: #2563EB;
 }
 
 #contact-btn {
@@ -126,13 +117,15 @@ nav {
 
 .lang-btn-container {
     position: relative;
-    width: 120px;
+    width: 100px;
     height: 30px;
     background-color: #ffffff;
     border-radius: 15px;
     display: flex;
     border: 1px solid rgb(59, 207, 230);
     justify-content: center;
+    flex-shrink: 0;
+    min-width: 80px;
 }
 
 .lang-btn-container:hover {
@@ -1053,13 +1046,42 @@ footer {
 @media (min-width: 768px) and (max-width: 1024px) {
     /* Navigation adjustments */
     .nav-container {
-        padding-left: clamp(20px, 5vw, 90px);
+        width: 95%;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-left: 2.5%;
     }
     
     .nav-links {
-    margin-left: 3vw;              /* 🔥 REMOVE the cause */
-    gap: clamp(1rem, 2vw, 2.5rem);
-
-    justify-content: center;
-  }
+        margin-left: auto;
+        gap: clamp(1rem, 2vw, 2rem);
+        justify-content: flex-end;
+    }
+    
+    .logo {
+        margin-left: 3%;
+        margin-right: auto;
+    }
+    
+    /* Navigation adjustments for tablets/iPads */
+    .nav-links {
+        gap: clamp(1rem, 1.5vw, 2rem);
+    }
+    
+    .nav-links li a {
+        font-size: 0.85rem;
+    }
+    
+    #contact-btn {
+        width: 100px;
+        font-size: 0.8rem;
+    }
+    
+    .lang-btn-container {
+        width: 100px;
+    }
+    
+    .lang-btn-container button {
+        font-size: 13px;
+    }
 }

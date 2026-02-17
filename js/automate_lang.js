@@ -3,6 +3,7 @@ const translations = {
     nav_aboutus:"About Us",
     nav_services:"Services",
     nav_industries:"Industries",
+    nav_resources:"Resources",
     nav_careers: "Careers",
     nav_contact: "Contact-Us",
     automatetitle:"Automation & DevOps Services",
