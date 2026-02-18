@@ -1,4 +1,102 @@
 (() => {
+  // Fetch navigation from nav.html
+  const fetchNavigation = async () => {
+    try {
+      const response = await fetch('nav.html');
+      if (response.ok) {
+        const navHTML = await response.text();
+        const navContainer = document.getElementById('nav-container');
+        if (navContainer) {
+          navContainer.innerHTML = navHTML;
+          
+          // Initialize language functionality after nav is loaded
+          initLanguageFunctionality();
+        }
+      } else {
+        console.error('Failed to load navigation');
+      }
+    } catch (error) {
+      console.error('Error loading navigation:', error);
+    }
+  };
+
+  // Initialize language functionality
+  const initLanguageFunctionality = () => {
+    const langBtn = document.getElementById('langBtn');
+    const langMenu = document.getElementById('langMenu');
+
+    if (langBtn && langMenu) {
+      langBtn.addEventListener('click', (event) => {
+        event.preventDefault();
+        event.stopPropagation();
+        
+        const isHidden = langMenu.style.display === 'none' || langMenu.style.display === '';
+        langMenu.style.display = isHidden ? 'block' : 'none';
+      });
+
+      // Close language menu when clicking outside
+      document.addEventListener('click', (event) => {
+        const target = event.target;
+        if (!(target instanceof Element)) return;
+
+        const clickedInsideLangMenu = target.closest('.lang-btn-container');
+        
+        if (!clickedInsideLangMenu && langMenu.style.display === 'block') {
+          langMenu.style.display = 'none';
+        }
+      });
+    }
+
+    // Language change function
+    window.changeLanguage = function(lang) {
+      console.log('Language changed to:', lang);
+      
+      // Update button text
+      if (langBtn) {
+        langBtn.textContent = lang === 'en' ? '🌐 EN' : '🌐 AR';
+      }
+      
+      // Close language menu
+      if (langMenu) {
+        langMenu.style.display = 'none';
+      }
+      
+      // Update all elements with data-i18n attribute
+      document.querySelectorAll("[data-i18n]").forEach(element => {
+        const key = element.getAttribute("data-i18n");
+        if (window.translations && window.translations[lang] && window.translations[lang][key]) {
+          element.textContent = window.translations[lang][key];
+        }
+      });
+
+      // Simple RTL toggle (like About page)
+      if (lang === "ar") {
+        document.body.classList.add("rtl");
+      } else {
+        document.body.classList.remove("rtl");
+      }
+      
+      // Store language preference
+      localStorage.setItem('preferredLanguage', lang);
+    };
+
+    // Load saved language preference or default to English
+    const savedLanguage = localStorage.getItem('preferredLanguage') || 'en';
+    
+    // Wait for translations to be available before applying language
+    const applyLanguage = () => {
+      if (window.translations) {
+        changeLanguage(savedLanguage);
+      } else {
+        // If translations not ready, wait a bit and try again
+        setTimeout(applyLanguage, 100);
+      }
+    };
+    
+    applyLanguage();
+  };
+
+  // Initialize navigation
   const init = () => {
     const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
     const navLinks = document.querySelector('.nav-links');
@@ -177,8 +275,13 @@ document.addEventListener('click', (event) => {
   };//floatingCardTilt effect completes here
 
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', init);
+    document.addEventListener('DOMContentLoaded', async () => {
+      await fetchNavigation();
+      init();
+    });
   } else {
-    init();
+    fetchNavigation().then(() => {
+      init();
+    });
   }
 })();

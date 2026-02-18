@@ -1,6 +1,7 @@
 const translations = {
   en: {
-    nav_aboutus: "About Us",
+    nav_aboutus: "Company",
+    nav_shuroqway: "The Shuroq Way",
     nav_services: "Services",
     nav_industries: "Industries",
     nav_resources: "Resources",
@@ -61,7 +62,8 @@ const translations = {
     
   },
   ar: {
-    nav_aboutus: "معلومات عنا",
+    nav_aboutus: "الشركة",
+    nav_shuroqway: "طريق شروق",
     nav_services: "الخدمات",
     nav_industries: "الصناعات",
     nav_resources: "الموارد",
@@ -105,7 +107,7 @@ const translations = {
     diffautomate:"عقلية الأتمتة أولاً",
     diffautopara:"نحن نعطي الأولوية للأتمتة في كل عملية لزيادة الكفاءة وتقليل الأخطاء وتسريع التسليم. من خلال استخدام أدوات ذكية، نساعد الشركات على توفير الوقت والموارد وتحقيق نتائج ثابتة.",
     diffcloud:"نهج قائم على السحابة",
-    diffcloudpara:"تم تصميم حلولنا للاستفادة الكاملة من منصات السحابة، مما يتيح المرونة وقابلية التوسع والتكامل السلس. يضمن هذا النهج نشرًا أسرع وإدارة أسهل للتطبيقات في بيئات ديناميكية.",
+    diffcloudpara:"تم تصميم حلولنا للاستفادة الكاملة من منصات السحابة، مما يتيح المرونة وقابلية للتوسع والتكامل السلس. يضمن هذا النهج نشرًا أسرع وإدارة أسهل للتطبيقات في بيئات ديناميكية.",
     diffsecure:"التركيز على الأمان والامتثال",
     diffsecurepara:"نحن ندمج الأمان والامتثال في كل خطوة من عملية التطوير الخاصة بنا لحماية البيانات وتلبية المتطلبات التنظيمية. تحافظ حلولنا على أعلى معايير السرية والنزاهة والموثوقية.",
     engagementhead:"نماذج التعاون",
@@ -124,34 +126,5 @@ const translations = {
   }
 };
 
-// Toggle dropdown visibility
-document.getElementById("langBtn").addEventListener("click", () => {
-  const langMenu = document.getElementById("langMenu");
-  langMenu.style.display = langMenu.style.display === "block" ? "none" : "block";
-});
-
-
-
-
-// Change language function
-function changeLanguage(lang){
-  // Update text content based on selected language
-  document.querySelectorAll("[data-i18n]").forEach(element=>{
-    const key = element.getAttribute("data-i18n");
-    element.textContent = translations[lang][key];
-  });
-
-  // Apply RTL for Arabic
-  if (lang === "ar") {
-    document.body.classList.add("rtl");
-  } else {
-    document.body.classList.remove("rtl");
-  }
-
-  // Close dropdown after selection
-  document.getElementById("langMenu").style.display = "none";
-}
-
-
-// Load English by default
-changeLanguage("en");
+// Make translations available globally
+window.translations = translations;

@@ -13,10 +13,9 @@
   <link rel="icon" href="logo.png" sizes="44x44" type="image/png">
 
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/nav.css">
 
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
-
 
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
@@ -30,85 +29,8 @@
 
 
 
-  <!-- Language Switch Button -->
-
-  <nav>
-
-    <div class="nav-container">
-
-    <div class="logo">
-
-      <a href="#">
-
-
-        <img src="image.png" alt="logo" class="logo-img">
-
-       
-
-      </a>
-
-    </div>
-
-    
-
-      <ul class="nav-links">
-
-        <li><a href="#aboutus" data-i18n="nav_aboutus">About Us</a></li>
-
-        <li class="services-dropdown">
-
-          <a href="services.html" class="services-link" data-i18n="nav_services" aria-haspopup="true" aria-expanded="false">Services <i class="fas fa-chevron-down"></i></a>
-
-          <div class="dropdown-menu" role="menu">
-
-            <a href="cuttingedge.html"><i class="fas fa-rocket"></i> Cutting Edge</a>
-
-            <a href="assurance.html"><i class="fas fa-shield-alt"></i> Assurance</a>
-
-            <a href="automate.html"><i class="fas fa-cogs"></i> Automate</a>
-
-            <a href="vision.html"><i class="fas fa-chart-line"></i> Vision</a>
-
-          </div>
-
-        </li>
-
-        <li><a href="industries.html" data-i18n="nav_industries">Industries</a></li>
-
-        <li><a href="resources.html" data-i18n="nav_resources">Resources</a></li>
-
-        <li><a href="careers.html" data-i18n="nav_careers">Careers</a></li>
-
-        <li id="contact-btn"><a href="contact.html" data-i18n="nav_contact">Contact-Us</a></li>
-
-        <div class="lang-btn-container">
-
-        <button id="langBtn">🌐~lang</button>
-
-        <!-- Dropdown Menu -->
-
-        <div id="langMenu">
-
-          <div onclick="changeLanguage('en')">English</div>
-
-          <div onclick="changeLanguage('ar')">العربية</div>
-
-        </div>
-
-      </ul>
-
-         <button class="mobile-menu-btn">☰</button>
-
-      </div>
-
-     
-
-    </div>
-
-  </nav>
-
- 
-
+  <!-- Navigation will be fetched here -->
+  <div id="nav-container"></div>
 
 
   <!-- Text Elements -->
@@ -794,6 +716,7 @@ insights through scalable and secure technology </h4>
 
   </div>
 
+  <script src="js/nav_lang.js"></script>
   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
    
