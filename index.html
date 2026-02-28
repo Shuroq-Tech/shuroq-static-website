@@ -27,11 +27,10 @@
 
 <body>
 
-
-
-  <!-- Navigation will be fetched here -->
-  <div id="nav-container"></div>
-
+  <!-- Navigation Bar (Loaded Dynamically) -->
+  <nav id="main-nav">
+    <div class="loading"></div>
+  </nav>
 
   <!-- Text Elements -->
 
@@ -719,37 +718,51 @@ insights through scalable and secure technology </h4>
   <script src="js/nav_lang.js"></script>
   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
-   
-
-
-
-
+  <script src="js/nav.js"></script>
+  <script src="js/main_lang.js"></script>
+  <script src="js/main.js"></script>
 
   <script>
+    // Load navigation
+    async function loadNavigation() {
+      try {
+        const response = await fetch('nav.html');
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        const navHTML = await response.text();
+        
+        // Replace the existing navigation
+        const existingNav = document.querySelector('nav');
+        if (existingNav) {
+          existingNav.innerHTML = navHTML;
+        }
+        
+        // Initialize navigation functionality
+        setTimeout(() => {
+          initializeNavigation();
+        }, 300);
+        
+      } catch (error) {
+        console.error('Error loading navigation:', error);
+      }
+    }
 
-    var typed = new Typed('#element', {
-
-      strings: ['Product Engineering', 'Devops', 'ERP', 'Cloud Services' , 'Quality Engineering'],
-
-      typeSpeed: 80,
-
-      showCursor: false,
-
-      loop:true
-
-      
-
+    // Initialize everything when DOM is loaded
+    document.addEventListener('DOMContentLoaded', function() {
+      loadNavigation();
     });
-
   </script>
 
-
-
-  <script src="js/main_lang.js"></script>
-
-  <script src="js/main.js"></script>
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Product Engineering', 'Devops', 'ERP', 'Cloud Services' , 'Quality Engineering'],
+      typeSpeed: 80,
+      showCursor: false,
+      loop:true
+    });
+  </script>
 
 </body>
 
 </html>
-
