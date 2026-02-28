@@ -1,5 +1,7 @@
 ﻿@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap");
 
+﻿@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap");
+
 /* Mobile-first styles for The Shuroq Way page */
 :root {
     --sw-heading: #0f2f7b;
@@ -29,6 +31,11 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 4rem 1rem;
+    text-align: center;
+    background-color: transparent;
+    min-height: 60vh;
+}
     padding: 4rem 1rem;
     text-align: center;
     background-color: transparent;
@@ -304,14 +311,3 @@ main {
     }
 }
 
-/* Mobile Navigation - Increased spacing for shuroq way page */
-@media (max-width: 768px) {
-    #main-nav .nav-links {
-        gap: 2rem !important; /* Increased from 0.5rem to 1rem */
-    }
-}
-
-/* Override Services dropdown width for shuroq way page - match index page */
-#main-nav .services-dropdown .dropdown-menu {
-    min-width: 280px !important;
-}
