@@ -8,83 +8,22 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Contactpage</title>
+    <title>Contact Us</title>
 
     <link rel="icon" href="logo.png" sizes="44x44" type="image/png">
 
     <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 </head>
 
 <body>
 
-    <nav>
-
-    <div class="nav-container">
-
-    <div class="logo">
-
-      <a href="index.html">
-
-        <img src="image.png" alt="logo" class="logo-img">
-
-      </a>
-
-    </div>
-
-      <ul class="nav-links">
-
-        <li><a href="aboutus.html"data-i18n="nav_aboutus">About Us</a></li>
-
-        <li class="services-dropdown">
-
-          <a href="services.html" class="services-link" aria-haspopup="true" aria-expanded="false"data-i18n="nav_services">Services <i class="fas fa-chevron-down"></i></a>
-
-          <div class="dropdown-menu" role="menu">
-
-            <a href="cuttingedge.html"><i class="fas fa-rocket"></i> Cutting Edge</a>
-
-            <a href="assurance.html"><i class="fas fa-shield-alt"></i> Assurance</a>
-
-            <a href="automate.html"><i class="fas fa-cogs"></i> Automate</a>
-
-            <a href="vision.html"><i class="fas fa-chart-line"></i> Vision</a>
-
-          </div>
-
-        </li>
-
-        <li><a href="industries.html"data-i18n="nav_industries">Industries</a></li>
-
-        <li><a href="resources.html" data-i18n="nav_resources">Resources</a></li>
-
-        <li><a href="careers.html" data-i18n="nav_careers">Careers</a></li>
-
-        <div id="contact-btn"><li><a href="contact.html" data-i18n="nav_contact">Contact-Us</a></li></div>
-
-        <div class="lang-btn-container">
-
-        <button id="langBtn">🌐~lang</button>
-
-        <!-- Dropdown Menu -->
-
-        <div id="langMenu">
-
-          <div onclick="changeLanguage('en')">English</div>
-
-          <div onclick="changeLanguage('ar')">العربية</div>
-
-        </div>
-
-      </div>
-
-      </ul>
-
-      <button class="mobile-menu-btn">☰</button>
-
-    </div>
-
-  </nav>
+    <!-- Navigation Bar (Loaded Dynamically) -->
+    <nav id="main-nav">
+        <div class="loading"></div>
+    </nav>
 
     <div id="main">
 
@@ -215,8 +154,53 @@
     </div>
 
     <script src="js/contact_lang.js"></script>
-
+    <script src="js/nav.js"></script>
     <script src="js/contact.js"></script>
+    <script>
+        // Load navigation
+        async function loadNavigation() {
+            try {
+                const response = await fetch('nav.html');
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                const navHTML = await response.text();
+                
+                // Replace the existing navigation
+                const existingNav = document.querySelector('nav');
+                if (existingNav) {
+                    existingNav.innerHTML = navHTML;
+                }
+                
+                // Initialize navigation functionality with longer timeout for CSS loading
+                setTimeout(() => {
+                    initializeNavigation();
+                    
+                    // Debug: Check if Company dropdown elements exist
+                    const companyDropdown = document.querySelector('.company-dropdown');
+                    const companyLink = document.querySelector('.company-link');
+                    const companyDropdownMenu = document.querySelector('.company-dropdown-menu');
+                    console.log('Company dropdown elements:', { companyDropdown, companyLink, companyDropdownMenu });
+                    
+                    // Test click functionality
+                    if (companyLink) {
+                        console.log('Company link found, adding test click listener');
+                        companyLink.addEventListener('click', function(e) {
+                            console.log('Company dropdown clicked!');
+                        });
+                    }
+                }, 500); // Increased timeout
+                
+            } catch (error) {
+                console.error('Error loading navigation:', error);
+            }
+        }
+
+        // Initialize everything when DOM is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            loadNavigation();
+        });
+    </script>
 
 </body>
 

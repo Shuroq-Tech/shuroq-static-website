@@ -1,3 +1,6 @@
+/* Import Navigation Styles */
+@import url('nav.css');
+
 *{
     margin: 0;
     padding: 0;
