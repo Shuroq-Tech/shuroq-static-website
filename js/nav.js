@@ -7,7 +7,15 @@
 //     initializeNavigation();
 // });
 
+// Global click handler for dropdowns - single listener to prevent conflicts
+let globalClickHandler = null;
+
 function initializeNavigation() {
+    // Remove existing global click handler if it exists
+    if (globalClickHandler) {
+        document.removeEventListener('click', globalClickHandler);
+    }
+    
     // Mobile menu functionality
     const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
     const navLinks = document.querySelector('.nav-links');
@@ -26,34 +34,12 @@ function initializeNavigation() {
 
             // Close any open dropdowns when menu is closed
             if (!open) {
-                const servicesDropdown = document.querySelector('.services-dropdown');
-                const servicesLink = servicesDropdown?.querySelector('.services-link');
-                if (servicesDropdown) {
-                    servicesDropdown.classList.remove('submenu-open');
-                    if (servicesLink) {
-                        servicesLink.setAttribute('aria-expanded', 'false');
-                    }
-                }
+                closeAllDropdowns();
             }
         };
 
         mobileMenuBtn.addEventListener('click', function() {
             setMenuOpen(!document.body.classList.contains('nav-open'));
-        });
-
-        // Close menu when clicking outside
-        document.addEventListener('click', (event) => {
-            if (!document.body.classList.contains('nav-open')) return;
-            
-            const target = event.target;
-            if (!(target instanceof Element)) return;
-            
-            const clickedInsideNav = target.closest('nav');
-            
-            // Close ONLY if clicked OUTSIDE nav
-            if (!clickedInsideNav) {
-                setMenuOpen(false);
-            }
         });
 
         // Close menu when clicking on nav links (in mobile)
@@ -77,7 +63,65 @@ function initializeNavigation() {
         });
     }
 
-    // Services dropdown functionality
+    // Initialize all dropdowns
+    initializeDropdowns();
+    
+    // Initialize language functionality
+    initializeLanguage();
+    
+    // Create single global click handler
+    globalClickHandler = function(e) {
+        handleGlobalClick(e);
+    };
+    document.addEventListener('click', globalClickHandler);
+}
+
+// Function to close all dropdowns
+function closeAllDropdowns() {
+    const dropdowns = [
+        { selector: '.services-dropdown', menuSelector: '.dropdown-menu', linkSelector: '.services-link' },
+        { selector: '.company-dropdown', menuSelector: '.company-dropdown-menu', linkSelector: '.company-link' },
+        { selector: '.solutions-dropdown', menuSelector: '.solutions-dropdown-menu', linkSelector: '.solutions-link' },
+        { selector: '.resources-dropdown', menuSelector: '.resources-dropdown-menu', linkSelector: '.resources-link' }
+    ];
+    
+    dropdowns.forEach(dropdown => {
+        const element = document.querySelector(dropdown.selector);
+        const menu = document.querySelector(dropdown.menuSelector);
+        const link = document.querySelector(dropdown.linkSelector);
+        
+        if (element && menu) {
+            element.classList.remove('submenu-open');
+            menu.style.display = 'none';
+            
+            if (link) {
+                link.setAttribute('aria-expanded', 'false');
+                const chevron = link.querySelector('i');
+                if (chevron) {
+                    chevron.style.transform = 'rotate(0)';
+                }
+            }
+        }
+    });
+}
+
+// Function to initialize all dropdowns
+function initializeDropdowns() {
+    // Services dropdown
+    initializeServicesDropdown();
+    
+    // Company dropdown
+    initializeCompanyDropdown();
+    
+    // Solutions dropdown
+    initializeSolutionsDropdown();
+    
+    // Resources dropdown
+    initializeResourcesDropdown();
+}
+
+// Services dropdown functionality
+function initializeServicesDropdown() {
     const servicesDropdown = document.querySelector('.services-dropdown');
     const servicesLink = document.querySelector('.services-link');
     const servicesDropdownMenu = document.querySelector('.services-dropdown .dropdown-menu');
@@ -87,72 +131,59 @@ function initializeNavigation() {
             e.preventDefault();
             e.stopPropagation();
             
-            // Toggle the dropdown visibility
-            servicesDropdown.classList.toggle('submenu-open');
-            
-            // Rotate chevron icon
-            const chevron = servicesLink.querySelector('i');
-            if (chevron) {
-                chevron.style.transform = servicesDropdown.classList.contains('submenu-open') ? 'rotate(180deg)' : 'rotate(0)';
-            }
+            toggleDropdown(servicesDropdown, servicesDropdownMenu, servicesLink);
         });
         
-        // Close dropdown when clicking outside
-        document.addEventListener('click', function(e) {
-            if (!servicesDropdown.contains(e.target)) {
-                servicesDropdown.classList.remove('submenu-open');
-                const chevron = servicesLink.querySelector('i');
-                if (chevron) {
-                    chevron.style.transform = 'rotate(0)';
-                }
-            }
-        });
-    }
-
-    // Services Submenu Toggle Functionality (BELOW positioning)
-    const submenuToggles = document.querySelectorAll('.services-dropdown .dropdown-menu .has-submenu');
-    
-    submenuToggles.forEach(toggle => {
-        toggle.addEventListener('click', function(e) {
-            e.preventDefault();
-            e.stopPropagation();
-            
-            // Find submenu (next element)
-            const submenu = this.nextElementSibling;
-            const arrow = this.querySelector('.submenu-arrow');
-            
-            if (submenu && submenu.classList.contains('submenu')) {
-                // Check if this submenu is currently open
-                const isCurrentlyOpen = submenu.classList.contains('active');
+        // Services Submenu Toggle Functionality
+        const submenuToggles = document.querySelectorAll('.services-dropdown .dropdown-menu .has-submenu');
+        
+        submenuToggles.forEach(toggle => {
+            toggle.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
                 
-                // Close ALL submenus first (accordion behavior)
-                document.querySelectorAll('.services-dropdown .dropdown-menu .submenu.active').forEach(openSubmenu => {
-                    openSubmenu.classList.remove('active');
-                    openSubmenu.previousElementSibling.classList.remove('active');
-                    openSubmenu.previousElementSibling.querySelector('.submenu-arrow').style.transform = 'rotate(0)';
-                });
+                // Find submenu (next element)
+                const submenu = this.nextElementSibling;
+                const arrow = this.querySelector('.submenu-arrow');
                 
-                // If this submenu wasn't open, open it
-                if (!isCurrentlyOpen) {
-                    submenu.classList.add('active');
-                    this.classList.add('active');
-                    if (arrow) {
-                        arrow.style.transform = 'rotate(90deg)';
+                if (submenu && submenu.classList.contains('submenu')) {
+                    // Check if this submenu is currently open
+                    const isCurrentlyOpen = submenu.classList.contains('active');
+                    
+                    // Close ALL submenus first (accordion behavior)
+                    document.querySelectorAll('.services-dropdown .dropdown-menu .submenu.active').forEach(openSubmenu => {
+                        openSubmenu.classList.remove('active');
+                        openSubmenu.previousElementSibling.classList.remove('active');
+                        const openArrow = openSubmenu.previousElementSibling.querySelector('.submenu-arrow');
+                        if (openArrow) {
+                            openArrow.style.transform = 'rotate(0)';
+                        }
+                    });
+                    
+                    // If this submenu wasn't open, open it
+                    if (!isCurrentlyOpen) {
+                        submenu.classList.add('active');
+                        this.classList.add('active');
+                        if (arrow) {
+                            arrow.style.transform = 'rotate(90deg)';
+                        }
                     }
                 }
-            }
+            });
         });
-    });
-    
-    // Prevent submenu clicks from closing parent dropdown
-    const allSubmenus = document.querySelectorAll('.services-dropdown .dropdown-menu .submenu');
-    allSubmenus.forEach(submenu => {
-        submenu.addEventListener('click', function(e) {
-            e.stopPropagation();
+        
+        // Prevent submenu clicks from closing parent dropdown
+        const allSubmenus = document.querySelectorAll('.services-dropdown .dropdown-menu .submenu');
+        allSubmenus.forEach(submenu => {
+            submenu.addEventListener('click', function(e) {
+                e.stopPropagation();
+            });
         });
-    });
+    }
+}
 
-    // Company dropdown functionality
+// Company dropdown functionality
+function initializeCompanyDropdown() {
     const companyDropdown = document.querySelector('.company-dropdown');
     const companyLink = document.querySelector('.company-link');
     const companyDropdownMenu = document.querySelector('.company-dropdown-menu');
@@ -162,37 +193,7 @@ function initializeNavigation() {
             e.preventDefault();
             e.stopPropagation();
             
-            // Toggle the dropdown visibility
-            const isOpen = companyDropdownMenu.style.display === 'block' || 
-                          companyDropdown.classList.contains('submenu-open');
-            
-            if (isOpen) {
-                // Close the dropdown
-                companyDropdownMenu.style.display = 'none';
-                companyDropdown.classList.remove('submenu-open');
-            } else {
-                // Open the dropdown
-                companyDropdownMenu.style.display = 'block';
-                companyDropdown.classList.add('submenu-open');
-            }
-            
-            // Rotate chevron icon
-            const chevron = companyLink.querySelector('i');
-            if (chevron) {
-                chevron.style.transform = companyDropdown.classList.contains('submenu-open') ? 'rotate(180deg)' : 'rotate(0)';
-            }
-        });
-        
-        // Close dropdown when clicking outside
-        document.addEventListener('click', function(e) {
-            if (!companyDropdown.contains(e.target)) {
-                companyDropdownMenu.style.display = 'none';
-                companyDropdown.classList.remove('submenu-open');
-                const chevron = companyLink.querySelector('i');
-                if (chevron) {
-                    chevron.style.transform = 'rotate(0)';
-                }
-            }
+            toggleDropdown(companyDropdown, companyDropdownMenu, companyLink);
         });
         
         // Prevent dropdown menu clicks from closing the dropdown
@@ -200,8 +201,10 @@ function initializeNavigation() {
             e.stopPropagation();
         });
     }
+}
 
-    // Solutions dropdown functionality
+// Solutions dropdown functionality
+function initializeSolutionsDropdown() {
     const solutionsDropdown = document.querySelector('.solutions-dropdown');
     const solutionsLink = document.querySelector('.solutions-link');
     const solutionsDropdownMenu = document.querySelector('.solutions-dropdown-menu');
@@ -211,37 +214,7 @@ function initializeNavigation() {
             e.preventDefault();
             e.stopPropagation();
             
-            // Toggle the dropdown visibility
-            const isOpen = solutionsDropdownMenu.style.display === 'block' || 
-                          solutionsDropdown.classList.contains('submenu-open');
-            
-            if (isOpen) {
-                // Close the dropdown
-                solutionsDropdownMenu.style.display = 'none';
-                solutionsDropdown.classList.remove('submenu-open');
-            } else {
-                // Open the dropdown
-                solutionsDropdownMenu.style.display = 'block';
-                solutionsDropdown.classList.add('submenu-open');
-            }
-            
-            // Rotate chevron icon
-            const chevron = solutionsLink.querySelector('i');
-            if (chevron) {
-                chevron.style.transform = solutionsDropdown.classList.contains('submenu-open') ? 'rotate(180deg)' : 'rotate(0)';
-            }
-        });
-        
-        // Close dropdown when clicking outside
-        document.addEventListener('click', function(e) {
-            if (!solutionsDropdown.contains(e.target)) {
-                solutionsDropdownMenu.style.display = 'none';
-                solutionsDropdown.classList.remove('submenu-open');
-                const chevron = solutionsLink.querySelector('i');
-                if (chevron) {
-                    chevron.style.transform = 'rotate(0)';
-                }
-            }
+            toggleDropdown(solutionsDropdown, solutionsDropdownMenu, solutionsLink);
         });
         
         // Prevent dropdown menu clicks from closing the dropdown
@@ -249,8 +222,10 @@ function initializeNavigation() {
             e.stopPropagation();
         });
     }
+}
 
-    // Resources dropdown functionality
+// Resources dropdown functionality
+function initializeResourcesDropdown() {
     const resourcesDropdown = document.querySelector('.resources-dropdown');
     const resourcesLink = document.querySelector('.resources-link');
     const resourcesDropdownMenu = document.querySelector('.resources-dropdown-menu');
@@ -260,37 +235,7 @@ function initializeNavigation() {
             e.preventDefault();
             e.stopPropagation();
             
-            // Toggle the dropdown visibility
-            const isOpen = resourcesDropdownMenu.style.display === 'block' || 
-                          resourcesDropdown.classList.contains('submenu-open');
-            
-            if (isOpen) {
-                // Close the dropdown
-                resourcesDropdownMenu.style.display = 'none';
-                resourcesDropdown.classList.remove('submenu-open');
-            } else {
-                // Open the dropdown
-                resourcesDropdownMenu.style.display = 'block';
-                resourcesDropdown.classList.add('submenu-open');
-            }
-            
-            // Rotate chevron icon
-            const chevron = resourcesLink.querySelector('i');
-            if (chevron) {
-                chevron.style.transform = resourcesDropdown.classList.contains('submenu-open') ? 'rotate(180deg)' : 'rotate(0)';
-            }
-        });
-        
-        // Close dropdown when clicking outside
-        document.addEventListener('click', function(e) {
-            if (!resourcesDropdown.contains(e.target)) {
-                resourcesDropdownMenu.style.display = 'none';
-                resourcesDropdown.classList.remove('submenu-open');
-                const chevron = resourcesLink.querySelector('i');
-                if (chevron) {
-                    chevron.style.transform = 'rotate(0)';
-                }
-            }
+            toggleDropdown(resourcesDropdown, resourcesDropdownMenu, resourcesLink);
         });
         
         // Prevent dropdown menu clicks from closing the dropdown
@@ -298,8 +243,41 @@ function initializeNavigation() {
             e.stopPropagation();
         });
     }
+}
 
-    // Language switching functionality
+// Generic dropdown toggle function
+function toggleDropdown(dropdownElement, menuElement, linkElement) {
+    const isOpen = menuElement.style.display === 'block' || 
+                  dropdownElement.classList.contains('submenu-open');
+    
+    if (isOpen) {
+        // Close the dropdown
+        menuElement.style.display = 'none';
+        dropdownElement.classList.remove('submenu-open');
+        if (linkElement) {
+            linkElement.setAttribute('aria-expanded', 'false');
+        }
+    } else {
+        // Close other dropdowns first
+        closeAllDropdowns();
+        
+        // Open this dropdown
+        menuElement.style.display = 'block';
+        dropdownElement.classList.add('submenu-open');
+        if (linkElement) {
+            linkElement.setAttribute('aria-expanded', 'true');
+        }
+    }
+    
+    // Rotate chevron icon
+    const chevron = linkElement.querySelector('i');
+    if (chevron) {
+        chevron.style.transform = dropdownElement.classList.contains('submenu-open') ? 'rotate(180deg)' : 'rotate(0)';
+    }
+}
+
+// Language switching functionality
+function initializeLanguage() {
     const langBtn = document.getElementById('langBtn');
     const langMenu = document.getElementById('langMenu');
     
@@ -312,14 +290,67 @@ function initializeNavigation() {
         // Mark as initialized by nav.js
         langBtn.setAttribute('data-nav-initialized', 'true');
         
-        // Close language menu when clicking outside
-        document.addEventListener('click', function() {
-            langMenu.style.display = 'none';
-        });
-        
         langMenu.addEventListener('click', function(e) {
             e.stopPropagation();
         });
+    }
+}
+
+// Global click handler - single function to handle all outside clicks
+function handleGlobalClick(e) {
+    const target = e.target;
+    if (!(target instanceof Element)) return;
+    
+    // Handle mobile menu close
+    if (document.body.classList.contains('nav-open')) {
+        const clickedInsideNav = target.closest('nav');
+        if (!clickedInsideNav) {
+            const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+            if (mobileMenuBtn) {
+                document.body.classList.remove('nav-open');
+                mobileMenuBtn.setAttribute('aria-expanded', 'false');
+                mobileMenuBtn.classList.remove('is-open');
+                mobileMenuBtn.textContent = '☰';
+                closeAllDropdowns();
+            }
+        }
+    }
+    
+    // Handle dropdown close when clicking outside
+    const dropdowns = [
+        { selector: '.services-dropdown', menuSelector: '.dropdown-menu', linkSelector: '.services-link' },
+        { selector: '.company-dropdown', menuSelector: '.company-dropdown-menu', linkSelector: '.company-link' },
+        { selector: '.solutions-dropdown', menuSelector: '.solutions-dropdown-menu', linkSelector: '.solutions-link' },
+        { selector: '.resources-dropdown', menuSelector: '.resources-dropdown-menu', linkSelector: '.resources-link' }
+    ];
+    
+    dropdowns.forEach(dropdown => {
+        const element = document.querySelector(dropdown.selector);
+        if (element && !element.contains(target)) {
+            const menu = document.querySelector(dropdown.menuSelector);
+            const link = document.querySelector(dropdown.linkSelector);
+            
+            if (menu) {
+                menu.style.display = 'none';
+            }
+            if (element) {
+                element.classList.remove('submenu-open');
+            }
+            if (link) {
+                link.setAttribute('aria-expanded', 'false');
+                const chevron = link.querySelector('i');
+                if (chevron) {
+                    chevron.style.transform = 'rotate(0)';
+                }
+            }
+        }
+    });
+    
+    // Handle language menu close
+    const langBtn = document.getElementById('langBtn');
+    const langMenu = document.getElementById('langMenu');
+    if (langBtn && langMenu && !langBtn.contains(target) && !langMenu.contains(target)) {
+        langMenu.style.display = 'none';
     }
 }
 
