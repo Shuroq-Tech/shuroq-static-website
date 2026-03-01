@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
   <title>Services - Shuroq</title>
   <link rel="icon" href="logo.png" sizes="44x44" type="image/png">
-  <link rel="stylesheet" href="css/nav.css">
   <link rel="stylesheet" href="css/services.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
@@ -15,9 +14,42 @@
   <!-- Scroll Progress Indicator -->
   <div class="services-scroll-progress"></div>
 
-  <!-- Navigation Bar (Loaded Dynamically) -->
-  <nav id="main-nav">
-    <div class="loading"></div>
+  <!-- Navigation Bar with Services Dropdown -->
+  <nav>
+    <div class="nav-container">
+    <div class="logo">
+      <a href="index.html">
+        
+        <img src="image.png" alt="logo" class="logo-img">
+      
+      </a>
+    </div>
+      <ul class="nav-links">
+        <li><a href="aboutus.html" data-i18n="nav_aboutus">About Us</a></li>
+        <li class="services-dropdown">
+          <a href="services.html" class="services-link" aria-haspopup="true" aria-expanded="false"data-i18n="nav_services">Services <i class="fas fa-chevron-down"></i></a>
+          <div class="dropdown-menu" role="menu">
+            <a href="cuttingedge.html"><i class="fas fa-rocket"></i> Cutting Edge</a>
+            <a href="assurance.html"><i class="fas fa-shield-alt"></i> Assurance</a>
+            <a href="automate.html"><i class="fas fa-cogs"></i> Automate</a>
+            <a href="vision.html"><i class="fas fa-chart-line"></i> Vision</a>
+          </div>
+        </li>
+        <li><a href="industries.html" data-i18n="nav_industries">Industries</a></li>
+        <li><a href="resources.html" data-i18n="nav_resources">Resources</a></li>
+        <li><a href="careers.html"data-i18n="nav_careers">Careers</a></li>
+        <div id="contact-btn"><li><a href="contact.html"data-i18n="nav_contact">Contact-Us</a></li></div>
+        <div class="lang-btn-container">
+        <button id="langBtn">🌐~lang</button>
+        <!-- Dropdown Menu -->
+        <div id="langMenu">
+          <div onclick="changeLanguage('en')">English</div>
+          <div onclick="changeLanguage('ar')">العربية</div>
+        </div>
+      </div>
+      </ul>
+      <button class="mobile-menu-btn">☰</button>
+    </div>
   </nav>
 
   <!-- Main Content -->
@@ -366,39 +398,6 @@
           });
         }
       });
-    });
-  </script>
-  <script src="js/nav.js"></script>
-  <script>
-    // Load navigation
-    async function loadNavigation() {
-      try {
-        const response = await fetch('nav.html');
-        if (!response.ok) {
-          throw new Error(`HTTP error! status: ${response.status}`);
-        }
-        const navHTML = await response.text();
-        
-        // Replace the existing navigation
-        const existingNav = document.querySelector('nav');
-        if (existingNav) {
-          existingNav.innerHTML = navHTML;
-        }
-        
-        // Initialize navigation functionality
-        setTimeout(() => {
-          initializeNavigation();
-        }, 300);
-        
-      } catch (error) {
-        console.error('Error loading navigation:', error);
-      }
-    }
-
-    // Initialize everything when DOM is loaded
-    document.addEventListener('DOMContentLoaded', function() {
-      loadNavigation();
-      initScrollProgress();
     });
   </script>
 </body>
