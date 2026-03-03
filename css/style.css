@@ -12,6 +12,13 @@ body{
     line-height: 1.6;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 h1 {
   font-size: 3.5rem;
@@ -36,6 +43,7 @@ p {
     max-width: 100%;
     box-sizing: border-box;
     overflow-x: hidden;
+    position: relative;
 }
 
 #hero, .hero {
@@ -318,7 +326,7 @@ p {
 #second{
     margin-top: 2rem;
     width: 100%;
-    height: 120vh;
+    min-height: 120vh;
     background-color:#c4e5fa;
    
 }
@@ -416,7 +424,7 @@ p {
 }
 #third{
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     background-color: #a8d0e9;
 }
 .about{
@@ -676,7 +684,7 @@ p {
 }
 #different{
     width: 100%;
-    height: 141vh;
+    min-height: 141vh;
     background-color: #c4e5fa;
     margin-left: -5vw;
     
@@ -1000,7 +1008,7 @@ p {
     margin-top: 2rem;
 }
 #contactbox button:hover{
-    background-color: #744ac2;background: #1D4ED8;
+    background-color: #1D4ED8;
     color: white;
      transform: translateY(-2px);
     box-shadow: 0 8px 20px rgba(251, 113, 133, 0.4);
@@ -1011,18 +1019,15 @@ p {
 }
 footer{
     width: 100%;
-    
-    
-   
-    
+    margin-top: 2rem;
 }
 #footbox{
-    width: 110%;
+    width: 100%;
     height: auto;
     padding: 30px 40px;
     background: linear-gradient(135deg, #475569 0%, #334155 50%, #1e293b 100%);
     margin-top: 20px;
-    margin-left: -2vw;
+    margin-left: 0;
 }
 #footbox img{
     width: 20px;
@@ -1048,7 +1053,6 @@ footer{
     justify-content: center;
     gap:20vw;
    
-    
     
     
 }
@@ -1453,15 +1457,15 @@ footer{
     #contactbox {
         width: 90%;
         height: auto;
-        padding: 3vh 2vw;
+        padding: 5vh 3vw;
     }
     
     #contactbox h1 {
-        font-size: clamp(1.5rem, 3vw, 2rem);
+        font-size: clamp(2.8rem, 4vw, 3.8rem);
     }
     
     #contactbox h2 {
-        font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+        font-size: clamp(2.3rem, 3.5vw, 3.1rem);
     }
     
     /* Footer */

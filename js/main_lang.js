@@ -2,17 +2,48 @@ const translations = {
   en: {
     nav_company: "Company",
     nav_aboutus: "About Us",
-    nav_shuroqway: "The Shuroq Way",
-    nav_services: "Services",
-    nav_industries: "Industries",
-    nav_solutions: "Solutions",
     nav_careers: "Careers",
+    nav_shuroqway: "The Shuroq Way",
+    nav_contact: "Contact Us",
+    nav_services: "Services",
+    nav_allservices: "All Services",
+    nav_cuttingedge: "Cutting Edge",
+    nav_assurance: "Assurance",
+    nav_automate: "Automate",
+    nav_vision: "Vision",
+    nav_industries: "Industries",
+    nav_telecom: "Telecom",
+    nav_automotive: "Automotive",
+    nav_bfsi: "BFSI",
+    nav_healthcare: "Healthcare",
+    nav_finance: "Finance",
+    nav_productengineering: "Product Engineering",
+    nav_cloudnative: "Cloud Native Product Development",
+    nav_faas: "FaaS",
+    nav_monolith: "Monolith Microservice",
+    nav_platformengineering: "Platform Engineering",
+    nav_productservices: "Product Engineering Services",
+    nav_backstage: "Backstage Consulting",
+    nav_cicd: "CI/CD & Dev Experience",
+    nav_progressive: "Progressive Delivery",
+    nav_sre: "Site Reliability Engineering",
+    nav_sreconsultancy: "SRE Consultancy",
+    nav_servicemesh: "Service Mesh Consulting",
+    nav_linkerd: "Linkerd Consulting",
+    nav_terraform: "Terraform Consulting",
+    nav_observability: "Observability & DevSecOps",
+    nav_devsecops: "DevSecOps Consult",
+    nav_observabilityadoption: "Observability and Adoption",
+    nav_grafana: "Grafana Consulting",
+    nav_prometheus: "Prometheus Consulting",
+    nav_solutions: "Solutions",
+    nav_fission: "Fission Enterprise",
+    nav_botkube: "Botkube Enterprise",
+    nav_managed: "Managed Services for Kubernetes",
     nav_resources: "Resources",
     nav_blogs: "Blogs",
-    nav_webinars: "Webinars",
     nav_events: "Events",
     nav_skillrubrics: "Skill Rubrics",
-    nav_contact: "Contact-Us",
     herotitle: "We provide the best digital solutions and services in ",
     whatwedo: "What We Do",
     Delivery: "Delivering Trusted Technology Solutions for Modern Enterprises",
@@ -68,18 +99,50 @@ const translations = {
     
   },
   ar: {
-    nav_company: "الشركة",
-    nav_shuroqway: "طريق شروق",
-    nav_services: "الخدمات",
-    nav_industries: "الصناعات",
-    nav_resources: "المدونات",
+     nav_company: "الشركة",
+    nav_aboutus: "معلومات عنا",
     nav_careers: "وظائف",
-    nav_solutions: "الحلول",
-    nav_blogs: "المدونات",
-    nav_webinars: "ندوات عبر الإنترنت",
-    nav_events: "الأحداث",
-    nav_skillrubrics: "معايير المهارات",
+    nav_shuroqway: "طريق شروق",
     nav_contact: "اتصل بنا",
+    nav_services: "الخدمات",
+    nav_allservices: "جميع الخدمات",
+    nav_cuttingedge: "الطليعة",
+    nav_assurance: "التأكيد",
+    nav_automate: "الأتمتة",
+    nav_vision: "الرؤية",
+    nav_industries: "الصناعات",
+    nav_telecom: "الاتصالات",
+    nav_automotive: "السيارات",
+    nav_bfsi: "الخدمات المالية المصرفية",
+    nav_healthcare: "الرعاية الصحية",
+    nav_finance: "التمويل",
+    nav_productengineering: "هندسة المنتجات",
+    nav_cloudnative: "تطوير المنتجات السحابية الأصلية",
+    nav_faas: "الخدمة كخدمة",
+    nav_monolith: "الوحيد المصغر",
+    nav_platformengineering: "هندسة المنصات",
+    nav_productservices: "خدمات هندسة المنتجات",
+    nav_backstage: "استشارات باكستيج",
+    nav_cicd: "التكامل المستمر/التسليم المستمر وتجربة المطور",
+    nav_progressive: "التسليم التدريجي",
+    nav_sre: "هندسة موثوقية الموقع",
+    nav_sreconsultancy: "استشارات هندسة موثوقية الموقع",
+    nav_servicemesh: "استشارات شبكة الخدمات",
+    nav_linkerd: "استشارات لينكرد",
+    nav_terraform: "استشارات تيرافورم",
+    nav_observability: "إمكانية المراقبة وأمان التطوير",
+    nav_devsecops: "استشارات أمان التطوير",
+    nav_observabilityadoption: "إمكانية المراقبة والتبني",
+    nav_grafana: "استشارات جرافانا",
+    nav_prometheus: "استشارات بروميثيوس",
+    nav_solutions: "الحلول",
+    nav_fission: "فيشن للمؤسسات",
+    nav_botkube: "بوتكيوب للمؤسسات",
+    nav_managed: "الخدمات المدارة لكوبرنيتيس",
+    nav_resources: "الموارد",
+    nav_blogs: "المدونات",
+    nav_events: "الفعاليات",
+    nav_skillrubrics: "معايير المهارات",
     herotitle: "نحن نوفر أرقى الحلول والخدمات الرقمية في",
     
     whatwedo: "ما نقدمه",
@@ -92,7 +155,7 @@ const translations = {
     servicepoint3:"رؤى بيانات في الوقت الفعلي وتقارير متقدمة",
     servicebtn:"جميع الخدمات",
     aboutusheading:"معلومات عنا",
-    Learnabout:" shuroq تعرف على ",
+    Learnabout:"تعرف على شروق",
     aboutuspara:"شروق هي شركة تكنولوجيا قائمة على الخدمات تقدم حلولًا رقمية موثوقة وقابلة للتوسع وجاهزة للمستقبل للمؤسسات والشركات النامية. نحن متخصصون في خدمات DevOps والسحابة والذكاء الاصطناعي والبيانات والهندسة الرقمية التي تمكن المؤسسات من تحديث المنصات وأتمتة العمليات وتسريع الابتكار.",
     aboutbtn:"اعرف أكثر",
      vision_title: "رؤيتنا",
@@ -136,6 +199,44 @@ const translations = {
    
   }
 };
+
+// Change language function
+function changeLanguage(lang){
+  // Update text content based on selected language
+  document.querySelectorAll("[data-i18n]").forEach(element=>{
+    const key = element.getAttribute("data-i18n");
+    if (translations[lang] && translations[lang][key]) {
+      // Preserve Font Awesome icons by updating only the text content
+      const icon = element.querySelector('i.fas, i.fab, i.fa, i.far, i.fal');
+      if (icon) {
+        // Keep the icon and update the text after it
+        const iconHTML = icon.outerHTML;
+        element.innerHTML = iconHTML + ' ' + translations[lang][key];
+      } else {
+        // No icon, just update the text
+        element.textContent = translations[lang][key];
+      }
+    }
+  });
+
+  // Apply RTL for Arabic
+  if (lang === "ar") {
+    document.body.classList.add("rtl");
+  } else {
+    document.body.classList.remove("rtl");
+  }
+
+  // Close dropdown after selection
+  const langMenu = document.getElementById("langMenu");
+  if (langMenu) {
+    langMenu.style.display = "none";
+  }
+}
+
+// Load English by default
+document.addEventListener('DOMContentLoaded', function() {
+  changeLanguage("en");
+});
 
 // Make translations available globally
 window.translations = translations;

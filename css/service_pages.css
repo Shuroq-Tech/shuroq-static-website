@@ -1,0 +1,744 @@
+﻿:root {
+  --sp-bg: #eef4fb;
+  --sp-bg-soft: #f8fbff;
+  --sp-text: #0f172a;
+  --sp-muted: #4a5b77;
+  --sp-primary: #0369a1;
+  --sp-primary-soft: #0ea5e9;
+  --sp-surface: #ffffff;
+  --sp-border: #d6e2ee;
+  --sp-shadow: 0 14px 36px rgba(15, 23, 42, 0.08);
+}
+
+/* Reduced services dropdown width for specific service pages */
+body.sre-consultancy .dropdown-menu,
+body.service-mesh-consulting .dropdown-menu,
+body.cloud-native-product-development .dropdown-menu,
+body.linkerd-consulting .dropdown-menu,
+body.terraform-consulting .dropdown-menu,
+body.observability-devsecops-consult .dropdown-menu,
+body.observability-adoption .dropdown-menu,
+body.grafana-consulting .dropdown-menu,
+body.prometheus-consulting .dropdown-menu {
+  min-width: 600px !important;
+}
+
+/* CTA Reasons */
+.sp-cta-reasons {
+  margin: 1.5rem 0;
+}
+
+.sp-reason-item {
+  display: flex;
+  align-items: center;
+  margin: 0.75rem 0;
+  font-size: 0.9rem;
+}
+
+.sp-reason-item i {
+  color: #4CAF50;
+  margin-right: 0.75rem;
+  font-size: 1.1rem;
+}
+
+/* Tech items in cards */
+.sp-card .sp-tech-item {
+  background: rgba(76, 175, 80, 0.1);
+  border-radius: 6px;
+  padding: 0.75rem;
+  margin-top: 1rem;
+  border: 1px solid rgba(76, 175, 80, 0.2);
+}
+
+.sp-card .sp-tech-item i {
+  color: var(--sp-primary);
+  margin-right: 0.5rem;
+}
+
+/* SRE Consultancy Theme - Reliability Colors */
+.sre-consultancy .sp-hero {
+  background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #059669 100%);
+  width:80%;
+  margin-left:12%;
+  padding:10px;
+  border-radius:5%;
+}
+.sre-consultancy .sp-shell p{
+  
+  color: white;
+}
+
+.sre-consultancy .sp-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(5, 150, 105, 0.15);
+}
+
+.sre-consultancy .sp-btn {
+  background: linear-gradient(135deg, #059669, #047857);
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.sre-consultancy .sp-btn:hover {
+  background: linear-gradient(135deg, #047857, #065f46);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(5, 150, 105, 0.3);
+}
+
+.sre-consultancy .sp-btn.sp-btn-secondary {
+  background: transparent;
+  border: 2px solid #059669;
+  color: #059669;
+}
+
+.sre-consultancy .sp-btn.sp-btn-secondary:hover {
+  background: #059669;
+  color: white;
+}
+
+.sre-consultancy .sp-tech-item {
+  background: rgba(5, 150, 105, 0.1);
+  border: 1px solid rgba(5, 150, 105, 0.2);
+  transition: all 0.3s ease;
+}
+
+.sre-consultancy .sp-tech-item:hover {
+  background: rgba(5, 150, 105, 0.15);
+  transform: translateY(-2px);
+}
+
+.sre-consultancy .sp-tech-item i {
+  color: #059669;
+}
+
+.sre-consultancy .sp-process-step .step-number {
+  background: linear-gradient(135deg, #059669, #047857);
+}
+
+.sre-consultancy .sp-benefit-item i {
+  color: #059669;
+}
+
+.sre-consultancy .sp-reason-item i {
+  color: #059669;
+}
+
+.sre-consultancy .sp-feature-list li::before {
+  color: #059669;
+}
+
+.sre-consultancy .sp-card .sp-tech-item i {
+  color: #059669;
+}
+
+/* Service Mesh Consulting Theme - Teal/Cyan Networking Colors */
+.service-mesh-consulting .sp-hero {
+  background: linear-gradient(135deg, #64a8b9 0%, #0e7490 50%, #14b8a6 100%);
+  width:80%;
+  margin-left: 12%;
+  border-radius: 5%;
+}
+
+.service-mesh-consulting .sp-card {
+  border-left: 4px solid #14b8a6;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-mesh-consulting .sp-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(20, 184, 166, 0.15);
+}
+
+.service-mesh-consulting .sp-btn {
+  background: linear-gradient(135deg, #14b8a6, #0d9488);
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.service-mesh-consulting .sp-btn:hover {
+  background: linear-gradient(135deg, #0d9488, #0f766e);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(20, 184, 166, 0.3);
+}
+
+.service-mesh-consulting .sp-btn.sp-btn-secondary {
+  background: transparent;
+  border: 2px solid #14b8a6;
+  color: #14b8a6;
+}
+
+.service-mesh-consulting .sp-btn.sp-btn-secondary:hover {
+  background: #14b8a6;
+  color: white;
+}
+
+.service-mesh-consulting .sp-tech-item {
+  background: rgba(20, 184, 166, 0.1);
+  border: 1px solid rgba(20, 184, 166, 0.2);
+  transition: all 0.3s ease;
+}
+
+.service-mesh-consulting .sp-tech-item:hover {
+  background: rgba(20, 184, 166, 0.15);
+  transform: translateY(-2px);
+}
+
+.service-mesh-consulting .sp-tech-item i {
+  color: #14b8a6;
+}
+
+.service-mesh-consulting .sp-process-step .step-number {
+  background: linear-gradient(135deg, #14b8a6, #0d9488);
+}
+
+.service-mesh-consulting .sp-benefit-item i {
+  color: #14b8a6;
+}
+
+.service-mesh-consulting .sp-reason-item i {
+  color: #14b8a6;
+}
+
+.service-mesh-consulting .sp-feature-list li::before {
+  color: #14b8a6;
+}
+
+.service-mesh-consulting .sp-card .sp-tech-item i {
+  color: #14b8a6;
+}
+
+/* Cloud Native Network Theme - Electric Blue Networking Colors */
+.cloud-native-product-development .sp-hero {
+  background: linear-gradient(135deg, #0066cc 0%, #0052a3 50%, #0080ff 100%);
+   width:80%;
+  margin-left:12%;
+  padding:10px;
+  color:white;
+  border-radius:5%;
+}
+
+.cloud-native-product-development .sp-card {
+  border-left: 4px solid #0080ff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cloud-native-product-development .sp-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0, 128, 255, 0.15);
+}
+
+.cloud-native-product-development .sp-btn {
+  background: linear-gradient(135deg, #0080ff, #0066cc);
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.cloud-native-product-development .sp-btn:hover {
+  background: linear-gradient(135deg, #0066cc, #0052a3);
+  transform: translateY(-2px);
+  color:white;
+  box-shadow: 0 8px 20px rgba(0, 128, 255, 0.3);
+}
+
+.cloud-native-product-development .sp-btn.sp-btn-secondary {
+  background: transparent;
+  border: 2px solid #0080ff;
+  color: #0080ff;
+}
+
+.cloud-native-product-development .sp-btn.sp-btn-secondary:hover {
+  background: #0080ff;
+  color: white;
+}
+
+.cloud-native-product-development .sp-tech-item {
+  background: rgba(0, 128, 255, 0.1);
+  border: 1px solid rgba(0, 128, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.cloud-native-product-development .sp-tech-item:hover {
+  background: rgba(0, 128, 255, 0.15);
+  transform: translateY(-2px);
+}
+
+.cloud-native-product-development .sp-tech-item i {
+  color: #0080ff;
+}
+
+.cloud-native-product-development .sp-process-step .step-number {
+  background: linear-gradient(135deg, #0080ff, #0066cc);
+}
+
+.cloud-native-product-development .sp-benefit-item i {
+  color: #0080ff;
+}
+
+.cloud-native-product-development .sp-reason-item i {
+  color: #0080ff;
+}
+
+.cloud-native-product-development .sp-feature-list li::before {
+  color: #0080ff;
+}
+
+.cloud-native-product-development .sp-card .sp-tech-item i {
+  color: #0080ff;
+}
+
+/* Feature Lists */
+.sp-feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0 0;
+}
+
+.sp-feature-list li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  font-size: 0.9rem;
+}
+
+.sp-feature-list li:before {
+  content: "✓";
+  color: #4CAF50;
+  margin-right: 0.5rem;
+  font-weight: bold;
+}
+
+/* Technology Grid */
+.sp-tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.sp-tech-item {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background: rgba(255,255,255,0.05);
+  border-radius: 8px;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.sp-tech-item:hover {
+  transform: translateY(-2px);
+  background: rgba(255,255,255,0.1);
+}
+
+.sp-tech-item i {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  color: #4CAF50;
+}
+
+.sp-tech-item span {
+  font-weight: 500;
+}
+
+/* Process Steps */
+.sp-process {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.sp-process-step {
+  text-align: center;
+  position: relative;
+  padding: 1.5rem;
+  background: var(--sp-surface);
+  border-radius: 12px;
+  box-shadow: var(--sp-shadow);
+  transition: transform 0.3s ease;
+}
+
+.sp-process-step:hover {
+  transform: translateY(-5px);
+}
+
+.step-number {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #4CAF50, #45a049);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  box-shadow: 0 4px 12px rgba(76, 175, 80, 0.3);
+}
+
+.sp-process-step h3 {
+  margin: 0 0 0.5rem 0;
+  color: var(--sp-primary);
+  font-size: 1.2rem;
+}
+
+.sp-process-step p {
+  margin: 0;
+  color: var(--sp-muted);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* Benefits */
+.sp-benefits {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.sp-benefit-item {
+  text-align: center;
+  padding: 2rem;
+  background: var(--sp-surface);
+  border-radius: 12px;
+  box-shadow: var(--sp-shadow);
+  transition: transform 0.3s ease;
+}
+
+.sp-benefit-item:hover {
+  transform: translateY(-5px);
+}
+
+.sp-benefit-item i {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #4CAF50;
+}
+
+.sp-benefit-item h3 {
+  margin: 0 0 1rem 0;
+  color: var(--sp-primary);
+  font-size: 1.2rem;
+}
+
+.sp-benefit-item p {
+  margin: 0;
+  color: var(--sp-muted);
+  line-height: 1.5;
+}
+
+/* CTA Actions */
+.sp-cta-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.sp-btn-secondary {
+  background: transparent;
+  border: 2px solid var(--sp-primary);
+  color: var(--sp-primary);
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.sp-btn-secondary:hover {
+  background: var(--sp-primary);
+  color: white;
+  transform: translateY(-2px);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--sp-text);
+  background:
+    radial-gradient(circle at 8% 0%, #d9eeff 0%, transparent 36%),
+    radial-gradient(circle at 96% 10%, #dbeafe 0%, transparent 38%),
+    linear-gradient(180deg, #f9fcff 0%, var(--sp-bg) 100%);
+}
+
+#main {
+  min-height: 100vh;
+  padding-top: 10vh;
+}
+
+.sp-shell {
+  width: min(1140px, 92%);
+  margin: 0 auto;
+}
+
+.sp-breadcrumb {
+  padding: 1.2rem 0 0;
+  color: #5c6c85;
+  font-size: 0.95rem;
+}
+
+.sp-breadcrumb a {
+  color: var(--sp-primary);
+  text-decoration: none;
+}
+
+.sp-breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.sp-hero {
+  padding: 2rem 0;
+}
+
+.sp-hero-wrap {
+  border-radius: 24px;
+  padding: clamp(1.2rem, 2.8vw, 2.3rem);
+  background: linear-gradient(130deg, #0a3b5f 0%, #0d5f93 48%, #1b7eb8 100%);
+  box-shadow: var(--sp-shadow);
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.sp-hero-wrap::after {
+  content: "";
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.09);
+  top: -120px;
+  right: -90px;
+}
+
+.sp-eyebrow {
+  display: inline-flex;
+  padding: 0.35rem 0.72rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 999px;
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #dff1ff;
+}
+
+.sp-hero h1 {
+  margin: 0.9rem 0 0;
+  font-size: clamp(2rem, 4.4vw, 3.1rem);
+  line-height: 1.12;
+  max-width: 18ch;
+}
+
+.sp-hero p {
+  margin: 1rem 0 0;
+  max-width: 72ch;
+  color: #5ca6e2;
+  line-height: 1.58;
+}
+
+.sp-chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-top: 1rem;
+}
+
+.sp-chip {
+  border: 1px solid rgba(255, 255, 255, 0.27);
+  border-radius: 999px;
+  padding: 0.4rem 0.7rem;
+  font-size: 0.84rem;
+  color: #e9f6ff;
+}
+
+.sp-section {
+  padding: 0.95rem 0 1.2rem;
+}
+
+.sp-title {
+  margin: 0 0 0.65rem;
+  font-size: clamp(1.25rem, 2.2vw, 1.7rem);
+}
+
+.sp-subtitle {
+  margin: 0 0 1rem;
+  color: var(--sp-muted);
+  max-width: 75ch;
+  line-height: 1.6;
+}
+
+.sp-grid,
+.sp-metric-grid,
+.sp-step-grid,
+.sp-list-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.sp-metric-grid {
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+}
+
+.sp-grid {
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+}
+
+.sp-step-grid {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.sp-list-grid {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.sp-card,
+.sp-metric,
+.sp-step,
+.sp-list {
+  background: var(--sp-surface);
+  border: 1px solid var(--sp-border);
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.05);
+}
+
+.sp-metric {
+  padding: 1rem;
+}
+
+.sp-metric strong {
+  display: block;
+  color: var(--sp-primary);
+  font-size: 1.45rem;
+}
+
+.sp-metric span {
+  color: #61718a;
+  font-size: 0.93rem;
+}
+
+.sp-card {
+  padding: 1.05rem;
+}
+
+.sp-card h3 {
+  margin: 0 0 0.45rem;
+  font-size: 1.05rem;
+}
+
+.sp-card p {
+  margin: 0;
+  color: var(--sp-muted);
+  line-height: 1.5;
+}
+
+.sp-links {
+  margin-top: 0.85rem;
+}
+
+.sp-links a {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.52rem 0.8rem;
+  border-radius: 999px;
+  border: 1px solid #b9dbf2;
+  color: var(--sp-primary);
+  text-decoration: none;
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+.sp-links a:hover {
+  background: #eaf6ff;
+}
+
+.sp-step {
+  padding: 1rem;
+}
+
+.sp-step .num {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--sp-primary), var(--sp-primary-soft));
+  margin-bottom: 0.65rem;
+}
+
+.sp-step h3 {
+  margin: 0 0 0.35rem;
+}
+
+.sp-step p {
+  margin: 0;
+  color: var(--sp-muted);
+  line-height: 1.5;
+}
+
+.sp-list {
+  padding: 1rem;
+}
+
+.sp-list h3 {
+  margin: 0 0 0.65rem;
+}
+
+.sp-list ul {
+  margin: 0;
+  padding-left: 1.05rem;
+  color: var(--sp-muted);
+  line-height: 1.5;
+}
+
+.sp-cta {
+  padding: 0.8rem 0 3rem;
+}
+
+.sp-cta .box {
+  background: linear-gradient(135deg, #082f4b, #0b5584 60%, #126c9f);
+  color: #fff;
+  border-radius: 20px;
+  padding: clamp(1rem, 2.4vw, 1.6rem);
+  box-shadow: var(--sp-shadow);
+}
+
+.sp-cta p {
+  margin: 0.6rem 0 1rem;
+  color: #d9eeff;
+  max-width: 72ch;
+}
+
+.sp-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #0c3e63;
+  background: #fff;
+  padding: 0.6rem 1rem;
+  border-radius: 999px;
+  font-weight: 700;
+}
+
+.sp-btn:hover {
+  background: #f2f9ff;
+}
+
+@media (max-width: 768px) {
+  .sp-hero {
+    padding-top: 1.6rem;
+  }
+
+  .sp-hero-wrap {
+    border-radius: 18px;
+  }
+}
+

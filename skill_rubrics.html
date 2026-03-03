@@ -1,0 +1,206 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skill Rubrics - Shuroq</title>
+  <meta name="description" content="Role-based cloud-native skill rubrics for hiring, upskilling, and team benchmarking.">
+  <link rel="icon" href="logo.png" sizes="44x44" type="image/png">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/skill_rubrics.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <!-- Navigation Bar (Loaded Dynamically) -->
+  <nav id="main-nav">
+    <div class="loading"></div>
+  </nav>
+
+  <main id="main">
+    <section class="sr-hero">
+      <div class="sr-hero-grid">
+        <div class="sr-hero-content">
+          <span class="sr-badge" data-i18n="sr_badge">Cloud Native Skills Framework</span>
+          <h1 data-i18n="sr_hero_title">Build the Right Cloud Team with Role-Based Skill Rubrics</h1>
+          <p data-i18n="sr_hero_subtitle">Standardize how you hire, evaluate, and grow cloud-native talent with practical skill rubrics aligned to real production work.</p>
+          <div class="sr-cta-row">
+            <a class="btn-primary" href="#role-rubrics" data-i18n="sr_explore_btn">Explore Rubrics</a>
+            <a class="btn-secondary" href="contact.html" data-i18n="sr_talk_btn">Talk to Us</a>
+          </div>
+          <div class="sr-trust-row">
+            <span><i class="fa-solid fa-check"></i> <span data-i18n="sr_trust1">Role-ready benchmarks</span></span>
+            <span><i class="fa-solid fa-check"></i> <span data-i18n="sr_trust2">Expert-curated skills</span></span>
+            <span><i class="fa-solid fa-check"></i> <span data-i18n="sr_trust3">Faster team ramp-up</span></span>
+          </div>
+        </div>
+        <aside class="sr-hero-card">
+          <h3 data-i18n="sr_who_for_title">Who is this for?</h3>
+          <ul>
+            <li data-i18n="sr_who_for_1">Engineering leaders building cloud platforms</li>
+            <li data-i18n="sr_who_for_2">Hiring teams assessing technical depth</li>
+            <li data-i18n="sr_who_for_3">L and D teams planning upskilling paths</li>
+            <li data-i18n="sr_who_for_4">Practitioners benchmarking role readiness</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section class="sr-section sr-intro">
+      <div class="sr-container">
+        <h2 data-i18n="sr_intro_title">Get the Right Cloud Skills in Minutes, Not Days</h2>
+        <p data-i18n="sr_intro_subtitle">Use ready-to-apply skill maps that define what great looks like across key cloud-native roles. Move from subjective assessment to measurable capability planning.</p>
+      </div>
+    </section>
+
+    <section class="sr-section sr-help">
+      <div class="sr-container">
+        <h2 data-i18n="sr_help_title">How Skill Rubrics Help You</h2>
+        <div class="sr-cards">
+          <article class="sr-card">
+            <i class="fa-solid fa-user-check"></i>
+            <h3 data-i18n="sr_help1_title">Assess Capability</h3>
+            <p data-i18n="sr_help1_text">Evaluate role readiness across fundamentals, tooling, and production practices using clear proficiency levels.</p>
+          </article>
+          <article class="sr-card">
+            <i class="fa-solid fa-diagram-project"></i>
+            <h3 data-i18n="sr_help2_title">Design Learning Paths</h3>
+            <p data-i18n="sr_help2_text">Plan focused upskilling journeys for teams and individuals by mapping current level to target expectations.</p>
+          </article>
+          <article class="sr-card">
+            <i class="fa-solid fa-people-group"></i>
+            <h3 data-i18n="sr_help3_title">Scale Team Standards</h3>
+            <p data-i18n="sr_help3_text">Bring consistency to hiring, onboarding, and internal growth across all cloud-native engineering functions.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="sr-section sr-rubrics" id="role-rubrics">
+      <div class="sr-container">
+        <h2 data-i18n="sr_rubrics_title">Role Based Skill Rubrics</h2>
+        <p class="sr-sub" data-i18n="sr_rubrics_subtitle">Select a role to view key competency areas.</p>
+
+        <div class="sr-tabs" role="tablist" aria-label="Skill rubric roles">
+          <button class="sr-tab active" data-role="sre" role="tab" aria-selected="true" data-i18n="sr_tab_sre">SRE</button>
+          <button class="sr-tab" data-role="platform" role="tab" aria-selected="false" data-i18n="sr_tab_platform">Platform Engineer</button>
+          <button class="sr-tab" data-role="kubernetes" role="tab" aria-selected="false" data-i18n="sr_tab_kubernetes">Kubernetes Engineer</button>
+          <button class="sr-tab" data-role="devops" role="tab" aria-selected="false" data-i18n="sr_tab_devops">DevOps Engineer</button>
+        </div>
+
+        <div class="sr-panels">
+          <article class="sr-panel active" data-panel="sre" role="tabpanel">
+            <h3 data-i18n="sr_sre_title">Site Reliability Engineer</h3>
+            <ul>
+              <li data-i18n="sr_sre_skill1">Service level objectives and error budgets</li>
+              <li data-i18n="sr_sre_skill2">Incident response and on-call operations</li>
+              <li data-i18n="sr_sre_skill3">Observability: metrics, logs, tracing</li>
+              <li data-i18n="sr_sre_skill4">Reliability automation and toil reduction</li>
+              <li data-i18n="sr_sre_skill5">Post-incident reviews and corrective actions</li>
+            </ul>
+          </article>
+
+          <article class="sr-panel" data-panel="platform" role="tabpanel" hidden>
+            <h3 data-i18n="sr_platform_title">Platform Engineer</h3>
+            <ul>
+              <li data-i18n="sr_platform_skill1">Internal developer platform foundations</li>
+              <li data-i18n="sr_platform_skill2">Golden paths and reusable templates</li>
+              <li data-i18n="sr_platform_skill3">Developer experience and self-service workflows</li>
+              <li data-i18n="sr_platform_skill4">Policy, governance, and platform security</li>
+              <li data-i18n="sr_platform_skill5">Platform adoption and success metrics</li>
+            </ul>
+          </article>
+
+          <article class="sr-panel" data-panel="kubernetes" role="tabpanel" hidden>
+            <h3 data-i18n="sr_kubernetes_title">Kubernetes Engineer</h3>
+            <ul>
+              <li data-i18n="sr_kubernetes_skill1">Cluster architecture and lifecycle operations</li>
+              <li data-i18n="sr_kubernetes_skill2">Workload orchestration and scaling strategies</li>
+              <li data-i18n="sr_kubernetes_skill3">Networking, ingress, and service discovery</li>
+              <li data-i18n="sr_kubernetes_skill4">Security hardening and runtime policies</li>
+              <li data-i18n="sr_kubernetes_skill5">Troubleshooting and performance optimization</li>
+            </ul>
+          </article>
+
+          <article class="sr-panel" data-panel="devops" role="tabpanel" hidden>
+            <h3 data-i18n="sr_devops_title">DevOps Engineer</h3>
+            <ul>
+              <li data-i18n="sr_devops_skill1">CI/CD pipeline design and automation</li>
+              <li data-i18n="sr_devops_skill2">Infrastructure as code and environment management</li>
+              <li data-i18n="sr_devops_skill3">Release governance and deployment safety</li>
+              <li data-i18n="sr_devops_skill4">Monitoring and feedback loops</li>
+              <li data-i18n="sr_devops_skill5">Collaboration patterns across dev, ops, and security</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="sr-section sr-experts">
+      <div class="sr-container">
+        <h2 data-i18n="sr_experts_title">A Rubric Built by Cloud Native Experts for Cloud Native Teams</h2>
+        <p data-i18n="sr_experts_subtitle">These frameworks reflect field-tested expectations from real delivery environments and modern engineering organizations.</p>
+      </div>
+    </section>
+
+    <section class="sr-section sr-faq">
+      <div class="sr-container">
+        <h2 data-i18n="sr_faq_title">Frequently Asked Questions</h2>
+        <div class="sr-faq-list">
+          <details>
+            <summary data-i18n="sr_faq1_question">What is a skill rubric?</summary>
+            <p data-i18n="sr_faq1_answer">A skill rubric is a structured way to define capabilities and proficiency levels for a specific role.</p>
+          </details>
+          <details>
+            <summary data-i18n="sr_faq2_question">How can engineering teams use these rubrics?</summary>
+            <p data-i18n="sr_faq2_answer">Teams can use them for hiring calibration, onboarding plans, promotion readiness, and focused upskilling.</p>
+          </details>
+          <details>
+            <summary data-i18n="sr_faq3_question">Can these rubrics work for both hiring and internal growth?</summary>
+            <p data-i18n="sr_faq3_answer">Yes. The same framework helps evaluate incoming candidates and benchmark current team capability over time.</p>
+          </details>
+          <details>
+            <summary data-i18n="sr_faq4_question">Are these rubrics only for Kubernetes teams?</summary>
+            <p data-i18n="sr_faq4_answer">No. They cover broader cloud-native roles including SRE, Platform Engineering, and DevOps practices.</p>
+          </details>
+          <details>
+            <summary data-i18n="sr_faq5_question">Do you support custom role definitions?</summary>
+            <p data-i18n="sr_faq5_answer">Yes. You can adapt categories and levels to your internal role architecture and technology stack.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="sr-section sr-final-cta">
+      <div class="sr-container">
+        <h2 data-i18n="sr_cta_title">Start Building Role-Ready Cloud Teams</h2>
+        <p data-i18n="sr_cta_subtitle">Adopt a practical rubric model to improve hiring quality, reduce ramp-up time, and create a stronger engineering foundation.</p>
+        <a class="btn-primary" href="contact.html" data-i18n="sr_cta_button">Get Started</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Dynamic Footer Component -->
+  <script src="js/footer.js"></script>
+  <link rel="stylesheet" href="css/footer.css">
+
+  <script src="js/nav.js"></script>
+  <script src="js/nav_lang.js"></script>
+  <script src="js/skill_rubrics_lang.js"></script>
+  <script src="js/skill_rubrics.js"></script>
+  <script>
+    // Load navigation
+    fetch('nav.html')
+      .then(response => response.text())
+      .then(html => {
+        const navElement = document.getElementById('main-nav');
+        if (navElement) {
+          navElement.innerHTML = html;
+        }
+        // Initialize navigation after loading
+        if (typeof initializeNavigation === 'function') {
+          initializeNavigation();
+        }
+      });
+  </script>
+</body>
+</html>

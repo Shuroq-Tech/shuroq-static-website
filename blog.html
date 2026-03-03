@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="blog-page-title">Blog - Shuroq Technology Services</title>
+    <meta name="description" content="Read our latest insights on Product Engineering, Platform Engineering, SRE, and DevSecOps.">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/blogs.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="icon" href="logo.png" sizes="44x44" type="image/png">
+</head>
+<body>
+    <!-- Navigation Bar (Loaded Dynamically) -->
+    <nav id="main-nav">
+        <div class="loading"></div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main">
+        <!-- Loading State -->
+        <div id="loading-state" class="loading">
+            Loading blog post...
+        </div>
+
+        <!-- Error State (Hidden by default) -->
+        <div id="error-state" class="error-message" style="display: none;">
+            <h2>Blog Post Not Found</h2>
+            <p>The blog post you're looking for doesn't exist or has been moved.</p>
+            <a href="blogs.html" class="back-link">
+                <i class="fas fa-arrow-left"></i>
+                Back to Blogs
+            </a>
+        </div>
+
+        <!-- Blog Content (Hidden by default) -->
+        <section id="blog-content-container" class="blog-container" style="display: none;">
+            <!-- Title -->
+            <h1 id="blog-title"></h1>
+
+            <!-- Meta -->
+            <div class="blog-meta">
+                <span><i class="fas fa-user"></i> <span id="blog-author"></span></span>
+                <span><i class="far fa-calendar"></i> <span id="blog-date"></span></span>
+                <span><i class="far fa-clock"></i> <span id="blog-readtime"></span></span>
+            </div>
+
+            <!-- Author Profile -->
+            <div class="author-box">
+                <img id="author-image" src="https://picsum.photos/seed/author/80/80.jpg" alt="Author">
+                <div>
+                    <h3 id="author-name"></h3>
+                    <p id="author-role"></p>
+                </div>
+            </div>
+
+            <!-- Content -->
+            <div id="blog-content"></div>
+
+            <!-- Back to Blogs -->
+            <a href="blogs.html" class="back-link">
+                <i class="fas fa-arrow-left"></i>
+                Back to Blogs
+            </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Dynamic Footer Component -->
+    <script src="js/footer.js"></script>
+
+    <!-- JavaScript -->
+    <script src="js/nav.js"></script>
+    <script src="js/nav_lang.js"></script>
+    <script src="js/blog.js"></script>
+    <script>
+        // Load navigation
+        async function loadNavigation() {
+            try {
+                const response = await fetch('nav.html');
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                const navHTML = await response.text();
+                
+                // Replace the existing navigation
+                const existingNav = document.querySelector('nav');
+                if (existingNav) {
+                    existingNav.innerHTML = navHTML;
+                }
+                
+                // Initialize navigation functionality
+                setTimeout(() => {
+                    initializeNavigation();
+                }, 300);
+                
+            } catch (error) {
+                console.error('Error loading navigation:', error);
+            }
+        }
+
+        // Initialize everything when DOM is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            loadNavigation();
+        });
+    </script>
+</body>
+</html>

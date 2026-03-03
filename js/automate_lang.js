@@ -471,8 +471,22 @@ function changeLanguage(lang){
   // Update text content based on selected language
   document.querySelectorAll("[data-i18n]").forEach(element=>{
     const key = element.getAttribute("data-i18n");
-    element.textContent = translations[lang][key];
+    // Preserve Font Awesome icons by updating only the text content
+    const icon = element.querySelector('i.fas, i.fab, i.fa, i.far, i.fal');
+    if (icon) {
+      // Keep the icon and update the text after it
+      const iconHTML = icon.outerHTML;
+      element.innerHTML = iconHTML + ' ' + translations[lang][key];
+    } else {
+      // No icon, just update the text
+      element.textContent = translations[lang][key];
+    }
   });
+
+  // Update navigation translations
+  if (typeof translateNavigation === 'function') {
+    translateNavigation(lang);
+  }
 
   // Apply RTL for Arabic
   if (lang === "ar") {

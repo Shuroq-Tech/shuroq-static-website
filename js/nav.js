@@ -282,13 +282,16 @@ function initializeLanguage() {
     const langMenu = document.getElementById('langMenu');
     
     if (langBtn && langMenu) {
-        langBtn.addEventListener('click', function(e) {
-            e.stopPropagation();
-            langMenu.style.display = langMenu.style.display === 'block' ? 'none' : 'block';
-        });
-        
-        // Mark as initialized by nav.js
-        langBtn.setAttribute('data-nav-initialized', 'true');
+        // Only initialize if not already handled by main_lang.js
+        if (!langBtn.getAttribute('data-nav-initialized')) {
+            langBtn.addEventListener('click', function(e) {
+                e.stopPropagation();
+                langMenu.style.display = langMenu.style.display === 'block' ? 'none' : 'block';
+            });
+            
+            // Mark as initialized by nav.js
+            langBtn.setAttribute('data-nav-initialized', 'true');
+        }
         
         langMenu.addEventListener('click', function(e) {
             e.stopPropagation();

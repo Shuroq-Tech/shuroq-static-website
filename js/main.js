@@ -1,7 +1,7 @@
 (() => {
   // 3D Floating Card Effect
   const initFloatingCardTilt = () => {
-    const floatingCard = document.querySelector('.hero-card');
+    const floatingCard = document.querySelector('.floating-card');
     
     if (!floatingCard) {
       return;
