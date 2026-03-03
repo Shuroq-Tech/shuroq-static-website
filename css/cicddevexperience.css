@@ -249,7 +249,7 @@ body.cicd-dev-experience-page #nav-container .dropdown-menu {
 
 .tech-tags span {
     background: linear-gradient(135deg, #8caea3, #77d4b2);
-    color: rgb(208, 136, 136);
+    color: white !important;
     padding: 8px 16px;
     border-radius: 20px;
     font-size: 0.9rem;

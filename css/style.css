@@ -53,7 +53,7 @@ p {
     align-items: center;
     padding-top: 80px;
     overflow: hidden;
-    background: url("/images/hero.png") center/cover no-repeat !important;
+    background: url("../images/hero.png") center/cover no-repeat !important;
     width: 100%;
     max-width: 100%;
     box-sizing: border-box;

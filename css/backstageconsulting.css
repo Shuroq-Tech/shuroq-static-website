@@ -145,7 +145,7 @@ body.backstage-consulting-page #nav-container .dropdown-menu {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: white !important;
     font-size: 2rem;
     flex-shrink: 0;
 }
@@ -248,7 +248,7 @@ body.backstage-consulting-page #nav-container .dropdown-menu {
 
 .tech-tags span {
     background: linear-gradient(135deg, #89dae9, #79d4e2);
-    color: white;
+    color: white !important;
     padding: 8px 16px;
     border-radius: 20px;
     font-size: 0.9rem;

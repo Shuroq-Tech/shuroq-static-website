@@ -247,7 +247,7 @@ body.progressivedelivery-page #nav-container .dropdown-menu {
 
 .tech-tags span {
     background: linear-gradient(135deg, #b59d75, #e5cb8a);
-    color: white;
+    color: white !important;
     padding: 8px 16px;
     border-radius: 20px;
     font-size: 0.9rem;
