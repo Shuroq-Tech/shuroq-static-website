@@ -18,7 +18,7 @@ body {
 
 /* Main Container */
 #main {
-    margin-top: 80px;
+    margin-top: 60px;
 }
 
 /* Section Container */
@@ -868,23 +868,6 @@ body {
     }
 }
 
-/* RTL Support */
-body.rtl {
-    direction: rtl;
-}
-
-body.rtl .capability-features li::before,
-body.rtl .module-features li::before {
-    left: auto;
-    right: 0;
-}
-
-body.rtl .capability-features li,
-body.rtl .module-features li {
-    padding-left: 0;
-    padding-right: 25px;
-}
-
 /* Smooth Scrolling */
 html {
     scroll-behavior: smooth;
@@ -1040,7 +1023,7 @@ nav .services-dropdown.submenu-open .dropdown-menu {
 /* Desktop Navigation adjustments for fission page */
 @media (min-width: 1024px) {
     #main-nav .nav-links {
-        gap: 1.2rem !important; /* Slightly increased gap for better spacing */
+        gap: 1rem !important; /* Slightly increased gap for better spacing */
     }
     
     #main-nav .nav-links li {
@@ -1048,8 +1031,7 @@ nav .services-dropdown.submenu-open .dropdown-menu {
     }
     
     #main-nav .nav-links li a {
-        font-weight: 600 !important; /* Make links more prominent */
-        font-size: 0.95rem !important; /* Slightly larger font */
+        font-weight: bolder !important;
         padding: 8px 12px !important; /* Add padding for better click area */
         border-radius: 4px !important; /* Subtle rounded corners */
         transition: all 0.3s ease !important;
@@ -1066,6 +1048,7 @@ nav .services-dropdown.submenu-open .dropdown-menu {
         justify-content: center !important;
         align-items: center !important;
         text-align: center !important;
+        
     }
     
     #contact-btn a {

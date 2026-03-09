@@ -15,7 +15,7 @@
    REDUCE SERVICES DROPDOWN WIDTH FOR PRODUCT ENGINEERING PAGE
    ================================ */
 body.product-engineering-page #nav-container .dropdown-menu {
-  min-width: 600px !important;
+    min-width: 200px !important; /* Match nav.css width */
 }
 
 /* Base Scroll Timelines */

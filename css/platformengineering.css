@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -6,8 +7,8 @@
 
 /* Reduce services dropdown width for Platform Engineering page */
 .platformengineering-page .dropdown-menu {
-    min-width: 400px !important;
-    width: 400px !important;
+    min-width: 300px !important; /* Match nav.css width */
+    width: 320px !important;
 }
 
 /* Scroll Timeline API Setup */
@@ -523,13 +524,6 @@ body {
 .cta-section button a {
     color: #1E3A8A;
     text-decoration: none;
-}
-
-/* Footer */
-footer {
-    background: #1e293b;
-    color: white;
-    padding: 40px 0 20px;
 }
 
 #footbox {

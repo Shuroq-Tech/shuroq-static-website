@@ -6,8 +6,8 @@
 
 /* Reduce services dropdown width for Platform Engineering Services page */
 .platformengineeringservices-page .dropdown-menu {
-    min-width: 400px !important;
-    width: 400px !important;
+    min-width: 300px !important;
+    width: 320px !important;
 }
 
 body{

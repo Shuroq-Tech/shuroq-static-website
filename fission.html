@@ -25,11 +25,11 @@
         <!-- Hero Section -->
         <section class="hero-section">
             <div class="hero-content">
-                <h1 data-i18n="hero_title">Fission Enterprise Platform</h1>
-                <p data-i18n="hero_subtitle">A unified enterprise platform designed to streamline operations, enhance productivity, and enable intelligent decision-making across organizations.</p>
+                <h1 data-i18n="fission_hero_title">Fission Enterprise Platform</h1>
+                <p data-i18n="fission_hero_subtitle">A unified enterprise platform designed to streamline operations, enhance productivity, and enable intelligent decision-making across organizations.</p>
                 <div class="cta-buttons">
-                    <button class="cta-primary" data-i18n="cta_getStarted">Get Started</button>
-                    <button class="cta-secondary" data-i18n="cta_requestDemo">Request Demo</button>
+                    <button class="cta-primary" data-i18n="fission_cta_button">Get Started</button>
+                    <button class="cta-secondary" data-i18n="fission_demo_button">Request Demo</button>
                 </div>
             </div>
             <div class="hero-gradient"></div>
@@ -39,14 +39,14 @@
         <section class="intro-section">
             <div class="section-container">
                 <div class="section-header">
-                    <h2 data-i18n="what_is_title">What is Fission Enterprise?</h2>
+                    <h2 data-i18n="fission_features_title">Powerful Features</h2>
                     <div class="section-icon">
                         <i class="fas fa-cube"></i>
                     </div>
                 </div>
                 <div class="section-content">
-                    <p data-i18n="what_is_description">Fission Enterprise is a comprehensive digital platform built to manage, automate, and optimize core business processes within organizations. It integrates multiple operational modules into a single, scalable system, enabling companies to reduce complexity and improve efficiency.</p>
-                    <p data-i18n="what_is_description2">From employee management to analytics and workflow automation, Fission Enterprise acts as the central nervous system of modern businesses.</p>
+                    <p data-i18n="fission_hero_description">Transform your business with our comprehensive enterprise solution that integrates resource management, workflow automation, analytics, and employee management into a single powerful platform.</p>
+                    <p data-i18n="fission_features_subtitle">Everything you need to run your enterprise efficiently</p>
                 </div>
             </div>
         </section>
@@ -385,8 +385,9 @@
 
     <script src="js/nav.js"></script>
   <script src="js/nav_lang.js"></script>
-  <script src="js/contact_lang.js"></script>
-  <script src="js/fission.js"></script>
+  <script src="js/fission_lang.js"></script>
+   <script src="js/fission.js"></script>
+ 
     <script>
         // Load navigation
         async function loadNavigation() {
@@ -406,6 +407,12 @@
                 // Initialize navigation functionality
                 setTimeout(() => {
                     initializeNavigation();
+                    // Apply default English translation after navigation is loaded
+                    setTimeout(() => {
+                        if (typeof changeLanguage === 'function') {
+                            changeLanguage("en");
+                        }
+                    }, 100);
                 }, 300);
                 
             } catch (error) {

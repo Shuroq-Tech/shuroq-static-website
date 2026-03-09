@@ -4,13 +4,14 @@
 
 body {
   margin: 0;
+  background: radial-gradient(circle at 15% 10%, #eff5ff 0%, #f7f9fd 42%, #edf4ff 100%);
 }
 
 #main {
   margin-top: 80px;
   font-family: Poppins, Arial, sans-serif;
   color: #10243d;
-  background: radial-gradient(circle at 15% 10%, #eff5ff 0%, #f7f9fd 42%, #edf4ff 100%);
+  
   padding-bottom: 24px;
 }
 

@@ -75,7 +75,6 @@ nav{
 }
 
 .nav-links {
-    color: #1F2933;
     list-style: none;
     display: flex;
     align-items: center;
@@ -87,7 +86,6 @@ nav{
 .nav-links li a {
     text-decoration: none;
     font-weight: 600;
-    color: #1F2933;
     transition: color 0.3s ease;
 }
 
@@ -99,16 +97,15 @@ nav{
     width: 120px;
     height: 30px;
     background-color: #f8f8f9;
-    color:rgb(59, 207, 230) ;
     display: flex;
     justify-content: center;
     border-radius: 15px;
-    border: 1px solid rgb(59, 207, 230);
+    border: 1px solid;
     margin-left:1vw;
 }
 
 #contact-btn a{
-    color: rgb(59, 207, 230);
+    color: #000;
 }
 
 #contact-btn:hover{
@@ -123,7 +120,7 @@ nav{
     background-color: #ffffff;
     border-radius: 15px;
     display: flex;
-    border: 1px solid rgb(59, 207, 230);
+    border: 1px solid;
     justify-content: center;
     flex-shrink: 0;
     min-width: 80px;

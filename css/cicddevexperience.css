@@ -23,7 +23,7 @@ body{
    REDUCE SERVICES DROPDOWN WIDTH FOR CI/CD DEV EXPERIENCE PAGE
    ================================ */
 body.cicd-dev-experience-page #nav-container .dropdown-menu {
-  min-width: 600px !important;
+    min-width: 320px !important;
 }
 
 /* Breadcrumb */

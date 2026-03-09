@@ -9,7 +9,6 @@ body{
     background-color: #E4E6F4;
     color: #333;
     line-height: 1.6;
-    padding: 20px;
 }
 
 /* ================================
@@ -17,7 +16,7 @@ body{
    ================================ */
 
 .breadcrumb {
-    padding: 20px;
+    padding: 10px;
     margin-bottom: 20px;
     font-size: 0.9rem;
     color: #666;
@@ -932,5 +931,5 @@ footer{
    REDUCE SERVICES DROPDOWN WIDTH FOR FaaS PAGE
    ================================ */
 body.faas-page #nav-container .dropdown-menu {
-  min-width: 600px !important;
+    min-width: 320px !important;
 }

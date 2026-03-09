@@ -29,7 +29,7 @@ body{
    REDUCE SERVICES DROPDOWN WIDTH FOR MONOLITH MICROSERVICE PAGE
    ================================ */
 body.monolith-microservice-page #nav-container .dropdown-menu {
-  min-width: 600px !important;
+    min-width: 320px !important;
 }
 
 .breadcrumb a {

@@ -648,7 +648,7 @@ body{
    REDUCE SERVICES DROPDOWN WIDTH FOR CLOUD NATIVE PAGE
    ================================ */
 body.cloudnative-page #nav-container .dropdown-menu {
-  min-width: 600px !important;
+    min-width: 320px !important;
 }
 
 /* ================================

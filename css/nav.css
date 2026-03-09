@@ -108,9 +108,9 @@ nav {
 
 #contact-btn:hover {
     color: white;
-    background-color: rgb(59, 207, 230);
+    background-color: rgb(59, 156, 230);
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(59, 207, 230, 0.3);
+    box-shadow: 0 4px 12px rgba(12, 201, 231, 0.3);
 }
 
 #contact-btn:hover a {
@@ -200,7 +200,7 @@ nav {
     top: 100%;
     left: 0;
     background: white;
-    min-width: 400px;
+    min-width: 200px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     z-index: 1000;
@@ -280,35 +280,36 @@ nav {
 }
 
 .services-dropdown:hover .services-link i {
-    transform: rotate(180deg);
+transform: rotate(180deg);
 }
 
 .dropdown-menu {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background: white;
-    min-width: 900px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-    border-radius: 10px;
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(-10px);
-    transition: all 0.3s ease;
-    margin-top: 10px;
-    z-index: 1100;
+position: absolute;
+top: 100%;
+left: 0;
+background: white;
+min-width: 200px;
+box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+border-radius: 10px;
+opacity: 0;
+visibility: hidden;
+transform: translateY(-10px);
+transition: all 0.3s ease;
+margin-top: 10px;
+z-index: 1100;
 }
 
 .services-dropdown:hover .dropdown-menu,
 .services-dropdown:focus-within .dropdown-menu {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
+opacity: 1;
+visibility: visible;
+transform: translateY(0);
 }
 
 .dropdown-menu a {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    justify-content: flex-start;
     gap: 0.8rem;
     padding: 12px 20px;
     color: #333;
@@ -523,6 +524,7 @@ nav {
     border-radius: 0 8px 8px 0;
     box-shadow: -2px 0 8px rgba(0, 0, 0, 0.1);
     padding: 8px 0; /* Add some padding for items */
+    text-align: left !important;
 }
 
 .has-submenu:hover + .submenu,
@@ -542,6 +544,8 @@ nav {
     font-size: 14px;
     background: transparent;
     border-bottom: 1px solid #f3f4f6;
+    text-align: left !important;
+    justify-content: flex-start !important;
 }
 
 .submenu a:last-child {
@@ -552,6 +556,7 @@ nav {
     background: linear-gradient(90deg, #2d78f0 0%, #2a66e6 100%);
     color: white;
     padding-left: 25px;
+    
 }
 
 .submenu a i {
@@ -562,6 +567,7 @@ nav {
     transition: color 0.3s ease;
 }
 
+/* Specific fixes for problematic dropdowns */
 .submenu a:hover i {
     color: white;
 }
@@ -569,19 +575,19 @@ nav {
 
 /* Specific styling for wider submenus */
 .site-reliability-submenu {
-    min-width: 350px !important;  /* Increased from 280px to 350px */
+    min-width: 200px !important;  /* Match aboutus.css width */
 }
 
 .industries-submenu {
-    min-width: 320px !important;  /* Increased from 280px to 320px */
+    min-width: 200px !important;  /* Match aboutus.css width */
 }
 
 .platform-engineering-submenu {
-    min-width: 340px !important;  /* Increased from 280px to 340px */
+    min-width: 200px !important;  /* Match aboutus.css width */
 }
 
 .observability-submenu {
-    min-width: 330px !important;  /* Increased from 280px to 330px */
+    min-width: 200px !important;  /* Match aboutus.css width */
 }
 
 /* Responsive Navigation - Standardized for all pages */

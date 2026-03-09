@@ -21,7 +21,7 @@ body{
    REDUCE SERVICES DROPDOWN WIDTH FOR PROGRESSIVE DELIVERY PAGE
    ================================ */
 body.progressivedelivery-page #nav-container .dropdown-menu {
-  min-width: 600px !important;
+    min-width: 320px !important;
 }
 
 /* Breadcrumb */

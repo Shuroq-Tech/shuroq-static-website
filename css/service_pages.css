@@ -20,7 +20,7 @@ body.observability-devsecops-consult .dropdown-menu,
 body.observability-adoption .dropdown-menu,
 body.grafana-consulting .dropdown-menu,
 body.prometheus-consulting .dropdown-menu {
-  min-width: 600px !important;
+    min-width: 200px !important; /* Match nav.css width */
 }
 
 /* CTA Reasons */
