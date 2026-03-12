@@ -6,7 +6,7 @@
 
 body{
     font-family: "poppins", sans-serif;
-    background-color: #E4E6F4;
+    background-color: #E6F3FA;
     color: #333;
     line-height: 1.6;
     padding: 20px;
@@ -35,13 +35,13 @@ body.cicd-dev-experience-page #nav-container .dropdown-menu {
 }
 
 .breadcrumb a {
-    color: #10b981;
+    color: #3B82F6;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .breadcrumb a:hover {
-    color: #059669;
+    color: #2563EB;
 }
 
 .breadcrumb span {
@@ -50,7 +50,7 @@ body.cicd-dev-experience-page #nav-container .dropdown-menu {
 
 /* Hero Section */
 .cicd-hero {
-    background: linear-gradient(135deg, #10b981 0%, #34d399 100%);
+    background: linear-gradient(135deg, #3B82F6 0%, #60A5FA 100%);
     color: white;
     padding: 80px 0;
     border-radius: 20px;
@@ -141,7 +141,7 @@ body.cicd-dev-experience-page #nav-container .dropdown-menu {
 .section-icon {
     width: 80px;
     height: 80px;
-    background: linear-gradient(135deg, #10b981, #34d399);
+    background: linear-gradient(135deg, #3B82F6, #60A5FA);
     border-radius: 20px;
     display: flex;
     align-items: center;
@@ -216,7 +216,7 @@ body.cicd-dev-experience-page #nav-container .dropdown-menu {
 }
 
 .key-features strong {
-    color: #10b981;
+    color: #3B82F6;
     font-weight: 600;
     font-size: 1rem;
 }
@@ -287,7 +287,7 @@ body.cicd-dev-experience-page #nav-container .dropdown-menu {
 
 .benefit-card i {
     font-size: 3rem;
-    color: #10b981;
+    color: #3B82F6;
     margin-bottom: 20px;
 }
 
@@ -305,11 +305,11 @@ body.cicd-dev-experience-page #nav-container .dropdown-menu {
 
 /* Section Specific Colors */
 .pipeline-section .section-icon {
-    background: linear-gradient(135deg, #10b981, #34d399);
+    background: linear-gradient(135deg, #3B82F6, #60A5FA);
 }
 
 .deployment-section .section-icon {
-    background: linear-gradient(135deg, #f59e0b, #fbbf24);
+    background: linear-gradient(135deg, #3B82F6, #60A5FA);
 }
 
 .devex-section .section-icon {
@@ -318,33 +318,21 @@ body.cicd-dev-experience-page #nav-container .dropdown-menu {
 
 .pipeline-section .key-features strong,
 .pipeline-section .tech-tags span {
-    color: #10b981;
+    color: #3B82F6;
 }
 
 .deployment-section .key-features strong,
 .deployment-section .tech-tags span {
-    color: #f59e0b;
+    color: #3B82F6;
 }
 
 .devex-section .key-features strong,
 .devex-section .tech-tags span {
-    color: #ec4899;
+    color: #3B82F6;
 }
 
 .deployment-section .tech-tags span {
     background: linear-gradient(135deg, #cbad7a, #c7b382);
-}
-
-.devex-section .tech-tags span {
-    background: linear-gradient(135deg, #c16f98, #cc8e61);
-}
-
-.deployment-section .benefit-card i {
-    color: #f59e0b;
-}
-
-.devex-section .benefit-card i {
-    color: #ec4899;
 }
 
 /* CTA Section */
@@ -543,11 +531,11 @@ footer {
 
 /* CI/CD & Dev Experience Specific Styles */
 .pipeline-section {
-    border-left: 5px solid #10b981;
+    border-left: 5px solid #3B82F6;
 }
 
 .deployment-section {
-    border-left: 5px solid #f59e0b;
+    border-left: 5px solid #3B82F6;
 }
 
 .devex-section {
@@ -596,7 +584,7 @@ footer {
     left: 50%;
     width: 200%;
     height: 2px;
-    background: linear-gradient(90deg, transparent, #10b981, transparent);
+    background: linear-gradient(90deg, transparent, #3B82F6, transparent);
     animation: flowAnimation 3s ease-in-out infinite;
     transform: translate(-50%, -50%);
 }

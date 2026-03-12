@@ -6,7 +6,7 @@
 
 body{
     font-family: "poppins", sans-serif;
-    background-color: #DEF2EB;
+    background-color: #E6F3FA;
     color: #333;
     line-height: 1.6;
     padding-top: 60px;
@@ -33,13 +33,13 @@ body.monolith-microservice-page #nav-container .dropdown-menu {
 }
 
 .breadcrumb a {
-    color: #10b981;
+    color: #3B82F6;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .breadcrumb a:hover {
-    color: #059669;
+    color: #2563EB;
 }
 
 /* ================================
@@ -66,7 +66,7 @@ body.monolith-microservice-page #nav-container .dropdown-menu {
     min-height: 79vh;
     display: flex;
     align-items: center;
-    background: linear-gradient(135deg, #d1fae5 0%, #f3f4f6 100%);
+    background: linear-gradient(135deg, #E6F3FA 0%, #B8E0F7 100%);
     padding-top: 80px;
     overflow: hidden;
     margin-top: -20px;
@@ -81,7 +81,7 @@ body.monolith-microservice-page #nav-container .dropdown-menu {
     right: -10%;
     width: 600px;
     height: 600px;
-    background: radial-gradient(circle, rgba(16, 185, 129, 0.1) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(59, 130, 246, 0.1) 0%, transparent 70%);
     border-radius: 50%;
     animation: float 20s ease-in-out infinite;
     pointer-events: none;
@@ -105,7 +105,7 @@ body.monolith-microservice-page #nav-container .dropdown-menu {
 .hero-content h1 {
     font-size: 3.5rem;
     font-weight: 800;
-    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    background: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -147,7 +147,7 @@ body.monolith-microservice-page #nav-container .dropdown-menu {
 
 .feature i {
     font-size: 1.5rem;
-    color: #10b981;
+    color: #3B82F6;
 }
 
 .feature span {
@@ -172,7 +172,7 @@ body.monolith-microservice-page #nav-container .dropdown-menu {
 
 .overview-section {
     padding: 80px 20px;
-    background-color: #f0fdf4;
+    background-color: #F0F9FF;
     margin: 0 -20px;
 }
 
@@ -193,11 +193,11 @@ body.monolith-microservice-page #nav-container .dropdown-menu {
     width: 80px;
     height: 80px;
     border-radius: 20px;
-    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    background: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%);
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 10px 25px rgba(16, 185, 129, 0.2);
+    box-shadow: 0 10px 25px rgba(59, 130, 246, 0.2);
 }
 
 .section-icon i {
@@ -250,11 +250,11 @@ body.monolith-microservice-page #nav-container .dropdown-menu {
 }
 
 .key-benefits h4 {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 600;
     color: #333;
     margin-bottom: 1.5rem;
-    color: #10b981;
+    color: #3B82F6;
 }
 
 .key-benefits ul {
@@ -307,7 +307,7 @@ body.monolith-microservice-page #nav-container .dropdown-menu {
     color: #333;
     text-align: center;
     margin-bottom: 3rem;
-    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    background: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -342,14 +342,14 @@ body.monolith-microservice-page #nav-container .dropdown-menu {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    background: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%);
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 1.5rem;
     font-weight: 700;
-    box-shadow: 0 5px 15px rgba(16, 185, 129, 0.2);
+    box-shadow: 0 5px 15px rgba(59, 130, 246, 0.2);
 }
 
 .step-content {
@@ -376,7 +376,7 @@ body.monolith-microservice-page #nav-container .dropdown-menu {
 
 .services-section {
     padding: 80px 20px;
-    background-color: #f0fdf4;
+    background-color: #F0F9FF;
     margin: 0 -20px;
 }
 
@@ -386,7 +386,7 @@ body.monolith-microservice-page #nav-container .dropdown-menu {
     color: #333;
     text-align: center;
     margin-bottom: 3rem;
-    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    background: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -417,7 +417,7 @@ body.monolith-microservice-page #nav-container .dropdown-menu {
     height: 80px;
     margin: 0 auto 1.5rem;
     border-radius: 20px;
-    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    background: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -426,7 +426,7 @@ body.monolith-microservice-page #nav-container .dropdown-menu {
 
 .service-item:hover .service-icon {
     transform: scale(1.1) rotate(5deg);
-    box-shadow: 0 15px 30px rgba(16, 185, 129, 0.3);
+    box-shadow: 0 15px 30px rgba(59, 130, 246, 0.3);
 }
 
 .service-item .service-icon i {
@@ -464,7 +464,7 @@ body.monolith-microservice-page #nav-container .dropdown-menu {
     color: #333;
     text-align: center;
     margin-bottom: 3rem;
-    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    background: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -490,11 +490,11 @@ body.monolith-microservice-page #nav-container .dropdown-menu {
 }
 
 .tech-category h3 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 600;
     color: #333;
     margin-bottom: 1.5rem;
-    color: #10b981;
+    color: #3B82F6;
 }
 
 .tech-items {
@@ -508,19 +508,19 @@ body.monolith-microservice-page #nav-container .dropdown-menu {
     align-items: center;
     gap: 0.8rem;
     padding: 1rem;
-    background: #f0fdf4;
+    background: #F0F9FF;
     border-radius: 10px;
     transition: all 0.3s ease;
 }
 
 .tech-item:hover {
-    background: #dcfce7;
+    background: #DBEAFE;
     transform: translateY(-2px);
 }
 
 .tech-item i {
     font-size: 1.5rem;
-    color: #10b981;
+    color: #3B82F6;
     width: 24px;
     text-align: center;
 }
@@ -537,7 +537,7 @@ body.monolith-microservice-page #nav-container .dropdown-menu {
 
 .use-cases-section {
     padding: 80px 20px;
-    background-color: #f0fdf4;
+    background-color: #F0F9FF;
     margin: 0 -20px;
 }
 
@@ -547,7 +547,7 @@ body.monolith-microservice-page #nav-container .dropdown-menu {
     color: #333;
     text-align: center;
     margin-bottom: 3rem;
-    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    background: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -578,7 +578,7 @@ body.monolith-microservice-page #nav-container .dropdown-menu {
     height: 80px;
     margin: 0 auto 1.5rem;
     border-radius: 20px;
-    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    background: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -587,7 +587,7 @@ body.monolith-microservice-page #nav-container .dropdown-menu {
 
 .use-case:hover .use-case-icon {
     transform: scale(1.1) rotate(5deg);
-    box-shadow: 0 15px 30px rgba(16, 185, 129, 0.3);
+    box-shadow: 0 15px 30px rgba(59, 130, 246, 0.3);
 }
 
 .use-case-icon i {
@@ -615,8 +615,8 @@ body.monolith-microservice-page #nav-container .dropdown-menu {
 
 .cta-section {
     width:70%;
-    background: linear-gradient(45deg, #d2caec 33%, #FFFFFF 50%, #B497D6 80%);
-    border: 2px solid rgb(167, 15, 180);
+    background: linear-gradient(45deg, #E6F3FA 33%, #FFFFFF 50%, #97D5F0 80%);
+    border: 2px solid #3B82F6;
     border-radius: 30px;
     margin: 60px -20px;
     padding: 60px 20px;
@@ -648,7 +648,7 @@ body.monolith-microservice-page #nav-container .dropdown-menu {
 .cta-content button {
     width: 180px;
     height: 50px;
-    background-color: #9e65d4;
+    background-color: #3B82F6;
     border: none;
     border-radius: 25px;
     color: white;
@@ -661,17 +661,17 @@ body.monolith-microservice-page #nav-container .dropdown-menu {
 }
 
 .cta-content button:hover {
-    background-color: #744ac2;
+    background-color: #2563EB;
     transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(158, 101, 212, 0.4);
+    box-shadow: 0 8px 20px rgba(59, 130, 246, 0.4);
 }
 
 .cta-content button.secondary-btn {
-    background-color: #987eda;
+    background-color: #60A5FA;
 }
 
 .cta-content button.secondary-btn:hover {
-    background-color: #7a2ac5;
+    background-color: #3B82F6;
 }
 
 .cta-content button a {

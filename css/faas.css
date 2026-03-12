@@ -6,7 +6,7 @@
 
 body{
     font-family: "poppins", sans-serif;
-    background-color: #E4E6F4;
+    background-color: #E6F3FA;
     color: #333;
     line-height: 1.6;
 }
@@ -23,13 +23,13 @@ body{
 }
 
 .breadcrumb a {
-    color: #f59e0b;
+    color: #3B82F6;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .breadcrumb a:hover {
-    color: #d97706;
+    color: #2563EB;
 }
 
 .breadcrumb span {
@@ -45,7 +45,7 @@ body{
     min-height: 60vh;
     display: flex;
     align-items: center;
-    background: linear-gradient(135deg, #fef3c7 0%, #f3f4f6 100%);
+    background: linear-gradient(135deg, #E6F3FA 0%, #B8E0F7 100%);
     padding-top: 80px;
     overflow: hidden;
     margin-top: -20px;
@@ -84,7 +84,7 @@ body{
 .hero-content h1 {
     font-size: 3.5rem;
     font-weight: 800;
-    background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+    background: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -126,7 +126,7 @@ body{
 
 .feature i {
     font-size: 1.5rem;
-    color: #f59e0b;
+    color: #3B82F6;
 }
 
 .feature span {
@@ -151,7 +151,7 @@ body{
 
 .overview-section {
     padding: 80px 20px;
-    background-color: #fef7e6;
+    background-color: #F0F9FF;
     margin: 0 -20px;
 }
 
@@ -172,7 +172,7 @@ body{
     width: 80px;
     height: 80px;
     border-radius: 20px;
-    background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+    background: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -286,7 +286,7 @@ body{
     color: #333;
     text-align: center;
     margin-bottom: 3rem;
-    background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+    background: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -317,7 +317,7 @@ body{
     height: 80px;
     margin: 0 auto 1.5rem;
     border-radius: 20px;
-    background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+    background: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -354,7 +354,7 @@ body{
 
 .benefits-section {
     padding: 80px 20px;
-    background-color: #fef7e6;
+    background-color: #F0F9FF;
     margin: 0 -20px;
 }
 
@@ -364,7 +364,7 @@ body{
     color: #333;
     text-align: center;
     margin-bottom: 3rem;
-    background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+    background: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -392,7 +392,7 @@ body{
 
 .benefit-card i {
     font-size: 3rem;
-    color: #f59e0b;
+    color: #3B82F6;
     margin-bottom: 1.5rem;
 }
 
@@ -426,7 +426,7 @@ body{
     color: #333;
     text-align: center;
     margin-bottom: 3rem;
-    background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+    background: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -470,19 +470,19 @@ body{
     align-items: center;
     gap: 0.8rem;
     padding: 1rem;
-    background: #fef7e6;
+    background: #F0F9FF;
     border-radius: 10px;
     transition: all 0.3s ease;
 }
 
 .tech-item:hover {
-    background: #fed7aa;
+    background: #DBEAFE;
     transform: translateY(-2px);
 }
 
 .tech-item i {
     font-size: 1.5rem;
-    color: #f59e0b;
+    color: #3B82F6;
     width: 24px;
     text-align: center;
 }
@@ -499,7 +499,7 @@ body{
 
 .use-cases-section {
     padding: 80px 20px;
-    background-color: #fef7e6;
+    background-color: #F0F9FF;
     margin: 0 -20px;
 }
 
@@ -509,7 +509,7 @@ body{
     color: #333;
     text-align: center;
     margin-bottom: 3rem;
-    background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+    background: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -540,7 +540,7 @@ body{
     height: 80px;
     margin: 0 auto 1.5rem;
     border-radius: 20px;
-    background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+    background: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -577,8 +577,8 @@ body{
 
 .cta-section {
     width:100%;
-    background: linear-gradient(45deg, #d2caec 33%, #FFFFFF 50%, #B497D6 80%);
-    border: 2px solid rgb(167, 15, 180);
+    background: linear-gradient(45deg, #E6F3FA 33%, #FFFFFF 50%, #97D5F0 80%);
+    border: 2px solid #3B82F6;
     border-radius: 30px;
     margin: 60px -20px;
     padding: 60px 20px;

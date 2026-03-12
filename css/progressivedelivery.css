@@ -6,7 +6,7 @@
 
 body{
     font-family: "poppins", sans-serif;
-    background-color: #E4E6F4;
+    background-color: #E6F3FA;
     color: #333;
     line-height: 1.6;
     padding: 20px;
@@ -33,13 +33,13 @@ body.progressivedelivery-page #nav-container .dropdown-menu {
 }
 
 .breadcrumb a {
-    color: #f59e0b;
+    color: #3B82F6;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .breadcrumb a:hover {
-    color: #d97706;
+    color: #2563EB;
 }
 
 .breadcrumb span {
@@ -48,7 +48,7 @@ body.progressivedelivery-page #nav-container .dropdown-menu {
 
 /* Hero Section */
 .progressive-hero {
-    background: linear-gradient(135deg, #f59e0b 0%, #fbbf24 100%);
+    background: linear-gradient(135deg, #3B82F6 0%, #60A5FA 100%);
     color: white;
     padding: 80px 0;
     border-radius: 20px;
@@ -139,7 +139,7 @@ body.progressivedelivery-page #nav-container .dropdown-menu {
 .section-icon {
     width: 80px;
     height: 80px;
-    background: linear-gradient(135deg, #f59e0b, #fbbf24);
+    background: linear-gradient(135deg, #3B82F6, #60A5FA);
     border-radius: 20px;
     display: flex;
     align-items: center;
@@ -214,7 +214,7 @@ body.progressivedelivery-page #nav-container .dropdown-menu {
 }
 
 .key-features strong {
-    color: #f59e0b;
+    color: #3B82F6;
     font-weight: 600;
     font-size: 1rem;
 }
@@ -285,7 +285,7 @@ body.progressivedelivery-page #nav-container .dropdown-menu {
 
 .benefit-card i {
     font-size: 3rem;
-    color: #f59e0b;
+    color: #3B82F6;
     margin-bottom: 20px;
 }
 
@@ -303,46 +303,116 @@ body.progressivedelivery-page #nav-container .dropdown-menu {
 
 /* Section Specific Colors */
 .flags-section .section-icon {
-    background: linear-gradient(135deg, #f59e0b, #fbbf24);
+    background: linear-gradient(135deg, #3B82F6, #60A5FA);
 }
 
 .canary-section .section-icon {
-    background: linear-gradient(135deg, #06b6d4, #22d3ee);
+    background: linear-gradient(135deg, #3B82F6, #60A5FA);
 }
 
 .rollback-section .section-icon {
-    background: linear-gradient(135deg, #dc2626, #ef4444);
+    background: linear-gradient(135deg, #3B82F6, #60A5FA);
 }
 
 .flags-section .key-features strong,
 .flags-section .tech-tags span {
-    color: #f59e0b;
+    color: #3B82F6;
 }
 
 .canary-section .key-features strong,
 .canary-section .tech-tags span {
-    color: #06b6d4;
+    color: #3B82F6;
 }
 
 .rollback-section .key-features strong,
 .rollback-section .tech-tags span {
-    color: #dc2626;
+    color: #3B82F6;
 }
 
 .canary-section .tech-tags span {
     background: linear-gradient(135deg, #5eb7c7, #e4e7e8);
 }
 
-.rollback-section .tech-tags span {
-    background: linear-gradient(135deg, #c27f7f, #d6c5c5);
+/* Progressive Delivery Specific Styles */
+.flags-section {
+    border-left: 5px solid #3B82F6;
 }
 
-.canary-section .benefit-card i {
-    color: #06b6d4;
+.canary-section {
+    border-left: 5px solid #3B82F6;
 }
 
-.rollback-section .benefit-card i {
-    color: #dc2626;
+.rollback-section {
+    border-left: 5px solid #3B82F6;
+}
+
+/* Hover Effects */
+.tech-tags span:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(245, 158, 11, 0.3);
+}
+
+/* Section Icon Animations */
+.section-icon:hover {
+    transform: rotate(10deg) scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+/* Key Features List Animations */
+.key-features li:hover {
+    transform: translateX(10px);
+    background-color: #f1f5f9;
+    transition: all 0.3s ease;
+}
+
+/* Feature Flag Animation */
+@keyframes flagWave {
+    0%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(5deg); }
+    75% { transform: rotate(-5deg); }
+}
+
+.flags-section .section-icon {
+    animation: flagWave 3s ease-in-out infinite;
+}
+
+/* Canary Bird Animation */
+@keyframes birdFly {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-8px) rotate(10deg); }
+}
+
+.canary-section .section-icon {
+    animation: birdFly 4s ease-in-out infinite;
+}
+
+/* Rollback Undo Animation */
+@keyframes undoSpin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.rollback-section .section-icon {
+    animation: undoSpin 5s linear infinite;
+}
+
+/* Progressive Flow Animation */
+@keyframes progressiveFlow {
+    0% { transform: translateX(-100%); opacity: 0; }
+    50% { opacity: 1; }
+    100% { transform: translateX(100%); opacity: 0; }
+}
+
+.progressive-hero::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #3B82F6, transparent);
+    animation: progressiveFlow 4s ease-in-out infinite;
+    transform: translate(-50%, -50%);
 }
 
 /* CTA Section */
@@ -533,24 +603,6 @@ footer {
 .benefit-card:nth-child(1) { animation-delay: 0.1s; }
 .benefit-card:nth-child(2) { animation-delay: 0.2s; }
 .benefit-card:nth-child(3) { animation-delay: 0.3s; }
-
-/* Progressive Delivery Specific Styles */
-.flags-section {
-    border-left: 5px solid #f59e0b;
-}
-
-.canary-section {
-    border-left: 5px solid #06b6d4;
-}
-
-.rollback-section {
-    border-left: 5px solid #dc2626;
-}
-
-/* Hover Effects */
-.tech-tags span:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(245, 158, 11, 0.3);
 }
 
 .canary-section .tech-tags span:hover {
@@ -619,7 +671,7 @@ footer {
     left: 50%;
     width: 200%;
     height: 2px;
-    background: linear-gradient(90deg, transparent, #f59e0b, transparent);
+    background: linear-gradient(90deg, transparent, #3B82F6, transparent);
     animation: progressiveFlow 4s ease-in-out infinite;
     transform: translate(-50%, -50%);
 }
