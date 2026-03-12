@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+  <title>Product Engineering - Shuroq</title>
+  <link rel="icon" href="../logo.png" sizes="44x44" type="image/png">
+  <link rel="stylesheet" href="../css/productengineering.css">
+  <link rel="stylesheet" href="../css/nav.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body class="product-engineering-page">
+
+  <!-- Scroll Progress Indicator -->
+  <div class="productengineering-scroll-progress"></div>
+
+  <!-- Navigation will be fetched here -->
+  <div id="nav-container"></div>
+
+  <!-- Main Content -->
+  <div id="main">
+    <!-- Hero Section -->
+    <section class="productengineering-hero">
+      <div class="hero-content">
+        <h1 data-i18n="hero_title">Product Engineering</h1>
+        <p data-i18n="hero_subtitle">Engineering tomorrow's products with today's best practices</p>
+      </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="introduction-section">
+      <div class="container">
+        <div class="intro-content">
+          <h2 data-i18n="intro_title">Transform Your Ideas into Scalable Products</h2>
+          <p data-i18n="intro_description">At Shuroq, we specialize in building robust, scalable, and cloud-native products that drive business growth. Our comprehensive product engineering services span from initial concept to deployment and ongoing optimization, ensuring your products are built with modern best practices and cutting-edge technologies.</p>
+          
+          <div class="key-highlights">
+            <div class="highlight">
+              <i class="fas fa-rocket"></i>
+              <h3 data-i18n="highlight1_title">Fast Time-to-Market</h3>
+              <p data-i18n="highlight1_desc">Accelerated development cycles with agile methodologies</p>
+            </div>
+            <div class="highlight">
+              <i class="fas fa-expand-arrows-alt"></i>
+              <h3 data-i18n="highlight2_title">Scalable Architecture</h3>
+              <p data-i18n="highlight2_desc">Future-proof solutions that grow with your business</p>
+            </div>
+            <div class="highlight">
+              <i class="fas fa-cloud"></i>
+              <h3 data-i18n="highlight3_title">Cloud-Native First</h3>
+              <p data-i18n="highlight3_desc">Built for the cloud from day one</p>
+            </div>
+            <div class="highlight">
+              <i class="fas fa-shield-alt"></i>
+              <h3 data-i18n="highlight4_title">Enterprise Security</h3>
+              <p data-i18n="highlight4_desc">Security and compliance built into every layer</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section class="services-overview">
+      <div class="container">
+        
+        <!-- Cloud Native Product Engineering Section -->
+        <div class="service-card cloud-native">
+          <div class="service-icon">
+            <i class="fas fa-cloud"></i>
+          </div>
+          <div class="service-content">
+            <h2 data-i18n="cloud_native_title">Cloud Native Product Engineering</h2>
+            <h3 data-i18n="cloud_native_subtitle">Design and build products from the ground up using cloud-native principles</h3>
+            <p data-i18n="cloud_native_description">Design and build products from the ground up using cloud-native principles — containers, Kubernetes, and scalable microservices architectures that maximize performance and resilience.</p>
+            
+            <div class="sub-services">
+              <div class="sub-service">
+                <i class="fas fa-dharmachakra"></i>
+                <h4 data-i18n="cloud_native_k8s">Kubernetes</h4>
+                <p data-i18n="cloud_native_k8s_desc">Container orchestration at scale</p>
+              </div>
+              <div class="sub-service">
+                <i class="fas fa-cubes"></i>
+                <h4 data-i18n="cloud_native_microservices">Microservices</h4>
+                <p data-i18n="cloud_native_microservices_desc">Distributed, resilient architectures</p>
+              </div>
+              <div class="sub-service">
+                <i class="fas fa-infinity"></i>
+                <h4 data-i18n="cloud_native_cicd">CI/CD</h4>
+                <p data-i18n="cloud_native_cicd_desc">Automated deployment pipelines</p>
+              </div>
+            </div>
+            
+            <button class="service-btn"><a href="cloudnative.html" data-i18n="cloud_native_button">Explore Cloud Native</a></button>
+          </div>
+        </div>
+
+        <!-- FaaS Section -->
+        <div class="service-card faas">
+          <div class="service-icon">
+            <i class="fas fa-bolt"></i>
+          </div>
+          <div class="service-content">
+            <h2 data-i18n="faas_title">FaaS — Function as a Service</h2>
+            <h3 data-i18n="faas_subtitle">Serverless Architecture for Infinite Scale and Zero Operational Overhead</h3>
+            <p data-i18n="faas_description">Embrace serverless computing with event-driven, auto-scaling functions that eliminate infrastructure overhead and reduce operational costs significantly.</p>
+            
+            <div class="sub-services">
+              <div class="sub-service">
+                <i class="fas fa-code"></i>
+                <h4 data-i18n="faas_functions">Serverless Functions</h4>
+                <p data-i18n="faas_functions_desc">Event-driven, auto-scaling code</p>
+              </div>
+              <div class="sub-service">
+                <i class="fas fa-project-diagram"></i>
+                <h4 data-i18n="faas_events">Event Architecture</h4>
+                <p data-i18n="faas_events_desc">Loosely coupled, event-driven systems</p>
+              </div>
+              <div class="sub-service">
+                <i class="fas fa-dollar-sign"></i>
+                <h4 data-i18n="faas_cost">Cost Optimization</h4>
+                <p data-i18n="faas_cost_desc">Pay-per-execution pricing model</p>
+              </div>
+            </div>
+            
+            <button class="service-btn"><a href="faas.html" data-i18n="faas_button">Explore FaaS</a></button>
+          </div>
+        </div>
+
+        <!-- Monolith to Microservice Section -->
+        <div class="service-card monolith-microservice">
+          <div class="service-icon">
+            <i class="fas fa-cubes"></i>
+          </div>
+          <div class="service-content">
+            <h2 data-i18n="monolith_title">Monolith to Microservice Migration</h2>
+            <h3 data-i18n="monolith_subtitle">Modernize Legacy Systems with Confidence and Precision</h3>
+            <p data-i18n="monolith_description">Transform legacy monolithic applications into agile, independently deployable microservices — enabling faster releases, better scalability, and improved fault isolation.</p>
+            
+            <div class="sub-services">
+              <div class="sub-service">
+                <i class="fas fa-exchange-alt"></i>
+                <h4 data-i18n="monolith_migration">Migration Strategy</h4>
+                <p data-i18n="monolith_migration_desc">Phased, risk-managed transformation</p>
+              </div>
+              <div class="sub-service">
+                <i class="fas fa-network-wired"></i>
+                <h4 data-i18n="monolith_decomposition">Domain Decomposition</h4>
+                <p data-i18n="monolith_decomposition_desc">DDD-based service boundaries</p>
+              </div>
+              <div class="sub-service">
+                <i class="fas fa-link"></i>
+                <i class="fas fa-plug"></i>
+                <h4 data-i18n="monolith_integration">Service Integration</h4>
+                <p data-i18n="monolith_integration_desc">Seamless inter-service communication</p>
+              </div>
+            </div>
+            
+            <button class="service-btn"><a href="monolithmicroservice.html" data-i18n="monolith_button">Explore Migration</a></button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Why Choose Shuroq Section -->
+    <section class="why-choose-section">
+      <div class="container">
+        <h2 data-i18n="why_choose_title">Why Choose Shuroq for Product Engineering?</h2>
+        <div class="benefits-grid">
+          <div class="benefit-card">
+            <i class="fas fa-users"></i>
+            <h3 data-i18n="benefit1_title">Expert Team</h3>
+            <p data-i18n="benefit1_desc">Seasoned engineers with deep expertise in modern technologies and best practices</p>
+          </div>
+          <div class="benefit-card">
+            <i class="fas fa-cogs"></i>
+            <h3 data-i18n="benefit2_title">Agile Process</h3>
+            <p data-i18n="benefit2_desc">Iterative development with continuous feedback and rapid adaptation</p>
+          </div>
+          <div class="benefit-card">
+            <i class="fas fa-chart-line"></i>
+            <h3 data-i18n="benefit3_title">Proven Track Record</h3>
+            <p data-i18n="benefit3_desc">Successful delivery of complex products across various industries</p>
+          </div>
+          <div class="benefit-card">
+            <i class="fas fa-handshake"></i>
+            <h3 data-i18n="benefit4_title">Partnership Approach</h3>
+            <p data-i18n="benefit4_desc">We work as an extension of your team, committed to your success</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+      <div class="cta-content">
+        <h2 data-i18n="cta_title">Ready to Build Your Next Product?</h2>
+        <p data-i18n="cta_description">Let's discuss how our product engineering expertise can help bring your vision to life</p>
+        <button><a href="contact.html" data-i18n="cta_button">Get in Touch</a></button>
+      </div>
+    </section>
+  </div>
+  
+  <!-- Footer Container -->
+  <div id="footer-container"></div>
+
+  <!-- Dynamic Footer Component -->
+  <script src="../js/footer.js"></script>
+  <link rel="stylesheet" href="../css/footer.css">
+  <script src="../js/nav_lang.js"></script>
+  <script src="../js/productengineering_lang.js"></script>
+  <script src="../js/nav.js"></script>
+  <script src="../js/productengineering.js"></script>
+
+  </body>
+</html>

@@ -513,43 +513,184 @@ p {
     border-radius: 5%;
     
 }
-.vision-container{
-    width:100%;
-   gap:2vh;
-  
-    padding: 1.7em 0.2em 1.5em  1.5em;
-    background-color: #a8d0e9;
-   
+
+/* Vision & Mission Box Section */
+.vision-mission-section {
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #91c6e6 0%, #c4e5fa 100%);
+    margin: 60px -20px;
 }
-.vision-header{
-    color:#3fb0f7;
-    margin-left:2%;
+
+.vision-mission-container {
+    max-width: 1200px;
+    margin: 0 auto;
 }
-.vision-content{
-    width:80%;
-    font:400;
-   margin-left: 4%;
-    font-size:large;
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+    border-radius: 2px;
+}
+
+.vision-mission-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.vision-box, .mission-box {
+    background: white;
+    border-radius: 20px;
+    padding: 2.5rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.vision-box::before, .mission-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+    border-radius: 20px 20px 0 0;
+}
+
+.mission-box::before {
+    background: linear-gradient(135deg, #f59e0b 0%, #ef4444 100%);
+}
+
+.vision-box:hover, .mission-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.vision-box:hover::before, .mission-box:hover::before {
+    height: 8px;
+}
+
+.box-icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    color: white;
+}
+
+.vision-box .box-icon {
+    background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+}
+
+.mission-box .box-icon {
+    background: linear-gradient(135deg, #f59e0b 0%, #ef4444 100%);
+}
+
+.box-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.box-content {
+    color: #666;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    font-family: "Inter", sans-serif;
+}
+
+.box-content p {
+    margin: 0;
+}
+
+/* Mobile Responsive for Vision & Mission Boxes */
+@media (max-width: 768px) {
+    .vision-mission-section {
+        padding: 60px 20px;
+        margin: 40px -20px;
+    }
     
-}
-.mission-container{
-    width:100%;
-   gap:2vh;
-  
-     padding: 0.7em  1.5em;
-    background-color: #a8d0e9;
-   
-}
-.mission-header{
-    color:#fc7686;
-    margin-left:2%;
-}
-.mission-content{
-    width:80%;
-    font:400;
-   margin-left: 4%;
-    font-size:large;
+    .section-title {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
     
+    .vision-mission-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .vision-box, .mission-box {
+        padding: 2rem;
+    }
+    
+    .box-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .box-title {
+        font-size: 1.5rem;
+    }
+    
+    .box-content {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .vision-mission-section {
+        padding: 40px 15px;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .vision-box, .mission-box {
+        padding: 1.5rem;
+    }
+    
+    .box-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.3rem;
+    }
+    
+    .box-title {
+        font-size: 1.3rem;
+    }
+    
+    .box-content {
+        font-size: 0.95rem;
+    }
 }
 
 #fourth{

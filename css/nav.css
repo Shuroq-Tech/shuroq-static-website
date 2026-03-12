@@ -184,11 +184,14 @@ nav {
     display: flex;
     align-items: center;
     gap: 8px;
+    flex-direction: row;
 }
 
 .company-link i {
     font-size: 12px;
     transition: transform 0.3s ease;
+    order: 2;
+    margin-left: 4px;
 }
 
 .company-dropdown:hover .company-link i {
@@ -272,11 +275,14 @@ nav {
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    flex-direction: row;
 }
 
 .services-link i {
     font-size: 0.8rem;
     transition: transform 0.3s ease;
+    order: 2;
+    margin-left: 4px;
 }
 
 .services-dropdown:hover .services-link i {
@@ -352,11 +358,14 @@ transform: translateY(0);
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    flex-direction: row;
 }
 
 .solutions-link i {
     font-size: 12px;
     transition: transform 0.3s ease;
+    order: 2;
+    margin-left: 4px;
 }
 
 .solutions-dropdown:hover .solutions-link i {
@@ -426,11 +435,14 @@ transform: translateY(0);
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    flex-direction: row;
 }
 
 .resources-link i {
     font-size: 12px;
     transition: transform 0.3s ease;
+    order: 2;
+    margin-left: 4px;
 }
 
 .resources-dropdown:hover .resources-link i {

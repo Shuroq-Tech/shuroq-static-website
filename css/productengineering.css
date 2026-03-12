@@ -882,17 +882,8 @@ footer{
    RESPONSIVE - TABLET
    ================================ */
 @media (max-width: 1024px) {
-    .nav-container {
-        padding-left: 20px;
-        padding-right: 20px;
-        margin-left: 2.5%;
-    }
-    
-    .nav-links {
-        margin-left: auto;
-        gap: clamp(1rem, 2vw, 2rem);
-        justify-content: flex-end;
-    }
+
+}
     
     .hero-content {
         margin-left: clamp(1rem, 3vw, 2rem);
@@ -963,12 +954,7 @@ footer{
     .nav-container {
         padding-left: 20px;
     }
-    
-    .nav-links {
-        gap: 1rem;
-        margin-left: 0;
-    }
-    
+
     .dropdown-menu {
         position: fixed;
         top: 60px;
@@ -981,6 +967,7 @@ footer{
     
     .hero-content h1 {
         font-size: 2.5rem;
+        margin-top: -20%;
     }
     
     .hero-content p {
@@ -1033,25 +1020,6 @@ footer{
     .services-overview {
         padding: 60px 20px;
     }
-    
-    .nav-links {
-        position: fixed;
-        top: 60px;
-        left: 0;
-        right: 0;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 1.5rem;
-        background-color: #E4E6F4;
-        padding: 20px;
-        margin-left: 0;
-        display: none;
-        z-index: 1000;
-    }
-
-    .nav-open .nav-links {
-        display: flex;
-    }
 
     .services-dropdown .dropdown-menu {
         position: static;
@@ -1075,14 +1043,7 @@ footer{
 }
 
 @media (max-width: 480px) {
-    .nav-links {
-        display: none;
-    }
-    
-    .mobile-menu-btn {
-        display: block;
-    }
-    
+
     .hero-content h1 {
         font-size: 2rem;
     }
@@ -1162,11 +1123,7 @@ footer{
     .services-overview {
         padding: 40px 15px;
     }
-    
-    .nav-links {
-        padding:16px;
-    }
-    
+
     #footbox{
         height: 70vh;
     }

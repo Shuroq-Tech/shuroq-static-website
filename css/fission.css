@@ -629,36 +629,6 @@ body {
         margin-top: 60px;
     }
     
-    /* Mobile Navigation - Align left like other pages but vertically center items */
-    @media (max-width: 768px) {
-        #main-nav .nav-links {
-            height: 100vh !important;
-            justify-content: center !important;      /* Vertically center all items */
-            align-items: flex-start !important;     /* Keep items left-aligned horizontally */
-            padding: 40px 20px !important;
-        }
-        
-        #main-nav .nav-links li {
-            margin: 8px 0 !important;              /* Reduced from 15px to 8px */
-            text-align: left !important;            /* Changed from center to left */
-        }
-        
-        #main-nav .nav-links a {
-            justify-content: flex-start !important; /* Changed from center to flex-start */
-            text-align: left !important;            /* Changed from center to left */
-        }
-    }
-    
-    @media (max-width: 480px) {
-        #main-nav .nav-links {
-            padding: 30px 15px !important;
-            height: 100vh !important;
-        }
-        
-        #main-nav .nav-links li {
-            margin: 6px 0 !important;              /* Reduced from 12px to 6px for smaller screens */
-        }
-    }
     
     .services-dropdown .dropdown-menu {
         position: static;
@@ -673,6 +643,7 @@ body {
         overflow-x: hidden; /* Prevent horizontal scroll */
         width: 100% !important;
         max-width: 300px !important;
+        padding: 10px;
         box-sizing: border-box !important;
     }
     
@@ -727,59 +698,7 @@ body {
         pointer-events: auto !important; /* Ensure clickability */
     }
     
-    /* Language button styling */
-    #main-nav #langBtn {
-        position: relative !important;
-        z-index: 1 !important;          /* Minimal z-index to prevent conflicts */
-        pointer-events: auto !important; /* Explicitly clickable */
-        padding: 8px 16px !important;
-        background: transparent !important; /* Remove background box */
-        border-radius: 0 !important;    /* Remove border radius */
-        cursor: pointer !important;
-        transition: all 0.3s ease !important;
-        font-size: 14px !important;
-    }
     
-    #main-nav #langBtn:hover {
-        background: rgba(59, 130, 246, 0.2) !important;
-    }
-    
-    /* Language dropdown positioning */
-    #main-nav #langMenu {
-        position: absolute !important;
-        top: 100% !important;                    /* Directly below button */
-        left: 50% !important;                    /* Center horizontally */
-        transform: translateX(-50%) !important;  /* Perfect center */
-        right: auto !important;                  /* Override nav.css */
-        margin-top: 8px !important;               /* Gap from button */
-        z-index: 10 !important;                  /* Lower but above button */
-        pointer-events: auto !important;         /* Ensure dropdown clickable */
-        
-        /* Visual styling */
-        background: white !important;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.15) !important;
-        border-radius: 6px !important;
-        min-width: 80px !important;
-        padding: 8px 0 !important;
-        border: 1px solid #e5e7eb !important;
-    }
-    
-    /* Dropdown items */
-    #main-nav #langMenu div {
-        display: block !important;
-        padding: 8px 16px !important;
-        text-align: center !important;
-        color: #333 !important;
-        text-decoration: none !important;
-        transition: background 0.2s ease !important;
-        font-size: 14px !important;
-        pointer-events: auto !important;         /* Ensure items clickable */
-        cursor: pointer !important;              /* Show pointer cursor */
-    }
-    
-    #main-nav #langMenu div:hover {
-        background: #f5f5f5 !important;
-    }
 }
 
 @media (max-width: 480px) {
@@ -851,21 +770,7 @@ body {
         transform: translateY(-2px) !important;
     }
     
-    /* Small mobile language button adjustments */
-    #main-nav #langBtn {
-        font-size: 13px !important;
-        padding: 6px 12px !important;
-    }
     
-    #main-nav #langMenu {
-        min-width: 70px !important;
-        margin-top: 6px !important;
-    }
-    
-    #main-nav #langMenu div {
-        padding: 6px 12px !important;
-        font-size: 13px !important;
-    }
 }
 
 /* Smooth Scrolling */
@@ -975,88 +880,6 @@ html {
     100% { transform: rotate(360deg); }
 }
 
-/* Override Services dropdown width for fission page - match index page */
-#main-nav .services-dropdown .dropdown-menu {
-    min-width: 280px !important;
-}
 
-/* Ensure Company dropdown icons are visible on fission page */
-.company-dropdown-menu a i {
-    display: inline-block !important;
-    width: 16px !important;
-    text-align: center !important;
-    color: #3b82f6 !important;
-    font-size: 14px !important;
-}
 
-/* Ensure all dropdown icons are visible */
-.services-dropdown .dropdown-menu a i,
-.solutions-dropdown .solutions-dropdown-menu a i,
-.resources-dropdown .resources-dropdown-menu a i {
-    display: inline-block !important;
-    width: 16px !important;
-    text-align: center !important;
-    color: #3b82f6 !important;
-    font-size: 14px !important;
-}
 
-/* Comprehensive Services dropdown width fix for fission page - CORRECT SELECTORS */
-#main-nav .services-dropdown .dropdown-menu,
-nav .services-dropdown .dropdown-menu,
-.services-dropdown .dropdown-menu {
-    min-width: 300px !important;
-    max-width: 450px !important;
-    width: auto !important;
-}
-
-#main-nav .services-dropdown:hover .dropdown-menu,
-#main-nav .services-dropdown:focus-within .dropdown-menu,
-#main-nav .services-dropdown.submenu-open .dropdown-menu,
-nav .services-dropdown:hover .dropdown-menu,
-nav .services-dropdown:focus-within .dropdown-menu,
-nav .services-dropdown.submenu-open .dropdown-menu {
-    min-width: 300px !important;
-    max-width: 450px !important;
-    width: auto !important;
-}
-
-/* Desktop Navigation adjustments for fission page */
-@media (min-width: 1024px) {
-    #main-nav .nav-links {
-        gap: 1rem !important; /* Slightly increased gap for better spacing */
-    }
-    
-    #main-nav .nav-links li {
-        margin: 0 0.25rem !important; /* Add small margin for better separation */
-    }
-    
-    #main-nav .nav-links li a {
-        font-weight: bolder !important;
-        padding: 8px 12px !important; /* Add padding for better click area */
-        border-radius: 4px !important; /* Subtle rounded corners */
-        transition: all 0.3s ease !important;
-    }
-    
-    #main-nav .nav-links li a:hover {
-        background-color: rgba(59, 130, 246, 0.1) !important;
-        transform: translateY(-1px) !important;
-    }
-    
-    /* Desktop Contact button centering */
-    #contact-btn {
-        display: flex !important;
-        justify-content: center !important;
-        align-items: center !important;
-        text-align: center !important;
-        
-    }
-    
-    #contact-btn a {
-        display: flex !important;
-        justify-content: center !important;
-        align-items: center !important;
-        text-align: center !important;
-        width: 100% !important;
-        height: 100% !important;
-    }
-}

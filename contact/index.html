@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Us</title>
+
+    <link rel="icon" href="../logo.png" sizes="44x44" type="image/png">
+
+    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- Navigation Container -->
+    <div id="nav-container"></div>
+
+    <div id="main">
+
+        <div id="contact-title">
+
+            <h2 data-i18n="contact_title">Get in touch with us for reliable, fast, and tailored digital solutions.</h2>
+
+        </div>
+
+        <div id="contactbox">
+
+            <h2 class="form-title" data-i18n="form_title">Send us a Message</h2>
+
+            <form id="contactForm">
+
+                <div class="form-group">
+
+                    <label for="name" data-i18n="form_name_label">Name</label>
+
+                    <input type="text" id="name" placeholder="Your Name" data-i18n-placeholder="form_name_placeholder" required 
+
+                           pattern="[A-Za-z\s]+" title="Only alphabets and spaces allowed" />
+
+                    <small class="helper-text">Only alphabets and spaces allowed</small>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="email" data-i18n="form_email_label">Email</label>
+
+                    <input type="email" id="email" placeholder="Your Email" data-i18n-placeholder="form_email_placeholder" required 
+
+                           pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" title="Email must contain @" />
+
+                    <small class="helper-text">@ is must for mail</small>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="phone" data-i18n="form_phone_label">Phone</label>
+
+                    <input type="tel" id="phone" placeholder="Phone Number" data-i18n-placeholder="form_phone_placeholder" required 
+
+                           pattern="[+]?[0-9\s]+" title="Only numbers and + symbol allowed" />
+
+                    <small class="helper-text">Only numbers and + symbol allowed</small>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="subject" data-i18n="form_subject_label">Subject</label>
+
+                    <input type="text" id="subject" placeholder="Subject" data-i18n-placeholder="form_subject_placeholder" required />
+
+                </div>
+
+                <div class="button-container">
+
+                    <button type="button" onclick="submitForm()" data-i18n="form_submit_button">Submit</button>
+
+                    <button type="button" onclick="clearForm()" data-i18n="form_clear_button">Clear</button>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <!-- Dynamic Footer Component -->
+    <script src="../js/footer.js"></script>
+    <link rel="stylesheet" href="../css/footer.css">
+
+    <script src="../js/nav.js"></script>
+    <script src="../js/nav_lang.js"></script>
+    <script src="../js/contact_lang.js"></script>
+    <script src="js/contact.js"></script>
+    <script>
+        // Load navigation
+        async function loadNavigation() {
+            try {
+                const response = await fetch('../nav.html');
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                const navHTML = await response.text();
+                
+                // Replace the existing navigation
+                const existingNav = document.getElementById('nav-container');
+                if (existingNav) {
+                    existingNav.innerHTML = navHTML;
+                }
+                
+                // Initialize navigation functionality with longer timeout for CSS loading
+                setTimeout(() => {
+                    initializeNavigation();
+                    
+                    // Debug: Check if Company dropdown elements exist
+                    const companyDropdown = document.querySelector('.company-dropdown');
+                    const companyLink = document.querySelector('.company-link');
+                    const companyDropdownMenu = document.querySelector('.company-dropdown-menu');
+                    console.log('Company dropdown elements:', { companyDropdown, companyLink, companyDropdownMenu });
+                    
+                    // Test click functionality
+                    if (companyLink) {
+                        console.log('Company link found, adding test click listener');
+                        companyLink.addEventListener('click', function(e) {
+                            console.log('Company dropdown clicked!');
+                        });
+                    }
+                }, 500); // Increased timeout
+                
+            } catch (error) {
+                console.error('Error loading navigation:', error);
+            }
+        }
+
+        // Initialize everything when DOM is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            loadNavigation();
+        });
+    </script>
+
+</body>
+
+</html>

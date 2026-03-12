@@ -11,7 +11,7 @@
   
   const fetchNavigation = async () => {
     try {
-      const response = await fetch('nav.html');
+      const response = await fetch('../nav.html');
       if (response.ok) {
         const navHTML = await response.text();
         const navContainer = document.getElementById('nav-container');

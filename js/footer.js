@@ -171,7 +171,7 @@ function loadFooterComponent() {
     }
     
     // Load footer HTML
-    fetch('footer.html')
+    fetch('../footer.html')
         .then(response => response.text())
         .then(html => {
             // Append footer to footer container instead of main
