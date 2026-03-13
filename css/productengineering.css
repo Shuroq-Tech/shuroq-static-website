@@ -284,17 +284,18 @@ body{
    HERO SECTION
    ================================ */
 
+/* Main Content */
+#main {
+    margin-top: 80px;
+}
+
 .productengineering-hero {
     position: relative;
     min-height: 50vh;
     display: flex;
     align-items: center;
     background: linear-gradient(135deg, #e0e7ff 0%, #f3f4f6 100%);
-    padding-top: 80px;
     overflow: hidden;
-    margin-top: -20px;
-    margin-left: -20px;
-    margin-right: -20px;
 }
 
 .productengineering-hero::before {
@@ -882,19 +883,14 @@ footer{
    RESPONSIVE - TABLET
    ================================ */
 @media (max-width: 1024px) {
-
-}
-    
     .hero-content {
         margin-left: clamp(1rem, 3vw, 2rem);
-        margin-top: 5rem;
         height: auto;
     }
     
     .hero-content h1 {
         width: clamp(80%, 85vw, 45vw);
         font-size: clamp(2rem, 4vw, 3rem);
-        margin-top: 23vh;
     }
     
     .hero-content p {
@@ -967,7 +963,6 @@ footer{
     
     .hero-content h1 {
         font-size: 2.5rem;
-        margin-top: -20%;
     }
     
     .hero-content p {
