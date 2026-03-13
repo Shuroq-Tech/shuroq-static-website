@@ -10,7 +10,7 @@
 
 body{
     font-family: "poppins", sans-serif;
-    background-color: #E4E6F4;
+     background: linear-gradient(135deg, #96C9E8, #5e91b1 100%);
     color: #333;
     line-height: 1.6;
     padding: 20px;
@@ -43,7 +43,7 @@ body{
     min-height: 60vh;
     display: flex;
     align-items: center;
-    background: linear-gradient(135deg, #f3f4f6 0%, #e0e7ff 100%);
+     background: linear-gradient(135deg, #8fc8eb, #74b6df 100%);
     padding-top: 80px;
     overflow: hidden;
     margin-top: -20px;
@@ -133,7 +133,7 @@ body{
 .agile-section,
 .process-automation-section {
     padding: 80px 20px;
-    background-color: #E4E6F4;
+     background: linear-gradient(135deg, #98c1da, #5f8aa5 100%);
     margin: 0 -20px;
 }
 
