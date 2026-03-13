@@ -14,7 +14,7 @@ body{
 
     font-family: "poppins", sans-serif;
 
-    background-color: #E4E6F4;
+    background: linear-gradient(135deg, #96C9E8, #5e91b1 100%);
 
     color: #333;
 
@@ -79,7 +79,7 @@ body{
 
     align-items: center;
 
-    background: linear-gradient(135deg, #e0e7ff 0%, #f3f4f6 100%);
+     background: linear-gradient(135deg, #96C9E8, #5e91b1 100%);
 
     padding-top: 80px;
 
@@ -253,7 +253,7 @@ body{
 
     padding: 80px 20px;
 
-    background-color: #E4E6F4;
+     background: linear-gradient(135deg, #75acce, #6994af 100%);
 
     margin: 0 -20px;
 
