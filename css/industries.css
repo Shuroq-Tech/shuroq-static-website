@@ -308,9 +308,21 @@ body{
     cursor: pointer;
 }
 
+.cta-button a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
 .cta-button:hover {
     transform: translateY(-2px);
     box-shadow: 0 10px 25px rgba(124, 58, 237, 0.3);
+}
+
+.cta-button:hover a {
+    color: white;
+    text-decoration: none;
 }
 
 /* Footer Styles */

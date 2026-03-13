@@ -15,7 +15,7 @@ body{
 
     font-family: "poppins", sans-serif;
 
-    background-color: #E4E6F4;
+    background-color: #96C9E8;
 
     color: #333;
 
@@ -45,7 +45,7 @@ body{
 
     align-items: center;
 
-    background: linear-gradient(135deg, #e0e7ff 0%, #f3f4f6 100%);
+    background: linear-gradient(135deg, #96C9E8, #5e91b1 100%);
 
     padding-top: 80px;
 
@@ -269,8 +269,8 @@ body{
 
 .company-overview {
 
-    background-color: #E4E6F4;
-
+    background-color:#96C9E8;
+    padding:20px;
     margin: 0 -20px;
 
     margin-bottom: 3rem;
@@ -361,9 +361,9 @@ body{
 
 .vision-section {
 
-    background-color: #E4E6F4;
-
-    margin: 0 -20px;
+    background-color: #7dbce6;
+    padding:30px;
+        margin: 0 -20px;
 
     margin-bottom: 3rem;
 

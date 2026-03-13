@@ -945,7 +945,7 @@ footer{
     .cta-content p {
         font-size: clamp(1rem, 2vw, 1.2rem);
     }
-}
+
 
 /* ================================
    RESPONSIVE - MOBILE

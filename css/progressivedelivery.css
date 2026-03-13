@@ -603,7 +603,7 @@ footer {
 .benefit-card:nth-child(1) { animation-delay: 0.1s; }
 .benefit-card:nth-child(2) { animation-delay: 0.2s; }
 .benefit-card:nth-child(3) { animation-delay: 0.3s; }
-}
+
 
 .canary-section .tech-tags span:hover {
     box-shadow: 0 5px 15px rgba(6, 182, 212, 0.3);
