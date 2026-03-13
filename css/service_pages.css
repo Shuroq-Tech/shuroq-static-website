@@ -84,9 +84,8 @@ body.prometheus-consulting .dropdown-menu {
 }
 
 .sre-consultancy .sp-btn.sp-btn-secondary {
-  background: transparent;
   border: 2px solid #059669;
-  color: #059669;
+  color: white;
 }
 
 .sre-consultancy .sp-btn.sp-btn-secondary:hover {
