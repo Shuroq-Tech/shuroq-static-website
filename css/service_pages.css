@@ -64,7 +64,9 @@ body.prometheus-consulting .dropdown-menu {
   
   border-radius:2%;
 }
-
+.sre-consultancy .sp-hero p{
+  color:white;
+}
 
 .sre-consultancy .sp-card:hover {
   transform: translateY(-4px);
@@ -742,3 +744,96 @@ body {
   }
 }
 
+.observability-devsecops-consult .sp-hero{
+ 
+  background: linear-gradient(135deg, #6f83bb 0%, #173774 50%, #515dbd 100%);
+  width:80%;
+  margin-left:12%;
+  padding:10px;
+  
+  border-radius:2%;
+
+}
+.observability-devsecops-consult .sp-hero p{
+  color:#fff;
+}
+.cloud-native-product-development .sp-hero p{
+  color:#fff;
+}
+.linkerd-consulting .sp-hero{
+ 
+  background: linear-gradient(135deg, #4c92bd 0%, #388fc5 50%, #515dbd 100%);
+  width:80%;
+  margin-left:12%;
+  padding:10px;
+  
+  border-radius:2%;
+
+}
+.linkerd-consulting .sp-hero p{
+  color:#fff;
+}
+.linkerd-consulting .sp-hero h1{
+  color:#fff;
+  font-weight:700;
+}
+.terraform-consulting .sp-hero{
+  background: linear-gradient(135deg, #4c63bd 0%, #388fc5 50%, #515dbd 100%);
+  width:80%;
+  margin-left:12%;
+  padding:10px;
+  
+  border-radius:2%;
+}
+.terraform-consulting .sp-hero p{
+  color:#fff;
+}
+.terraform-consulting .sp-hero h1{
+  color:#fff;
+  font-weight:700;
+}
+.observability-adoption .sp-hero{
+  background: linear-gradient(135deg, #614cbd 0%, #383fc5 50%, #515dbd 100%);
+  width:80%;
+  margin-left:12%;
+  padding:10px;
+  
+  border-radius:2%;
+}
+.observability-adoption .sp-hero p{
+  color:#fff;
+}
+.observability-adoption .sp-hero h1{
+  color:#fff;
+  font-weight:700;
+}
+.grafana-consulting .sp-hero{
+  background: linear-gradient(135deg, #7f4cbd 0%, #3869c5 50%, #5177bd 100%);
+  width:80%;
+  margin-left:12%;
+  padding:10px;
+  
+  border-radius:2%;
+}
+.grafana-consulting .sp-hero p{
+  color:#fff;
+}
+.grafana-consulting .sp-hero h1{
+  color:#fff;
+  font-weight:700;
+}
+.prometheus-consulting .sp-hero{
+  background: linear-gradient(135deg, #bd4c72 0%, #6f47c4 50%, #6151bd 100%);
+  width:80%;
+  margin-left:12%;
+  padding:10px;
+  
+  border-radius:2%;
+}
+.prometheus-consulting .sp-hero p{
+  color:#fff;
+}
+.prometheus-consulting .sp-hero h1{
+  color:#fff;
+  font-weight:700;
+}
