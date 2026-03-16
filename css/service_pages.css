@@ -836,3 +836,7 @@ body {
   color:#fff;
   font-weight:700;
 }
+.terraform-consulting  .sp-btn-secondary:hover{
+  background-color: #1e6183;
+  color: white;
+}

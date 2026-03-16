@@ -268,22 +268,27 @@ main {
     line-height: 1.75;
 }
 .sw-cta .cta-btn {
-    display: block;
-    margin: 0 auto;
+    display: inline-block;
+    margin: 2rem auto 0;
+    width:190px;
     background: linear-gradient(135deg, #2563EB, #1D4ED8);
     color: #fff;
-    padding: 0.82rem 2rem;
-    border: none;
+    padding: 12px;
+    
     border-radius: 10px;
     font-size: 0.98rem;
     font-weight: 700;
     font-family: "Plus Jakarta Sans", "Manrope", sans-serif;
     cursor: pointer;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-decoration: none;
+    text-align: center;
+    display: block;
 }
 .sw-cta .cta-btn:hover {
     transform: translateY(-2px);
     box-shadow: 0 12px 24px rgba(29, 78, 216, 0.28);
+    text-decoration: none;
 }
 
 /* Responsive breakpoint */
@@ -301,6 +306,14 @@ main {
     .sw-process .container,
     .sw-expertise .container {
         max-width: 1200px;
+    }
+}
+
+/* iPad specific fix - reduce expertise grid columns */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .sw-expertise .expertise-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
     }
 }
 

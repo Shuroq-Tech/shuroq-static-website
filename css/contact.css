@@ -18,12 +18,100 @@ body{
 =============================== */
 
 .contact-hero {
-    background: linear-gradient(135deg, #759fb9, #4880a3 100%);
+   background: linear-gradient(135deg,#0388db 0%, #56a7da 100%);
     padding: 80px 20px;
     text-align: center;
     margin: 0 -20px 60px -20px;
     position: relative;
+    border-radius: 20px;
     overflow: hidden;
+}
+
+.hero-decoration {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.decoration-icon {
+    position: absolute;
+    color: rgba(255, 255, 255, 0.1);
+    font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+    .decoration-icon {
+        font-size: 1.5rem;
+    }
+    
+    .icon-1 {
+        top: 25%;
+        left: 5%;
+    }
+    
+    .icon-2 {
+        top: 20%;
+        right: 8%;
+    }
+    
+    .icon-3 {
+        bottom: 30%;
+        left: 5%;
+    }
+    
+    .icon-4 {
+        bottom: 25%;
+        right: 5%;
+    }
+}
+
+@media (max-width: 480px) {
+    .decoration-icon {
+        font-size: 1.2rem;
+    }
+    
+    .icon-1 {
+        top: 30%;
+        left: 3%;
+    }
+    
+    .icon-2 {
+        top: 25%;
+        right: 5%;
+    }
+    
+    .icon-3 {
+        bottom: 35%;
+        left: 3%;
+    }
+    
+    .icon-4 {
+        bottom: 30%;
+        right: 3%;
+    }
+}
+
+.icon-1 {
+    top: 20%;
+    left: 10%;
+}
+
+.icon-2 {
+    top: 15%;
+    right: 15%;
+}
+
+.icon-3 {
+    bottom: 25%;
+    left: 8%;
+}
+
+.icon-4 {
+    bottom: 20%;
+    right: 10%;
 }
 
 .contact-hero::before {
@@ -51,8 +139,8 @@ body{
 
 .company-tagline {
     font-size: clamp(2.5rem, 5vw, 4rem);
-    font-weight: 800;
-    color: white;
+    font-weight: 700;
+    color: rgb(217, 219, 221);
     margin-bottom: 1rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     animation: fadeInUp 1s ease;
@@ -440,6 +528,7 @@ body{
         gap: 40px;
         padding: 30px;
         margin: 0 10px;
+        
     }
     
     .contact-hero {

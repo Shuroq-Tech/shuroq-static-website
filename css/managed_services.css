@@ -7,7 +7,7 @@ body {
 }
 
 #main {
-  margin-top: 80px;
+  margin-top: 60px;
   font-family: Poppins, Arial, sans-serif;
   color: #10243d;
   background: #f9fbff;
@@ -294,7 +294,7 @@ body {
 
 .cta-box h2,
 .cta-box p {
-  color: #fff;
+  color: #242424;
   
 }
 
@@ -311,7 +311,8 @@ body {
 .cta-box .btn.primary.light {
   background: #fff;
   color: #1459d4;
-  border-color: #fff;
+  border: 2px solid;
+  border-color: #536aa0;
   box-shadow: none;
 }
 

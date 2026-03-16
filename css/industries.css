@@ -258,6 +258,8 @@ body{
     margin: 80px 20px;
     position: relative;
     overflow: hidden;
+      width:80%;
+    margin-left:12%;
 }
 
 .cta-section::before {
