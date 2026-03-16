@@ -1,4 +1,4 @@
-const translations = {
+﻿const translations = {
     en:{
          nav_aboutus:"About Us",
         nav_services:"Services",
@@ -25,7 +25,7 @@ const translations = {
             nav_contact_us: "Contact-Us",
             
             lang_english: "English",
-            lang_arabic: "العربية",
+            lang_arabic: "Ø§Ù„Ø¹Ø±Ø¨ÙŠØ©",
             
             resources_hero_title: "Resources & Insights",
             resources_hero_description: "Explore our knowledge hub featuring industry insights, technology trends, and real-world success stories",
@@ -50,17 +50,17 @@ const translations = {
             category6_description: "Objective evaluations of platforms, frameworks, and tools to help you make informed technology choices",
             
             blog_features_title: "Why Follow Shuroq's Blog:",
-            feature1_title: "📚 Expert-Authored Content",
+            feature1_title: "ðŸ“š Expert-Authored Content",
             feature1_description: "Every blog post is written or reviewed by certified professionals and industry veterans with years of hands-on experience",
-            feature2_title: "🎯 Actionable Insights",
+            feature2_title: "ðŸŽ¯ Actionable Insights",
             feature2_description: "Move beyond theory with practical recommendations, code snippets, architecture diagrams, and implementation roadmaps",
-            feature3_title: "🔄 Regular Updates",
+            feature3_title: "ðŸ”„ Regular Updates",
             feature3_description: "New content published weekly, covering the latest technology releases, industry news, and emerging trends",
-            feature4_title: "💡 Diverse Perspectives",
+            feature4_title: "ðŸ’¡ Diverse Perspectives",
             feature4_description: "Content from multiple team members including architects, developers, QA specialists, data scientists, and project managers",
-            feature5_title: "🌐 Real-World Application",
+            feature5_title: "ðŸŒ Real-World Application",
             feature5_description: "Insights drawn from actual client engagements and production environments across multiple industries",
-            feature6_title: "📊 Data-Driven Analysis",
+            feature6_title: "ðŸ“Š Data-Driven Analysis",
             feature6_description: "Research-backed articles featuring statistics, benchmarks, and performance metrics",
             
             blog_cta_title: "Stay Updated with Latest Insights",
@@ -70,39 +70,39 @@ const translations = {
             
             case_studies_title: "Case Studies & Success Stories",
             case_studies_description1: "Discover how Shuroq has helped organizations across industries overcome complex technology challenges, achieve digital transformation goals, and drive measurable business outcomes. Our case studies provide detailed, transparent accounts of real-world projects, showcasing the methodologies, technologies, and innovative solutions we've deployed to deliver exceptional results.",
-            case_studies_description2: "Each case study is more than just a success story—it's a comprehensive documentation of the journey from initial challenge identification through strategy development, implementation, and measurable outcomes. We believe in showcasing authentic experiences, including the obstacles we navigated, the decisions we made, and the lessons we learned along the way.",
+            case_studies_description2: "Each case study is more than just a success storyâ€”it's a comprehensive documentation of the journey from initial challenge identification through strategy development, implementation, and measurable outcomes. We believe in showcasing authentic experiences, including the obstacles we navigated, the decisions we made, and the lessons we learned along the way.",
             case_studies_description3: "These real-world examples demonstrate Shuroq's ability to understand unique business contexts, design tailored solutions, and execute complex technology initiatives that create lasting value. Whether you're facing similar challenges or simply want to understand how modern technology solutions are applied in practice, our case studies offer valuable insights and inspiration.",
             
             industry_case_studies_title: "Industry-Specific Case Studies:",
-            telecom_case_studies: "🔹 Telecom Sector",
+            telecom_case_studies: "ðŸ”¹ Telecom Sector",
             telecom_case1: "Network infrastructure modernization and cloud migration",
             telecom_case2: "Customer experience platform transformation",
             telecom_case3: "IoT implementation for connected devices",
             telecom_case4: "Real-time analytics for network optimization",
             telecom_case5: "5G readiness and implementation",
             
-            automotive_case_studies: "🔹 Automotive Industry",
+            automotive_case_studies: "ðŸ”¹ Automotive Industry",
             automotive_case1: "Connected vehicle platforms and telematics",
             automotive_case2: "Supply chain digitization and predictive maintenance",
             automotive_case3: "Manufacturing process automation",
             automotive_case4: "Quality control systems with AI/ML",
             automotive_case5: "Dealer management system modernization",
             
-            bfsi_case_studies: "🔹 BFSI Sector",
+            bfsi_case_studies: "ðŸ”¹ BFSI Sector",
             bfsi_case1: "Core banking system transformation",
             bfsi_case2: "Digital banking platform development",
             bfsi_case3: "Fraud detection using machine learning",
             bfsi_case4: "Regulatory compliance automation",
             bfsi_case5: "Customer 360 analytics implementation",
             
-            healthcare_case_studies: "🔹 Healthcare",
+            healthcare_case_studies: "ðŸ”¹ Healthcare",
             healthcare_case1: "Electronic Health Records (EHR) integration",
             healthcare_case2: "Telemedicine platform development",
             healthcare_case3: "Patient data analytics and population health management",
             healthcare_case4: "Healthcare IoT and remote monitoring",
             healthcare_case5: "HIPAA-compliant cloud infrastructure",
             
-            finance_case_studies: "🔹 Finance",
+            finance_case_studies: "ðŸ”¹ Finance",
             finance_case1: "Trading platform modernization",
             finance_case2: "Risk analytics and reporting systems",
             finance_case3: "Payment gateway integration",
@@ -124,19 +124,19 @@ const translations = {
             tech6_description: "Predictive models driving business decisions and customer personalization",
             
             measurable_impact_title: "Measurable Impact Across Our Case Studies:",
-            metric1_title: "⚡ Performance Improvements",
+            metric1_title: "âš¡ Performance Improvements",
             metric1_description: "Average 60-70% increase in system performance and response times",
-            metric2_title: "💰 Cost Optimization",
+            metric2_title: "ðŸ’° Cost Optimization",
             metric2_description: "30-50% reduction in infrastructure and operational costs",
-            metric3_title: "🚀 Time-to-Market",
+            metric3_title: "ðŸš€ Time-to-Market",
             metric3_description: "50-80% faster deployment cycles and feature releases",
-            metric4_title: "📈 Business Growth",
+            metric4_title: "ðŸ“ˆ Business Growth",
             metric4_description: "Double-digit revenue growth and market share expansion",
-            metric5_title: "✅ Quality Enhancement",
+            metric5_title: "âœ… Quality Enhancement",
             metric5_description: "90%+ reduction in production defects and incidents",
-            metric6_title: "👥 User Satisfaction",
+            metric6_title: "ðŸ‘¥ User Satisfaction",
             metric6_description: "Significant improvements in customer and employee experience scores",
-            metric7_title: "🔒 Security & Compliance",
+            metric7_title: "ðŸ”’ Security & Compliance",
             metric7_description: "100% adherence to regulatory requirements with enhanced security postures",
             
             case_study_format_title: "Each Case Study Includes:",
@@ -172,7 +172,7 @@ const translations = {
             cta_button: "Contact Us",
     },
     ar:{
-        nav_aboutus: "معلومات عنا",
+         nav_aboutus: "معلومات عنا",
         nav_services: "الخدمات",
         nav_industries: "الصناعات",
         nav_resources: "الموارد",
@@ -362,6 +362,15 @@ function changeLanguage(lang){
     document.body.classList.remove("rtl");
   }
 
+  // Update language button text
+  const langBtn = document.getElementById("langBtn");
+  if (langBtn) {
+    langBtn.textContent = lang === "ar" ? "🌐ar" : "🌐en";
+  }
+
+  // Store language preference
+  localStorage.setItem('preferredLanguage', lang);
+
   // Close dropdown after selection
   document.getElementById("langMenu").style.display = "none";
 }
@@ -369,3 +378,4 @@ function changeLanguage(lang){
 
 // Load English by default
 changeLanguage("en");
+

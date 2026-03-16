@@ -1,4 +1,4 @@
-const translations = {
+﻿const translations = {
   en: {
     nav_aboutus: "About Us",
     nav_services: "Services",
@@ -211,6 +211,15 @@ function changeLanguage(lang){
     document.body.classList.remove("rtl");
   }
 
+  // Update language button text
+  const langBtn = document.getElementById("langBtn");
+  if (langBtn) {
+    langBtn.textContent = lang === "ar" ? "🌐ar" : "🌐en";
+  }
+
+  // Store language preference
+  localStorage.setItem('preferredLanguage', lang);
+
   // Close dropdown after selection
   document.getElementById("langMenu").style.display = "none";
 }
@@ -218,3 +227,4 @@ function changeLanguage(lang){
 
 // Load English by default
 changeLanguage("en");
+

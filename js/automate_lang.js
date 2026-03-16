@@ -1,4 +1,4 @@
-const translations = {
+﻿const translations = {
     en:{
     nav_aboutus:"About Us",
     nav_services:"Services",
@@ -229,7 +229,7 @@ const translations = {
     
     },
     ar:{
-    nav_aboutus: "معلومات عنا",
+     nav_aboutus: "معلومات عنا",
     nav_services:"الخدمات",
     nav_industries:"الصناعات",
     nav_resources: "الموارد",
@@ -495,6 +495,15 @@ function changeLanguage(lang){
     document.body.classList.remove("rtl");
   }
 
+  // Update language button text
+  const langBtn = document.getElementById("langBtn");
+  if (langBtn) {
+    langBtn.textContent = lang === "ar" ? "🌐ar" : "🌐en";
+  }
+
+  // Store language preference
+  localStorage.setItem('preferredLanguage', lang);
+
   // Close dropdown after selection
   document.getElementById("langMenu").style.display = "none";
 }
@@ -528,7 +537,7 @@ changeLanguage("en");
       document.body.classList.toggle('nav-open', open);
       mobileMenuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
       mobileMenuBtn.classList.toggle('is-open', open);
-      mobileMenuBtn.textContent = open ? '✕' : '☰';
+      mobileMenuBtn.textContent = open ? 'âœ•' : 'â˜°';
 
       if (!open && servicesDropdown) {
         servicesDropdown.classList.remove('submenu-open');
@@ -588,7 +597,7 @@ document.addEventListener('click', (event) => {
 
   const clickedInsideNav = target.closest('nav');
 
-  // ✅ Close ONLY if clicked OUTSIDE nav
+  // âœ… Close ONLY if clicked OUTSIDE nav
   if (!clickedInsideNav) {
     setMenuOpen(false);
   }
@@ -622,3 +631,4 @@ document.addEventListener('click', (event) => {
     init();
   }
 })();
+
