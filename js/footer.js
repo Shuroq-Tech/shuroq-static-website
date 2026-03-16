@@ -6,26 +6,26 @@
 // Footer Links Data Structure
 const footerData = {
     company: [
-        { text: 'About Us', href: 'aboutus.html', icon: 'fas fa-info-circle' },
-        { text: 'The Shuroq Way', href: 'shuroq_way.html', icon: 'fas fa-star' },
-        { text: 'Careers', href: '#', icon: 'fas fa-briefcase' }
+        { text: 'About Us', href: '/about/', icon: 'fas fa-info-circle' },
+        { text: 'The Shuroq Way', href: '/shuroq-way/', icon: 'fas fa-star' },
+        { text: 'Careers', href: '/careers/', icon: 'fas fa-briefcase' }
     ],
     services: [
-        { text: 'All Services', href: 'services.html', icon: 'fas fa-th-large' },
-        { text: 'Cutting Edge', href: 'cuttingedge.html', icon: 'fas fa-rocket' },
-        { text: 'Assurance', href: 'assurance.html', icon: 'fas fa-shield-alt' },
-        { text: 'Automate', href: 'automate.html', icon: 'fas fa-cogs' },
-        { text: 'Vision', href: 'vision.html', icon: 'fas fa-chart-line' }
+        { text: 'All Services', href: '/services/', icon: 'fas fa-th-large' },
+        { text: 'Cutting Edge', href: '/cutting-edge', icon: 'fas fa-rocket' },
+        { text: 'Assurance', href: '/assurance/', icon: 'fas fa-shield-alt' },
+        { text: 'Automate', href: '/automate', icon: 'fas fa-cogs' },
+        { text: 'Vision', href: '/vision/', icon: 'fas fa-chart-line' }
     ],
     resources: [
-        { text: 'Blogs', href: 'blogs.html', icon: 'fas fa-newspaper' },
-        { text: 'Events', href: '#', icon: 'fas fa-calendar-days' },
-        { text: 'Skill Rubrics', href: '#', icon: 'fas fa-chart-column' },
-        { text: 'Webinars', href: '#', icon: 'fas fa-video' }
+        { text: 'Blogs', href: '/blogs/blogs.html', icon: 'fas fa-newspaper' },
+        { text: 'Events', href: '/events/', icon: 'fas fa-calendar-days' },
+        { text: 'Skill Rubrics', href: '/skill-rubrics/', icon: 'fas fa-chart-column' },
+        // { text: 'Webinars', href: '#', icon: 'fas fa-video' }
     ],
     contact: [
-        { text: 'Contact Us', href: 'contact.html', icon: 'fas fa-envelope' },
-        { text: 'Support', href: '#', icon: 'fas fa-headset' },
+        { text: 'Contact Us', href: '/contact/', icon: 'fas fa-envelope' },
+        { text: 'Support', href: '/contact/', icon: 'fas fa-headset' },
         { text: 'Locations', href: '#', icon: 'fas fa-map-marker-alt' }
     ]
 };
