@@ -45,7 +45,7 @@ body{
 
     align-items: center;
 
-    background: linear-gradient(135deg, #96C9E8, #5e91b1 100%);
+  background: linear-gradient(135deg,#96C9E8 0%, #6fb0d8 100%);
 
     padding-top: 80px;
 
@@ -426,6 +426,8 @@ body{
     margin: 60px -3px;
 
     padding: 60px 20px;
+    width:80%;
+    margin-left:12%;
 
 }
 
