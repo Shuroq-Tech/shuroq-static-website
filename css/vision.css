@@ -553,21 +553,6 @@ footer{
         margin-top:-2%;
     }
 
-    .nav-links {
-        gap: 1rem;
-        margin-left: 0;
-    }
-
-    .dropdown-menu {
-        position: fixed;
-        top: 60px;
-        left: 0;
-        right: 0;
-        width: 100%;
-        border-radius: 0;
-        margin-top: 0;
-    }
-
     .section-header {
         flex-direction: column;
         text-align: center;
@@ -582,10 +567,6 @@ footer{
 
     .cta-content h2 {
         font-size: 2rem;
-    }
-
-    .nav-open .nav-links {
-        display: flex;
     }
 
     .services-dropdown .dropdown-menu {
@@ -609,10 +590,6 @@ footer{
 }
 
 @media (max-width: 480px) {
-    .nav-links {
-        display: none;
-    }
-
     .mobile-menu-btn {
         display: block;
     }
@@ -672,24 +649,9 @@ footer{
         margin-left: 2.5%;
     }
     
-    .nav-links {
-        margin-left: auto;
-        gap: clamp(1rem, 2vw, 2rem);
-        justify-content: flex-end;
-    }
-    
     .logo {
         margin-left: 3%;
         margin-right: auto;
-    }
-    
-    /* Navigation adjustments for tablets/iPads */
-    .nav-links {
-        gap: clamp(1rem, 1.5vw, 2rem);
-    }
-    
-    .nav-links li a {
-        font-size: 0.85rem;
     }
     
     #contact-btn {
@@ -716,34 +678,6 @@ footer{
         margin-left: 12px;
     }
 
-    .nav-links {
-        position: fixed;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        width: min(320px, 86vw);
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 1.25rem;
-        background-color: #E4E6F4;
-        padding: 90px 24px 24px;
-        margin-left: 0;
-        transform: translateX(110%);
-        transition: transform 0.3s ease;
-        z-index: 1001;
-        box-shadow: -12px 0 30px rgba(0, 0, 0, 0.12);
-    }
-
-    .nav-links li a {
-        font-size: 1rem;
-        font-weight: 600;
-    }
-
-    .nav-links li,
-    #contact-btn {
-        width: 40%;
-    }
-
     #contact-btn {
         justify-content: flex-start;
         align-items: center;
@@ -755,18 +689,6 @@ footer{
         width: 100%;
     }
 
-    .nav-open .nav-links {
-        transform: translateX(0);
-    }
-
-    .nav-open::before {
-        content: '';
-        position: fixed;
-        inset: 0;
-        background: rgba(6, 7, 20, 0.35);
-        z-index: 1000;
-    }
-    
     .hero-content h1 {
         font-size: 2.5rem;
     }
@@ -817,11 +739,6 @@ footer{
 }
 
 @media (max-width: 480px) {
-    .nav-links {
-        width: min(300px, 90vw);
-        padding: 84px 20px 20px;
-    }
-    
     .hero-content h1 {
         font-size: 2rem;
     }

@@ -28,7 +28,7 @@
     view_larger_map: "View Larger Map",
     },
     ar:{
-     nav_aboutus: "معلومات عنا",
+    nav_aboutus: "معلومات عنا",
     nav_services: "الخدمات",
     nav_industries:"الصناعات",
     nav_resources: "الموارد",

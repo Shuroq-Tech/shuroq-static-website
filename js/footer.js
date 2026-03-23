@@ -160,45 +160,86 @@ function initializeFooter() {
     });
 }
 
+function getFooterAssetPath(assetName) {
+    const path = window.location.pathname.replace(/\\/g, '/');
+    const isRootPage =
+        path === '/' ||
+        /\/index\.html$/i.test(path) ||
+        /^[^/]+\.html$/i.test(path);
+
+    return isRootPage ? assetName : `../${assetName}`;
+}
+
+function updateFooterAssetPaths(footerElement) {
+    const logo = footerElement.querySelector('.footer-logo img');
+    if (logo) {
+        logo.src = getFooterAssetPath('image.png');
+    }
+}
+
+function ensureFooterContainer() {
+    let footerContainer = document.getElementById('footer-container');
+    if (footerContainer) {
+        footerContainer.classList.add('footer-host');
+        return footerContainer;
+    }
+
+    footerContainer = document.createElement('div');
+    footerContainer.id = 'footer-container';
+    footerContainer.className = 'footer-host';
+
+    const mainContent = document.querySelector('main') || document.getElementById('main');
+    if (mainContent && mainContent.parentNode) {
+        mainContent.insertAdjacentElement('afterend', footerContainer);
+    } else {
+        document.body.appendChild(footerContainer);
+    }
+
+    return footerContainer;
+}
+
+async function fetchFooterMarkup() {
+    const candidates = ['footer.html', '../footer.html', '../../footer.html'];
+
+    for (const path of candidates) {
+        try {
+            const response = await fetch(path);
+            if (response.ok) {
+                return await response.text();
+            }
+        } catch (error) {
+            // Try the next candidate path.
+        }
+    }
+
+    throw new Error('Unable to load footer.html from known paths');
+}
+
 /**
  * Load footer component into page
  */
-function loadFooterComponent() {
+async function loadFooterComponent() {
     // Check if footer already exists
     if (document.getElementById('dynamic-footer')) {
         initializeFooter();
         return;
     }
     
-    // Load footer HTML
-    fetch('../footer.html')
-        .then(response => response.text())
-        .then(html => {
-            // Append footer to footer container instead of main
-            const tempDiv = document.createElement('div');
-            tempDiv.innerHTML = html;
-            const footer = tempDiv.querySelector('#dynamic-footer');
-            
-            if (footer) {
-                // Find footer container and append footer there
-                const footerContainer = document.getElementById('footer-container');
-                if (footerContainer) {
-                    footerContainer.appendChild(footer);
-                } else {
-                    // Fallback to main if container not found
-                    const mainContent = document.querySelector('main') || document.getElementById('main');
-                    if (mainContent) {
-                        mainContent.appendChild(footer);
-                    } else {
-                        document.body.appendChild(footer);
-                    }
-                }
-                initializeFooter();
-            }
-        })
-        .catch(error => {
-            console.error('Error loading footer:', error);
-        });
+    try {
+        const html = await fetchFooterMarkup();
+        const tempDiv = document.createElement('div');
+        tempDiv.innerHTML = html;
+        const footer = tempDiv.querySelector('#dynamic-footer');
+
+        if (footer) {
+            const footerContainer = ensureFooterContainer();
+            updateFooterAssetPaths(footer);
+            footerContainer.appendChild(footer);
+            initializeFooter();
+        }
+    } catch (error) {
+        console.error('Error loading footer:', error);
+    }
 }
 
 /**

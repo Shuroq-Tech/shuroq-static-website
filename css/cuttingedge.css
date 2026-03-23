@@ -1713,11 +1713,6 @@ footer{
 
 
 @media (max-width: 480px) {
-    .nav-links {
-        width: min(300px, 90vw);
-        padding: 84px 20px 20px;
-    }
-    
     .hero-content h1 {
         font-size: 2rem;
     }

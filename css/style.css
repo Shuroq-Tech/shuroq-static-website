@@ -53,7 +53,7 @@ p {
     align-items: center;
     padding-top: 80px;
     overflow: hidden;
-    background: url("../images/hero.png") center/cover no-repeat !important;
+    background:#7D52CC;
     width: 100%;
     max-width: 100%;
     box-sizing: border-box;
@@ -91,7 +91,7 @@ p {
 .floating-card {
     width: 320px;
     padding: 30px;
-    background: #ffffff;
+    background: #DF8AE1;
     border-radius: 16px;
     box-shadow: 0 20px 40px rgba(0,0,0,0.15);
     text-align: center;
@@ -1243,94 +1243,17 @@ footer{
 @media (max-width: 768px) {
     .nav-container {
         padding-left: 20px;
-       
     }
 
     .mobile-menu-btn {
         display: inline-flex;
         margin-left: 12px;
     }
-   
-    .nav-links {
-        position: fixed;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        width: min(350px, 86vw);
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 1.25rem;
-        background-color: #E4E6F4;
-        padding: 90px 24px 24px;
-        margin-left: 0;
-        transform: translateX(110%);
-        transition: transform 0.3s ease;
-        z-index: 1001;
-        box-shadow: -12px 0 30px rgba(0, 0, 0, 0.12);
-    }
-
-    .nav-links li a {
-        font-size: 1rem;
-        font-weight: 600;
-    }
-
-    .nav-links li,
-    #contact-btn {
-        width: 40%;
-    }
-
-    #contact-btn {
-        justify-content: flex-start;
-        align-items: center;
-        padding-left: 16px;
-        height: 46px;
-    }
-
-    #contact-btn a {
-        width: 100%;
-    }
-
-    .nav-open .nav-links {
-        transform: translateX(0);
-    }
-
-    .nav-open::before {
-        content: '';
-        position: fixed;
-        inset: 0;
-        background: rgba(6, 7, 20, 0.35);
-        z-index: 1000;
-    }
-
-    .services-dropdown .dropdown-menu {
-        position: static;
-        box-shadow: none;
-        opacity: 1;
-        visibility: visible;
-        transform: none;
-        margin-top: 0.5rem;
-        display: none;
-        width: 100%;
-        background: transparent;
-    }
-
-    .services-dropdown .dropdown-menu a {
-        padding-left: 32px;
-    }
-
-    .services-dropdown.submenu-open .dropdown-menu {
-        display: block;
-    }
-
-    .services-dropdown.submenu-open .services-link i {
-        transform: rotate(180deg);
-    }
 }
 
 @media (max-width: 480px) {
-    .nav-links {
-        width: min(350px, 90vw);
-        padding: 84px 20px 20px;
+    .hero-content h1 {
+        font-size: 2rem;
     }
     
     
@@ -2531,11 +2454,6 @@ footer{
         width:100%;
         font-size: 20px;
     }
-}
-
-/* Override Services dropdown width for index page */
-#main-nav .services-dropdown .dropdown-menu {
-    min-width: 280px !important;
 }
 
 /* Mobile Navigation - Increased spacing for index page */
