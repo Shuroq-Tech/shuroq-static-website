@@ -166,8 +166,8 @@ nav {
     width: 44px;
     height: 44px;
     border-radius: 10px;
-    background: rgba(59, 207, 230, 0.12);
-    border: 1px solid rgba(59, 207, 230, 0.4);
+    background: transparent;
+    border: none;
     font-size: 1.6rem;
     cursor: pointer;
     color: #111;
@@ -176,8 +176,8 @@ nav {
 }
 
 .mobile-menu-btn.is-open {
-    background: rgba(59, 207, 230, 0.2);
-    border-color: rgba(59, 207, 230, 0.7);
+    background: transparent;
+    border: none;
 }
 
 /* Company Dropdown Styles */
@@ -712,6 +712,207 @@ transform: translateY(0);
 
     #contact-btn:hover a {
         color: white !important;
+    }
+
+    /* Change main menu arrows to right arrows in mobile */
+    .nav-links .company-link .fa-chevron-down,
+    .nav-links .services-link .fa-chevron-down,
+    .nav-links .solutions-link .fa-chevron-down,
+    .nav-links .resources-link .fa-chevron-down {
+        transform: rotate(-90deg);
+        font-size: 10px;
+        margin-left: 5px;
+    }
+
+    /* Sub-menu styles for mobile */
+    .company-submenu,
+    .solutions-submenu,
+    .resources-submenu,
+    .services-submenu {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        animation: slideInRight 0.3s ease;
+        background-color: #F1F5F9;
+        overflow-y: auto;
+        max-height: calc(100vh - 160px);
+        scrollbar-width: thin;
+    }
+
+    /* Custom scrollbar styling for sub-menus */
+    .company-submenu::-webkit-scrollbar,
+    .solutions-submenu::-webkit-scrollbar,
+    .resources-submenu::-webkit-scrollbar,
+    .services-submenu::-webkit-scrollbar {
+        width: 4px;
+    }
+
+    .company-submenu::-webkit-scrollbar-track,
+    .solutions-submenu::-webkit-scrollbar-track,
+    .resources-submenu::-webkit-scrollbar-track,
+    .services-submenu::-webkit-scrollbar-track {
+        background: rgba(0, 0, 0, 0.1);
+        border-radius: 2px;
+    }
+
+    .company-submenu::-webkit-scrollbar-thumb,
+    .solutions-submenu::-webkit-scrollbar-thumb,
+    .resources-submenu::-webkit-scrollbar-thumb,
+    .services-submenu::-webkit-scrollbar-thumb {
+        background: rgba(59, 130, 246, 0.5);
+        border-radius: 2px;
+    }
+
+    .submenu-header {
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        gap: 15px;
+    }
+
+    .back-btn {
+        background: none;
+        border: none;
+        color: #3b82f6;
+        font-size: 1rem;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 8px 12px;
+        border-radius: 8px;
+        transition: background-color 0.3s ease;
+    }
+
+    .back-btn:hover {
+        background-color: rgba(59, 130, 246, 0.1);
+    }
+
+    .back-btn i {
+        font-size: 0.9rem;
+    }
+
+    .submenu-header h3 {
+        margin: 0;
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: #1f2937;
+    }
+
+    .submenu-items {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        padding-bottom: 30px;
+        gap: 15px;
+        overflow-y: visible;
+    }
+
+    .submenu-item {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        padding: 15px 20px;
+        text-decoration: none;
+        color: #374151;
+        border-radius: 12px;
+        transition: all 0.3s ease;
+        font-size: 1rem;
+    }
+
+    .submenu-item:hover {
+        background-color: rgba(59, 130, 246, 0.1);
+        color: #3b82f6;
+        transform: translateX(5px);
+    }
+
+    .submenu-item i {
+        font-size: 1.1rem;
+        width: 20px;
+        text-align: center;
+    }
+
+    /* Service category styling */
+    .submenu-category {
+        margin-bottom: 10px;
+    }
+
+    .submenu-category .submenu-item {
+        background-color: rgba(59, 130, 246, 0.05);
+        border-radius: 8px;
+        margin-bottom: 2px;
+    }
+
+    .submenu-category .submenu-item:hover {
+        background-color: rgba(59, 130, 246, 0.1);
+    }
+
+    .submenu-dropdown {
+        display: none;
+        margin-left: 20px;
+        margin-top: 5px;
+        padding-left: 15px;
+        border-left: 2px solid rgba(59, 130, 246, 0.2);
+        animation: slideDown 0.3s ease;
+    }
+
+    .submenu-dropdown.active {
+        display: block;
+    }
+
+    .submenu-dropdown .submenu-item {
+        padding: 10px 15px;
+        font-size: 0.9rem;
+        background: transparent;
+        border-radius: 6px;
+        margin-bottom: 2px;
+    }
+
+    .submenu-dropdown .submenu-item:hover {
+        background-color: rgba(59, 130, 246, 0.1);
+        transform: translateX(3px);
+    }
+
+    .submenu-dropdown .submenu-item i {
+        font-size: 0.9rem;
+        width: 18px;
+    }
+
+    /* Animation for dropdown */
+    @keyframes slideDown {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /* Animation for sub-menu slide-in */
+    @keyframes slideInRight {
+        from {
+            transform: translateX(100%);
+            opacity: 0;
+        }
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    /* Sub-menu active state */
+    .nav-links.submenu-active {
+        overflow: hidden;
     }
 
     .services-dropdown .dropdown-menu {
