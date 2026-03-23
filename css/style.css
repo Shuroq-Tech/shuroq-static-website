@@ -53,7 +53,7 @@ p {
     align-items: center;
     padding-top: 80px;
     overflow: hidden;
-    background:#7D52CC;
+    background: url("../images/hero.png") center/cover no-repeat !important;
     width: 100%;
     max-width: 100%;
     box-sizing: border-box;
@@ -91,7 +91,7 @@ p {
 .floating-card {
     width: 320px;
     padding: 30px;
-    background: #DF8AE1;
+    background: #ffffff;
     border-radius: 16px;
     box-shadow: 0 20px 40px rgba(0,0,0,0.15);
     text-align: center;
@@ -1252,6 +1252,10 @@ footer{
 }
 
 @media (max-width: 480px) {
+    .nav-links {
+        width: min(350px, 90vw);
+        padding: 84px 20px 20px;
+    }
     .hero-content h1 {
         font-size: 2rem;
     }
