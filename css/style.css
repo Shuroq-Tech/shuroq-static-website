@@ -7,7 +7,7 @@
 }
 body{
     font-family: "poppins", sans-serif;
-    background-color:#c4e5fa;
+    background-color:#ffffff;
     color: #333;
     line-height: 1.6;
     margin: 0;
@@ -327,7 +327,7 @@ p {
     margin-top: 2rem;
     width: 100%;
     min-height: 120vh;
-    background-color:#c4e5fa;
+    background-color:#ffffff;
    
 }
 
@@ -425,7 +425,7 @@ p {
 #third{
     width: 100%;
     min-height: 100vh;
-    background-color: #a8d0e9;
+    background-color: #ffffff;
 }
 .about{
     width: 89vw;
@@ -517,7 +517,7 @@ p {
 /* Vision & Mission Box Section */
 .vision-mission-section {
     padding: 80px 20px;
-    background: linear-gradient(135deg, #91c6e6 0%, #c4e5fa 100%);
+    background: linear-gradient(135deg, #ffffff 0%, #ffffff 100%);
     margin: 60px -20px;
 }
 
@@ -696,7 +696,7 @@ p {
 #fourth{
     width: 100%;
     height: auto;
-    background-color:#c4e5fa;
+    background-color:#ffffff;
     padding: 60px 20px;
 }
 #industries{
@@ -826,7 +826,7 @@ p {
 #different{
     width: 100%;
     min-height: 141vh;
-    background-color: #c4e5fa;
+    background-color: #ffffff;
     margin-left: -5vw;
     
     
@@ -953,7 +953,7 @@ p {
     padding: 60px 20px;
     margin-top: 5em;
     text-align: center;
-    background-color: #c4e5fa;
+    background-color: #ffffff;
 }
 
 #engagement_title h1 {
