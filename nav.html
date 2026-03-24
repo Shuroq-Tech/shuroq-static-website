@@ -19,11 +19,15 @@
             <li class="services-dropdown">
                 <a href="#" class="services-link" data-i18n="nav_services" aria-haspopup="true" aria-expanded="false">Services <i class="fas fa-chevron-down"></i></a>
                 <div class="dropdown-menu" role="menu">
-                    <a href="/services/" data-i18n="nav_allservices"><i class="fas fa-th-large"></i> All Services</a>
-                    <a href="/cutting-edge" data-i18n="nav_cuttingedge"><i class="fas fa-rocket"></i> Cutting Edge</a>
-                    <a href="/assurance/" data-i18n="nav_assurance"><i class="fas fa-shield-alt"></i> Assurance</a>
-                    <a href="/automate" data-i18n="nav_automate"><i class="fas fa-cogs"></i> Automate</a>
-                    <a href="/vision/" data-i18n="nav_vision"><i class="fas fa-chart-line"></i> Vision</a>
+                    <a href="/services/" class="has-submenu" data-i18n="nav_allservices"><i class="fas fa-th-large"></i> All Services <i class="fas fa-chevron-right submenu-arrow"></i></a>
+                    <div class="submenu">
+                        <a href="/services/" data-i18n="nav_cuttingedge"><i class="fas fa-rocket"></i> Services</a>
+                        <a href="/cutting-edge" data-i18n="nav_cuttingedge"><i class="fas fa-rocket"></i> Cutting Edge</a>
+                        <a href="/assurance/" data-i18n="nav_assurance"><i class="fas fa-shield-alt"></i> Assurance</a>
+                        <a href="/automate" data-i18n="nav_automate"><i class="fas fa-cogs"></i> Automate</a>
+                        <a href="/vision/" data-i18n="nav_vision"><i class="fas fa-chart-line"></i> Vision</a>
+                    </div>
+                    
                     <a href="#" class="has-submenu" data-i18n="nav_industries"><i class="fas fa-industry"></i> Industries <i class="fas fa-chevron-right submenu-arrow"></i></a>
                     <div class="submenu industries-submenu">
                         <a href="/industries/" data-i18n="nav_industries"><i class="fas fa-industry"></i> Industries</a>
@@ -85,7 +89,7 @@
             </li>
             <li id="contact-btn"><a href="/contact/" data-i18n="nav_contact">Contact-Us</a></li>
             <div class="lang-btn-container">
-                <button id="langBtn">🌐~en</button>
+                <button id="langBtn">🌐~EN</button>
                 <!-- Dropdown Menu -->
                 <div id="langMenu">
                     <div onclick="changeLanguage('en')">English</div>

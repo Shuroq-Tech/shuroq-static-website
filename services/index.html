@@ -169,135 +169,135 @@
   <!-- Directional Tilt Effect for Service Cards -->
   <script>
     // Directional tilt effect for service cards
-    document.addEventListener('DOMContentLoaded', function() {
+    // document.addEventListener('DOMContentLoaded', function() {
       // Only apply on desktop (not mobile)
-      if (window.innerWidth > 768) {
-        const serviceCards = document.querySelectorAll('.service-card');
+    //   if (window.innerWidth > 768) {
+    //     const serviceCards = document.querySelectorAll('.service-card');
         
-        serviceCards.forEach(card => {
-          let isHovering = false;
+    //     serviceCards.forEach(card => {
+    //       let isHovering = false;
           
-          // Mouse enter - start tracking
-          card.addEventListener('mouseenter', function() {
-            isHovering = true;
-            card.style.transition = 'transform 0.3s cubic-bezier(0.4, 0, 0.2, 1)';
-          });
+    //       // Mouse enter - start tracking
+    //       card.addEventListener('mouseenter', function() {
+    //         isHovering = true;
+    //         card.style.transition = 'transform 0.3s cubic-bezier(0.4, 0, 0.2, 1)';
+    //       });
           
-          // Mouse move - calculate tilt based on position
-          card.addEventListener('mousemove', function(e) {
-            if (!isHovering) return;
+    //       // Mouse move - calculate tilt based on position
+    //       card.addEventListener('mousemove', function(e) {
+    //         if (!isHovering) return;
             
-            const rect = card.getBoundingClientRect();
-            const cardCenterX = rect.left + rect.width / 2;
-            const mouseX = e.clientX;
+    //         const rect = card.getBoundingClientRect();
+    //         const cardCenterX = rect.left + rect.width / 2;
+    //         const mouseX = e.clientX;
             
-            // Calculate distance from center (-1 to 1)
-            const distanceFromCenter = (mouseX - cardCenterX) / (rect.width / 2);
+    //         // Calculate distance from center (-1 to 1)
+    //         const distanceFromCenter = (mouseX - cardCenterX) / (rect.width / 2);
             
-            // Clamp between -1 and 1
-            const clampedDistance = Math.max(-1, Math.min(1, distanceFromCenter));
+    //         // Clamp between -1 and 1
+    //         const clampedDistance = Math.max(-1, Math.min(1, distanceFromCenter));
             
-            // Calculate tilt angle (-5deg to 5deg)
-            const tiltAngle = clampedDistance * 5;
+    //         // Calculate tilt angle (-5deg to 5deg)
+    //         const tiltAngle = clampedDistance * 5;
             
-            // Apply tilt with existing hover effects
-            const currentTransform = card.style.transform || '';
-            const translateY = currentTransform.includes('translateY') ? 
-              currentTransform.match(/translateY\(([^)]+)\)/)?.[1] : '-8px';
+    //         // Apply tilt with existing hover effects
+    //         const currentTransform = card.style.transform || '';
+    //         const translateY = currentTransform.includes('translateY') ? 
+    //           currentTransform.match(/translateY\(([^)]+)\)/)?.[1] : '-8px';
             
-            // Get card type for specific effects
-            const cardClass = card.className.split(' ').find(cls => 
-              ['cutting-edge', 'assurance', 'automate', 'vision'].includes(cls)
-            );
+    //         // Get card type for specific effects
+    //         const cardClass = card.className.split(' ').find(cls => 
+    //           ['cutting-edge', 'assurance', 'automate', 'vision'].includes(cls)
+    //         );
             
-            let additionalTransform = '';
-            let scale = 1;
+    //         let additionalTransform = '';
+    //         let scale = 1;
             
-            switch(cardClass) {
-              case 'cutting-edge':
-                scale = 1.05;
-                break;
-              case 'assurance':
-                scale = 1.02;
-                additionalTransform = ' scale(1.02)';
-                break;
-              case 'automate':
-                additionalTransform = ' rotate(-1deg)';
-                break;
-              case 'vision':
-                scale = 1.02;
-                additionalTransform = ' scale(1.02)';
-                break;
-            }
+    //         switch(cardClass) {
+    //           case 'cutting-edge':
+    //             scale = 1.05;
+    //             break;
+    //           case 'assurance':
+    //             scale = 1.02;
+    //             additionalTransform = ' scale(1.02)';
+    //             break;
+    //           case 'automate':
+    //             additionalTransform = ' rotate(-1deg)';
+    //             break;
+    //           case 'vision':
+    //             scale = 1.02;
+    //             additionalTransform = ' scale(1.02)';
+    //             break;
+    //         }
             
-            card.style.transform = `translateY(${translateY}) rotate(${tiltAngle}deg) scale(${scale})${additionalTransform}`;
-          });
+    //         card.style.transform = `translateY(${translateY}) rotate(${tiltAngle}deg) scale(${scale})${additionalTransform}`;
+    //       });
           
-          // Mouse leave - animate back to center
-          card.addEventListener('mouseleave', function() {
-            isHovering = false;
+    //       // Mouse leave - animate back to center
+    //       card.addEventListener('mouseleave', function() {
+    //         isHovering = false;
             
-            // Get card type for reset animation
-            const cardClass = card.className.split(' ').find(cls => 
-              ['cutting-edge', 'assurance', 'automate', 'vision'].includes(cls)
-            );
+    //         // Get card type for reset animation
+    //         const cardClass = card.className.split(' ').find(cls => 
+    //           ['cutting-edge', 'assurance', 'automate', 'vision'].includes(cls)
+    //         );
             
-            let resetTransform = '';
+    //         let resetTransform = '';
             
-            switch(cardClass) {
-              case 'cutting-edge':
-                resetTransform = 'translateY(0) rotate(0) scale(1)';
-                break;
-              case 'assurance':
-                resetTransform = 'translateY(0) rotate(0) scale(1)';
-                break;
-              case 'automate':
-                resetTransform = 'translateY(0) rotate(0) scale(1)';
-                break;
-              case 'vision':
-                resetTransform = 'translateY(0) rotate(0) scale(1)';
-                break;
-              default:
-                resetTransform = 'translateY(0) rotate(0) scale(1)';
-            }
+    //         switch(cardClass) {
+    //           case 'cutting-edge':
+    //             resetTransform = 'translateY(0) rotate(0) scale(1)';
+    //             break;
+    //           case 'assurance':
+    //             resetTransform = 'translateY(0) rotate(0) scale(1)';
+    //             break;
+    //           case 'automate':
+    //             resetTransform = 'translateY(0) rotate(0) scale(1)';
+    //             break;
+    //           case 'vision':
+    //             resetTransform = 'translateY(0) rotate(0) scale(1)';
+    //             break;
+    //           default:
+    //             resetTransform = 'translateY(0) rotate(0) scale(1)';
+    //         }
             
-            card.style.transform = resetTransform;
+    //         card.style.transform = resetTransform;
             
-            // Remove transition after animation completes
-            setTimeout(() => {
-              if (!isHovering) {
-                card.style.transition = '';
-              }
-            }, 300);
-          });
-        });
-      }
-    });
+    //         // Remove transition after animation completes
+    //         setTimeout(() => {
+    //           if (!isHovering) {
+    //             card.style.transition = '';
+    //           }
+    //         }, 300);
+    //       });
+    //     });
+    //   }
+    // });
     
     // Handle window resize
-    window.addEventListener('resize', function() {
-      if (window.innerWidth <= 768) {
-        // Remove tilt effect on mobile
-        document.querySelectorAll('.service-card').forEach(card => {
-          card.style.transform = '';
-          card.style.transition = '';
-        });
-      }
-    });
-  </script>
+  //   window.addEventListener('resize', function() {
+  //     if (window.innerWidth <= 768) {
+  //       // Remove tilt effect on mobile
+  //       document.querySelectorAll('.service-card').forEach(card => {
+  //         card.style.transform = '';
+  //         card.style.transition = '';
+  //       });
+  //     }
+  //   });
+  // </script>
 
   <!-- Scroll Timeline API Fallback -->
   <script>
     // Check if Scroll Timeline API is supported
-    const supportsScrollTimeline = CSS.supports('animation-timeline', 'scroll()');
+    // const supportsScrollTimeline = CSS.supports('animation-timeline', 'scroll()');
     
-    if (!supportsScrollTimeline) {
-      // Fallback for browsers without Scroll Timeline API
-      const observerOptions = {
-        root: null,
-        rootMargin: '0px',
-        threshold: 0.1
-      };
+    // if (!supportsScrollTimeline) {
+    //   // Fallback for browsers without Scroll Timeline API
+    //   const observerOptions = {
+    //     root: null,
+    //     rootMargin: '0px',
+    //     threshold: 0.1
+    //   };
       
       const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
@@ -326,7 +326,7 @@
           progressBar.style.width = scrolled + '%';
         }
       });
-    }
+    
     
     // Add smooth scrolling for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {

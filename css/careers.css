@@ -2080,101 +2080,11 @@ footer {
 
 
 
+    .services-dropdown.submenu-open .dropdown-menu 
 
 
-    .services-dropdown .dropdown-menu {
 
-
-
-        position: static;
-
-
-
-        box-shadow: none;
-
-
-
-        opacity: 1;
-
-
-
-        visibility: visible;
-
-
-
-        transform: none;
-
-
-
-        margin-top: 0.5rem;
-
-
-
-        display: none;
-
-
-
-        width: 100%;
-
-
-
-        background: transparent;
-
-
-
-    }
-
-
-
-
-
-
-
-    .services-dropdown .dropdown-menu a {
-
-
-
-        padding-left: 32px;
-
-
-
-    }
-
-
-
-
-
-
-
-    .services-dropdown.submenu-open .dropdown-menu {
-
-
-
-        display: block;
-
-
-
-    }
-
-
-
-
-
-
-
-    .services-dropdown.submenu-open .services-link i {
-
-
-
-        transform: rotate(180deg);
-
-
-
-    }
-
-
-
-
+    .services-dropdown.submenu-open .services-link i 
 
 
 
@@ -2185,14 +2095,15 @@ footer {
     .process-steps {
 
 
-
-        grid-template-columns: 1fr;
+      
+        grid-template-columns:(1, 1fr); }   
 
 
 
     }
 
-
+    .benefits-grid,
+    .process-steps {
 
     /* Mobile Footer Styles */
 

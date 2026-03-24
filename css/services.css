@@ -4,112 +4,6 @@
     box-sizing: border-box;
 }
 
-/* Scroll Timeline API Setup */
-@supports (animation-timeline: scroll()) {
-    html {
-        scroll-behavior: smooth;
-    }
-}
-
-/* Base Scroll Timelines */
-@scroll-timeline services-hero-timeline {
-    source: auto;
-    orientation: vertical;
-    scroll-offsets: 0%, 30%;
-}
-
-@scroll-timeline services-content-timeline {
-    source: auto;
-    orientation: vertical;
-    scroll-offsets: 20%, 80%;
-}
-
-@scroll-timeline services-cta-timeline {
-    source: auto;
-    orientation: vertical;
-    scroll-offsets: 70%, 100%;
-}
-
-/* Progress Indicator Timeline */
-@scroll-timeline services-progress-timeline {
-    source: auto;
-    orientation: vertical;
-    scroll-offsets: 0%, 100%;
-}
-
-/* Scroll Animation Keyframes */
-@keyframes services-hero-reveal {
-    0% {
-        opacity: 0;
-        transform: translateY(50px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes services-slide-in-left {
-    0% {
-        opacity: 0;
-        transform: translateX(-100px) rotate(-5deg);
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0) rotate(0);
-    }
-}
-
-@keyframes services-slide-in-right {
-    0% {
-        opacity: 0;
-        transform: translateX(100px) rotate(5deg);
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0) rotate(0);
-    }
-}
-
-@keyframes services-scale-in {
-    0% {
-        opacity: 0;
-        transform: scale(0.8);
-    }
-    100% {
-        opacity: 1;
-        transform: scale(1);
-    }
-}
-
-@keyframes services-float-animation {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-10px);
-    }
-}
-
-@keyframes services-progress-fill {
-    0% {
-        width: 0%;
-    }
-    100% {
-        width: 100%;
-    }
-}
-
-@keyframes services-stagger-fade-in {
-    0% {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
 
 /* Scroll Progress Indicator */
 .services-scroll-progress {
@@ -122,6 +16,7 @@
     transform-origin: left;
 }
 
+<<<<<<< HEAD
 @supports (animation-timeline: scroll()) {
     .services-scroll-progress {
         animation: services-progress-fill 1s linear;
@@ -288,6 +183,8 @@
         display: none;
     }
 }
+=======
+>>>>>>> 0b08b0ccef7ade8cfde3998974bd82408af09d4c
 
 body{
     font-family: "poppins", sans-serif;
@@ -309,7 +206,6 @@ body{
 
 
 /* Hero Section */
-
 .services-hero {
 
     position: relative;
@@ -333,6 +229,7 @@ body{
     margin-right: -20px;
 
 }
+
 
 
 
@@ -894,7 +791,7 @@ body{
 
 .cutting-edge:hover {
 
-    transform: translateY(-8px) rotate(2deg);
+    /*transform: translateY(-8px) rotate(2deg);*/
 
     box-shadow: 0 25px 50px rgba(59, 130, 246, 0.4);
 
@@ -904,11 +801,11 @@ body{
 
 .cutting-edge:hover .service-icon {
 
-    transform: scale(1.2) rotate(360deg);
+  /*  transform: scale(1.2) rotate(360deg);*/
 
     box-shadow: 0 20px 40px rgba(59, 130, 246, 0.3);
 
-    animation: services-float-animation 2s ease-in-out infinite;
+    /* animation: services-float-animation 2s ease-in-out infinite; */
 
 }
 
@@ -918,7 +815,7 @@ body{
 
 .assurance:hover {
 
-    transform: translateY(-8px) scale(1.05);
+  /*  transform: translateY(-8px) scale(1.05);*/
 
     box-shadow: 0 25px 50px rgba(16, 185, 129, 0.3);
 
@@ -928,7 +825,7 @@ body{
 
 .assurance:hover .service-icon {
 
-    transform: scale(1.15) rotate(180deg);
+   /* transform: scale(1.15) rotate(180deg);*/
 
     box-shadow: 0 20px 40px rgba(16, 185, 129, 0.25);
 
@@ -942,7 +839,7 @@ body{
 
 .automate:hover {
 
-    transform: translateY(-8px) rotate(-2deg);
+   /* transform: translateY(-8px) rotate(-2deg);*/
 
     box-shadow: 0 25px 50px rgba(245, 158, 11, 0.3);
 
@@ -952,7 +849,7 @@ body{
 
 .automate:hover .service-icon {
 
-    transform: scale(1.1) rotate(-360deg);
+   /* transform: scale(1.1) rotate(-360deg);*/
 
     box-shadow: 0 20px 40px rgba(245, 158, 11, 0.25);
 
@@ -966,7 +863,7 @@ body{
 
 .vision:hover {
 
-    transform: translateY(-8px) scale(1.05);
+    /*transform: translateY(-8px) scale(1.05);*/
 
     box-shadow: 0 25px 50px rgba(239, 68, 68, 0.3);
 
@@ -976,7 +873,7 @@ body{
 
 .vision:hover .service-icon {
 
-    transform: scale(1.1) rotate(90deg);
+    /*transform: scale(1.1) rotate(90deg);*/
 
     box-shadow: 0 20px 40px rgba(239, 68, 68, 0.25);
 
@@ -1442,8 +1339,8 @@ footer{
     
     /* Enhanced mobile hover effects for all service cards */
     .service-card:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+         transform: translateY(-2px);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     }
     
     .service-card:hover .service-icon {
@@ -1452,7 +1349,7 @@ footer{
     }
     
     .cutting-edge:hover {
-        transform: translateY(-2px) rotate(0.5deg);
+        transform: translateY(0) rotate(0);
         box-shadow: 0 10px 20px rgba(59, 130, 246, 0.15);
     }
     
@@ -1468,31 +1365,31 @@ footer{
     }
     
     .assurance:hover .service-icon {
-        transform: scale(1.05) rotate(45deg);
-        box-shadow: 0 8px 15px rgba(16, 185, 129, 0.15);
+       transform: scale(1.05) rotate(45deg);
+        box-shadow: 0 8px 15px rgba(91, 108, 102, 0.15);
         animation: services-float-animation 3.5s ease-in-out infinite;
     }
     
     .automate:hover {
-        transform: translateY(-2px) rotate(-0.5deg);
+       /* transform: translateY(-2px) rotate(-0.5deg); */
         box-shadow: 0 10px 20px rgba(245, 158, 11, 0.15);
     }
     
     .automate:hover .service-icon {
-        transform: scale(1.02) rotate(-90deg);
+        /* transform: scale(1.02) rotate(-90deg); */
         box-shadow: 0 8px 15px rgba(245, 158, 11, 0.15);
-        animation: services-float-animation 2.5s ease-in-out infinite;
+        /* animation: services-float-animation 2.5s ease-in-out infinite; */
     }
     
     .vision:hover {
-        transform: translateY(-2px) scale(1.01);
+        /* transform: translateY(-2px) scale(1.01); */
         box-shadow: 0 10px 20px rgba(239, 68, 68, 0.15);
     }
     
     .vision:hover .service-icon {
-        transform: scale(1.05) rotate(22.5deg);
+        /* transform: scale(1.05) rotate(22.5deg); */
         box-shadow: 0 8px 15px rgba(239, 68, 68, 0.15);
-        animation: services-float-animation 3s ease-in-out infinite;
+        /* animation: services-float-animation 3s ease-in-out infinite; */
     }
 
     

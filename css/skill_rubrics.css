@@ -21,6 +21,7 @@ body {
   font-family: Poppins, Arial, sans-serif;
   background: radial-gradient(circle at 10% 10%, #eef4ff 0%, #f6f8fc 45%, #eef4ff 100%);
   color: var(--sr-ink);
+  overflow-x: hidden;
 }
 
 #main {
