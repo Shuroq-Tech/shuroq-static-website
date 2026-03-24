@@ -19,7 +19,7 @@
 }
 
 /* Base Scroll Timelines */
-@scroll-timeline platformengineering-hero-timeline {
+/* @scroll-timeline platformengineering-hero-timeline {
     source: auto;
     orientation: vertical;
     scroll-offsets: 0%, 30%;
@@ -38,11 +38,11 @@
 }
 
 /* Progress Indicator Timeline */
-@scroll-timeline platformengineering-progress-timeline {
+/* @scroll-timeline platformengineering-progress-timeline {
     source: auto;
     orientation: vertical;
     scroll-offsets: 0%, 100%;
-}
+} */ 
 
 /* Scroll Animation Keyframes */
 @keyframes platformengineering-hero-reveal {

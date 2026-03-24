@@ -16,7 +16,6 @@
     transform-origin: left;
 }
 
-<<<<<<< HEAD
 @supports (animation-timeline: scroll()) {
     .services-scroll-progress {
         animation: services-progress-fill 1s linear;
@@ -183,9 +182,6 @@
         display: none;
     }
 }
-=======
->>>>>>> 0b08b0ccef7ade8cfde3998974bd82408af09d4c
-
 body{
     font-family: "poppins", sans-serif;
 
