@@ -636,7 +636,7 @@ body{
 
     box-shadow: 0 20px 40px rgba(59, 130, 246, 0.3);
 
-    animation: services-float-animation 2s ease-in-out infinite;
+    /* animation: services-float-animation 2s ease-in-out infinite; */
 
 }
 
@@ -1200,25 +1200,25 @@ footer{
     }
     
     .automate:hover {
-       transform: translateY(-2px) rotate(-0.5deg);
+       /* transform: translateY(-2px) rotate(-0.5deg); */
         box-shadow: 0 10px 20px rgba(245, 158, 11, 0.15);
     }
     
     .automate:hover .service-icon {
-        transform: scale(1.02) rotate(-90deg);
+        /* transform: scale(1.02) rotate(-90deg); */
         box-shadow: 0 8px 15px rgba(245, 158, 11, 0.15);
-        animation: services-float-animation 2.5s ease-in-out infinite;
+        /* animation: services-float-animation 2.5s ease-in-out infinite; */
     }
     
     .vision:hover {
-        transform: translateY(-2px) scale(1.01);
+        /* transform: translateY(-2px) scale(1.01); */
         box-shadow: 0 10px 20px rgba(239, 68, 68, 0.15);
     }
     
     .vision:hover .service-icon {
-        transform: scale(1.05) rotate(22.5deg);
+        /* transform: scale(1.05) rotate(22.5deg); */
         box-shadow: 0 8px 15px rgba(239, 68, 68, 0.15);
-        animation: services-float-animation 3s ease-in-out infinite;
+        /* animation: services-float-animation 3s ease-in-out infinite; */
     }
 
     

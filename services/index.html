@@ -169,7 +169,7 @@
   <!-- Directional Tilt Effect for Service Cards -->
   <script>
     // Directional tilt effect for service cards
-    document.addEventListener('DOMContentLoaded', function() {
+    // document.addEventListener('DOMContentLoaded', function() {
       // Only apply on desktop (not mobile)
       if (window.innerWidth > 768) {
         const serviceCards = document.querySelectorAll('.service-card');
@@ -289,15 +289,15 @@
   <!-- Scroll Timeline API Fallback -->
   <script>
     // Check if Scroll Timeline API is supported
-    const supportsScrollTimeline = CSS.supports('animation-timeline', 'scroll()');
+    // const supportsScrollTimeline = CSS.supports('animation-timeline', 'scroll()');
     
-    if (!supportsScrollTimeline) {
-      // Fallback for browsers without Scroll Timeline API
-      const observerOptions = {
-        root: null,
-        rootMargin: '0px',
-        threshold: 0.1
-      };
+    // if (!supportsScrollTimeline) {
+    //   // Fallback for browsers without Scroll Timeline API
+    //   const observerOptions = {
+    //     root: null,
+    //     rootMargin: '0px',
+    //     threshold: 0.1
+    //   };
       
       const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
