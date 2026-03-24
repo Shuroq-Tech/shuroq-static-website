@@ -1171,6 +1171,7 @@ body {
 
 
 
+
     border: 2px solid rgb(167, 15, 180);
 
 
@@ -1179,15 +1180,16 @@ body {
 
 
 
-    margin: 20px;
+    margin: 60px -3px;
 
 
 
     padding: 60px 20px;
 
-
+    width:80%;
 
     text-align: center;
+    margin-left:12%;
 
 
 

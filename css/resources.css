@@ -585,9 +585,11 @@ body {
     background: linear-gradient(45deg, #d2caec 33%, #FFFFFF 50%, #B497D6 80%);
     border: 2px solid rgb(167, 15, 180);
     border-radius: 30px;
-    margin: 20px;
+    margin: 60px -20;
     padding: 60px 20px;
     text-align: center;
+    width:80%;
+    margin-left:12%;
      
 }
 

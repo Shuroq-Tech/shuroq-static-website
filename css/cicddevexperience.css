@@ -339,13 +339,14 @@ body.cicd-dev-experience-page #nav-container .dropdown-menu {
 .cta-section {
     background: linear-gradient(135deg, #1E3A8A 0%, #2563EB 100%);
     color: white;
-    padding: 80px 0;
+    padding: 60px 20px;
     overflow-x: hidden;
-    border-radius: 20px;
-    margin: 60px 0;
+    border-radius: 30px;
+    margin: 60px -20px;
     width:80%;
     text-align: center;
     margin-left: 12%;
+    border:2px solid rgb(167,15,180);
 }
 
 .cta-content h2 {
