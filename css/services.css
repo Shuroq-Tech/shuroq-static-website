@@ -37,7 +37,6 @@ body{
 
 
 /* Hero Section */
-
 .services-hero {
 
     position: relative;
@@ -61,6 +60,7 @@ body{
     margin-right: -20px;
 
 }
+
 
 
 
@@ -622,7 +622,7 @@ body{
 
 .cutting-edge:hover {
 
-    transform: translateY(-8px) rotate(2deg);
+    /*transform: translateY(-8px) rotate(2deg);*/
 
     box-shadow: 0 25px 50px rgba(59, 130, 246, 0.4);
 
@@ -632,7 +632,7 @@ body{
 
 .cutting-edge:hover .service-icon {
 
-    transform: scale(1.2) rotate(360deg);
+  /*  transform: scale(1.2) rotate(360deg);*/
 
     box-shadow: 0 20px 40px rgba(59, 130, 246, 0.3);
 
@@ -646,7 +646,7 @@ body{
 
 .assurance:hover {
 
-    transform: translateY(-8px) scale(1.05);
+  /*  transform: translateY(-8px) scale(1.05);*/
 
     box-shadow: 0 25px 50px rgba(16, 185, 129, 0.3);
 
@@ -656,7 +656,7 @@ body{
 
 .assurance:hover .service-icon {
 
-    transform: scale(1.15) rotate(180deg);
+   /* transform: scale(1.15) rotate(180deg);*/
 
     box-shadow: 0 20px 40px rgba(16, 185, 129, 0.25);
 
@@ -670,7 +670,7 @@ body{
 
 .automate:hover {
 
-    transform: translateY(-8px) rotate(-2deg);
+   /* transform: translateY(-8px) rotate(-2deg);*/
 
     box-shadow: 0 25px 50px rgba(245, 158, 11, 0.3);
 
@@ -680,7 +680,7 @@ body{
 
 .automate:hover .service-icon {
 
-    transform: scale(1.1) rotate(-360deg);
+   /* transform: scale(1.1) rotate(-360deg);*/
 
     box-shadow: 0 20px 40px rgba(245, 158, 11, 0.25);
 
@@ -694,7 +694,7 @@ body{
 
 .vision:hover {
 
-    transform: translateY(-8px) scale(1.05);
+    /*transform: translateY(-8px) scale(1.05);*/
 
     box-shadow: 0 25px 50px rgba(239, 68, 68, 0.3);
 
@@ -704,7 +704,7 @@ body{
 
 .vision:hover .service-icon {
 
-    transform: scale(1.1) rotate(90deg);
+    /*transform: scale(1.1) rotate(90deg);*/
 
     box-shadow: 0 20px 40px rgba(239, 68, 68, 0.25);
 
@@ -1168,8 +1168,8 @@ footer{
     
     /* Enhanced mobile hover effects for all service cards */
     .service-card:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+         transform: translateY(-2px);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     }
     
     .service-card:hover .service-icon {
@@ -1178,7 +1178,7 @@ footer{
     }
     
     .cutting-edge:hover {
-        transform: translateY(-2px) rotate(0.5deg);
+        transform: translateY(0) rotate(0);
         box-shadow: 0 10px 20px rgba(59, 130, 246, 0.15);
     }
     
@@ -1194,13 +1194,13 @@ footer{
     }
     
     .assurance:hover .service-icon {
-        transform: scale(1.05) rotate(45deg);
-        box-shadow: 0 8px 15px rgba(16, 185, 129, 0.15);
+       transform: scale(1.05) rotate(45deg);
+        box-shadow: 0 8px 15px rgba(91, 108, 102, 0.15);
         animation: services-float-animation 3.5s ease-in-out infinite;
     }
     
     .automate:hover {
-        transform: translateY(-2px) rotate(-0.5deg);
+       transform: translateY(-2px) rotate(-0.5deg);
         box-shadow: 0 10px 20px rgba(245, 158, 11, 0.15);
     }
     
