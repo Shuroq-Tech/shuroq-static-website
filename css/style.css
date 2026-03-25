@@ -46,7 +46,7 @@ p {
     position: relative;
 }
 
-#hero, .hero {
+body.home #hero, body.home .hero {
     position: relative;
     
     min-height: 100vh;
