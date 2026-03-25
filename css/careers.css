@@ -111,7 +111,7 @@ body {
 
 
 
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #EEF4FF 0%, #FFFFFF 100%);
 
 
 
@@ -263,6 +263,9 @@ body {
 
 
 
+    color: #132C6F  ;
+
+
 }
 
 
@@ -297,6 +300,9 @@ body {
 
     animation: fadeInUp 1s ease 0.2s both;
 
+
+
+    color:#1E3A8A  ;
 
 
 }
@@ -415,7 +421,7 @@ body {
 
 
 
-    color: #1F2937;
+    color:  #070D5E;
 
 
 
@@ -423,7 +429,7 @@ body {
 
 
 
-    background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+    background: linear-gradient(135deg,#3b82f6 0%, #8b5cf6  100%);
 
 
 
@@ -543,7 +549,7 @@ body {
 
 
 
-    color: #4B5563;
+    color: #5A6473 ;
 
 
 
@@ -579,7 +585,7 @@ body {
 
 
 
-    background-color: white;
+    background-color: #FFFFFF;
 
 
 
@@ -635,7 +641,7 @@ body {
 
 
 
-    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    background: linear-gradient(135deg, #F4F8Ff 100%);
 
 
 
@@ -763,7 +769,7 @@ body {
 
 
 
-    color: #1F2937;
+    color:  #1E3A8A;
 
 
 
@@ -787,7 +793,7 @@ body {
 
 
 
-    color: #6B7280;
+    color: #5A6473;
 
 
 
@@ -811,7 +817,7 @@ body {
 
 
 
-    background-color: white;
+    background-color:#F6F9FF ;
 
 
 
@@ -824,6 +830,7 @@ body {
 
 
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    
 
 
 
@@ -943,7 +950,7 @@ body {
 
 
 
-    background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+    background: linear-gradient(135deg, #2563EB 100%);
 
 
 
@@ -951,7 +958,7 @@ body {
 
 
 
-    color: white;
+    color:  #FFFFFF;
 
 
 
@@ -987,7 +994,7 @@ body {
 
 
 
-    color: #1F2937;
+    color: #132C6F ;
 
 
 
@@ -1011,7 +1018,7 @@ body {
 
 
 
-    color: #6B7280;
+    color: #5A6473 ;
 
 
 
@@ -1051,7 +1058,7 @@ body {
 
 
 
-    background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+    background: linear-gradient(135deg,  #FFFFFF 100%);
 
 
 
@@ -1119,7 +1126,7 @@ body {
 
 
 
-    color: #1F2937;
+    color: #070D5E ;
 
 
 
@@ -1143,7 +1150,7 @@ body {
 
 
 
-    color: #4B5563;
+    color:  #5A6473;
 
 
 
@@ -1167,7 +1174,7 @@ body {
 
 
 
-    background: linear-gradient(45deg, #d2caec 33%, #FFFFFF 50%, #B497D6 80%);
+    background: linear-gradient(45deg, #2563EB);
 
 
 
@@ -1213,7 +1220,7 @@ body {
 
 
 
-    color: #000;
+    color: #FFFFFF;
 
 
 
@@ -1237,7 +1244,7 @@ body {
 
 
 
-    color: #000;
+    color: #FFFFFF;
 
 
 
@@ -1277,7 +1284,7 @@ body {
 
 
 
-    background-color: #9e65d4;
+    background-color: #FFFFFF;
 
 
 
@@ -1341,7 +1348,7 @@ body {
 
 
 
-    color: white;
+    color:#2563EB ;
 
 
 
