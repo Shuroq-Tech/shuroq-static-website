@@ -15,7 +15,7 @@ const footerData = {
         { text: 'Cutting Edge', href: '/cutting-edge', icon: 'fas fa-rocket' },
         { text: 'Assurance', href: '/assurance/', icon: 'fas fa-shield-alt' },
         { text: 'Automate', href: '/automate', icon: 'fas fa-cogs' },
-        { text: 'Vision', href: '/vision/', icon: 'fas fa-chart-line' }
+        { text: 'Data Analytics', href: '/Data Analytics', icon: 'fas fa-chart-line' }
     ],
     resources: [
         { text: 'Blogs', href: '/blogs/blogs.html', icon: 'fas fa-newspaper' },
