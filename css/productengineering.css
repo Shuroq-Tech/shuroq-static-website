@@ -18,31 +18,9 @@ body.product-engineering-page #nav-container .dropdown-menu {
     min-width: 200px !important; /* Match nav.css width */
 }
 
-/* Base Scroll Timelines */
-@scroll-timeline productengineering-hero-timeline {
-    source: auto;
-    orientation: vertical;
-    scroll-offsets: 0%, 30%;
-}
 
-@scroll-timeline productengineering-content-timeline {
-    source: auto;
-    orientation: vertical;
-    scroll-offsets: 20%, 80%;
-}
 
-@scroll-timeline productengineering-cta-timeline {
-    source: auto;
-    orientation: vertical;
-    scroll-offsets: 70%, 100%;
-}
 
-/* Progress Indicator Timeline */
-@scroll-timeline productengineering-progress-timeline {
-    source: auto;
-    orientation: vertical;
-    scroll-offsets: 0%, 100%;
-}
 
 /* Scroll Animation Keyframes */
 @keyframes productengineering-hero-reveal {
@@ -1169,4 +1147,5 @@ footer{
         margin-left: 0;
         flex-wrap: wrap;
     }
+}
 }
