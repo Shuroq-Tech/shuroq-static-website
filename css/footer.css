@@ -272,9 +272,9 @@
     #dynamic-footer {
         padding: 1.5rem 0 2rem;
         margin-top: 0;
-        height: 45vh;
+        height: 100%;
         min-height: 400px;
-        max-height: 600px;
+        max-height: 1029px;
         overflow: visible;
     }
     

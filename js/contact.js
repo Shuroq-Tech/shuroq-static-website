@@ -1,7 +1,6 @@
 // Clear form function
 function clearForm() {
     document.getElementById("contactForm").reset();
-    console.log('Form cleared');
 }
 
 // Input validation functions
@@ -21,14 +20,6 @@ function validateEmailInput(event) {
     const value = event.target.value;
     // Basic email validation - prevent invalid characters
     event.target.value = value.replace(/[^a-zA-Z0-9._%+-@]/g, '');
-    
-    // Reset helper text styling when user starts typing
-    const emailHelper = document.querySelector('#email + .helper-text');
-    if (emailHelper && value.includes('@')) {
-        emailHelper.style.fontWeight = '';
-        emailHelper.style.color = '';
-        emailHelper.textContent = '@ is must for mail';
-    }
 }
 
 // Add input event listeners when DOM is loaded
@@ -56,9 +47,6 @@ function submitForm() {
     const email = document.getElementById('email').value;
     const phone = document.getElementById('phone').value;
     const subject = document.getElementById('subject').value;
-    
-    // Get helper text elements
-    const emailHelper = document.querySelector('#email + .helper-text');
 
     // Validate form
     if (!name || !email || !phone || !subject) {
@@ -69,20 +57,7 @@ function submitForm() {
     // Check if email contains @ symbol
     if (!email.includes('@')) {
         alert('Failed to submit: @ is required in email');
-        // Make helper text bold and red
-        if (emailHelper) {
-            emailHelper.style.fontWeight = 'bold';
-            emailHelper.style.color = '#dc2626';
-            emailHelper.textContent = '@ is required for mail';
-        }
         return;
-    }
-    
-    // Reset helper text styling if validation passes
-    if (emailHelper) {
-        emailHelper.style.fontWeight = '';
-        emailHelper.style.color = '';
-        emailHelper.textContent = '@ is must for mail';
     }
 
     // Create form data object
@@ -94,26 +69,29 @@ function submitForm() {
         timestamp: new Date().toISOString()
     };
 
-    //TODO: Send to S3 endpoint
-    // Replace 'YOUR_S3_ENDPOINT_HERE' with your actual S3 endpoint
+    // Send to S3 endpoint
+    const apiUrl = 'https://8ba8wv1vc8.execute-api.us-east-1.amazonaws.com/dev/contactus';
     
-    fetch('https://8ba8wv1vc8.execute-api.us-east-1.amazonaws.com/dev/contactus', {
+    console.log('Submitting form to:', apiUrl);
+    console.log('Form data:', formData);
+    
+    fetch(apiUrl, {
         method: 'POST',
+        mode: 'no-cors',
         headers: {
             'Content-Type': 'application/json'
         },
         body: JSON.stringify(formData)
     })
-    .then(response => response.json())
-    .then(data => {
+    .then(response => {
+        console.log('Response received:', response);
+        // With no-cors mode, we can't read the response status or body
+        // But the request was sent successfully
         alert('Message sent successfully!');
         clearForm();
     })
     .catch(error => {
-        console.error('Error:', error);
-        alert('Failed to send message');
+        console.error('Form submission error:', error);
+        alert('Failed to send message. Please try again later.');
     });
-  
-    // For now, just show success message
-    clearForm();
 }

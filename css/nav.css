@@ -8,7 +8,7 @@ nav {
     left: 0;
     z-index: 1000;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    background-color: #F1F5F9;
+    background-color: #2161a0;
 }
 
 .nav-container {
@@ -22,6 +22,18 @@ nav {
 
 .logo {
     margin-left: 10%;
+    
+    padding: 3px 14px;
+  border-radius: 10px;
+  background: linear-gradient(
+    135deg,
+    rgba(255,255,255,0.25),
+    rgba(255,255,255,0.05)
+  );
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border: 1px solid rgba(255,255,255,0.2);
+
 }
 
 .logo a {
@@ -59,7 +71,7 @@ nav {
 }
 
 .nav-links {
-    color: black;
+    color: #ffff;
     list-style: none;
     display: flex;
     align-items: center;
@@ -71,15 +83,13 @@ nav {
 
 .nav-links li a {
     text-decoration: none;
-    color: #1F2933;
+    color: #ffff;
     font-weight: 600;
     transition: color 0.3s ease;
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
-.nav-links li a:hover {
-    color: #2563EB;
-}
+
 
 #contact-btn {
     width: 120px;
@@ -161,6 +171,19 @@ nav {
     cursor: pointer;
 }
 
+#langMenu div {
+    color: #000000 !important;
+    padding: 8px 0;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+#langMenu div:hover {
+    color: #3b82f6 !important;
+}
+
 .mobile-menu-btn {
     display: none;
     width: 44px;
@@ -233,7 +256,7 @@ nav {
     align-items: center;
     gap: 12px;
     padding: 12px 20px;
-    color: #374151;
+    color: #000000 !important;
     text-decoration: none;
     transition: all 0.3s ease;
     border-bottom: 1px solid #f0f0f0;
@@ -321,10 +344,10 @@ transform: translateY(0);
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
-    gap: 0.8rem;
     padding: 12px 20px;
-    color: #333;
+    color: #000000 !important;
     text-decoration: none;
+    font-size: 15px;
     transition: all 0.3s ease;
     border-bottom: 1px solid #f0f0f0;
     width: 320px;
@@ -403,8 +426,9 @@ transform: translateY(0);
     display: flex;
     align-items: center;
     padding: 12px 20px;
-    color: #374151;
+    color: #000000 !important;
     text-decoration: none;
+    font-size: 15px;
     transition: all 0.3s ease;
     border-bottom: 1px solid #f0f0f0;
 }
@@ -480,8 +504,9 @@ transform: translateY(0);
     display: flex;
     align-items: center;
     padding: 12px 20px;
-    color: #374151;
+    color: #000000 !important;
     text-decoration: none;
+    font-size: 15px;
     transition: all 0.3s ease;
     border-bottom: 1px solid #f0f0f0;
 }
@@ -555,13 +580,12 @@ transform: translateY(0);
     display: flex;
     align-items: center;
     padding: 12px 20px;
-    color: #374151;
+    color: #000000 !important;
     text-decoration: none;
+    font-size: 15px;
     transition: all 0.3s ease;
-    font-size: 14px;
-    background: transparent;
-    border-bottom: 1px solid #f3f4f6;
-    text-align: left !important;
+    border-bottom: 1px solid #f0f0f0;
+    background: white;
     justify-content: flex-start !important;
 }
 
@@ -626,7 +650,7 @@ transform: translateY(0);
         width: 100%;
         border-radius: 0;
         margin-top: 0;
-        background-color: #F1F5F9;
+        background-color: #4377ca;
         padding: 20px;
         transform: translateY(-100%);
         transition: transform 0.3s ease;
@@ -648,7 +672,7 @@ transform: translateY(0);
         flex-direction: column;
         align-items: center;
         gap: 2rem; /* Increased gap for better spacing */
-        background-color: #F1F5F9; /* Match nav background */
+        background-color: #7395cc; /* Match nav background */
         padding: 20px;
         width: 100%;
         transform: translateY(-100%);
@@ -739,7 +763,7 @@ transform: translateY(0);
         display: flex;
         flex-direction: column;
         animation: slideInRight 0.3s ease;
-        background-color: #F1F5F9;
+        background-color: #5882c6;
         overflow-y: auto;
         max-height: calc(100vh - 160px);
         scrollbar-width: thin;
@@ -780,7 +804,7 @@ transform: translateY(0);
     .back-btn {
         background: none;
         border: none;
-        color: #3b82f6;
+        color: #174fc8;
         font-size: 1rem;
         cursor: pointer;
         display: flex;
@@ -828,11 +852,7 @@ transform: translateY(0);
         font-size: 1rem;
     }
 
-    .submenu-item:hover {
-        background-color: rgba(59, 130, 246, 0.1);
-        color: #3b82f6;
-        transform: translateX(5px);
-    }
+    
 
     .submenu-item i {
         font-size: 1.1rem;
@@ -851,9 +871,7 @@ transform: translateY(0);
         margin-bottom: 2px;
     }
 
-    .submenu-category .submenu-item:hover {
-        background-color: rgba(59, 130, 246, 0.1);
-    }
+    
 
     .submenu-dropdown {
         display: none;
@@ -876,10 +894,7 @@ transform: translateY(0);
         margin-bottom: 2px;
     }
 
-    .submenu-dropdown .submenu-item:hover {
-        background-color: rgba(59, 130, 246, 0.1);
-        transform: translateX(3px);
-    }
+ 
 
     .submenu-dropdown .submenu-item i {
         font-size: 0.9rem;
@@ -1107,11 +1122,7 @@ transform: translateY(0);
         transition: all 0.3s ease !important;
     }
     
-    .services-dropdown .dropdown-menu .submenu a:hover {
-        background: rgba(59, 130, 246, 0.1) !important;
-        color: #3b82f6 !important;
-        transform: translateX(5px) !important;
-    }
+    
     
     .services-dropdown .dropdown-menu .submenu a i {
         margin-right: 8px !important;
@@ -1162,7 +1173,7 @@ transform: translateY(0);
         flex-direction: column;
         align-items: center;
         gap: 2rem;
-        background-color: #F1F5F9;
+        background-color: #7191c4;
         padding: 20px;
         width: 100%;
         transform: translateY(-100%);

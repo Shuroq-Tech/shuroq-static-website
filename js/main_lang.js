@@ -44,13 +44,13 @@ const translations = {
     nav_blogs: "Blogs",
     nav_events: "Events",
     nav_skillrubrics: "Skill Rubrics",
-    herotitle: "We provide the best digital solutions and services in ",
-    whatwedo: "What We Do",
+    herotitle: "Redefining Technology For Modern Enterprises ",
+    whatwedo: "Our Services",
     Delivery: "Delivering Trusted Technology Solutions for Modern Enterprises",
-    whatpara:"At Shuroq, we empower organizations to drive innovation by unifying expertise across AI, modern application platforms, and enterprise data ecosystems. Our holistic approach integrates intelligent technologies, scalable architectures, and analytics-led strategies to solve complex business problems and enable sustainable growth.",
+    whatpara:"At Shuroq, we empower organizations to drive innovation by unifying expertise across AI, modern application platforms, and enterprise data ecosystems. Our holistic approach integrates intelligent technologies, scalable architectures, and analytics-led strategies to solve complex business problems and enable sustainable growth. We deliver end-to-end solutions that transform how businesses operate, compete, and thrive in digital age.",
     vm_title: "Our Vision & Mission",
     servicedata:"Enterprise Resource Planning (ERP)",
-    servicedatapara:"Our approach reduces operational complexity, improves visibility across teams, and enables enterprises to scale efficiently with secure, future-ready systems.",
+    servicedatapara:"Our approach reduces operational complexity, improves visibility across teams, and enables enterprises to scale efficiently with secure, future-ready systems. ",
     servicepoint1:"Modular ERP solutions tailored to business needs",
     servicepoint2:"Cloud-native, scalable, and secure architecture",
     servicepoint3:"Real-time data insights and advanced reporting",
@@ -58,12 +58,10 @@ const translations = {
     aboutusheading:"About Us",
     Learnabout:"LEARN ABOUT SHUROQ",
     aboutuspara:"Shuroq is a service-based technology company delivering reliable, scalable, and future-ready digital solutions for enterprises and growing businesses. We specialize in DevOps, Cloud, AI, data, and digital engineering services that enable organizations to modernize platforms, automate operations, and accelerate innovation.",
-    aboutbtn:"Learn More",
     vision_title: "Our Vision",
     vision_description: "At Shuroq, our vision is to become a trusted engineering partner for ambitious startups and growing enterprises worldwide — enabling them to scale with confidence through resilient, intelligent, and future-ready technology foundations. We envision a digital ecosystem where businesses are empowered by infrastructure that is secure, automated, and built for long-term sustainability rather than short-term survival.",
     mission_title: "Our Mission",
     mission_description: "Our mission is to bridge the gap between complex engineering and practical execution by delivering scalable cloud infrastructure, robust DevOps practices, and high-performance platform engineering solutions. We work closely with founders and product teams to design, automate, and optimize systems that reduce operational overhead, enhance reliability, and accelerate innovation — transforming ideas into production-ready platforms that support sustainable growth.",
-
     industriesheading:"Industries We Serve",
     industry1:"Telecom Industry ",
     industry1_data:"We support telecom providers with scalable digital solutions that enhance network operations, optimize customer experiences, and enable data-driven decision-making",
@@ -74,7 +72,7 @@ const translations = {
     industry4:"Healthcare",
     industry4_data:"We enable healthcare organizations to improve patient outcomes and operational efficiency through secure, data-driven solutions. Our approach supports interoperability, digital workflows, analytics, and compliance with healthcare standards.",
     industry5:"Finance",
-    industry5_data:"We help financial enterprises modernize systems, streamline operations, and gain real-time insights through scalable and secure technology",
+    industry5_data:"We help financial enterprises modernize systems, streamline operations, and gain real-time insights through scalable and secure technology.",
     industrybtn:"More About Industries",
     whatdiffer:"What Makes Us Different",
     enterprise:"Enterprise Grade Delivery",
@@ -96,7 +94,44 @@ const translations = {
     consultingpara:"Expert guidance to help you make informed technology and business decisions.We assess, strategize, and recommend solutions aligned with your goals.",
     contacthead: "Move Forward with US",
     contactqoute: "From vision to execution — we deliver digital excellence",
-    contactbutton: "Contact Us"
+    contactbutton: "Contact Us",
+    
+    // Service Cards
+    service_automation_title: "Automation",
+    service_automation_desc: "Streamline workflows and eliminate manual processes using intelligent automation.",
+    service_analytics_title: "Data Analytics", 
+    service_analytics_desc: "Transform raw data into actionable insights to drive smarter business decisions.",
+    service_product_title: "Product Engineering",
+    service_product_desc: "Build scalable, high-performance digital products with modern engineering practices.",
+    service_devsecops_title: "DevSecOps",
+    service_devsecops_desc: "Integrate security seamlessly into your development and deployment lifecycle.",
+    service_cicd_title: "CI/CD Pipelines",
+    service_cicd_desc: "Accelerate delivery with automated pipelines and improved developer experience.",
+    service_sre_title: "Site Reliability Engineering",
+    service_sre_desc: "Ensure system reliability, scalability, and performance with expert SRE practices.",
+    service_know_more: "Know More →",
+    
+    // About Section
+    about_mission_title: "About Shuroq & Company Mission",
+    about_mission_desc: "We empower organizations with future-ready technology solutions and strategic insights to drive sustainable growth and innovation.",
+    about_values_title: "Our Values",
+    about_innovation_title: "Innovation",
+    about_innovation_desc: "Constantly pushing boundaries and exploring new technologies to deliver cutting-edge solutions.",
+    about_collaboration_title: "Collaboration",
+    about_collaboration_desc: "Building strong partnerships and working closely with clients to achieve shared success.",
+    about_integrity_title: "Integrity",
+    about_integrity_desc: "Upholding the highest ethical standards and transparency in all our actions and decisions.",
+    
+    // Expertise Section
+    expertise_title: "Our Expertise",
+    expertise_devops: "Devops Engineering",
+    expertise_devops_desc: "We implement robust DevOps practices and CI/CD pipelines to accelerate development cycles, improve deployment reliability, and foster collaboration between development and operations teams.",
+    expertise_ai: "AI & Data Infrastructure",
+    expertise_ai_desc: "We build scalable data pipelines and AI-powered solutions that transform raw data into actionable insights, enabling intelligent decision-making and predictive analytics.",
+    expertise_cloud: "Cloud Architecture",
+    expertise_cloud_desc: "We design and implement cloud-native architectures that ensure scalability, resilience, and optimal performance across major cloud platforms with cost-effective solutions.",
+    expertise_kubernetes: "Kubernetes and Containerization",
+    expertise_kubernetes_desc: "We orchestrate containerized applications using Kubernetes to achieve seamless deployment, scaling, and management of microservices with high availability and resource efficiency."
     
   },
   ar: {
@@ -144,7 +179,7 @@ const translations = {
     nav_blogs: "المدونات",
     nav_events: "الفعاليات",
     nav_skillrubrics: "معايير المهارات",
-    herotitle: "نحن نوفر أرقى الحلول والخدمات الرقمية في",
+    herotitle: "إعادة تعريف التكنولوجيا للمؤسسات الحديثة",
     
     whatwedo: "ما نقدمه",
     Delivery: "تقديم حلول تكنولوجية موثوقة للمؤسسات الحديثة",
@@ -197,7 +232,44 @@ const translations = {
     consultingpara:"إرشادات خبراء لمساعدتك في اتخاذ قرارات مستنيرة بشأن التكنولوجيا والأعمال. نقوم بالتقييم، ووضع الاستراتيجيات، والتوصية بحلول تتماشى مع أهدافك.",
     contacthead: "المضي قدمًا معنا",
     contactqoute: "من الرؤية إلى التنفيذ - نحن نقدم التميز الرقمي",
-    contactbutton: "اتصل بنا"
+    contactbutton: "اتصل بنا",
+    
+    // Service Cards
+    service_automation_title: "الأتمتة",
+    service_automation_desc: "تبسيط سير العمل وإزالة العمليات اليدوية باستخدام الأتمتة الذكية.",
+    service_analytics_title: "تحليل البيانات", 
+    service_analytics_desc: "تحويل البيانات الخام إلى رؤى قابلة للتنفيذ لدفع قرارات تجارية أكثر ذكاءً.",
+    service_product_title: "هندسة المنتجات",
+    service_product_desc: "بناء منتجات رقمية قابلة للتوسع وعالية الأداء بممارسات هندسية حديثة.",
+    service_devsecops_title: "DevSecOps",
+    service_devsecops_desc: "دمج الأمان بسلاسة في دورة حياة التطوير والنشر الخاصة بك.",
+    service_cicd_title: "خطوط أنابيب CI/CD",
+    service_cicd_desc: "تسريع التسليم باستخدام خطوط أنابيب مؤتمتة وتحسين تجربة المطور.",
+    service_sre_title: "هندسة موثوقية الموقع",
+    service_sre_desc: "ضمان موثوقية النظام وقابليته للتوسع والأداء بممارسات SRE الخبرية.",
+    service_know_more: "اعرف أكثر →",
+    
+    // About Section
+    about_mission_title: "معلومات عن شروق ومهمة الشركة",
+    about_mission_desc: "نمكّن المؤسسات بحلول تكنولوجية جاهزة للمستقبل ورؤى استراتيجية لدفع النمو المستدام والابتكار.",
+    about_values_title: "قيمنا",
+    about_innovation_title: "الابتكار",
+    about_innovation_desc: "دفع الحدود باستمرار واستكشاف تقنيات جديدة لتقديم حلول متطورة.",
+    about_collaboration_title: "التعاون",
+    about_collaboration_desc: "بناء شراكات قوية والعمل بشكل وثيق مع العملاء لتحقيق النجاح المشترك.",
+    about_integrity_title: "النزاهة",
+    about_integrity_desc: "الالتزام بأعلى المعايير الأخلاقية والشفافية في جميع إجراءاتنا وقراراتنا.",
+    
+    // Expertise Section
+    expertise_title: "خبراتنا",
+    expertise_devops: "هندسة DevOps",
+    expertise_devops_desc: "ننفذ ممارسات DevOps القوية وخطوط أنابيب CI/CD لتسريع دورات التطوير، وتحسين موثوقية النشر، وتعزيز التعاون بين فرق التطوير والعمليات.",
+    expertise_ai: "البنية التحتية للذكاء الاصطناعي والبيانات",
+    expertise_ai_desc: "نبني خطوط أنابيب بيانات قابلة للتوسع وحلول مدعومة بالذكاء الاصطناعي تحول البيانات الخام إلى رؤى قابلة للتنفيذ، مما يمكن من اتخاذ قرارات ذكية وتحليلات تنبؤية.",
+    expertise_cloud: "هندسة السحابة",
+    expertise_cloud_desc: "نصمم وننفذ هياكل سحابية أصلية تضمان قابلية التوسع والمرونة والأداء الأمثل عبر منصات السحابة الرئيسية بحلول فعالة من حيث التكلفة.",
+    expertise_kubernetes: "Kubernetes والتعبئة",
+    expertise_kubernetes_desc: "ننسق التطبيقات المعبأة باستخدام Kubernetes لتحقيق نشر سلس، وتوسع، وإدارة الخدمات المصغرة مع توافر عالي وكفاءة الموارد."
    
   }
 };
