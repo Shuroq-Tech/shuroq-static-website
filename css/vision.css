@@ -8,7 +8,7 @@
 
 body{
     font-family: "poppins", sans-serif;
-    background-color: #E4E6F4;
+    background: #F6F9FF;
     color: #333;
     line-height: 1.6;
     padding: 20px;
@@ -36,7 +36,7 @@ body{
     min-height: 60vh;
     display: flex;
     align-items: center;
-    background: linear-gradient(135deg, #e0f2fe 0%, #f0f9ff 100%);
+    background: linear-gradient(135deg, #EEF4FF, #FFFFFF);
     padding-top: 80px;
     overflow: hidden;
     margin-top: -20px;
@@ -74,17 +74,14 @@ body{
 .hero-content h1 {
     font-size: 3.5rem;
     font-weight: 800;
-    background: linear-gradient(135deg, #0ea5e9 0%, #6366f1 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #132C6F;
     margin-bottom: 1.5rem;
     animation: fadeInUp 1s ease;
 }
 
 .hero-content p {
     font-size: 1.3rem;
-    color: #666;
+    color: #5A6473;
     margin-bottom: 2rem;
     animation: fadeInUp 1s ease 0.2s both;
 }
@@ -102,11 +99,11 @@ body{
     align-items: center;
     gap: 0.6rem;
     font-size: 1rem;
-    color: #555;
+    color: #5A6473;
 }
 
 .highlight-item i {
-    color: #0ea5e9;
+    color: #2563EB;
     font-size: 1.2rem;
 }
 
@@ -131,15 +128,14 @@ body{
 .key-benefits-section,
 .approach-section {
     padding: 80px 20px;
-    background-color: #E4E6F4;
-    margin: 0 -20px;
+    background: #F4F8FF;
 }
 
 .business-intelligence-section,
 .advanced-analytics-section,
 .industry-applications-section,
 .approach-section {
-    background-color: #f8f9ff;
+    background-color: #FFFFFF;
 }
 
 .container {
@@ -157,7 +153,7 @@ body{
 .section-icon {
     width: 80px;
     height: 80px;
-    background: linear-gradient(135deg, #0ea5e9 0%, #6366f1 100%);
+    background: #2563EB;
     border-radius: 20px;
     display: flex;
     align-items: center;
@@ -173,13 +169,13 @@ body{
 .section-title h2 {
     font-size: 2.5rem;
     font-weight: 700;
-    color: #333;
+    color: #070D5E;
     margin-bottom: 0.5rem;
 }
 
 .section-title p {
     font-size: 1.2rem;
-    color: #666;
+    color: #6B7280;
     font-family: "inter", sans-serif;
 }
 
@@ -190,7 +186,7 @@ body{
 }
 
 .content-card {
-    background: white;
+    background: #FFFFFF;
     border-radius: 20px;
     padding: 2rem;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
@@ -199,13 +195,13 @@ body{
 .content-card h3 {
     font-size: 1.4rem;
     font-weight: 600;
+    color: #2563EB;
     margin-bottom: 1rem;
-    color: #333;
 }
 
 .content-card p {
     font-size: 1rem;
-    color: #666;
+    color: #5A6473;
     font-family: "inter", sans-serif;
 }
 
@@ -226,7 +222,7 @@ body{
     content: '▶';
     position: absolute;
     left: 0;
-    color: #0ea5e9;
+    color: #2563EB;
     font-size: 0.8rem;
     top: 0.25rem;
 }
@@ -238,7 +234,7 @@ body{
 }
 
 .metric-item {
-    background: #f8f9ff;
+    background: #F4F8FF;
     border-radius: 15px;
     padding: 1rem 1.2rem;
     text-align: center;
@@ -248,13 +244,13 @@ body{
 .metric-item h4 {
     font-size: 1.5rem;
     font-weight: 700;
-    color: #0ea5e9;
+    color: #2563EB;
     margin-bottom: 0.3rem;
 }
 
 .metric-item p {
     font-size: 0.85rem;
-    color: #666;
+    color: #6B7280;
 }
 
 .card-grid {
@@ -264,7 +260,7 @@ body{
 }
 
 .info-card {
-    background: white;
+    background: #FFFFFF;
     border-radius: 15px;
     padding: 1.8rem;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
@@ -279,12 +275,13 @@ body{
 .info-card h3 {
     font-size: 1.2rem;
     font-weight: 600;
+    color: #2563EB;
     margin-bottom: 0.6rem;
 }
 
 .info-card p {
     font-size: 0.95rem;
-    color: #666;
+    color: #5A6473;
     font-family: "inter", sans-serif;
 }
 
@@ -296,8 +293,8 @@ body{
 }
 
 .tech-tags span {
-    background: #f0f4ff;
-    color: #0ea5e9;
+    background: #F4F8FF;
+    color: #2563EB;
     padding: 0.4rem 0.9rem;
     border-radius: 999px;
     font-size: 0.85rem;
@@ -328,7 +325,7 @@ body{
 }
 
 .benefit-card {
-    background: white;
+    background: #FFFFFF;
     border-radius: 15px;
     padding: 2rem;
     text-align: center;
@@ -342,19 +339,20 @@ body{
 
 .benefit-card i {
     font-size: 2.2rem;
-    color: #0ea5e9;
+    color: #2563EB;
     margin-bottom: 1rem;
 }
 
 .benefit-card h3 {
     font-size: 1.15rem;
     font-weight: 600;
+    color: #2563EB;
     margin-bottom: 0.6rem;
 }
 
 .benefit-card p {
     font-size: 0.95rem;
-    color: #666;
+    color: #5A6473;
     font-family: "inter", sans-serif;
 }
 
@@ -365,7 +363,7 @@ body{
 }
 
 .approach-step {
-    background: white;
+    background: #FFFFFF;
     border-radius: 20px;
     padding: 2rem;
     display: flex;
@@ -378,7 +376,7 @@ body{
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background: linear-gradient(135deg, #0ea5e9 0%, #6366f1 100%);
+    background: #2563EB;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -388,19 +386,20 @@ body{
 
 .step-content h3 {
     font-size: 1.1rem;
-    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #2563EB;
 }
 
 .step-content p {
     font-size: 0.95rem;
-    color: #666;
+    color: #5A6473;
     font-family: "inter", sans-serif;
 }
 
 /* CTA Section */
 .cta-section {
-    background: linear-gradient(45deg, #d2caec 33%, #FFFFFF 50%, #B497D6 80%);
-    border: 2px solid rgb(167, 15, 180);
+    background: linear-gradient(135deg, #4FA3FF 0%, #2563EB 100%);
+    border: 2px solid #2563EB;
     border-radius: 30px;
     margin: 60px -20px;
     padding: 60px 20px;
@@ -412,13 +411,13 @@ body{
 .cta-content h2 {
     font-size: 2.5rem;
     font-weight: 700;
-    color: #000;
+    color: #FFFFFF;
     margin-bottom: 1.5rem;
 }
 
 .cta-content p {
     font-size: 1.2rem;
-    color: #666;
+    color: rgba(255, 255, 255, 0.85);
     margin-bottom: 2rem;
     font-family: "inter", sans-serif;
     font-weight: 400;
@@ -427,10 +426,10 @@ body{
 .cta-content button {
     width: 220px;
     height: 50px;
-    background-color: #9e65d4;
+    background-color: #FFFFFF;
     border: none;
     border-radius: 25px;
-    color: white;
+    color: #2563EB;
     font-size: 1.05rem;
     font-weight: 600;
     cursor: pointer;
@@ -439,20 +438,19 @@ body{
 }
 
 .cta-content button:hover {
-    background-color: #744ac2;
+    background-color: #F4F8FF;
     transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(158, 101, 212, 0.4);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
 }
 
 .cta-content button a {
-    color: rgb(242, 247, 248);
+    color: inherit;
     text-decoration: none;
 }
 
 .secondary-btn {
-    background-color: #9e65d4 !important;
-    border: 2px solid #9e65d4 !important;
-    color: #9e65d4 !important;
+    border: 2px solid #2563EB !important;
+    color: #2563EB !important;
 }
 
 .secondary-btn a {
@@ -460,7 +458,7 @@ body{
 }
 
 .secondary-btn:hover {
-    background-color: #9e65d4 !important;
+    background-color: #2563EB !important;
     color: white !important;
 }
 
