@@ -7,11 +7,11 @@
 :root {
   --sr-bg: #f6f8fc;
   --sr-surface: #ffffff;
-  --sr-ink: #11233d;
-  --sr-muted: #4b5f7a;
+  --sr-ink: #132C6F;
+  --sr-muted: #5A6473;
   --sr-brand: #1459d4;
   --sr-brand-dark: #0f43a3;
-  --sr-accent: #21c8a8;
+  --sr-accent: #1459da;
   --sr-border: #dce5f2;
   --sr-glow: rgba(20, 89, 212, 0.18);
   --sr-elevated: 0 18px 42px rgba(16, 38, 66, 0.12);
@@ -378,7 +378,7 @@ body {
 
 .sr-final-cta .sr-container {
   text-align: center;
-  background: linear-gradient(145deg, #0f4fc2 0%, #1e68e8 50%, #12bfa2 100%);
+    background: linear-gradient(145deg, #0f4fc2 0%, #1e68e8  100%) !important;
   color: #fff;
   box-shadow: 0 20px 44px rgba(16, 38, 66, 0.22);
 }
