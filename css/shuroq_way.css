@@ -11,7 +11,7 @@
 
 main {
     font-family: "Manrope", "Inter", sans-serif;
-    background-color: #c4e5fa;
+    /* background-color: #c4e5fa; */
 }
 
 .sw-hero h1,
@@ -256,7 +256,11 @@ main {
 /* cta section */
 .sw-cta {
     padding: 4rem 1rem;
+    text-align: center;
     background-color: #2563EB;
+    border-radius: 30px;
+    width: 80%;
+    margin-left: 12%;
 }
 .sw-cta h2 {
     text-align: center;

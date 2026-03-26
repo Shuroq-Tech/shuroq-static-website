@@ -8,7 +8,7 @@
 }
 body{
     font-family: "poppins", sans-serif;
-    background: linear-gradient(135deg, #96C9E8, #5e91b1 100%);
+    background: #F6F9FF;
     color: #333;
     line-height: 1.6;
     padding: 20px;
@@ -41,7 +41,7 @@ body{
     min-height: 60vh;
     display: flex;
     align-items: center;
-    background: linear-gradient(135deg, #96c6e6 0%, #f0f9ff 100%);
+    background: linear-gradient(135deg, #EEF4FF, #FFFFFF);
     padding-top: 80px;
     overflow: hidden;
     margin-top: -20px;
@@ -79,17 +79,14 @@ body{
 .hero-content h1 {
     font-size: 3.5rem;
     font-weight: 800;
-    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #132C6F;
     margin-bottom: 1.5rem;
     animation: fadeInUp 1s ease;
 }
 
 .hero-content p {
     font-size: 1.3rem;
-    color: #666;
+    color: #5A6473;
     margin-bottom: 2rem;
     animation: fadeInUp 1s ease 0.2s both;
 }
@@ -108,7 +105,7 @@ body{
 .stat h3 {
     font-size: 2.5rem;
     font-weight: 800;
-    color: #10b981;
+    color: #070D5E;
     margin-bottom: 0.5rem;
 }
 
@@ -136,7 +133,7 @@ body{
 .tools-frameworks,
 .benefits-section {
     padding: 80px 20px;
-    background: linear-gradient(135deg, #96C9E8, #5e91b1 100%);
+    background: #F4F8FF;
     margin: 0 -20px;
 }
 
@@ -145,7 +142,7 @@ body{
 .quality-processes:nth-child(even),
 .tools-frameworks:nth-child(even),
 .benefits-section:nth-child(even) {
-    background-color: #f8f9ff;
+    background-color: #FFFFFF;
 }
 
 .container {
@@ -163,7 +160,7 @@ body{
 .section-icon {
     width: 80px;
     height: 80px;
-    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    background: #070D5E;
     border-radius: 20px;
     display: flex;
     align-items: center;
@@ -179,13 +176,13 @@ body{
 .section-title h2 {
     font-size: 2.5rem;
     font-weight: 700;
-    color: #333;
+    color: #070D5E;
     margin-bottom: 0.5rem;
 }
 
 .section-title p {
     font-size: 1.2rem;
-    color: #666;
+    color: #6B7280;
     font-family: "inter", sans-serif;
 }
 
@@ -212,20 +209,20 @@ body{
 
 .philosophy-item i {
     font-size: 2.5rem;
-    color: #10b981;
+    color: #070D5E;
     margin-bottom: 1rem;
 }
 
 .philosophy-item h3 {
     font-size: 1.3rem;
     font-weight: 600;
-    color: #333;
+    color: #1E3A8A;
     margin-bottom: 1rem;
 }
 
 .philosophy-item p {
     font-size: 1rem;
-    color: #666;
+    color: #5A6473;
     font-family: "inter", sans-serif;
     line-height: 1.6;
 }
@@ -254,7 +251,7 @@ body{
     left: 0;
     width: 100%;
     height: 5px;
-    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    background: #2563EB;
 }
 
 .testing-service:hover {
@@ -265,7 +262,7 @@ body{
 .service-icon {
     width: 70px;
     height: 70px;
-    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    background: #070D5E;
     border-radius: 15px;
     display: flex;
     align-items: center;
@@ -281,13 +278,13 @@ body{
 .testing-service h3 {
     font-size: 1.5rem;
     font-weight: 600;
-    color: #333;
+    color: #1E3A8A;
     margin-bottom: 1rem;
 }
 
 .testing-service > p {
     font-size: 1.1rem;
-    color: #666;
+    color: #5A6473;
     font-family: "inter", sans-serif;
     margin-bottom: 1.5rem;
     line-height: 1.6;
@@ -300,7 +297,7 @@ body{
 
 .testing-service li {
     font-size: 0.95rem;
-    color: #555;
+    color: #5A6473;
     margin-bottom: 0.5rem;
     padding-left: 1.5rem;
     position: relative;
@@ -311,7 +308,7 @@ body{
     content: '▶';
     position: absolute;
     left: 0;
-    color: #10b981;
+    color: #070D5E;
     font-size: 0.8rem;
     top: 0.3rem;
 }
@@ -329,7 +326,7 @@ body{
     align-items: center;
     gap: 0.5rem;
     font-size: 0.85rem;
-    color: #10b981;
+    color: #070D5E;
     font-weight: 500;
 }
 
@@ -363,7 +360,7 @@ body{
 .step-number {
     width: 60px;
     height: 60px;
-    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    background: #070D5E;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -377,13 +374,13 @@ body{
 .step-content h3 {
     font-size: 1.3rem;
     font-weight: 600;
-    color: #333;
+    color: #1E3A8A;
     margin-bottom: 1rem;
 }
 
 .step-content > p {
     font-size: 1rem;
-    color: #666;
+    color: #5A6473;
     font-family: "inter", sans-serif;
     margin-bottom: 1rem;
     line-height: 1.6;
@@ -395,7 +392,7 @@ body{
 
 .step-content li {
     font-size: 0.9rem;
-    color: #555;
+    color: #5A6473;
     margin-bottom: 0.5rem;
     padding-left: 1.5rem;
     position: relative;
@@ -406,7 +403,7 @@ body{
     content: '▶';
     position: absolute;
     left: 0;
-    color: #10b981;
+    color: #070D5E;
     font-size: 0.8rem;
     top: 0.3rem;
 }
@@ -434,7 +431,7 @@ body{
 .tool-category h3 {
     font-size: 1.3rem;
     font-weight: 600;
-    color: #333;
+    color: #1E3A8A;
     margin-bottom: 1.5rem;
     text-align: center;
 }
@@ -450,19 +447,19 @@ body{
     align-items: center;
     gap: 1rem;
     padding: 0.8rem;
-    background: #f8f9ff;
+    background: #F4F8FF;
     border-radius: 10px;
     transition: all 0.3s ease;
 }
 
 .tool-item:hover {
-    background: #e8f5e8;
+    background: #EAF2FF;
     transform: translateX(5px);
 }
 
 .tool-item i {
     font-size: 1.5rem;
-    color: #10b981;
+    color: #070D5E;
     width: 30px;
     text-align: center;
 }
@@ -509,7 +506,7 @@ body{
 .benefit-icon {
     width: 80px;
     height: 80px;
-    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    background: #070D5E;
     border-radius: 20px;
     display: flex;
     align-items: center;
@@ -525,13 +522,13 @@ body{
 .benefit-card h3 {
     font-size: 1.3rem;
     font-weight: 600;
-    color: #333;
+    color: #1E3A8A;
     margin-bottom: 1rem;
 }
 
 .benefit-card p {
     font-size: 1rem;
-    color: #666;
+    color: #5A6473;
     font-family: "inter", sans-serif;
     line-height: 1.6;
     margin-bottom: 1.5rem;
@@ -549,21 +546,21 @@ body{
 .metric-value {
     font-size: 2rem;
     font-weight: 800;
-    color: #10b981;
+    color: #070D5E;
     margin-bottom: 0.5rem;
 }
 
 .metric-label {
     font-size: 0.85rem;
-    color: #666;
+    color: #6B7280;
     font-family: "inter", sans-serif;
     text-align: center;
 }
 
 /* CTA Section */
 .cta-section {
-    background: linear-gradient(45deg, #d2caec 33%, #FFFFFF 50%, #B497D6 80%);
-    border: 2px solid rgb(167, 15, 180);
+    background: #070D5E;
+    border: 2px solid #070D5E;
     border-radius: 30px;
     margin: 60px -20px;
     padding: 60px 20px;
@@ -575,13 +572,13 @@ body{
 .cta-content h2 {
     font-size: 2.5rem;
     font-weight: 700;
-    color: #000;
+    color: #FFFFFF;
     margin-bottom: 1.5rem;
 }
 
 .cta-content p {
     font-size: 1.2rem;
-    color: #666;
+    color: rgba(255, 255, 255, 0.85);
     margin-bottom: 2rem;
     font-family: "inter", sans-serif;
     font-weight: 400;
@@ -590,10 +587,10 @@ body{
 .cta-content button {
     width: 220px;
     height: 50px;
-    background-color: #9e65d4;
+    background-color: #FFFFFF;
     border: none;
     border-radius: 25px;
-    color: white;
+    color: #2563EB;
     font-size: 1.1rem;
     font-weight: 600;
     cursor: pointer;
@@ -602,19 +599,19 @@ body{
 }
 
 .cta-content button:hover {
-    background-color: #744ac2;
+    background-color: #F4F8FF;
     transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(158, 101, 212, 0.4);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
 }
 
 .cta-content button a {
-    color: white;
+    color: inherit;
     text-decoration: none;
 }
 
 .secondary-btn {
-    border: 2px solid #9e65d4 !important;
-    color: #9e65d4 !important;
+    border: 2px solid #2563EB !important;
+    color: #2563EB !important;
 }
 
 .secondary-btn:hover {

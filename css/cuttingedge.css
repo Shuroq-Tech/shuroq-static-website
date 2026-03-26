@@ -14,7 +14,7 @@ body{
 
     font-family: "poppins", sans-serif;
 
-    background: linear-gradient(135deg, #bddff4, #5e91b1 100%);
+    background: #F6F9FF;
 
     color: #333;
 
@@ -23,8 +23,6 @@ body{
     padding: 20px;
 
 }
-
-
 
 
 /* Breadcrumb */
@@ -40,7 +38,6 @@ body{
 }
 
 
-
 .breadcrumb a {
 
     color: #3b82f6;
@@ -50,7 +47,6 @@ body{
 }
 
 
-
 .breadcrumb a:hover {
 
     text-decoration: underline;
@@ -58,13 +54,11 @@ body{
 }
 
 
-
 .breadcrumb span {
 
     color: #666;
 
 }
-
 
 
 /* Hero Section */
@@ -79,7 +73,7 @@ body{
 
     align-items: center;
 
-    background: linear-gradient(135deg, #d7e4ec, #91cff6 100%);
+    background: linear-gradient(135deg, #EEF4FF, #FFFFFF);
 
     padding-top: 80px;
 
@@ -92,7 +86,6 @@ body{
     margin-right: -20px;
 
 }
-
 
 
 .cuttingedge-hero::before {
@@ -118,7 +111,6 @@ body{
 }
 
 
-
 @keyframes float {
 
     0%, 100% { transform: translate(0, 0) rotate(0deg); }
@@ -128,7 +120,6 @@ body{
     66% { transform: translate(-20px, 20px) rotate(240deg); }
 
 }
-
 
 
 .hero-content {
@@ -148,20 +139,13 @@ body{
 }
 
 
-
 .hero-content h1 {
 
     font-size: 3.5rem;
 
     font-weight: 800;
 
-    background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
-
-    -webkit-background-clip: text;
-
-    -webkit-text-fill-color: transparent;
-
-    background-clip: text;
+    color: #132C6F;
 
     margin-bottom: 1.5rem;
 
@@ -170,19 +154,17 @@ body{
 }
 
 
-
 .hero-content p {
 
     font-size: 1.3rem;
 
-    color: #666;
+    color: #5A6473;
 
     margin-bottom: 2rem;
 
     animation: fadeInUp 1s ease 0.2s both;
 
 }
-
 
 
 .hero-features {
@@ -198,7 +180,6 @@ body{
 }
 
 
-
 .feature {
 
     display: flex;
@@ -209,20 +190,18 @@ body{
 
     font-size: 1rem;
 
-    color: #555;
+    color: #5A6473;
 
 }
-
 
 
 .feature i {
 
-    color: #3b82f6;
+    color: #2563EB;
 
     font-size: 1.2rem;
 
 }
-
 
 
 @keyframes fadeInUp {
@@ -246,27 +225,24 @@ body{
 }
 
 
-
 /* Service Sections */
 
 .service-section {
 
     padding: 80px 20px;
 
-     background: linear-gradient(135deg, #75acce, #6994af 100%);
+    background: #F4F8FF;
 
     margin: 0 -20px;
 
 }
 
 
-
 .service-section:nth-child(even) {
 
-    background-color: #f8f9ff;
+    background-color: #FFFFFF;
 
 }
-
 
 
 .container {
@@ -276,7 +252,6 @@ body{
     margin: 0 auto;
 
 }
-
 
 
 .section-header {
@@ -292,14 +267,13 @@ body{
 }
 
 
-
 .section-icon {
 
     width: 80px;
 
     height: 80px;
 
-    background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+    background: #2563EB;
 
     border-radius: 20px;
 
@@ -314,7 +288,6 @@ body{
 }
 
 
-
 .section-icon i {
 
     font-size: 2rem;
@@ -324,38 +297,35 @@ body{
 }
 
 
-
 .section-title h2 {
 
     font-size: 2.5rem;
 
     font-weight: 700;
 
-    color: #333;
+    color: #070D5E;
 
     margin-bottom: 0.5rem;
 
 }
 
 
-
 .section-title p {
 
     font-size: 1.2rem;
 
-    color: #666;
+    color: #6B7280;
 
     font-family: "inter", sans-serif;
 
 }
 
 
-
 /* Service Content */
 
 .service-content {
 
-    background: white;
+    background: #FFFFFF;
 
     border-radius: 20px;
 
@@ -364,7 +334,6 @@ body{
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 
 }
-
 
 
 /* ERP Section Styles */
@@ -382,7 +351,6 @@ body{
 }
 
 
-
 .content-left h3,
 
 .content-right h3 {
@@ -391,12 +359,11 @@ body{
 
     font-weight: 600;
 
-    color: #333;
+    color: #1E3A8A;
 
     margin-bottom: 1rem;
 
 }
-
 
 
 .content-left p,
@@ -407,14 +374,13 @@ body{
 
     line-height: 1.7;
 
-    color: #555;
+    color: #5A6473;
 
     font-family: "inter", sans-serif;
 
     margin-bottom: 1.5rem;
 
 }
-
 
 
 .key-features h4,
@@ -425,12 +391,11 @@ body{
 
     font-weight: 600;
 
-    color: #333;
+    color: #2563EB;
 
     margin-bottom: 1rem;
 
 }
-
 
 
 .key-features ul {
@@ -440,14 +405,13 @@ body{
 }
 
 
-
 .key-features li {
 
     font-size: 1rem;
 
     line-height: 1.6;
 
-    color: #555;
+    color: #5A6473;
 
     margin-bottom: 0.8rem;
 
@@ -460,7 +424,6 @@ body{
 }
 
 
-
 .key-features li::before {
 
     content: '▶';
@@ -469,7 +432,7 @@ body{
 
     left: 0;
 
-    color: #3b82f6;
+    color: #2563EB;
 
     font-size: 0.8rem;
 
@@ -478,15 +441,13 @@ body{
 }
 
 
-
 .key-features strong {
 
-    color: #333;
+    color: #132C6F;
 
     font-weight: 600;
 
 }
-
 
 
 .industry-tags {
@@ -500,12 +461,11 @@ body{
 }
 
 
-
 .industry-tags span {
 
-    background: #f0f4ff;
+    background: #EAF2FF;
 
-    color: #3b82f6;
+    color: #2563EB;
 
     padding: 0.5rem 1rem;
 
@@ -518,18 +478,18 @@ body{
 }
 
 
-
 .benefits-h3 {
 
     font-size: 1.5rem;
 
     font-weight: 600;
 
-    color: #333;
+    color: #1E3A8A;
 
     margin-bottom: 2rem;
 
 }
+
 
 /* Benefits Grid */
 
@@ -540,19 +500,17 @@ body{
 }
 
 
-
 .benefits-grid h3 {
 
     font-size: 1.5rem;
 
     font-weight: 600;
 
-    color: #333;
+    color: #1E3A8A;
 
     margin-bottom: 2rem;
 
 }
-
 
 
 .benefits-grid {
@@ -566,10 +524,9 @@ body{
 }
 
 
-
 .benefit-card {
 
-    background: #f8f9ff;
+    background: #FFFFFF;
 
     padding: 2rem;
 
@@ -582,27 +539,24 @@ body{
 }
 
 
-
 .benefit-card:hover {
 
     transform: translateY(-5px);
 
-    box-shadow: 0 10px 25px rgba(59, 130, 246, 0.2);
+    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.2);
 
 }
-
 
 
 .benefit-card i {
 
     font-size: 2.5rem;
 
-    color: #3b82f6;
+    color: #2563EB;
 
     margin-bottom: 1rem;
 
 }
-
 
 
 .benefit-card h4 {
@@ -611,24 +565,22 @@ body{
 
     font-weight: 600;
 
-    color: #333;
+    color: #2563EB;
 
     margin-bottom: 0.8rem;
 
 }
 
 
-
 .benefit-card p {
 
     font-size: 0.95rem;
 
-    color: #666;
+    color: #6B7280;
 
     font-family: "inter", sans-serif;
 
 }
-
 
 
 /* Tech Stack */
@@ -639,12 +591,11 @@ body{
 
     font-weight: 600;
 
-    color: #333;
+    color: #1E3A8A;
 
     margin-bottom: 2rem;
 
 }
-
 
 
 .tech-logos {
@@ -658,10 +609,9 @@ body{
 }
 
 
-
 .tech-item {
 
-    background: #f8f9ff;
+    background: #FFFFFF;
 
     padding: 1.5rem;
 
@@ -674,27 +624,24 @@ body{
 }
 
 
-
 .tech-item:hover {
 
-    background: #e8ecff;
+    background: #EAF2FF;
 
     transform: translateY(-3px);
 
 }
 
 
-
 .tech-item i {
 
     font-size: 2rem;
 
-    color: #3b82f6;
+    color: #2563EB;
 
     margin-bottom: 0.5rem;
 
 }
-
 
 
 .tech-item span {
@@ -703,10 +650,9 @@ body{
 
     font-weight: 600;
 
-    color: #333;
+    color: #2563EB;
 
 }
-
 
 
 /* Product Engineering Styles */
@@ -717,12 +663,11 @@ body{
 
     font-weight: 600;
 
-    color: #333;
+    color: #1E3A8A;
 
     margin-bottom: 2rem;
 
 }
-
 
 
 .lifecycle-steps {
@@ -740,7 +685,6 @@ body{
 }
 
 
-
 .lifecycle-steps::before {
 
     content: '';
@@ -755,12 +699,11 @@ body{
 
     height: 2px;
 
-    background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+    background: linear-gradient(90deg, #2563EB, #070D5E);
 
     z-index: 0;
 
 }
-
 
 
 .step {
@@ -776,14 +719,13 @@ body{
 }
 
 
-
 .step-number {
 
     width: 60px;
 
     height: 60px;
 
-    background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+    background: #2563EB;
 
     border-radius: 50%;
 
@@ -804,31 +746,28 @@ body{
 }
 
 
-
 .step-content h4 {
 
     font-size: 1.1rem;
 
     font-weight: 600;
 
-    color: #333;
+    color: #2563EB;
 
     margin-bottom: 0.5rem;
 
 }
 
 
-
 .step-content p {
 
     font-size: 0.9rem;
 
-    color: #666;
+    color: #6B7280;
 
     font-family: "inter", sans-serif;
 
 }
-
 
 
 .tech-expertise {
@@ -842,10 +781,9 @@ body{
 }
 
 
-
 .expertise-item {
 
-    background: #f8f9ff;
+    background: #FFFFFF;
 
     padding: 2rem;
 
@@ -858,27 +796,24 @@ body{
 }
 
 
-
 .expertise-item:hover {
 
-    background: #e8ecff;
+    background: #EAF2FF;
 
     transform: translateY(-3px);
 
 }
 
 
-
 .expertise-item i {
 
     font-size: 2.5rem;
 
-    color: #3b82f6;
+    color: #2563EB;
 
     margin-bottom: 1rem;
 
 }
-
 
 
 .expertise-item h4 {
@@ -887,24 +822,22 @@ body{
 
     font-weight: 600;
 
-    color: #333;
+    color: #2563EB;
 
     margin-bottom: 0.8rem;
 
 }
 
 
-
 .expertise-item p {
 
     font-size: 0.95rem;
 
-    color: #666;
+    color: #6B7280;
 
     font-family: "inter", sans-serif;
 
 }
-
 
 
 .benefits-section h3 {
@@ -913,12 +846,11 @@ body{
 
     font-weight: 600;
 
-    color: #333;
+    color: #1E3A8A;
 
     margin-bottom: 2rem;
 
 }
-
 
 
 .benefits-list {
@@ -932,7 +864,6 @@ body{
 }
 
 
-
 .benefit-item {
 
     display: flex;
@@ -943,7 +874,7 @@ body{
 
     padding: 1.5rem;
 
-    background: #f8f9ff;
+    background: #FFFFFF;
 
     border-radius: 15px;
 
@@ -952,27 +883,24 @@ body{
 }
 
 
-
 .benefit-item:hover {
 
-    background: #e8ecff;
+    background: #EAF2FF;
 
     transform: translateX(5px);
 
 }
 
 
-
 .benefit-item i {
 
     font-size: 2rem;
 
-    color: #3b82f6;
+    color: #2563EB;
 
     margin-top: 0.2rem;
 
 }
-
 
 
 .benefit-item h4 {
@@ -981,24 +909,22 @@ body{
 
     font-weight: 600;
 
-    color: #333;
+    color: #2563EB;
 
     margin-bottom: 0.5rem;
 
 }
 
 
-
 .benefit-item p {
 
     font-size: 0.95rem;
 
-    color: #666;
+    color: #6B7280;
 
     font-family: "inter", sans-serif;
 
 }
-
 
 
 /* Digital Innovation Styles */
@@ -1009,12 +935,11 @@ body{
 
     font-weight: 600;
 
-    color: #333;
+    color: #1E3A8A;
 
     margin-bottom: 1rem;
 
 }
-
 
 
 .innovation-areas > p {
@@ -1023,14 +948,13 @@ body{
 
     line-height: 1.7;
 
-    color: #555;
+    color: #5A6473;
 
     font-family: "inter", sans-serif;
 
     margin-bottom: 2rem;
 
 }
-
 
 
 .innovation-grid {
@@ -1046,10 +970,9 @@ body{
 }
 
 
-
 .innovation-item {
 
-    background: #f8f9ff;
+    background: #FFFFFF;
 
     padding: 2rem;
 
@@ -1062,27 +985,24 @@ body{
 }
 
 
-
 .innovation-item:hover {
 
-    background: #e8ecff;
+    background: #EAF2FF;
 
     transform: translateY(-5px);
 
 }
 
 
-
 .innovation-item i {
 
     font-size: 2.5rem;
 
-    color: #3b82f6;
+    color: #2563EB;
 
     margin-bottom: 1rem;
 
 }
-
 
 
 .innovation-item h4 {
@@ -1091,24 +1011,22 @@ body{
 
     font-weight: 600;
 
-    color: #333;
+    color: #2563EB;
 
     margin-bottom: 0.8rem;
 
 }
 
 
-
 .innovation-item p {
 
     font-size: 0.95rem;
 
-    color: #666;
+    color: #6B7280;
 
     font-family: "inter", sans-serif;
 
 }
-
 
 
 .benefits-cards {
@@ -1122,7 +1040,6 @@ body{
 }
 
 
-
 /* Cloud Services Styles */
 
 .cloud-strategies h3 {
@@ -1131,12 +1048,11 @@ body{
 
     font-weight: 600;
 
-    color: #333;
+    color: #1E3A8A;
 
     margin-bottom: 1rem;
 
 }
-
 
 
 .cloud-strategies > p {
@@ -1145,14 +1061,13 @@ body{
 
     line-height: 1.7;
 
-    color: #555;
+    color: #5A6473;
 
     font-family: "inter", sans-serif;
 
     margin-bottom: 2rem;
 
 }
-
 
 
 .migration-types {
@@ -1168,10 +1083,9 @@ body{
 }
 
 
-
 .migration-type {
 
-    background: #f8f9ff;
+    background: #FFFFFF;
 
     padding: 2rem;
 
@@ -1184,27 +1098,24 @@ body{
 }
 
 
-
 .migration-type:hover {
 
-    background: #e8ecff;
+    background: #EAF2FF;
 
     transform: translateY(-3px);
 
 }
 
 
-
 .migration-type i {
 
     font-size: 2.5rem;
 
-    color: #3b82f6;
+    color: #2563EB;
 
     margin-bottom: 1rem;
 
 }
-
 
 
 .migration-type h4 {
@@ -1213,24 +1124,22 @@ body{
 
     font-weight: 600;
 
-    color: #333;
+    color: #2563EB;
 
     margin-bottom: 0.8rem;
 
 }
 
 
-
 .migration-type p {
 
     font-size: 0.95rem;
 
-    color: #666;
+    color: #6B7280;
 
     font-family: "inter", sans-serif;
 
 }
-
 
 
 .cloud-service-items {
@@ -1246,10 +1155,9 @@ body{
 }
 
 
-
 .cloud-service {
 
-    background: #f8f9ff;
+    background: #FFFFFF;
 
     padding: 2rem;
 
@@ -1262,27 +1170,24 @@ body{
 }
 
 
-
 .cloud-service:hover {
 
-    background: #e8ecff;
+    background: #EAF2FF;
 
     transform: translateY(-3px);
 
 }
 
 
-
 .cloud-service i {
 
     font-size: 2.5rem;
 
-    color: #3b82f6;
+    color: #2563EB;
 
     margin-bottom: 1rem;
 
 }
-
 
 
 .cloud-service h4 {
@@ -1291,24 +1196,22 @@ body{
 
     font-weight: 600;
 
-    color: #333;
+    color: #2563EB;
 
     margin-bottom: 0.8rem;
 
 }
 
 
-
 .cloud-service p {
 
     font-size: 0.95rem;
 
-    color: #666;
+    color: #6B7280;
 
     font-family: "inter", sans-serif;
 
 }
-
 
 
 .benefits-highlight {
@@ -1322,10 +1225,9 @@ body{
 }
 
 
-
 .benefit-stat {
 
-    background: linear-gradient(135deg, #f8f9ff 0%, #e8ecff 100%);
+    background: linear-gradient(135deg, #F4F8FF 0%, #EAF2FF 100%);
 
     padding: 2rem;
 
@@ -1338,15 +1240,13 @@ body{
 }
 
 
-
 .benefit-stat:hover {
 
     transform: translateY(-3px);
 
-    box-shadow: 0 10px 25px rgba(59, 130, 246, 0.2);
+    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.2);
 
 }
-
 
 
 .benefit-stat h4 {
@@ -1355,33 +1255,31 @@ body{
 
     font-weight: 600;
 
-    color: #3b82f6;
+    color: #2563EB;
 
     margin-bottom: 0.8rem;
 
 }
 
 
-
 .benefit-stat p {
 
     font-size: 0.95rem;
 
-    color: #666;
+    color: #6B7280;
 
     font-family: "inter", sans-serif;
 
 }
 
 
-
 /* CTA Section */
 
 .cta-section {
 
-    background: linear-gradient(45deg, #d2caec 33%, #FFFFFF 50%, #B497D6 80%);
+    background: linear-gradient(135deg, #2161a0 0%, #2563EB 100%);
 
-    border: 2px solid rgb(167, 15, 180);
+    border: 2px solid #2563EB;
 
     border-radius: 30px;
 
@@ -1390,11 +1288,12 @@ body{
     padding: 60px 20px;
 
     text-align: center;
-    width:80%;
-    margin-left:12%;
+
+    width: 80%;
+
+    margin-left: 12%;
 
 }
-
 
 
 .cta-content h2 {
@@ -1403,19 +1302,18 @@ body{
 
     font-weight: 700;
 
-    color: #000;
+    color: #FFFFFF;
 
     margin-bottom: 1.5rem;
 
 }
 
 
-
 .cta-content p {
 
     font-size: 1.2rem;
 
-    color: #666;
+    color: rgba(255, 255, 255, 0.85);
 
     margin-bottom: 2rem;
 
@@ -1426,20 +1324,19 @@ body{
 }
 
 
-
 .cta-content button {
 
     width: 200px;
 
     height: 50px;
 
-    background-color: #9e65d4;
+    background-color: #FFFFFF;
 
     border: none;
 
     border-radius: 25px;
 
-    color: white;
+    color: #2563EB;
 
     font-size: 1.1rem;
 
@@ -1454,44 +1351,39 @@ body{
 }
 
 
-
 .cta-content button:hover {
 
-    background-color: #744ac2;
+    background-color: #F4F8FF;
 
     transform: translateY(-2px);
 
-    box-shadow: 0 8px 20px rgba(158, 101, 212, 0.4);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
 
 }
 
 
-
 .cta-content button a {
 
-    color: white;
+    color: inherit;
 
     text-decoration: none;
 
 }
 
 
-
 .secondary-btn {
 
-    border: 2px solid #9e65d4 !important;
+    border: 2px solid #2563EB !important;
 
-    color: #9e65d4 ;
+    color: #2563EB;
 
 }
 
 
-
 .secondary-btn:hover {
 
-    /* background-color: #9e65d4 !important; */
+    color: #FFFFFF;
 
-    color: white ;
     text-decoration: none;
 
 }
