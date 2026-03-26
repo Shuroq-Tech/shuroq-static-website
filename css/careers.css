@@ -693,9 +693,11 @@ body {
 
 
 
-.benefit-icon {
+.benefit-icon 
 
 
+
+{
 
     display: inline-flex;
 
@@ -717,7 +719,7 @@ body {
 
 
 
-    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
 
 
 
@@ -1078,7 +1080,7 @@ body {
 
 
 
-    border: 1px solid #fbbf24;
+    border: 1px solid #2444fb;
 
 
 
@@ -1098,7 +1100,7 @@ body {
 
 
 
-    color: #f59e0b;
+    color: #0b55f5;
 
 
 

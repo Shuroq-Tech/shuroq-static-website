@@ -23,11 +23,12 @@ body {
 .blog-hero {
     position: relative;
     min-height: 400px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background:#FFFFFF;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    margin-top:50px;
 }
 
 .hero-content {
@@ -37,6 +38,7 @@ body {
     padding: 2rem;
     max-width: 800px;
     animation: fadeInUp 0.8s ease-out;
+    background-color:#FFFFFF; ;
 }
 
 .blog-hero h1 {
@@ -44,6 +46,7 @@ body {
     font-weight: 700;
     margin-bottom: 1rem;
     line-height: 1.2;
+    color:#2b5ecb;
 }
 
 .blog-hero p {
@@ -52,6 +55,7 @@ body {
     opacity: 0.9;
     max-width: 600px;
     margin: 0 auto;
+    color:#4b5563;
 }
 
 .hero-gradient {
@@ -60,7 +64,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(45deg, rgba(59, 130, 246, 0.1), rgba(147, 51, 234, 0.1));
+    background:#FFFFFF;
     z-index: 1;
 }
 
@@ -88,7 +92,7 @@ body {
    ============================================ */
 .blog-list {
     padding: 80px 20px;
-    background-color: #f8f9fa;
+    background-color: #FFFFFF;
 }
 
 .section-container {

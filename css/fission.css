@@ -11,14 +11,14 @@
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     line-height: 1.6;
-    color: #314f98;
+    color: #334155;
     background: #ffffff;
     overflow-x: hidden;
 }
 
 /* Main Container */
 #main {
-    margin-top: 60px;
+    margin-top: 40px;
 }
 
 /* Section Container */
@@ -38,7 +38,7 @@ body {
 .section-header h2 {
     font-size: 2.5rem;
     font-weight: 700;
-    color: #070d5e;
+    color: #2563EB;
     margin-bottom: 20px;
     position: relative;
     display: inline-block;
@@ -52,7 +52,7 @@ body {
     transform: translateX(-50%);
     width: 60px;
     height: 4px;
-    background: linear-gradient(135deg, #2161a0, #1d4ed8);
+    background: #2563EB;
     border-radius: 2px;
 }
 
@@ -62,10 +62,10 @@ body {
     justify-content: center;
     width: 60px;
     height: 60px;
-    background: linear-gradient(135deg, #2161a0, #1d4ed8);
+    background: #2563EB;
     border-radius: 50%;
     margin-bottom: 20px;
-    color: white;
+    color: #ffffff;
     font-size: 1.5rem;
     box-shadow: 0 10px 25px rgba(59, 130, 246, 0.3);
 }
@@ -77,7 +77,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, #8f9cd6 0%, #764ba2 100%);
+<<<<<<< HEAD
+    background: #2563EB;
+=======
+    background:#ffffff;
+>>>>>>> 0e70a4ff46e51071ae8779642564ab562e41e1ac
     overflow: hidden;
 }
 
@@ -86,7 +90,7 @@ body {
     color: #132c6f;
     z-index: 2;
     max-width: 800px;
-    padding: 0 20px;
+    padding: 20px;
     animation: fadeInUp 1s ease-out;
 }
 
@@ -111,25 +115,35 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, #f8fafc 0%, #f8fafc 100%);
+    background: #ffffff;
     z-index: 1;
 }
 
 /* CTA Buttons */
 .cta-buttons {
     display: flex;
-    gap: 20px;
+    gap: 60px;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-
+.cta-primary {
+    background: #2563EB;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    text-decoration: none;
+    color: #1a1a1a;
+    text-align: center !important;
+    justify-content: center;
+    align-items: center;
+}
 
 .cta-primary:hover {
     transform: translateY(-3px);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.06);
 }
-
 
 /* Intro Section */
 .intro-section {
@@ -152,7 +166,7 @@ body {
 
 /* Capabilities Section */
 .capabilities-section {
-    padding: 20px 0;
+    padding: 20px ;
     background: #ffffff;
 }
 
@@ -164,24 +178,24 @@ body {
 }
 
 .capability-card {
-    background: #f4f8ff;
+    background: #F4F8FF;
+    border: 1px solid #E6EDFF;
     padding: 30px;
     border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+    box-shadow: rgba(0,0,0,0.06) 0 10px 30px;
     transition: all 0.3s ease;
-    border: 1px solid #e6edff;
     position: relative;
     overflow: hidden;
 }
 
-.capability-card::before {
+.capability-card::after {
     content: '';
     position: absolute;
-    top: 0;
+    bottom: 0;
     left: 0;
     right: 0;
     height: 4px;
-    background: #f4f8ff;
+    background: #F4F8FF;
 }
 
 .capability-card:hover {
@@ -190,12 +204,12 @@ body {
 }
 
 .capability-icon {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     width: 70px;
     height: 70px;
-    background: linear-gradient(135deg, #2161a0, #1d4ed8);
+    background: #2563EB;
     border-radius: 15px;
     margin-bottom: 25px;
     color: #ffffff;
@@ -205,7 +219,7 @@ body {
 .capability-card h3 {
     font-size: 1.25rem;
     font-weight: 700;
-    color: #1e3a8a;
+    color: #132C6F;
     margin-bottom: 20px;
 }
 
@@ -224,13 +238,13 @@ body {
     content: '✓';
     position: absolute;
     left: 0;
-    color: #5a6473;
+    color: #2563EB;
     font-weight: bold;
 }
 
 /* Modules Section */
 .modules-section {
-    padding: 100px 0;
+    padding: 60px 0;
     background: #ffffff;
 }
 
@@ -242,12 +256,14 @@ body {
 }
 
 .module-card {
-    background: #f4f8ff;
+    background: #FFFFFF;
+    border: 1px solid #E6EDFF;
     padding: 35px;
     border-radius: 15px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+    box-shadow: rgba(0,0,0,0.06) 0 5px 20px;
     transition: all 0.3s ease;
-    border: 1px solid #e6edff;
+    position: relative;
+    overflow: hidden;
 }
 
 .module-card:hover {
@@ -256,12 +272,12 @@ body {
 }
 
 .module-icon {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     width: 60px;
     height: 60px;
-    background: linear-gradient(135deg, #2563eb, #0f3976);
+    background: #2563EB;
     border-radius: 12px;
     margin-bottom: 20px;
     color: white;
@@ -271,7 +287,7 @@ body {
 .module-card h3 {
     font-size: 1.2rem;
     font-weight: 700;
-    color: #1e3a8a;
+    color: #132C6F;
     margin-bottom: 15px;
 }
 
@@ -291,14 +307,13 @@ body {
     content: '→';
     position: absolute;
     left: 0;
-    color: #5a6473;
+    color: #2563EB;
     font-weight: bold;
 }
 
-
 /* Use Cases Section */
 .usecases-section {
-    padding: 100px 0;
+    padding: 60px 0;
     background: #ffffff;
 }
 
@@ -310,12 +325,14 @@ body {
 }
 
 .usecase-card {
-    background: #f4f8ff;
+    background: #F4F8FF;
+    border: 1px solid #E6EDFF;
     padding: 35px;
     border-radius: 15px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+    box-shadow: rgba(0,0,0,0.06) 0 5px 20px;
     transition: all 0.3s ease;
-    border:1px solid#e6edff;
+    position: relative;
+    overflow: hidden;
 }
 
 .usecase-card:hover {
@@ -324,12 +341,12 @@ body {
 }
 
 .usecase-icon {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     width: 60px;
     height: 60px;
-    background: linear-gradient(135deg, #2161a0,#1d4ed8);
+    background: #2563EB;
     border-radius: 12px;
     margin-bottom: 20px;
     color: white;
@@ -339,7 +356,7 @@ body {
 .usecase-card h3 {
     font-size: 1.25rem;
     font-weight: 700;
-    color: #1e3a8a;
+    color: #132C6F;
     margin-bottom: 15px;
 }
 
@@ -350,7 +367,7 @@ body {
 
 /* Benefits Section */
 .benefits-section {
-    padding: 100px 0;
+    padding: 40px 0;
     background: #ffffff;
 }
 
@@ -365,8 +382,10 @@ body {
     text-align: center;
     padding: 40px 30px;
     border-radius: 20px;
-    background:  #f4f8ff;
+    background: #FFFFFF;
+    border: 1px solid #E6EDFF;
     transition: all 0.3s ease;
+    box-shadow: rgba(0,0,0,0.06) 0 8px 25px;
 }
 
 .benefit-card:hover {
@@ -375,12 +394,12 @@ body {
 }
 
 .benefit-icon {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     width: 70px;
     height: 70px;
-    background: linear-gradient(135deg ,#2161a0, #1d4ed8);
+    background: #2563EB;
     border-radius: 50%;
     margin-bottom: 25px;
     color: white;
@@ -390,7 +409,7 @@ body {
 .benefit-card h3 {
     font-size: 1.2rem;
     font-weight: 700;
-    color: #1e3a8a;
+    color: #132C6F;
     margin-bottom: 15px;
 }
 
@@ -401,7 +420,7 @@ body {
 
 /* Why Section */
 .why-section {
-    padding: 100px 0;
+    padding: 60px 0;
     background: #ffffff;
 }
 
@@ -413,12 +432,14 @@ body {
 }
 
 .why-card {
-    background: #f4f8ff;
+    background: #F4F8FF;
+    border: 1px solid #E6EDFF;
     padding: 35px;
     border-radius: 15px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+    box-shadow: rgba(0,0,0,0.06) 0 8px 25px;
     transition: all 0.3s ease;
-    text-align: center;
+    position: relative;
+    overflow: hidden;
 }
 
 .why-card:hover {
@@ -427,12 +448,12 @@ body {
 }
 
 .why-icon {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     width: 60px;
     height: 60px;
-    background: linear-gradient(135deg, #2161a0, #1d4ed8);
+    background: #2563EB;
     border-radius: 12px;
     margin-bottom: 20px;
     color: white;
@@ -442,7 +463,7 @@ body {
 .why-card h3 {
     font-size: 1.2rem;
     font-weight: 700;
-    color: #1e3a8a;
+    color: #132C6F;
     margin-bottom: 15px;
 }
 
@@ -454,14 +475,17 @@ body {
 /* CTA Section */
 .cta-section {
     padding: 60px 20px;
-    background:linear-gradient(#2161a0 0%, #2563eb 100%);
+<<<<<<< HEAD
+    background: #2563EB;
+=======
+    background:linear-gradient(#2161a0 0%, #1c4398 100%);
+>>>>>>> 0e70a4ff46e51071ae8779642564ab562e41e1ac
     text-align: center;
-    border:2px solid rgb(255,255,255,0.85);
-    border-radius:30px;
-    margin:60px -20px;
+    border: 2px solid rgba(255,255,255,0.15);
+    border-radius: 30px;
+    margin: 80px -20px;
     width:80%;
     margin-left:12%;
-
 }
 
 .cta-content {
@@ -484,20 +508,32 @@ body {
 
 .cta-section .cta-buttons {
     justify-content: center;
+    
 }
 
 .cta-section .cta-primary {
+<<<<<<< HEAD
+    background: #2563EB;
+    color: #ffffff;
+=======
     background: #f1eeee;
-    color: #2563eb;
+    color: #3766cc;
+>>>>>>> 0e70a4ff46e51071ae8779642564ab562e41e1ac
     width:120px;
     height: 40px;
     border-radius:5px;
 }
 
 .cta-section .cta-secondary {
-    background:#ffffff;
-    color: rgb(184, 198, 223);
+<<<<<<< HEAD
+    background: #ffffff;
+    color: #2563EB;
+    border: 2px solid #2563EB;
+=======
+   
+    color: rgb(173, 200, 247);
     border: 2px solid white;
+>>>>>>> 0e70a4ff46e51071ae8779642564ab562e41e1ac
     width:120px;
     height: 40px;
     border-radius:5px;
@@ -563,7 +599,6 @@ body {
     #main {
         margin-top: 60px;
     }
-    
     
     .services-dropdown .dropdown-menu {
         position: static;

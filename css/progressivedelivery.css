@@ -6,7 +6,7 @@
 
 body{
     font-family: "poppins", sans-serif;
-    background-color: #E6F3FA;
+    background-color: #ffffff;
     color: #333;
     line-height: 1.6;
     padding: 20px;
@@ -48,15 +48,15 @@ body.progressivedelivery-page #nav-container .dropdown-menu {
 
 /* Hero Section */
 .progressive-hero {
-    background: linear-gradient(135deg, #3B82F6 0%, #60A5FA 100%);
+    background: linear-gradient(135deg, #1E3A8A 0%, #2563EB 100%);
     color: white;
     padding: 80px 0;
     border-radius: 20px;
-    margin-bottom: 60px;
+    margin: 0 -20px;
     position: relative;
     overflow: hidden;
-    width:80%;
-    margin-left:12%;
+    width:90%;
+    margin: 0 auto;
 }
 
 .progressive-hero::before {
@@ -139,7 +139,7 @@ body.progressivedelivery-page #nav-container .dropdown-menu {
 .section-icon {
     width: 80px;
     height: 80px;
-    background: linear-gradient(135deg, #3B82F6, #60A5FA);
+    background: #2563EB;
     border-radius: 20px;
     display: flex;
     align-items: center;
@@ -147,6 +147,7 @@ body.progressivedelivery-page #nav-container .dropdown-menu {
     color: white;
     font-size: 2rem;
     flex-shrink: 0;
+    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.2);
 }
 
 .section-title h2 {
@@ -189,10 +190,12 @@ body.progressivedelivery-page #nav-container .dropdown-menu {
 
 /* Key Features */
 .key-features {
-    background: #f8fafc;
+    background: #F4F8FF;
+    border: 1px solid #E6EDFF;
     padding: 30px;
     border-radius: 15px;
     margin-bottom: 30px;
+    box-shadow: rgba(0,0,0,0.06) 0 4px 12px;
 }
 
 .key-features h4 {
@@ -214,7 +217,7 @@ body.progressivedelivery-page #nav-container .dropdown-menu {
 }
 
 .key-features strong {
-    color: #3B82F6;
+    color: #2563EB;
     font-weight: 600;
     font-size: 1rem;
 }
@@ -227,9 +230,11 @@ body.progressivedelivery-page #nav-container .dropdown-menu {
 
 /* Tech Stack */
 .tech-stack {
-    background: #f8fafc;
+    background: #FFFFFF;
+    border: 1px solid #E6EDFF;
     padding: 30px;
     border-radius: 15px;
+    box-shadow: rgba(0,0,0,0.06) 0 4px 12px;
 }
 
 .tech-stack h4 {
@@ -246,12 +251,15 @@ body.progressivedelivery-page #nav-container .dropdown-menu {
 }
 
 .tech-tags span {
-    background: linear-gradient(135deg, #b59d75, #e5cb8a);
+    background: #2563EB;
     color: white !important;
     padding: 8px 16px;
     border-radius: 20px;
     font-size: 0.9rem;
     font-weight: 500;
+    display: inline-block;
+    margin: 5px;
+    transition: all 0.3s ease;
 }
 
 /* Benefits */
@@ -285,7 +293,7 @@ body.progressivedelivery-page #nav-container .dropdown-menu {
 
 .benefit-card i {
     font-size: 3rem;
-    color: #3B82F6;
+    color: #2563EB;
     margin-bottom: 20px;
 }
 
@@ -303,34 +311,34 @@ body.progressivedelivery-page #nav-container .dropdown-menu {
 
 /* Section Specific Colors */
 .flags-section .section-icon {
-    background: linear-gradient(135deg, #3B82F6, #60A5FA);
+    background: #2563EB;
 }
 
 .canary-section .section-icon {
-    background: linear-gradient(135deg, #3B82F6, #60A5FA);
+    background: #2563EB;
 }
 
 .rollback-section .section-icon {
-    background: linear-gradient(135deg, #3B82F6, #60A5FA);
+    background: #2563EB;
 }
 
 .flags-section .key-features strong,
 .flags-section .tech-tags span {
-    color: #3B82F6;
+    color: #2563EB;
 }
 
 .canary-section .key-features strong,
 .canary-section .tech-tags span {
-    color: #3B82F6;
+    color: #2563EB;
 }
 
 .rollback-section .key-features strong,
 .rollback-section .tech-tags span {
-    color: #3B82F6;
+    color: #2563EB;
 }
 
 .canary-section .tech-tags span {
-    background: linear-gradient(135deg, #5eb7c7, #e4e7e8);
+    background: #2563EB;
 }
 
 /* Progressive Delivery Specific Styles */

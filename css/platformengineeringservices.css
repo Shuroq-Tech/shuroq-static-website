@@ -12,7 +12,7 @@
 
 body{
     font-family: "poppins", sans-serif;
-    background-color: #E4E6F4;
+    background-color: #ffffff;
     color: #333;
     line-height: 1.6;
     padding: 20px;
@@ -32,13 +32,13 @@ body{
 }
 
 .breadcrumb a {
-    color: #8b5cf6;
+    color: #2563EB;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .breadcrumb a:hover {
-    color: #7c3aed;
+    color: #1D4ED8;
 }
 
 .breadcrumb span {
@@ -47,13 +47,15 @@ body{
 
 /* Hero Section */
 .platformengineeringservices-hero {
-    background: linear-gradient(135deg, #8b5cf6 0%, #a78bfa 100%);
+    background: linear-gradient(135deg, #1E3A8A 0%, #2563EB 100%);
     color: white;
     padding: 80px 0;
     border-radius: 20px;
-    margin-bottom: 60px;
+    margin: 0 -20px;
     position: relative;
     overflow: hidden;
+    width: 90%;
+    margin: 0 auto;
 }
 
 .platformengineeringservices-hero::before {
@@ -136,7 +138,7 @@ body{
 .section-icon {
     width: 80px;
     height: 80px;
-    background: linear-gradient(135deg, #8b5cf6, #a78bfa);
+    background: #2563EB;
     border-radius: 20px;
     display: flex;
     align-items: center;
@@ -144,6 +146,7 @@ body{
     color: white;
     font-size: 2rem;
     flex-shrink: 0;
+    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.2);
 }
 
 .section-title h2 {
@@ -186,10 +189,12 @@ body{
 
 /* Key Features */
 .key-features {
-    background: #f8fafc;
+    background: #F4F8FF;
+    border: 1px solid #E6EDFF;
     padding: 30px;
     border-radius: 15px;
     margin-bottom: 30px;
+    box-shadow: rgba(0,0,0,0.06) 0 4px 12px;
 }
 
 .key-features h4 {
@@ -211,7 +216,7 @@ body{
 }
 
 .key-features strong {
-    color: #8b5cf6;
+    color: #2563EB;
     font-weight: 600;
     font-size: 1rem;
 }
@@ -224,9 +229,11 @@ body{
 
 /* Tech Stack */
 .tech-stack {
-    background: #f8fafc;
+    background: #FFFFFF;
+    border: 1px solid #E6EDFF;
     padding: 30px;
     border-radius: 15px;
+    box-shadow: rgba(0,0,0,0.06) 0 4px 12px;
 }
 
 .tech-stack h4 {
@@ -243,12 +250,15 @@ body{
 }
 
 .tech-tags span {
-    background: linear-gradient(135deg, #8b5cf6, #ccc7db);
+    background: #2563EB;
     color: white !important;
     padding: 8px 16px;
     border-radius: 20px;
     font-size: 0.9rem;
     font-weight: 500;
+    display: inline-block;
+    margin: 5px;
+    transition: all 0.3s ease;
 }
 
 /* Benefits */
@@ -282,7 +292,7 @@ body{
 
 .benefit-card i {
     font-size: 3rem;
-    color: #8b5cf6;
+    color: #2563EB;
     margin-bottom: 20px;
 }
 
@@ -300,46 +310,46 @@ body{
 
 /* Section Specific Colors */
 .idp-section .section-icon {
-    background: linear-gradient(135deg, #8b5cf6, #a78bfa);
+    background: #2563EB;
 }
 
 .toolchain-section .section-icon {
-    background: linear-gradient(135deg, #06b6d4, #22d3ee);
+    background: #2563EB;
 }
 
 .automation-section .section-icon {
-    background: linear-gradient(135deg, #10b981, #34d399);
+    background: #2563EB;
 }
 
 .idp-section .key-features strong,
 .idp-section .tech-tags span {
-    color: #8b5cf6;
+    color: #2563EB;
 }
 
 .toolchain-section .key-features strong,
 .toolchain-section .tech-tags span {
-    color: #067bd4;
+    color: #2563EB;
 }
 
 .automation-section .key-features strong,
 .automation-section .tech-tags span {
-    color: #10b98c;
+    color: #2563EB;
 }
 
 .toolchain-section .tech-tags span {
-    background: linear-gradient(135deg, #6c888d, #73c1cd);
+    background: #2563EB;
 }
 
 .automation-section .tech-tags span {
-    background: linear-gradient(135deg, #bdd0ca, #75bca2);
+    background: #2563EB;
 }
 
 .toolchain-section .benefit-card i {
-    color: #06b6d4;
+    color: #2563EB;
 }
 
 .automation-section .benefit-card i {
-    color: #10b981;
+    color: #2563EB;
 }
 
 /* CTA Section */

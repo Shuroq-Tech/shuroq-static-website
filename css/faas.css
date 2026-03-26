@@ -6,8 +6,8 @@
 
 body{
     font-family: "poppins", sans-serif;
-    background-color: #E6F3FA;
-    color: #333;
+    background-color: #ffffff;
+    color: #6b7280;
     line-height: 1.6;
 }
 
@@ -19,11 +19,11 @@ body{
     padding: 10px;
     margin-bottom: 20px;
     font-size: 0.9rem;
-    color: #666;
+    color: #6b7280;
 }
 
 .breadcrumb a {
-    color: #3B82F6;
+    color: #132c6f;
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -45,7 +45,7 @@ body{
     min-height: 60vh;
     display: flex;
     align-items: center;
-    background: linear-gradient(135deg, #E6F3FA 0%, #B8E0F7 100%);
+    background: linear-gradient(135deg, #ffffff 0%, #ffffff 100%);
     padding-top: 80px;
     overflow: hidden;
     margin-top: -20px;
@@ -75,6 +75,7 @@ body{
 .hero-content {
     position: relative;
     text-align: center;
+    
     padding: 0 20px;
     z-index: 1;
     max-width: 1200px;
@@ -84,7 +85,7 @@ body{
 .hero-content h1 {
     font-size: 3.5rem;
     font-weight: 800;
-    background: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%);
+    background: linear-gradient(135deg, #132c6f 0%, #132c6f 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -94,7 +95,7 @@ body{
 
 .hero-content p {
     font-size: 1.3rem;
-    color: #666;
+    color: #6b7280;
     max-width: 800px;
     margin: 0 auto 2rem;
     animation: fadeInUp 1s ease 0.2s both;
@@ -115,7 +116,7 @@ body{
     padding: 1rem 2rem;
     background: rgba(255, 255, 255, 0.9);
     border-radius: 50px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
     transition: all 0.3s ease;
 }
 
@@ -126,12 +127,12 @@ body{
 
 .feature i {
     font-size: 1.5rem;
-    color: #3B82F6;
+    color: #1d4ed8;
 }
 
 .feature span {
     font-weight: 600;
-    color: #333;
+    color: #132c6f;
 }
 
 @keyframes fadeInUp {
@@ -151,7 +152,7 @@ body{
 
 .overview-section {
     padding: 80px 20px;
-    background-color: #F0F9FF;
+    background-color: #FffFFF;
     margin: 0 -20px;
 }
 
@@ -172,7 +173,7 @@ body{
     width: 80px;
     height: 80px;
     border-radius: 20px;
-    background: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%);
+    background: linear-gradient(135deg, #3B82F6 0%, #1e3a8a 100%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -181,20 +182,20 @@ body{
 
 .section-icon i {
     font-size: 2rem;
-    color: white;
+    color: #ffffff;
 }
 
 .section-title h2 {
     font-size: 2.5rem;
     font-weight: 700;
-    color: #333;
+    color: #070d5e;
     margin-bottom: 1rem;
 }
 
 .section-title p {
     font-size: 1.1rem;
     line-height: 1.7;
-    color: #555;
+    color: #5a6473;
     font-family: "inter", sans-serif;
     max-width: 600px;
 }
@@ -209,20 +210,20 @@ body{
 .content-left h3 {
     font-size: 1.8rem;
     font-weight: 600;
-    color: #333;
+    color: #132c6f;
     margin-bottom: 1rem;
 }
 
 .content-left p {
     font-size: 1.1rem;
     line-height: 1.7;
-    color: #555;
+    color: #5a6473;
     font-family: "inter", sans-serif;
     margin-bottom: 2rem;
 }
 
 .key-benefits {
-    background: white;
+    background: #ffffff;
     padding: 2rem;
     border-radius: 15px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -231,9 +232,9 @@ body{
 .key-benefits h4 {
     font-size: 1.4rem;
     font-weight: 600;
-    color: #333;
+    color: #5a6473;
     margin-bottom: 1.5rem;
-    color: #f59e0b;
+    color: #132c6f;
 }
 
 .key-benefits ul {
@@ -246,7 +247,7 @@ body{
     gap: 1rem;
     margin-bottom: 1rem;
     padding-bottom: 1rem;
-    border-bottom: 1px solid #f0f0f0;
+    border-bottom: 1px solid #f4f8ff;
 }
 
 .key-benefits li:last-child {
@@ -259,13 +260,13 @@ body{
     flex-shrink: 0;
     min-width: 120px;
     font-weight: 600;
-    color: #333;
+    color: #5a6473;
 }
 
 .key-benefits p {
     flex: 1;
     font-size: 0.95rem;
-    color: #666;
+    color: #6b7280;
     font-family: "inter", sans-serif;
     line-height: 1.6;
 }
@@ -275,18 +276,18 @@ body{
    ================================ */
 
 .services-section {
-    padding: 80px 20px;
-    background-color: #E4E6F4;
+    padding:  20px;
+    background-color: #ffffff;
     margin: 0 -20px;
 }
 
 .services-section h2 {
     font-size: 2.5rem;
     font-weight: 700;
-    color: #333;
+    color: #070d5e;
     text-align: center;
     margin-bottom: 3rem;
-    background: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%);
+    background: linear-gradient(135deg, #070d5e 100%, #1d4ed8 0%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -299,10 +300,10 @@ body{
 }
 
 .service-item {
-    background: white;
+    background: #f4f8ff;
     padding: 2.5rem;
     border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
     transition: all 0.3s ease;
     text-align: center;
 }
@@ -317,7 +318,7 @@ body{
     height: 80px;
     margin: 0 auto 1.5rem;
     border-radius: 20px;
-    background: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%);
+    background: linear-gradient(135deg, #2161a0 0%, #1d4ed8 100%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -331,20 +332,20 @@ body{
 
 .service-item .service-icon i {
     font-size: 2rem;
-    color: white;
+    color: #ffffff;
 }
 
 .service-item h3 {
     font-size: 1.4rem;
     font-weight: 600;
-    color: #333;
+    color:#1e3a8a;
     margin-bottom: 1rem;
 }
 
 .service-item p {
     font-size: 1rem;
     line-height: 1.7;
-    color: #555;
+    color: #6b7280;
     font-family: "inter", sans-serif;
 }
 
@@ -354,17 +355,17 @@ body{
 
 .benefits-section {
     padding: 80px 20px;
-    background-color: #F0F9FF;
-    margin: 0 -20px;
+    background-color: #FffFFF;
+    margin: 20px;
 }
 
 .benefits-section h2 {
     font-size: 2.5rem;
     font-weight: 700;
-    color: #333;
+    color: #070d5e;
     text-align: center;
     margin-bottom: 3rem;
-    background: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%);
+    background: linear-gradient(135deg, #3B82F6 0%, #070d5e 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -377,10 +378,10 @@ body{
 }
 
 .benefit-card {
-    background: white;
+    background: #f4f8ff;
     padding: 2.5rem;
     border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
     transition: all 0.3s ease;
     text-align: center;
 }
@@ -392,21 +393,21 @@ body{
 
 .benefit-card i {
     font-size: 3rem;
-    color: #3B82F6;
+    color: #1d4ed8;
     margin-bottom: 1.5rem;
 }
 
 .benefit-card h3 {
     font-size: 1.3rem;
     font-weight: 600;
-    color: #333;
+    color: #1e3a8a;
     margin-bottom: 1rem;
 }
 
 .benefit-card p {
     font-size: 1rem;
     line-height: 1.6;
-    color: #666;
+    color: #6b7280;
     font-family: "inter", sans-serif;
 }
 
@@ -415,18 +416,18 @@ body{
    ================================ */
 
 .tech-stack-section {
-    padding: 80px 20px;
-    background-color: #E4E6F4;
-    margin: 0 -20px;
+    padding: 20px;
+    background-color: #fffffF;
+    margin: 20px;
 }
 
 .tech-stack-section h2 {
     font-size: 2.5rem;
     font-weight: 700;
-    color: #333;
+    color: #1d4ed8;
     text-align: center;
     margin-bottom: 3rem;
-    background: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%);
+    background: linear-gradient(135deg, #3B82F6 0%, #1e3a8a 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -439,10 +440,10 @@ body{
 }
 
 .tech-category {
-    background: white;
+    background: #f4f8ff;
     padding: 2rem;
     border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
     transition: all 0.3s ease;
 }
 
@@ -456,7 +457,7 @@ body{
     font-weight: 600;
     color: #333;
     margin-bottom: 1.5rem;
-    color: #f59e0b;
+    color: #1e3a8a;
 }
 
 .tech-items {
@@ -470,7 +471,7 @@ body{
     align-items: center;
     gap: 0.8rem;
     padding: 1rem;
-    background: #F0F9FF;
+    background: #FfffFF;
     border-radius: 10px;
     transition: all 0.3s ease;
 }
@@ -482,14 +483,14 @@ body{
 
 .tech-item i {
     font-size: 1.5rem;
-    color: #3B82F6;
+    color: #1d4ed8;
     width: 24px;
     text-align: center;
 }
 
 .tech-item span {
     font-weight: 500;
-    color: #333;
+    color: #6b7280;
     font-size: 0.9rem;
 }
 
@@ -498,8 +499,8 @@ body{
    ================================ */
 
 .use-cases-section {
-    padding: 80px 20px;
-    background-color: #F0F9FF;
+    padding: 20px;
+    background-color: #FffFFF;
     margin: 0 -20px;
 }
 
@@ -509,7 +510,7 @@ body{
     color: #333;
     text-align: center;
     margin-bottom: 3rem;
-    background: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%);
+    background: linear-gradient(135deg, #3B82F6 0%, #070d5e 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -522,10 +523,10 @@ body{
 }
 
 .use-case {
-    background: white;
+    background: #f4f8ff;
     padding: 2.5rem;
     border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
     transition: all 0.3s ease;
     text-align: center;
 }
@@ -540,7 +541,7 @@ body{
     height: 80px;
     margin: 0 auto 1.5rem;
     border-radius: 20px;
-    background: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%);
+    background: linear-gradient(135deg, #3B82F6 0%, #1e3a8a 100%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -554,20 +555,20 @@ body{
 
 .use-case-icon i {
     font-size: 2rem;
-    color: white;
+    color: #ffffff;
 }
 
 .use-case h3 {
     font-size: 1.3rem;
     font-weight: 600;
-    color: #333;
+    color: #1e3a8a;
     margin-bottom: 1rem;
 }
 
 .use-case p {
     font-size: 1rem;
     line-height: 1.6;
-    color: #666;
+    color: #6b7280;
     font-family: "inter", sans-serif;
 }
 
@@ -577,7 +578,7 @@ body{
 
 .cta-section {
     width:100%;
-    background: linear-gradient(45deg, #E6F3FA 33%, #FFFFFF 50%, #97D5F0 80%);
+    background: linear-gradient(45deg, #1e3a8a 0%, #1e3a8a 80%);
     border: 2px solid #3B82F6;
     border-radius: 30px;
     margin: 60px -20px;
@@ -595,13 +596,13 @@ body{
 .cta-content h2 {
     font-size: 2.5rem;
     font-weight: 700;
-    color: #000;
+    color: #ffffff;
     margin-bottom: 1.5rem;
 }
 
 .cta-content p {
     font-size: 1.2rem;
-    color: #666;
+    color: #f4f8ff;
     margin-bottom: 2rem;
     font-family: "inter", sans-serif;
     font-weight: 400;
@@ -610,7 +611,7 @@ body{
 .cta-content button {
     width: 250px;
     height: 50px;
-    background-color: #9e65d4;
+    background-color: #ffffff;
     border: none;
     border-radius: 25px;
     color: white;
@@ -622,21 +623,21 @@ body{
 }
 
 .cta-content button:hover {
-    background-color: #744ac2;
+    background-color: #457b9b;
     transform: translateY(-2px);
     box-shadow: 0 8px 20px rgba(158, 101, 212, 0.4);
 }
 
 .cta-content button.secondary-btn {
-    background-color: #744ac2;
+    background-color: #ffffff;
 }
 
 .cta-content button.secondary-btn:hover {
-    background-color: #744ac2;
+    background-color: #457b9b;
 }
 
 .cta-content button a {
-    color: white;
+    color: #1e3a8a;
     text-decoration: none;
 }
 

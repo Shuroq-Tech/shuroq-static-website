@@ -28,9 +28,9 @@ body {
   overflow: hidden;
   border-radius: 24px;
   padding: 40px;
-  color: #fff;
-  background: linear-gradient(130deg, #426a86 0%, #1d67d9 52%, #0ea38e 100%);
-  box-shadow: 0 20px 44px rgba(16, 38, 66, 0.24);
+  color: #ffffff;
+  background:linear-gradient( #3673b0,#133377);
+  box-shadow: 0 20px 44px rgba(226, 228, 231, 0.24);
 }
 
 .ms-hero .ms-shell::before {
@@ -40,7 +40,7 @@ body {
   width: 260px;
   height: 260px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(255, 255, 255, 0.24), rgba(255, 255, 255, 0));
+  background: radial-gradient(circle, rgba(206, 197, 197, 0.24), rgba(255, 255, 255, 0));
   pointer-events: none;
 }
 
@@ -59,8 +59,8 @@ body {
   display: inline-flex;
   padding: 6px 12px;
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.22);
-  border: 1px solid rgba(255, 255, 255, 0.32);
+  background: rgba(171, 189, 236, 0.22);
+  border: 1px solid rgba(237, 229, 229, 0.32);
   backdrop-filter: blur(6px);
   font-size: 12px;
   font-weight: 700;
@@ -71,6 +71,7 @@ body {
 .ms-hero h1 {
   margin: 14px 0 10px;
   font-size: clamp(30px, 3.3vw, 46px);
+  color:#ffffff;
 }
 
 .ms-hero p {
@@ -107,7 +108,7 @@ body {
 }
 
 .btn.secondary {
-  background: #fff;
+  background: #ffffff;
   color: #1254cb;
   border: 1px solid #1254cb;
 }
@@ -257,7 +258,7 @@ body {
 
 .plan p {
   margin: 0;
-  color: #4c6281;
+  color: #4271b3;
   line-height: 1.7;
 }
 
@@ -274,7 +275,7 @@ body {
 
 .ms-section.cta .ms-shell {
   border: none;
-  background: transparent;
+  background: #2f5a8f;
   box-shadow: none;
   padding: 0;
   opacity: 1 !important;
@@ -283,9 +284,9 @@ body {
 
 .cta-box {
   border-radius: 20px;
-  padding: 34px;
+  padding: 60px;
   text-align: center;
-  color: #fff;
+  color: #dae3f3;
   background: linear-gradient(145deg, #0f4fc2 0%, #1e68e8 50%, #12bfa2 100%);
   box-shadow: 0 20px 44px rgba(16, 38, 66, 0.22);
   border: 1px solid rgba(255, 255, 255, 0.18);
@@ -294,7 +295,7 @@ body {
 
 .cta-box h2,
 .cta-box p {
-  color: #242424;
+  color: #f5f1f1;
   
 }
 
@@ -310,7 +311,7 @@ body {
 
 .cta-box .btn.primary.light {
   background: #fff;
-  color: #1459d4;
+  color: #5875a8;
   border: 2px solid;
   border-color: #536aa0;
   box-shadow: none;
