@@ -10,7 +10,7 @@
 
 body{
     font-family: "poppins", sans-serif;
-     background: linear-gradient(135deg, #c0e6fe, #5e91b1 100%);
+     background: #F6F9FF;
     color: #333;
     line-height: 1.6;
     padding: 20px;
@@ -43,7 +43,7 @@ body{
     min-height: 60vh;
     display: flex;
     align-items: center;
-    background: linear-gradient(135deg, #d7e4ec, #91cff6 100%);
+    background: linear-gradient(135deg, #EEF4FF, #FFFFFF);
     padding-top: 80px;
     overflow: hidden;
     margin-top: -20px;
@@ -81,17 +81,14 @@ body{
 .hero-content h1 {
     font-size: 3.5rem;
     font-weight: 800;
-    background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #132C6F;
     margin-bottom: 1.5rem;
     animation: fadeInUp 1s ease;
 }
 
 .hero-content p {
     font-size: 1.3rem;
-    color: #666;
+    color: #5A6473;
     margin-bottom: 2rem;
     animation: fadeInUp 1s ease 0.2s both;
 }
@@ -109,11 +106,11 @@ body{
     align-items: center;
     gap: 0.5rem;
     font-size: 1rem;
-    color: #555;
+    color: #5A6473;
 }
 
 .feature i {
-    color: #3b82f6;
+    color: #2563EB;
     font-size: 1.2rem;
 }
 
@@ -133,16 +130,16 @@ body{
 .agile-section,
 .process-automation-section {
     padding: 80px 20px;
-     background: linear-gradient(135deg, #98c1da, #5f8aa5 100%);
+     background: #F4F8FF;
     margin: 0 -20px;
 }
 
 .agile-section {
-    background-color: #f8f9ff;
+    background-color: #FFFFFF;
 }
 
 .process-automation-section {
-    background-color: #E4E6F4;
+    background-color: #FFFFFF;
 }
 
 .container {
@@ -160,7 +157,7 @@ body{
 .section-icon {
     width: 80px;
     height: 80px;
-    background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+    background: #2563EB;
     border-radius: 20px;
     display: flex;
     align-items: center;
@@ -176,13 +173,13 @@ body{
 .section-title h2 {
     font-size: 2.5rem;
     font-weight: 700;
-    color: #333;
+    color: #070D5E;
     margin-bottom: 0.5rem;
 }
 
 .section-title p {
     font-size: 1.2rem;
-    color: #666;
+    color: #6B7280;
     font-family: "inter", sans-serif;
 }
 
@@ -192,7 +189,7 @@ body{
 .automation-content h3 {
     font-size: 1.6rem;
     font-weight: 600;
-    color: #333;
+    color: #1E3A8A;
     margin-bottom: 1rem;
 }
 
@@ -201,7 +198,7 @@ body{
 .automation-content p {
     font-size: 1.05rem;
     line-height: 1.7;
-    color: #555;
+    color: #5A6473;
     font-family: "inter", sans-serif;
 }
 
@@ -215,7 +212,7 @@ body{
 .agile-content li,
 .automation-content li {
     font-size: 0.95rem;
-    color: #555;
+    color: #5A6473;
     margin-bottom: 0.6rem;
     padding-left: 1.5rem;
     position: relative;
@@ -228,7 +225,7 @@ body{
     content: '▶';
     position: absolute;
     left: 0;
-    color: #3b82f6;
+    color: #2563EB;
     font-size: 0.8rem;
     top: 0.25rem;
 }
@@ -255,7 +252,7 @@ body{
 }
 
 .pillar {
-    background: #f8f9ff;
+    background: #F4F8FF;
     padding: 1.8rem;
     border-radius: 15px;
     text-align: center;
@@ -264,25 +261,25 @@ body{
 
 .pillar:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(59, 130, 246, 0.18);
+    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.18);
 }
 
 .pillar i {
     font-size: 2.3rem;
-    color: #3b82f6;
+    color: #2563EB;
     margin-bottom: 1rem;
 }
 
 .pillar h4 {
     font-size: 1.15rem;
     font-weight: 600;
-    color: #333;
+    color: #2563EB;
     margin-bottom: 0.6rem;
 }
 
 .pillar p {
     font-size: 0.95rem;
-    color: #666;
+    color: #6B7280;
 }
 
 /* CI/CD Pipeline */
@@ -301,7 +298,7 @@ body{
 
 .stage {
     width: 180px;
-    background: #f8f9ff;
+    background: #F4F8FF;
     border-radius: 15px;
     padding: 1.4rem;
     text-align: center;
@@ -309,7 +306,7 @@ body{
 }
 
 .stage:hover {
-    background: #e8ecff;
+    background: #EAF2FF;
     transform: translateY(-3px);
 }
 
@@ -317,7 +314,7 @@ body{
     width: 60px;
     height: 60px;
     margin: 0 auto 1rem;
-    background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+    background: #2563EB;
     border-radius: 15px;
     display: flex;
     align-items: center;
@@ -332,17 +329,18 @@ body{
 .stage h4 {
     font-size: 1.05rem;
     font-weight: 600;
+    color: #2563EB;
     margin-bottom: 0.4rem;
 }
 
 .stage p {
     font-size: 0.9rem;
-    color: #666;
+    color: #6B7280;
 }
 
 .stage-arrow {
     font-size: 2rem;
-    color: #8b5cf6;
+    color: #070D5E;
     font-weight: 700;
 }
 
@@ -359,7 +357,7 @@ body{
 }
 
 .service-item {
-    background: #f8f9ff;
+    background: #F4F8FF;
     border-radius: 20px;
     padding: 2rem;
     text-align: left;
@@ -375,7 +373,7 @@ body{
     left: 0;
     width: 100%;
     height: 5px;
-    background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+    background: #2563EB;
 }
 
 .service-item:hover {
@@ -385,20 +383,20 @@ body{
 
 .service-item i {
     font-size: 2.3rem;
-    color: #3b82f6;
+    color: #2563EB;
     margin-bottom: 1rem;
 }
 
 .service-item h4 {
     font-size: 1.2rem;
     font-weight: 600;
-    color: #333;
+    color: #2563EB;
     margin-bottom: 0.7rem;
 }
 
 .service-item > p {
     margin-bottom: 1rem;
-    color: #666;
+    color: #5A6473;
 }
 
 /* Monitoring Grid */
@@ -414,7 +412,7 @@ body{
 }
 
 .monitoring-item {
-    background: #f8f9ff;
+    background: #F4F8FF;
     padding: 1.8rem;
     border-radius: 15px;
     text-align: center;
@@ -422,25 +420,26 @@ body{
 }
 
 .monitoring-item:hover {
-    background: #e8ecff;
+    background: #EAF2FF;
     transform: translateY(-3px);
 }
 
 .monitoring-item i {
     font-size: 2.2rem;
-    color: #3b82f6;
+    color: #2563EB;
     margin-bottom: 0.9rem;
 }
 
 .monitoring-item h4 {
     font-size: 1.15rem;
     font-weight: 600;
+    color: #2563EB;
     margin-bottom: 0.6rem;
 }
 
 .monitoring-item p {
     font-size: 0.95rem;
-    color: #666;
+    color: #6B7280;
 }
 
 /* Tools Section - grid with categories */
@@ -456,14 +455,14 @@ body{
 }
 
 .tool-category {
-    background: #f8f9ff;
+    background: #F4F8FF;
     padding: 2rem;
     border-radius: 20px;
     transition: all 0.3s ease;
 }
 
 .tool-category:hover {
-    background: #e8ecff;
+    background: #EAF2FF;
     transform: translateY(-3px);
 }
 
@@ -471,7 +470,7 @@ body{
     text-align: center;
     font-size: 1.2rem;
     font-weight: 600;
-    color: #333;
+    color: #2563EB;
     margin-bottom: 1.2rem;
 }
 
@@ -484,8 +483,8 @@ body{
 
 .tool-list span {
     background: white;
-    color: #3b82f6;
-    border: 1px solid rgba(59, 130, 246, 0.25);
+    color: #2563EB;
+    border: 1px solid rgba(37, 99, 235, 0.25);
     padding: 0.45rem 0.9rem;
     border-radius: 999px;
     font-size: 0.9rem;
@@ -509,31 +508,32 @@ body{
     align-items: flex-start;
     gap: 1rem;
     padding: 1.5rem;
-    background: #f8f9ff;
+    background: #F4F8FF;
     border-radius: 15px;
     transition: all 0.3s ease;
 }
 
 .benefit-item:hover {
-    background: #e8ecff;
+    background: #EAF2FF;
     transform: translateX(5px);
 }
 
 .benefit-item i {
     font-size: 2rem;
-    color: #3b82f6;
+    color: #2563EB;
     margin-top: 0.2rem;
 }
 
 .benefit-item h4 {
     font-size: 1.15rem;
     font-weight: 600;
+    color: #2563EB;
     margin-bottom: 0.4rem;
 }
 
 .benefit-item p {
     font-size: 0.95rem;
-    color: #666;
+    color: #5A6473;
 }
 
 /* Agile Specific */
@@ -545,7 +545,7 @@ body{
 }
 
 .principle-item {
-    background: #f8f9ff;
+    background: #F4F8FF;
     border-radius: 15px;
     padding: 2rem;
     text-align: center;
@@ -553,19 +553,20 @@ body{
 }
 
 .principle-item:hover {
-    background: #e8ecff;
+    background: #EAF2FF;
     transform: translateY(-3px);
 }
 
 .principle-item i {
     font-size: 2.4rem;
-    color: #3b82f6;
+    color: #2563EB;
     margin-bottom: 1rem;
 }
 
 .principle-item h4 {
     font-size: 1.15rem;
     font-weight: 600;
+    color: #2563EB;
     margin-bottom: 0.6rem;
 }
 
@@ -581,7 +582,7 @@ body{
 }
 
 .framework-card {
-    background: #f8f9ff;
+    background: #F4F8FF;
     border-radius: 20px;
     padding: 2.2rem;
     position: relative;
@@ -596,7 +597,7 @@ body{
     left: 0;
     width: 100%;
     height: 5px;
-    background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+    background: #2563EB;
 }
 
 .framework-card:hover {
@@ -607,27 +608,24 @@ body{
 .framework-card h4 {
     font-size: 1.3rem;
     font-weight: 700;
+    color: #2563EB;
     margin-bottom: 0.6rem;
 }
 
 .framework-card > p {
     margin-bottom: 1rem;
-    color: #666;
+    color: #5A6473;
 }
 
 .framework-metric {
     margin-top: 1.2rem;
     background: white;
-    border: 1px solid rgba(59, 130, 246, 0.25);
+    border: 1px solid rgba(37, 99, 235, 0.25);
     border-radius: 15px;
     padding: 0.9rem;
     text-align: center;
-    color: #3b82f6;
+    color: #2563EB;
     font-weight: 700;
-}
-
-.sprint-lifecycle {
-    margin-bottom: 3rem;
 }
 
 .sprint-stages {
@@ -638,7 +636,7 @@ body{
 }
 
 .sprint-stage {
-    background: #f8f9ff;
+    background: #F4F8FF;
     border-radius: 20px;
     padding: 2rem;
     text-align: center;
@@ -646,7 +644,7 @@ body{
 }
 
 .sprint-stage:hover {
-    background: #e8ecff;
+    background: #EAF2FF;
     transform: translateY(-3px);
 }
 
@@ -654,7 +652,7 @@ body{
     width: 55px;
     height: 55px;
     border-radius: 50%;
-    background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+    background: #2563EB;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -675,26 +673,27 @@ body{
 }
 
 .coaching-item {
-    background: #f8f9ff;
+    background: #F4F8FF;
     border-radius: 20px;
     padding: 2rem;
     transition: all 0.3s ease;
 }
 
 .coaching-item:hover {
-    background: #e8ecff;
+    background: #EAF2FF;
     transform: translateY(-3px);
 }
 
 .coaching-item i {
     font-size: 2.2rem;
-    color: #3b82f6;
+    color: #2563EB;
     margin-bottom: 1rem;
 }
 
 .coaching-item h4 {
     font-size: 1.2rem;
     font-weight: 600;
+    color: #2563EB;
     margin-bottom: 0.6rem;
 }
 
@@ -710,7 +709,7 @@ body{
 }
 
 .scaled-item {
-    background: #f8f9ff;
+    background: #F4F8FF;
     border-radius: 15px;
     padding: 1.8rem;
     text-align: center;
@@ -718,13 +717,13 @@ body{
 }
 
 .scaled-item:hover {
-    background: #e8ecff;
+    background: #EAF2FF;
     transform: translateY(-3px);
 }
 
 .scaled-item i {
     font-size: 2.3rem;
-    color: #3b82f6;
+    color: #2563EB;
     margin-bottom: 0.9rem;
 }
 
@@ -734,7 +733,7 @@ body{
 
 /* collaboration tool items (has nested .tools-grid already) */
 .tools-grid .tool-item {
-    background: #f8f9ff;
+    background: #F4F8FF;
     border-radius: 15px;
     padding: 1.2rem;
     text-align: center;
@@ -742,19 +741,19 @@ body{
 }
 
 .tools-grid .tool-item:hover {
-    background: #e8ecff;
+    background: #EAF2FF;
     transform: translateY(-3px);
 }
 
 .tools-grid .tool-item i {
     font-size: 2rem;
-    color: #3b82f6;
+    color: #2563EB;
     margin-bottom: 0.6rem;
 }
 
 .tools-grid .tool-item span {
     font-weight: 700;
-    color: #333;
+    color: #2563EB;
 }
 
 .agile-benefits {
@@ -769,7 +768,7 @@ body{
 }
 
 .benefits-cards .benefit-card {
-    background: #f8f9ff;
+    background: #F4F8FF;
     border-radius: 15px;
     padding: 2rem;
     text-align: center;
@@ -777,25 +776,26 @@ body{
 }
 
 .benefits-cards .benefit-card:hover {
-    background: #e8ecff;
+    background: #EAF2FF;
     transform: translateY(-3px);
 }
 
 .benefits-cards .benefit-card i {
     font-size: 2.3rem;
-    color: #3b82f6;
+    color: #2563EB;
     margin-bottom: 1rem;
 }
 
 .benefits-cards .benefit-card h4 {
     font-size: 1.15rem;
     font-weight: 600;
+    color: #2563EB;
     margin-bottom: 0.6rem;
 }
 
 .benefits-cards .benefit-card p {
     font-size: 0.95rem;
-    color: #666;
+    color: #5A6473;
 }
 
 /* Process Automation */
@@ -816,7 +816,7 @@ body{
 }
 
 .rpa-feature {
-    background: #f8f9ff;
+    background: #F4F8FF;
     border-radius: 15px;
     padding: 2rem;
     text-align: center;
@@ -824,17 +824,19 @@ body{
 }
 
 .rpa-feature:hover {
-    background: #e8ecff;
+    background: #EAF2FF;
     transform: translateY(-3px);
 }
 
 .rpa-feature i {
     font-size: 2.4rem;
-    color: #3b82f6;
+    color: #2563EB;
     margin-bottom: 1rem;
 }
 
-.process-grid {
+.rpa-feature p {
+    font-size: 0.95rem;
+    color: #5A6473;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
@@ -842,7 +844,7 @@ body{
 }
 
 .process-item {
-    background: #f8f9ff;
+    background: #F4F8FF;
     border-radius: 20px;
     padding: 2rem;
     transition: all 0.3s ease;
@@ -857,7 +859,7 @@ body{
     left: 0;
     width: 100%;
     height: 5px;
-    background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+    background: #2563EB;
 }
 
 .process-item:hover {
@@ -867,7 +869,7 @@ body{
 
 .process-item i {
     font-size: 2.3rem;
-    color: #3b82f6;
+    color: #2563EB;
     margin-bottom: 1rem;
 }
 
@@ -879,7 +881,7 @@ body{
 }
 
 .workflow-type {
-    background: #f8f9ff;
+    background: #F4F8FF;
     border-radius: 20px;
     padding: 2rem;
     transition: all 0.3s ease;
@@ -887,24 +889,26 @@ body{
 }
 
 .workflow-type:hover {
-    background: #e8ecff;
+    background: #EAF2FF;
     transform: translateY(-3px);
 }
 
 .workflow-type i {
     font-size: 2.4rem;
-    color: #3b82f6;
+    color: #2563EB;
     margin-bottom: 1rem;
 }
 
-.workflow-stats {
+.workflow-type p {
+    font-size: 0.95rem;
+    color: #5A6473;
     margin-top: 1rem;
     background: white;
-    border: 1px solid rgba(59, 130, 246, 0.25);
+    border: 1px solid rgba(37, 99, 235, 0.25);
     border-radius: 15px;
     padding: 0.8rem;
     font-weight: 700;
-    color: #3b82f6;
+    color: #2563EB;
 }
 
 .ai-automation-grid {
@@ -915,24 +919,26 @@ body{
 }
 
 .ai-item {
-    background: #f8f9ff;
+    background: #F4F8FF;
     border-radius: 20px;
     padding: 2rem;
     transition: all 0.3s ease;
 }
 
 .ai-item:hover {
-    background: #e8ecff;
+    background: #EAF2FF;
     transform: translateY(-3px);
 }
 
 .ai-item i {
     font-size: 2.3rem;
-    color: #3b82f6;
+    color: #2563EB;
     margin-bottom: 1rem;
 }
 
-.custom-grid {
+.ai-item p {
+    font-size: 0.95rem;
+    color: #5A6473;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 1.5rem;
@@ -940,7 +946,7 @@ body{
 }
 
 .custom-item {
-    background: #f8f9ff;
+    background: #F4F8FF;
     border-radius: 15px;
     padding: 1.8rem;
     text-align: center;
@@ -948,17 +954,19 @@ body{
 }
 
 .custom-item:hover {
-    background: #e8ecff;
+    background: #EAF2FF;
     transform: translateY(-3px);
 }
 
 .custom-item i {
     font-size: 2.2rem;
-    color: #3b82f6;
+    color: #2563EB;
     margin-bottom: 0.9rem;
 }
 
-.benefits-highlight {
+.custom-item p {
+    font-size: 0.95rem;
+    color: #5A6473;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 2rem;
@@ -966,7 +974,7 @@ body{
 }
 
 .benefit-stat {
-    background: linear-gradient(135deg, #f8f9ff 0%, #e8ecff 100%);
+    background: linear-gradient(135deg, #F4F8FF 0%, #EAF2FF 100%);
     border-radius: 15px;
     padding: 2rem;
     text-align: center;
@@ -975,50 +983,50 @@ body{
 
 .benefit-stat:hover {
     transform: translateY(-3px);
-    box-shadow: 0 10px 25px rgba(59, 130, 246, 0.18);
+    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.18);
 }
 
 .benefit-stat h4 {
     font-size: 1.2rem;
     font-weight: 700;
-    color: #3b82f6;
+    color: #2563EB;
     margin-bottom: 0.7rem;
 }
 
 .benefit-stat p {
     font-size: 0.95rem;
-    color: #666;
+    color: #6B7280;
     margin-bottom: 1rem;
 }
 
 .stat-number {
     font-size: 2.2rem;
     font-weight: 800;
-    color: #8b5cf6;
+    color: #070D5E;
 }
 
 /* CTA Section */
 .cta-section {
-    background: linear-gradient(45deg, #d2caec 33%, #FFFFFF 50%, #B497D6 80%);
-    border: 2px solid rgb(167, 15, 180);
+    background: linear-gradient(135deg, #4FA3FF 0%, #2563EB 100%);
+    border: 2px solid #2563EB;
     border-radius: 30px;
     margin: 60px -20px;
     padding: 60px 20px;
     text-align: center;
-     width:80%;
-    margin-left:12%;
+    width: 80%;
+    margin-left: 12%;
 }
 
 .cta-content h2 {
     font-size: 2.5rem;
     font-weight: 700;
-    color: #000;
+    color: #FFFFFF;
     margin-bottom: 1.5rem;
 }
 
 .cta-content p {
     font-size: 1.2rem;
-    color: #666;
+    color: rgba(255, 255, 255, 0.85);
     margin-bottom: 2rem;
     font-family: "inter", sans-serif;
     font-weight: 400;
@@ -1027,10 +1035,10 @@ body{
 .cta-content button {
     width: 220px;
     height: 50px;
-    background-color: #9e65d4;
+    background-color: #FFFFFF;
     border: none;
     border-radius: 25px;
-    color: white;
+    color: #2563EB;
     font-size: 1.05rem;
     font-weight: 600;
     cursor: pointer;
@@ -1039,19 +1047,19 @@ body{
 }
 
 .cta-content button:hover {
-    background-color: #744ac2;
+    background-color: #F4F8FF;
     transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(158, 101, 212, 0.4);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
 }
 
 .cta-content button a {
-    color: white;
+    color: inherit;
     text-decoration: none;
 }
 
 .secondary-btn {
-    border: 2px solid #9e65d4 !important;
-    color: #9e65d4 !important;
+    border: 2px solid #2563EB !important;
+    color: #2563EB !important;
 }
 
 .secondary-btn a {
@@ -1059,12 +1067,12 @@ body{
 }
 
 .secondary-btn:hover {
-    background-color: #9e65d4 !important;
+    background-color: #2563EB !important;
     color: white !important;
 }
 
 /* Footer Styles (Same as Homepage) */
-footer{
+footer {
     width: 100%;
     margin-top: 60px;
 }

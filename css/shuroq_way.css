@@ -31,24 +31,24 @@ main {
     justify-content: center;
     padding: 4rem 1rem;
     text-align: center;
-    background-color: transparent;
+     background: linear-gradient(135deg, #EEF4FF 0%,  #FFFFFF 100%)!important;
     min-height: 60vh;
 }
 .sw-hero h1 {
     font-size: clamp(2.3rem, 6.5vw, 3.4rem);
-    color: var(--sw-heading);
+    color:#132C6F;
     margin-bottom: 1rem;
 }
 .sw-hero .subtitle {
     font-size: clamp(1.2rem, 3.4vw, 1.65rem);
-    color: var(--sw-accent);
+    color:#1E3A8A;
     font-weight: 700;
     margin-bottom: 1.25rem;
 }
 .sw-hero .intro {
     max-width: 700px;
     margin: 0 auto;
-    color: var(--sw-text);
+    color:#5A6473;
     line-height: 1.8;
     font-size: clamp(1.05rem, 2.1vw, 1.22rem);
 }
@@ -56,7 +56,7 @@ main {
 /* difference cards */
 .sw-difference {
     padding: 4rem 1rem;
-    background-color: transparent;
+    background-color: #F6F9FF;
 }
 .sw-difference .container {
     max-width: 1100px;
@@ -65,7 +65,7 @@ main {
 .sw-difference h2 {
     text-align: center;
     font-size: 2rem;
-    color: var(--sw-heading);
+    color:#070D5E;
     margin-bottom: 2rem;
 }
 .sw-difference .cards {
@@ -73,7 +73,7 @@ main {
     gap: 1.5rem;
 }
 .sw-difference .card {
-    background: var(--sw-surface);
+    background: #FFFFFF;
     padding: 1.75rem;
     border-radius: 14px;
     border: 1px solid var(--sw-border);
@@ -97,12 +97,12 @@ main {
     box-shadow: 0 18px 34px rgba(15, 47, 123, 0.12);
 }
 .sw-difference .card h3 {
-    color: var(--sw-heading);
+    color: #1E3A8A;
     margin-bottom: 0.8rem;
     font-size: 1.2rem;
 }
 .sw-difference .card p {
-    color: var(--sw-text);
+    color: #5A6473;
     font-size: 0.98rem;
     line-height: 1.75;
 }
@@ -119,6 +119,7 @@ main {
 /* process steps */
 .sw-process {
     padding: 4rem 1rem;
+    background:#FFFFFF;
 }
 .sw-process .container {
     max-width: 1100px;
@@ -127,7 +128,7 @@ main {
 .sw-process h2 {
     text-align: center;
     font-size: 2rem;
-    color: var(--sw-heading);
+    color:#070D5E;
     margin-bottom: 2rem;
 }
 .sw-process .steps {
@@ -164,17 +165,18 @@ main {
     justify-content: center;
     font-size: 1.15rem;
     font-weight: 700;
-    color: var(--sw-accent);
-    background: #eef4ff;
+    color:#FFFFFF;
+    background-color:#2563EB;
     flex-shrink: 0;
+    
 }
 .sw-process .step h4 {
     margin: 0 0 0.5rem;
-    color: var(--sw-heading);
+    color: #132C6F;
 }
 .sw-process .step p {
     margin: 0;
-    color: var(--sw-text);
+    color:#5A6473;
     font-size: 0.98rem;
     line-height: 1.7;
 }
@@ -182,7 +184,7 @@ main {
 /* expertise grid */
 .sw-expertise {
     padding: 4rem 1rem;
-    background-color: transparent;
+    background-color:#F4F8FF;
 }
 .sw-expertise .container {
     max-width: 1100px;
@@ -191,7 +193,7 @@ main {
 .sw-expertise h2 {
     text-align: center;
     font-size: 2rem;
-    color: var(--sw-heading);
+    color:#070D5E;
     margin-bottom: 2rem;
 }
 .sw-expertise .expertise-grid {
@@ -219,7 +221,7 @@ main {
 }
 .sw-expertise .item i {
     font-size: 1.5rem;
-    color: var(--sw-accent);
+    color: #2563EB;
     transition: transform 0.2s ease, color 0.2s ease;
 }
 .sw-expertise .item:hover i {
@@ -231,6 +233,7 @@ main {
 .sw-principles {
     padding: 4rem 1rem;
     text-align: center;
+    background-color: linear-gradient(135deg,#EAF2FF 0%,#F8FBFF 100%);
 }
 .sw-principles h2 {
     font-size: 2rem;
@@ -253,26 +256,27 @@ main {
 /* cta section */
 .sw-cta {
     padding: 4rem 1rem;
+    background-color: #2563EB;
 }
 .sw-cta h2 {
     text-align: center;
     font-size: 2rem;
-    color: var(--sw-heading);
+    color:#FFFFFF;
     margin-bottom: 1rem;
 }
 .sw-cta p {
     text-align: center;
     max-width: 700px;
     margin: 0 auto 1.5rem;
-    color: var(--sw-text);
+    color: #FFFFFF;
     line-height: 1.75;
 }
 .sw-cta .cta-btn {
     display: inline-block;
     margin: 2rem auto 0;
     width:190px;
-    background: linear-gradient(135deg, #2563EB, #1D4ED8);
-    color: #fff;
+    background-color: #FFFFFF;
+    color: #2563EB;
     padding: 12px;
     
     border-radius: 10px;
