@@ -18,7 +18,7 @@ body {
 
 /* Main Container */
 #main {
-    margin-top: 60px;
+    margin-top: 40px;
 }
 
 /* Section Container */
@@ -65,7 +65,7 @@ body {
     background: linear-gradient(135deg, #2161a0, #1d4ed8);
     border-radius: 50%;
     margin-bottom: 20px;
-    color: white;
+    color: #ffffff;
     font-size: 1.5rem;
     box-shadow: 0 10px 25px rgba(59, 130, 246, 0.3);
 }
@@ -77,7 +77,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, #8f9cd6 0%, #764ba2 100%);
+    background:#ffffff;
     overflow: hidden;
 }
 
@@ -86,7 +86,7 @@ body {
     color: #132c6f;
     z-index: 2;
     max-width: 800px;
-    padding: 0 20px;
+    padding: 20px;
     animation: fadeInUp 1s ease-out;
 }
 
@@ -118,7 +118,7 @@ body {
 /* CTA Buttons */
 .cta-buttons {
     display: flex;
-    gap: 20px;
+    gap: 60px;
     justify-content: center;
     flex-wrap: wrap;
 }
@@ -127,7 +127,7 @@ body {
 
 .cta-primary:hover {
     transform: translateY(-3px);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.06);
 }
 
 
@@ -152,7 +152,7 @@ body {
 
 /* Capabilities Section */
 .capabilities-section {
-    padding: 20px 0;
+    padding: 20px ;
     background: #ffffff;
 }
 
@@ -230,7 +230,7 @@ body {
 
 /* Modules Section */
 .modules-section {
-    padding: 100px 0;
+    padding: 60px 0;
     background: #ffffff;
 }
 
@@ -298,7 +298,7 @@ body {
 
 /* Use Cases Section */
 .usecases-section {
-    padding: 100px 0;
+    padding: 60px 0;
     background: #ffffff;
 }
 
@@ -350,7 +350,7 @@ body {
 
 /* Benefits Section */
 .benefits-section {
-    padding: 100px 0;
+    padding: 40px 0;
     background: #ffffff;
 }
 
@@ -401,7 +401,7 @@ body {
 
 /* Why Section */
 .why-section {
-    padding: 100px 0;
+    padding: 60px 0;
     background: #ffffff;
 }
 
@@ -454,7 +454,7 @@ body {
 /* CTA Section */
 .cta-section {
     padding: 60px 20px;
-    background:linear-gradient(#2161a0 0%, #2563eb 100%);
+    background:linear-gradient(#2161a0 0%, #1c4398 100%);
     text-align: center;
     border:2px solid rgb(255,255,255,0.85);
     border-radius:30px;
@@ -484,19 +484,20 @@ body {
 
 .cta-section .cta-buttons {
     justify-content: center;
+    
 }
 
 .cta-section .cta-primary {
     background: #f1eeee;
-    color: #2563eb;
+    color: #3766cc;
     width:120px;
     height: 40px;
     border-radius:5px;
 }
 
 .cta-section .cta-secondary {
-    background:#ffffff;
-    color: rgb(184, 198, 223);
+   
+    color: rgb(173, 200, 247);
     border: 2px solid white;
     width:120px;
     height: 40px;
