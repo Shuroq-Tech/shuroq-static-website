@@ -1,0 +1,1326 @@
+/* Import Navigation Styles */
+@import url('nav.css');
+
+/* Base Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "poppins", sans-serif;
+     background: #F6F9FF;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+
+/* Breadcrumb */
+.breadcrumb {
+    padding: 80px 20px 20px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.breadcrumb a {
+    color: #3b82f6;
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb span {
+    color: #666;
+}
+
+/* Hero Section */
+.automate-hero {
+    position: relative;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #EEF4FF, #FFFFFF);
+    padding-top: 80px;
+    overflow: hidden;
+    margin-top: -20px;
+    margin-left: -20px;
+    margin-right: -20px;
+}
+
+.automate-hero::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -10%;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(59, 130, 246, 0.12) 0%, transparent 70%);
+    border-radius: 50%;
+    animation: float 20s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translate(0, 0) rotate(0deg); }
+    33% { transform: translate(30px, -30px) rotate(120deg); }
+    66% { transform: translate(-20px, 20px) rotate(240deg); }
+}
+
+.hero-content {
+    position: relative;
+    text-align: center;
+    padding: 0 20px;
+    z-index: 1;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: #132C6F;
+    margin-bottom: 1.5rem;
+    animation: fadeInUp 1s ease;
+}
+
+.hero-content p {
+    font-size: 1.3rem;
+    color: #5A6473;
+    margin-bottom: 2rem;
+    animation: fadeInUp 1s ease 0.2s both;
+}
+
+.hero-features {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    animation: fadeInUp 1s ease 0.4s both;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1rem;
+    color: #5A6473;
+}
+
+.feature i {
+    color: #2563EB;
+    font-size: 1.2rem;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Global Section Wrappers */
+.devops-section,
+.agile-section,
+.process-automation-section {
+    padding: 80px 20px;
+     background: #F4F8FF;
+    margin: 0 -20px;
+}
+
+.agile-section {
+    background-color: #FFFFFF;
+}
+
+.process-automation-section {
+    background-color: #FFFFFF;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.section-icon {
+    width: 80px;
+    height: 80px;
+    background: #2563EB;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.section-icon i {
+    font-size: 2rem;
+    color: white;
+}
+
+.section-title h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #070D5E;
+    margin-bottom: 0.5rem;
+}
+
+.section-title p {
+    font-size: 1.2rem;
+    color: #6B7280;
+    font-family: "inter", sans-serif;
+}
+
+/* Typography helpers */
+.devops-content h3,
+.agile-content h3,
+.automation-content h3 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #1E3A8A;
+    margin-bottom: 1rem;
+}
+
+.devops-content p,
+.agile-content p,
+.automation-content p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #5A6473;
+    font-family: "inter", sans-serif;
+}
+
+.devops-content ul,
+.agile-content ul,
+.automation-content ul {
+    list-style: none;
+}
+
+.devops-content li,
+.agile-content li,
+.automation-content li {
+    font-size: 0.95rem;
+    color: #5A6473;
+    margin-bottom: 0.6rem;
+    padding-left: 1.5rem;
+    position: relative;
+    font-family: "inter", sans-serif;
+}
+
+.devops-content li::before,
+.agile-content li::before,
+.automation-content li::before {
+    content: '▶';
+    position: absolute;
+    left: 0;
+    color: #2563EB;
+    font-size: 0.8rem;
+    top: 0.25rem;
+}
+
+/* DevOps Content Cards */
+.devops-content,
+.agile-content,
+.automation-content {
+    background: white;
+    border-radius: 20px;
+    padding: 50px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.devops-overview {
+    margin-bottom: 3rem;
+}
+
+.devops-pillars {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.pillar {
+    background: #F4F8FF;
+    padding: 1.8rem;
+    border-radius: 15px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.pillar:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.18);
+}
+
+.pillar i {
+    font-size: 2.3rem;
+    color: #2563EB;
+    margin-bottom: 1rem;
+}
+
+.pillar h4 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #2563EB;
+    margin-bottom: 0.6rem;
+}
+
+.pillar p {
+    font-size: 0.95rem;
+    color: #6B7280;
+}
+
+/* CI/CD Pipeline */
+.cicd-pipeline {
+    margin-bottom: 3rem;
+}
+
+.pipeline-stages {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+}
+
+.stage {
+    width: 180px;
+    background: #F4F8FF;
+    border-radius: 15px;
+    padding: 1.4rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.stage:hover {
+    background: #EAF2FF;
+    transform: translateY(-3px);
+}
+
+.stage-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 1rem;
+    background: #2563EB;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stage-icon i {
+    color: white;
+    font-size: 1.6rem;
+}
+
+.stage h4 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #2563EB;
+    margin-bottom: 0.4rem;
+}
+
+.stage p {
+    font-size: 0.9rem;
+    color: #6B7280;
+}
+
+.stage-arrow {
+    font-size: 2rem;
+    color: #070D5E;
+    font-weight: 700;
+}
+
+/* Infrastructure Automation Grid */
+.devops-services {
+    margin-bottom: 3rem;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.service-item {
+    background: #F4F8FF;
+    border-radius: 20px;
+    padding: 2rem;
+    text-align: left;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.service-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: #2563EB;
+}
+
+.service-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+.service-item i {
+    font-size: 2.3rem;
+    color: #2563EB;
+    margin-bottom: 1rem;
+}
+
+.service-item h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #2563EB;
+    margin-bottom: 0.7rem;
+}
+
+.service-item > p {
+    margin-bottom: 1rem;
+    color: #5A6473;
+}
+
+/* Monitoring Grid */
+.monitoring-section {
+    margin-bottom: 3rem;
+}
+
+.monitoring-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.monitoring-item {
+    background: #F4F8FF;
+    padding: 1.8rem;
+    border-radius: 15px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.monitoring-item:hover {
+    background: #EAF2FF;
+    transform: translateY(-3px);
+}
+
+.monitoring-item i {
+    font-size: 2.2rem;
+    color: #2563EB;
+    margin-bottom: 0.9rem;
+}
+
+.monitoring-item h4 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #2563EB;
+    margin-bottom: 0.6rem;
+}
+
+.monitoring-item p {
+    font-size: 0.95rem;
+    color: #6B7280;
+}
+
+/* Tools Section - grid with categories */
+.tools-section {
+    margin-bottom: 3rem;
+}
+
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.8rem;
+    margin-top: 1.5rem;
+}
+
+.tool-category {
+    background: #F4F8FF;
+    padding: 2rem;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.tool-category:hover {
+    background: #EAF2FF;
+    transform: translateY(-3px);
+}
+
+.tool-category h4 {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #2563EB;
+    margin-bottom: 1.2rem;
+}
+
+.tool-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+    justify-content: center;
+}
+
+.tool-list span {
+    background: white;
+    color: #2563EB;
+    border: 1px solid rgba(37, 99, 235, 0.25);
+    padding: 0.45rem 0.9rem;
+    border-radius: 999px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+/* DevOps Benefits - list */
+.devops-benefits {
+    margin-top: 1rem;
+}
+
+.benefits-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-top: 1.2rem;
+}
+
+.benefit-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1.5rem;
+    background: #F4F8FF;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.benefit-item:hover {
+    background: #EAF2FF;
+    transform: translateX(5px);
+}
+
+.benefit-item i {
+    font-size: 2rem;
+    color: #2563EB;
+    margin-top: 0.2rem;
+}
+
+.benefit-item h4 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #2563EB;
+    margin-bottom: 0.4rem;
+}
+
+.benefit-item p {
+    font-size: 0.95rem;
+    color: #5A6473;
+}
+
+/* Agile Specific */
+.principles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.principle-item {
+    background: #F4F8FF;
+    border-radius: 15px;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.principle-item:hover {
+    background: #EAF2FF;
+    transform: translateY(-3px);
+}
+
+.principle-item i {
+    font-size: 2.4rem;
+    color: #2563EB;
+    margin-bottom: 1rem;
+}
+
+.principle-item h4 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #2563EB;
+    margin-bottom: 0.6rem;
+}
+
+.frameworks-section {
+    margin: 3rem 0;
+}
+
+.frameworks-comparison {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.framework-card {
+    background: #F4F8FF;
+    border-radius: 20px;
+    padding: 2.2rem;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.framework-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: #2563EB;
+}
+
+.framework-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+.framework-card h4 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #2563EB;
+    margin-bottom: 0.6rem;
+}
+
+.framework-card > p {
+    margin-bottom: 1rem;
+    color: #5A6473;
+}
+
+.framework-metric {
+    margin-top: 1.2rem;
+    background: white;
+    border: 1px solid rgba(37, 99, 235, 0.25);
+    border-radius: 15px;
+    padding: 0.9rem;
+    text-align: center;
+    color: #2563EB;
+    font-weight: 700;
+}
+
+.sprint-stages {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.sprint-stage {
+    background: #F4F8FF;
+    border-radius: 20px;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.sprint-stage:hover {
+    background: #EAF2FF;
+    transform: translateY(-3px);
+}
+
+.stage-number {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background: #2563EB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 800;
+    margin: 0 auto 1rem;
+}
+
+.agile-services {
+    margin-bottom: 3rem;
+}
+
+.coaching-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.coaching-item {
+    background: #F4F8FF;
+    border-radius: 20px;
+    padding: 2rem;
+    transition: all 0.3s ease;
+}
+
+.coaching-item:hover {
+    background: #EAF2FF;
+    transform: translateY(-3px);
+}
+
+.coaching-item i {
+    font-size: 2.2rem;
+    color: #2563EB;
+    margin-bottom: 1rem;
+}
+
+.coaching-item h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #2563EB;
+    margin-bottom: 0.6rem;
+}
+
+.scaled-agile {
+    margin-bottom: 3rem;
+}
+
+.scaled-frameworks {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.scaled-item {
+    background: #F4F8FF;
+    border-radius: 15px;
+    padding: 1.8rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.scaled-item:hover {
+    background: #EAF2FF;
+    transform: translateY(-3px);
+}
+
+.scaled-item i {
+    font-size: 2.3rem;
+    color: #2563EB;
+    margin-bottom: 0.9rem;
+}
+
+.collaboration-tools {
+    margin-bottom: 3rem;
+}
+
+/* collaboration tool items (has nested .tools-grid already) */
+.tools-grid .tool-item {
+    background: #F4F8FF;
+    border-radius: 15px;
+    padding: 1.2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.tools-grid .tool-item:hover {
+    background: #EAF2FF;
+    transform: translateY(-3px);
+}
+
+.tools-grid .tool-item i {
+    font-size: 2rem;
+    color: #2563EB;
+    margin-bottom: 0.6rem;
+}
+
+.tools-grid .tool-item span {
+    font-weight: 700;
+    color: #2563EB;
+}
+
+.agile-benefits {
+    margin-top: 1rem;
+}
+
+.benefits-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.benefits-cards .benefit-card {
+    background: #F4F8FF;
+    border-radius: 15px;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.benefits-cards .benefit-card:hover {
+    background: #EAF2FF;
+    transform: translateY(-3px);
+}
+
+.benefits-cards .benefit-card i {
+    font-size: 2.3rem;
+    color: #2563EB;
+    margin-bottom: 1rem;
+}
+
+.benefits-cards .benefit-card h4 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #2563EB;
+    margin-bottom: 0.6rem;
+}
+
+.benefits-cards .benefit-card p {
+    font-size: 0.95rem;
+    color: #5A6473;
+}
+
+/* Process Automation */
+.rpa-section,
+.business-process-section,
+.workflow-section,
+.intelligent-automation,
+.custom-automation,
+.automation-benefits {
+    margin-bottom: 3rem;
+}
+
+.rpa-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.rpa-feature {
+    background: #F4F8FF;
+    border-radius: 15px;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.rpa-feature:hover {
+    background: #EAF2FF;
+    transform: translateY(-3px);
+}
+
+.rpa-feature i {
+    font-size: 2.4rem;
+    color: #2563EB;
+    margin-bottom: 1rem;
+}
+
+.rpa-feature p {
+    font-size: 0.95rem;
+    color: #5A6473;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.process-item {
+    background: #F4F8FF;
+    border-radius: 20px;
+    padding: 2rem;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.process-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: #2563EB;
+}
+
+.process-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+.process-item i {
+    font-size: 2.3rem;
+    color: #2563EB;
+    margin-bottom: 1rem;
+}
+
+.workflow-types {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.workflow-type {
+    background: #F4F8FF;
+    border-radius: 20px;
+    padding: 2rem;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.workflow-type:hover {
+    background: #EAF2FF;
+    transform: translateY(-3px);
+}
+
+.workflow-type i {
+    font-size: 2.4rem;
+    color: #2563EB;
+    margin-bottom: 1rem;
+}
+
+.workflow-type p {
+    font-size: 0.95rem;
+    color: #5A6473;
+    margin-top: 1rem;
+    background: white;
+    border: 1px solid rgba(37, 99, 235, 0.25);
+    border-radius: 15px;
+    padding: 0.8rem;
+    font-weight: 700;
+    color: #2563EB;
+}
+
+.ai-automation-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.ai-item {
+    background: #F4F8FF;
+    border-radius: 20px;
+    padding: 2rem;
+    transition: all 0.3s ease;
+}
+
+.ai-item:hover {
+    background: #EAF2FF;
+    transform: translateY(-3px);
+}
+
+.ai-item i {
+    font-size: 2.3rem;
+    color: #2563EB;
+    margin-bottom: 1rem;
+}
+
+.ai-item p {
+    font-size: 0.95rem;
+    color: #5A6473;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.custom-item {
+    background: #F4F8FF;
+    border-radius: 15px;
+    padding: 1.8rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.custom-item:hover {
+    background: #EAF2FF;
+    transform: translateY(-3px);
+}
+
+.custom-item i {
+    font-size: 2.2rem;
+    color: #2563EB;
+    margin-bottom: 0.9rem;
+}
+
+.custom-item p {
+    font-size: 0.95rem;
+    color: #5A6473;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.benefit-stat {
+    background: linear-gradient(135deg, #F4F8FF 0%, #EAF2FF 100%);
+    border-radius: 15px;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.benefit-stat:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.18);
+}
+
+.benefit-stat h4 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #2563EB;
+    margin-bottom: 0.7rem;
+}
+
+.benefit-stat p {
+    font-size: 0.95rem;
+    color: #6B7280;
+    margin-bottom: 1rem;
+}
+
+.stat-number {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #070D5E;
+}
+
+/* CTA Section */
+.cta-section {
+    background: linear-gradient(135deg, #4FA3FF 0%, #2563EB 100%);
+    border: 2px solid #2563EB;
+    border-radius: 30px;
+    margin: 60px -20px;
+    padding: 60px 20px;
+    text-align: center;
+    width: 80%;
+    margin-left: 12%;
+}
+
+.cta-content h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-bottom: 1.5rem;
+}
+
+.cta-content p {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.85);
+    margin-bottom: 2rem;
+    font-family: "inter", sans-serif;
+    font-weight: 400;
+}
+
+.cta-content button {
+    width: 220px;
+    height: 50px;
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 25px;
+    color: #2563EB;
+    font-size: 1.05rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 0 0.5rem;
+}
+
+.cta-content button:hover {
+    background-color: #F4F8FF;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+.cta-content button a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.secondary-btn {
+    border: 2px solid #2563EB !important;
+    color: #2563EB !important;
+}
+
+.secondary-btn a {
+    color: inherit;
+}
+
+.secondary-btn:hover {
+    background-color: #2563EB !important;
+    color: white !important;
+}
+
+/* Footer Styles (Same as Homepage) */
+footer {
+    width: 100%;
+    margin-top: 60px;
+}
+
+#footbox{
+    width: 100vw;
+    height: 300px;
+    padding: 30px;
+    background-color: rgb(82, 80, 80);
+    margin-top: 20px;
+    margin-left: -5vw;
+}
+
+#footbox img{
+    width: 20px;
+    height: auto;
+    object-fit: contain;
+}
+
+#footabout{
+    width: 85vw;
+    height: auto;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+#footnav{
+    width: 45vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    gap:20vw;
+    margin-left: 20%;
+}
+
+#footnav1{
+    display: flex;
+    flex-direction: column;
+    gap:9px;
+}
+
+#footnav2{
+    display: flex;
+    flex-direction: column;
+    gap:9px;
+}
+
+#footnav a{
+    color: #827E7E;
+    text-decoration: none;
+}
+
+#footlogo{
+    height: 5vh;
+    width: 10vw;
+    font-size: 22px;
+    margin-top: -4vh;
+    letter-spacing: -1px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footabout img {
+    width: 72px;
+    object-fit: contain;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+#footabout_title{
+    width: 19vw;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .nav-links {
+        gap: 2rem;
+        margin-left: 10vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-container {
+        padding-left: 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1.1rem;
+    }
+
+    .hero-features {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .section-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .devops-content,
+    .agile-content,
+    .automation-content {
+        padding: 30px;
+    }
+
+    .pipeline-stages {
+        gap: 0.8rem;
+    }
+
+    .stage-arrow {
+        display: none;
+    }
+
+    .cta-content h2 {
+        font-size: 2rem;
+    }
+
+    .services-dropdown .dropdown-menu {
+        position: static;
+        box-shadow: none;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        margin-top: 0.5rem;
+        display: none;
+        width: 100%;
+        background: transparent;
+    }
+
+    .services-dropdown .dropdown-menu a {
+        padding-left: 32px;
+    }
+
+    .services-dropdown.submenu-open .dropdown-menu {
+        display: block;
+    }
+
+    .services-dropdown.submenu-open .services-link i {
+        transform: rotate(180deg);
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-links {
+        width: min(300px, 90vw);
+        padding: 84px 20px 20px;
+    }
+    
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .devops-content,
+    .agile-content,
+    .automation-content {
+        padding: 20px;
+    }
+   
+    .section-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .section-icon i {
+        font-size: 1.5rem;
+    }
+
+    .section-title h2 {
+        font-size: 1.8rem;
+    }
+
+    .cta-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .cta-content button {
+        width: 170px;
+        height: 45px;
+        font-size: 1rem;
+        margin: 0.5rem 0.2rem;
+    }
+
+    #footlogo {
+        justify-content: center;
+    }
+    
+    #footbox{
+        height: 70vh;
+    }
+    #footbox h2{
+        margin-left: -50px;
+    }
+    #footnav{
+        margin-left:45vw ;
+    }
+    #footnav{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* Navigation adjustments */
+    .nav-container {
+        width: 95%;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-left: 2.5%;
+    }
+    
+    .nav-links {
+        margin-left: auto;
+        gap: clamp(1rem, 2vw, 2rem);
+        justify-content: flex-end;
+    }
+    
+    .logo {
+        margin-left: 3%;
+        margin-right: auto;
+    }
+    
+    /* Navigation adjustments for tablets/iPads */
+    .nav-links {
+        gap: clamp(1rem, 1.5vw, 2rem);
+    }
+    
+    .nav-links li a {
+        font-size: 0.85rem;
+    }
+    
+    #contact-btn {
+        width: 100px;
+        font-size: 0.8rem;
+    }
+    
+    .lang-btn-container {
+        width: 100px;
+    }
+    
+    .lang-btn-container button {
+        font-size: 13px;
+    }
+}
