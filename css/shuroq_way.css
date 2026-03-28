@@ -1,0 +1,338 @@
+﻿@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap");
+
+/* Mobile-first styles for The Shuroq Way page */
+:root {
+    --sw-heading: #0f2f7b;
+    --sw-text: #4B5563;
+    --sw-accent: #2563EB;
+    --sw-surface: #ffffff;
+    --sw-border: #dbe7ff;
+}
+
+main {
+    font-family: "Manrope", "Inter", sans-serif;
+    /* background-color: #c4e5fa; */
+}
+
+.sw-hero h1,
+.sw-difference h2,
+.sw-process h2,
+.sw-expertise h2,
+.sw-cta h2,
+.sw-difference .card h3,
+.sw-process .step h4 {
+    font-family: "Plus Jakarta Sans", "Manrope", sans-serif;
+    letter-spacing: -0.02em;
+}
+
+.sw-hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 1rem;
+    text-align: center;
+     background: linear-gradient(135deg, #EEF4FF 0%,  #FFFFFF 100%)!important;
+    min-height: 60vh;
+}
+.sw-hero h1 {
+    font-size: clamp(2.3rem, 6.5vw, 3.4rem);
+    color:#132C6F;
+    margin-bottom: 1rem;
+}
+.sw-hero .subtitle {
+    font-size: clamp(1.2rem, 3.4vw, 1.65rem);
+    color:#1E3A8A;
+    font-weight: 700;
+    margin-bottom: 1.25rem;
+}
+.sw-hero .intro {
+    max-width: 700px;
+    margin: 0 auto;
+    color:#5A6473;
+    line-height: 1.8;
+    font-size: clamp(1.05rem, 2.1vw, 1.22rem);
+}
+
+/* difference cards */
+.sw-difference {
+    padding: 4rem 1rem;
+    background-color: #F6F9FF;
+}
+.sw-difference .container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.sw-difference h2 {
+    text-align: center;
+    font-size: 2rem;
+    color:#070D5E;
+    margin-bottom: 2rem;
+}
+.sw-difference .cards {
+    display: grid;
+    gap: 1.5rem;
+}
+.sw-difference .card {
+    background: #FFFFFF;
+    padding: 1.75rem;
+    border-radius: 14px;
+    border: 1px solid var(--sw-border);
+    box-shadow: 0 12px 24px rgba(15, 47, 123, 0.07);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    position: relative;
+    overflow: hidden;
+    background-image: linear-gradient(160deg, rgba(37, 99, 235, 0.06), rgba(56, 189, 248, 0.03) 40%, #ffffff 78%);
+}
+.sw-difference .card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, #2563EB, #38BDF8);
+}
+.sw-difference .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 18px 34px rgba(15, 47, 123, 0.12);
+}
+.sw-difference .card h3 {
+    color: #1E3A8A;
+    margin-bottom: 0.8rem;
+    font-size: 1.2rem;
+}
+.sw-difference .card p {
+    color: #5A6473;
+    font-size: 0.98rem;
+    line-height: 1.75;
+}
+.sw-difference .card ul {
+    margin-top: 0.6rem;
+    list-style-type: disc;
+    padding-left: 1.25rem;
+    line-height: 1.7;
+}
+.sw-difference .card li::marker {
+    color: #2563EB;
+}
+
+/* process steps */
+.sw-process {
+    padding: 4rem 1rem;
+    background:#FFFFFF;
+}
+.sw-process .container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.sw-process h2 {
+    text-align: center;
+    font-size: 2rem;
+    color:#070D5E;
+    margin-bottom: 2rem;
+}
+.sw-process .steps {
+    display: grid;
+    gap: 1.5rem;
+}
+.sw-process .step {
+    background: var(--sw-surface);
+    padding: 1.5rem;
+    border-radius: 14px;
+    border: 1px solid var(--sw-border);
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    box-shadow: 0 12px 24px rgba(15, 47, 123, 0.06);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+.sw-process .step:hover {
+    transform: translateY(-4px);
+    border-color: #bfd2ff;
+    box-shadow: 0 20px 34px rgba(15, 47, 123, 0.12);
+}
+.sw-process .step-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.sw-process .step .number {
+    width: 2.4rem;
+    height: 2.4rem;
+    border-radius: 999px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color:#FFFFFF;
+    background-color:#2563EB;
+    flex-shrink: 0;
+    
+}
+.sw-process .step h4 {
+    margin: 0 0 0.5rem;
+    color: #132C6F;
+}
+.sw-process .step p {
+    margin: 0;
+    color:#5A6473;
+    font-size: 0.98rem;
+    line-height: 1.7;
+}
+
+/* expertise grid */
+.sw-expertise {
+    padding: 4rem 1rem;
+    background-color:#F4F8FF;
+}
+.sw-expertise .container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.sw-expertise h2 {
+    text-align: center;
+    font-size: 2rem;
+    color:#070D5E;
+    margin-bottom: 2rem;
+}
+.sw-expertise .expertise-grid {
+    display: grid;
+    gap: 1.5rem;
+}
+.sw-expertise .item {
+    background: var(--sw-surface);
+    padding: 1.25rem;
+    border-radius: 12px;
+    border: 1px solid var(--sw-border);
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 0.98rem;
+    color: var(--sw-text);
+    font-weight: 600;
+    box-shadow: 0 8px 18px rgba(15, 47, 123, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+.sw-expertise .item:hover {
+    transform: translateY(-4px);
+    border-color: #bfd2ff;
+    box-shadow: 0 18px 30px rgba(15, 47, 123, 0.1);
+}
+.sw-expertise .item i {
+    font-size: 1.5rem;
+    color: #2563EB;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+.sw-expertise .item:hover i {
+    transform: scale(1.08);
+    color: #1d4ed8;
+}
+
+/* principles */
+.sw-principles {
+    padding: 4rem 1rem;
+    text-align: center;
+    background-color: linear-gradient(135deg,#EAF2FF 0%,#F8FBFF 100%);
+}
+.sw-principles h2 {
+    font-size: 2rem;
+    color: #1E3A8A;
+    margin-bottom: 1.5rem;
+}
+.sw-principles .principles-list {
+    list-style: none;
+    padding: 0;
+    max-width: 600px;
+    margin: 0 auto;
+    color: #4B5563;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+.sw-principles .principles-list li {
+    margin-bottom: 0.75rem;
+}
+
+/* cta section */
+.sw-cta {
+    padding: 4rem 1rem;
+    text-align: center;
+    background-color: #2563EB;
+    border-radius: 30px;
+    width: 80%;
+    margin-left: 12%;
+}
+.sw-cta h2 {
+    text-align: center;
+    font-size: 2rem;
+    color:#FFFFFF;
+    margin-bottom: 1rem;
+}
+.sw-cta p {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 1.5rem;
+    color: #FFFFFF;
+    line-height: 1.75;
+}
+.sw-cta .cta-btn {
+    display: inline-block;
+    margin: 2rem auto 0;
+    width:190px;
+    background-color: #FFFFFF;
+    color: #2563EB;
+    padding: 12px;
+    
+    border-radius: 10px;
+    font-size: 0.98rem;
+    font-weight: 700;
+    font-family: "Plus Jakarta Sans", "Manrope", sans-serif;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+}
+.sw-cta .cta-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 24px rgba(29, 78, 216, 0.28);
+    text-decoration: none;
+}
+
+/* Responsive breakpoint */
+@media (min-width: 768px) {
+    .sw-difference .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .sw-process .steps {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .sw-expertise .expertise-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .sw-difference .container,
+    .sw-process .container,
+    .sw-expertise .container {
+        max-width: 1200px;
+    }
+}
+
+/* iPad specific fix - reduce expertise grid columns */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .sw-expertise .expertise-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+}
+
+/* Mobile Navigation - Increased spacing for shuroq way page */
+@media (max-width: 768px) {
+    #main-nav .nav-links {
+        gap: 2rem !important; /* Increased from 0.5rem to 1rem */
+    }
+}
+
+/* Override Services dropdown width for shuroq way page - match index page */
+#main-nav .services-dropdown .dropdown-menu {
+    min-width: 280px !important;
+}

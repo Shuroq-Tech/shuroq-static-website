@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Us</title>
+
+    <link rel="icon" href="../logo.png" sizes="44x44" type="image/png">
+
+    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- Navigation Container -->
+    <div id="nav-container"></div>
+
+    <div id="main">
+
+        <!-- Company Hero Section -->
+        <section class="contact-hero">
+            <div class="hero-decoration">
+                <i class="fas fa-envelope decoration-icon icon-1"></i>
+                <i class="fas fa-phone decoration-icon icon-2"></i>
+                <i class="fas fa-map-marker-alt decoration-icon icon-3"></i>
+                <i class="fas fa-comments decoration-icon icon-4"></i>
+            </div>
+            <div class="hero-content">
+                <h1 class="company-tagline" data-i18n="company_tagline">Tech Redefined</h1>
+                <p class="hero-description" data-i18n="hero_description">Transforming ideas into innovative digital solutions</p>
+            </div>
+        </section>
+
+        <!-- Contact Page Container -->
+        <section class="contact-page">
+            <div class="contact-container">
+                <!-- Left Section - Contact Information -->
+                <div class="contact-info-section">
+                    <div class="info-header">
+                        <h2 data-i18n="get_in_touch">Get in Touch</h2>
+                        <p data-i18n="contact_description">Reach out to us for inquiries, collaborations, or to learn more about our services. We're here to help transform your ideas into reality.</p>
+                    </div>
+                    
+                    <div class="contact-items">
+                        <!-- Email -->
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3 data-i18n="contact_email_title">Email</h3>
+                                <a href="mailto:contact@shuroq.com">contact@shuroq.com</a>
+                            </div>
+                        </div>
+
+                        <!-- Phone -->
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3 data-i18n="contact_phone_title">Phone</h3>
+                                <p data-i18n="contact_phone">+91 89831 40094</p>
+                            </div>
+                        </div>
+
+                        <!-- Location -->
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3 data-i18n="contact_location_title">Location</h3>
+                                <p data-i18n="contact_location">AWFIS, Hi-tech city<br>Hyderabad, Telangana<br>India</p>
+                            </div>
+                        </div>
+
+                        <!-- Social Links -->
+                       
+                    </div>
+                </div>
+
+                <!-- Right Section - Contact Form -->
+                <div class="contact-form-section">
+                    <div class="form-container">
+                        <h2 data-i18n="send_message">Send us a Message</h2>
+                        <p data-i18n="form_description">We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+                        
+                        <form id="contactForm" class="modern-form">
+                            <!-- Full Name -->
+                            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name" data-i18n="form_name_label">Name</label>
+                    <input type="text" id="name" placeholder="Your Name" data-i18n-placeholder="form_name_placeholder" required />
+                </div>
+                <div class="form-group">
+                    <label for="email" data-i18n="form_email_label">Email</label>
+                    <input type="email" id="email" placeholder="Your Email" data-i18n-placeholder="form_email_placeholder" required />
+                </div>
+                <div class="form-group">
+                    <label for="phone" data-i18n="form_phone_label">Phone</label>
+                    <input type="tel" id="phone" placeholder="Phone Number" data-i18n-placeholder="form_phone_placeholder" required />
+                </div>
+                <div class="form-group">
+                    <label for="subject" data-i18n="form_subject_label">Subject</label>
+                    <input type="text" id="subject" placeholder="Subject" data-i18n-placeholder="form_subject_placeholder" required />
+                </div>
+                <div class="button-container">
+                    <button type="button" onclick="submitForm()" data-i18n="form_submit_button">Submit</button>
+                    <button type="button" onclick="clearForm()" data-i18n="form_clear_button">Clear</button>
+                </div>
+            </form>
+
+                    </div>
+                    
+                   
+            <div class="map-container">
+                
+                 <!-- Map Container -->
+                    <div class="contact-map-container">
+                        <h3 data-i18n="visit_us">Visit Us</h3>
+                        <div class="contact-map-wrapper">
+                            <div class="contact-map-iframe">
+                                <iframe 
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.173936600825!2d78.36844427462835!3d17.451387100959327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93c48fece39b%3A0xd1bd8442e221291a!2sAwfis%20Hitech%20City%20N%20Heights!5e0!3m2!1sen!2sin!4v1773650025010!5m2!1sen!2sin" 
+                                    width="100%" 
+                                    height="100%" 
+                                    style="border:0;" 
+                                    allowfullscreen="" 
+                                    loading="lazy" 
+                                    referrerpolicy="no-referrer-when-downgrade"
+                                    class="contact-map-iframe-element">
+                                </iframe>
+                            </div>
+                            <div class="contact-map-actions">
+                                <a href="https://www.google.com/maps/dir/?api=1&destination=Awfis+Hitech+City+N+Heights,+Level+1,+Phase+2,+N-Heights,+Awfis,+Plot+No+38,+Siddiq+Nagar,+Gachibowli,+Hyderabad,+Telangana+500081" 
+                                   target="_blank" 
+                                   class="contact-directions-btn" 
+                                   data-i18n="get_directions">
+                                    <i class="fas fa-directions"></i>
+                                    Get Directions
+                                </a>
+                                <a href="https://www.google.com/maps/search/?api=1&query=Awfis+Hitech+City+N+Heights,+Hyderabad,+Telangana+500081" 
+                                   target="_blank" 
+                                   class="contact-view-larger-btn" 
+                                   data-i18n="view_larger_map">
+                                    <i class="fas fa-expand"></i>
+                                    View Larger Map
+                                </a>
+                            </div>
+                        </div>
+               
+                
+            </div>
+        </section>
+
+    </div>
+
+    <script src="../js/footer.js"></script>
+    <link rel="stylesheet" href="../css/footer.css">
+
+    <script src="../js/nav.js"></script>
+    <script src="../js/nav_lang.js"></script>
+    <script src="../js/contact_lang.js"></script>
+    <script src="../js/contact.js"></script>
+   
+    <script>
+        // Load navigation
+        async function loadNavigation() {
+            try {
+                const response = await fetch('../nav.html');
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                const navHTML = await response.text();
+                
+                // Replace the existing navigation
+                const existingNav = document.getElementById('nav-container');
+                if (existingNav) {
+                    existingNav.innerHTML = navHTML;
+                }
+                
+                // Initialize navigation functionality with longer timeout for CSS loading
+                setTimeout(() => {
+                    initializeNavigation();
+                    
+                    // Debug: Check if Company dropdown elements exist
+                    const companyDropdown = document.querySelector('.company-dropdown');
+                    const companyLink = document.querySelector('.company-link');
+                    const companyDropdownMenu = document.querySelector('.company-dropdown-menu');
+                    console.log('Company dropdown elements:', { companyDropdown, companyLink, companyDropdownMenu });
+                    
+                    // Test click functionality
+                    if (companyLink) {
+                        console.log('Company link found, adding test click listener');
+                        companyLink.addEventListener('click', function(e) {
+                            console.log('Company dropdown clicked!');
+                        });
+                    }
+                }, 500); // Increased timeout
+                
+            } catch (error) {
+                console.error('Error loading navigation:', error);
+            }
+        }
+
+        // Initialize everything when DOM is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            loadNavigation();
+        });
+    </script>
+
+</body>
+
+</html>
