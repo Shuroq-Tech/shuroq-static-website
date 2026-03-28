@@ -1,0 +1,162 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Observability and DevSecOps Services - Shuroq</title>
+  <meta name="description" content="End-to-end observability and security operations services that improve incident detection, response speed, and engineering confidence.">
+  <link rel="icon" href="logo.png" sizes="44x44" type="image/png">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/service_pages.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <div id="nav-container"></div>
+
+  <main id="main">
+    <div class="sp-shell sp-breadcrumb">
+      <a href="index.html">Home</a> / <a href="services.html">Services</a> / <a href="observability_devsecops.html">Observability and DevSecOps</a> / <span>Observability and DevSecOps</span>
+    </div>
+
+    <section class="sp-hero">
+      <div class="sp-shell">
+        <div class="sp-hero-wrap">
+          <span class="sp-eyebrow">Visibility and Security</span>
+          <h1>Observability and DevSecOps</h1>
+          <p>Strengthen platform visibility and secure delivery pipelines with practical standards for telemetry, alerting, and continuous security validation.</p>
+          <div class="sp-chip-row">
+            <span class="sp-chip">Unified Telemetry</span>
+            <span class="sp-chip">Secure CI/CD</span>
+            <span class="sp-chip">Faster Incident Detection</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sp-section">
+      <div class="sp-shell">
+        <h2 class="sp-title">Business Outcomes</h2>
+        <p class="sp-subtitle">Get high-signal observability and shift-left security controls without slowing engineering throughput.</p>
+        <div class="sp-metric-grid">
+          <article class="sp-metric"><strong>50%</strong><span>Faster issue detection with clear metrics, logs, and tracing standards.</span></article>
+          <article class="sp-metric"><strong>40%</strong><span>Reduction in alert noise through SLO-aware alert strategy.</span></article>
+          <article class="sp-metric"><strong>35%</strong><span>Fewer release delays from late-stage security findings.</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="sp-section">
+      <div class="sp-shell">
+        <h2 class="sp-title">Service Scope</h2>
+        <p class="sp-subtitle">Explore targeted services that help teams scale observability and DevSecOps operations consistently.</p>
+        <div class="sp-grid">
+          <article class="sp-card">
+            <h3>DevSecOps Consult</h3>
+            <p>Shift security left in CI/CD with policy guardrails for source code, dependencies, images, and runtime posture.</p>
+            <div class="sp-links"><a href="devsecops_consult.html">Open Page</a></div>
+          </article>
+          <article class="sp-card">
+            <h3>Observability and Adoption</h3>
+            <p>Define telemetry standards and operating practices that drive adoption across engineering teams.</p>
+            <div class="sp-links"><a href="observability_adoption.html">Open Page</a></div>
+          </article>
+          <article class="sp-card">
+            <h3>Grafana Consulting</h3>
+            <p>Create actionable dashboards and response workflows to improve decision speed during incidents.</p>
+            <div class="sp-links"><a href="grafana_consulting.html">Open Page</a></div>
+          </article>
+          <article class="sp-card">
+            <h3>Prometheus Consulting</h3>
+            <p>Engineer scalable metrics systems, recording rules, and reliable alert pipelines for production workloads.</p>
+            <div class="sp-links"><a href="prometheus_consulting.html">Open Page</a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="sp-section">
+      <div class="sp-shell">
+        <h2 class="sp-title">Implementation Approach</h2>
+        <div class="sp-step-grid">
+          <article class="sp-step"><span class="num">1</span><h3>Baseline</h3><p>Assess current telemetry quality, alert fatigue, and security control coverage.</p></article>
+          <article class="sp-step"><span class="num">2</span><h3>Standardize</h3><p>Define common conventions for data, dashboards, and pipeline checks.</p></article>
+          <article class="sp-step"><span class="num">3</span><h3>Roll Out</h3><p>Implement controls and observability assets in prioritized service groups.</p></article>
+          <article class="sp-step"><span class="num">4</span><h3>Scale</h3><p>Measure adoption and tune signal quality for sustained operational excellence.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="sp-section">
+      <div class="sp-shell">
+        <h2 class="sp-title">What You Receive</h2>
+        <div class="sp-list-grid">
+          <article class="sp-list">
+            <h3>Observability Blueprint</h3>
+            <ul>
+              <li>Telemetry naming and ownership model</li>
+              <li>SLO aligned alert taxonomy</li>
+              <li>Dashboard standards and starter templates</li>
+            </ul>
+          </article>
+          <article class="sp-list">
+            <h3>DevSecOps Controls Pack</h3>
+            <ul>
+              <li>Secure CI/CD checkpoint design</li>
+              <li>Runtime posture and vulnerability workflow</li>
+              <li>Operational reporting and governance cadence</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="sp-cta">
+      <div class="sp-shell">
+        <div class="box">
+          <h2>Need hands-on support?</h2>
+          <p>Work with Shuroq to build reliable observability and DevSecOps practices that scale with your product and teams.</p>
+          <a class="sp-btn" href="contact.html">Contact Our Team</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/nav.js"></script>
+  <script src="js/main_lang.js"></script>
+  <script src="js/service_pages.js"></script>
+  <script>
+    async function loadNavigation() {
+      try {
+        const response = await fetch('nav.html');
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        const navHTML = await response.text();
+        const navContainer = document.getElementById('nav-container');
+        if (navContainer) {
+          navContainer.innerHTML = navHTML;
+        }
+        setTimeout(() => {
+          if (typeof initializeNavigation === 'function') {
+            initializeNavigation();
+          }
+          if (typeof changeLanguage === 'function') {
+            changeLanguage('en');
+          }
+        }, 300);
+      } catch (error) {
+        console.error('Error loading navigation:', error);
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+      loadNavigation();
+    });
+  </script>
+  
+  <!-- Dynamic Footer Component -->
+  <script src="js/footer.js"></script>
+  <link rel="stylesheet" href="css/footer.css">
+</body>
+</html>

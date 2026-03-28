@@ -1,0 +1,2339 @@
+﻿:root {
+  /* Background System */
+  --bg-main: #F6F9FF;
+  --bg-white: #FFFFFF;
+  --bg-light: #F4F8FF;
+  --bg-hero-start: #EEF4FF;
+  --bg-hero-end: #FFFFFF;
+  --bg-highlight-start: #EAF2FF;
+  --bg-highlight-end: #F8FBFF;
+  
+  /* Heading Hierarchy */
+  --heading-h1: #132C6F;
+  --heading-h2: #070D5E;
+  --heading-h3: #1E3A8A;
+  --heading-h4: #2563EB;
+  
+  /* Text System */
+  --text-main: #5A6473;
+  --text-light: #6B7280;
+  --text-on-dark: #FFFFFF;
+  
+  /* Card Design */
+  --card-bg: #FFFFFF;
+  --card-bg-alt: #F4F8FF;
+  --card-border: #E6EDFF;
+  --card-shadow: rgba(0,0,0,0.06);
+  
+  /* Button System */
+  --btn-primary: #2563EB;
+  --btn-primary-hover: #1D4ED8;
+  --btn-outline: #2563EB;
+  --btn-text: #FFFFFF;
+  
+  /* Process Steps */
+  --step-circle: #2563EB;
+  --step-number: #FFFFFF;
+  --step-title: #132C6F;
+}
+
+/* Service Pages Base Variables */
+:root {
+  --sp-primary: #2563EB;
+  --sp-primary-soft: #4F8FEB;
+  --sp-bg: #F6F9FF;
+  --sp-surface: #FFFFFF;
+  --sp-border: #E6EDFF;
+  --sp-text: #5A6473;
+  --sp-muted: #6B7280;
+  --sp-shadow: 0 8px 24px rgba(0,0,0,0.06);
+}
+
+/* Reduced services dropdown width for specific service pages */
+body.sre-consultancy .dropdown-menu,
+body.service-mesh-consulting .dropdown-menu,
+body.cloud-native-product-development .dropdown-menu,
+body.linkerd-consulting .dropdown-menu,
+body.terraform-consulting .dropdown-menu,
+body.observability-devsecops-consult .dropdown-menu,
+body.observability-adoption .dropdown-menu,
+body.grafana-consulting .dropdown-menu,
+body.prometheus-consulting .dropdown-menu {
+    min-width: 200px !important; /* Match nav.css width */
+}
+
+/* CTA Reasons */
+.sp-cta-reasons {
+  margin: 1.5rem 0;
+}
+
+.sp-reason-item {
+  display: flex;
+  align-items: center;
+  margin: 0.75rem 0;
+  font-size: 0.9rem;
+}
+
+.sp-reason-item i {
+  color: #E6EDFF;
+  margin-right: 0.75rem;
+  font-size: 1.1rem;
+}
+
+/* Tech items in cards */
+.sp-card .sp-tech-item {
+  background: rgba(76, 175, 80, 0.1);
+  border-radius: 6px;
+  padding: 0.75rem;
+  margin-top: 1rem;
+  border: 1px solid rgba(76, 175, 80, 0.2);
+}
+
+.sp-card .sp-tech-item i {
+  color: var(--sp-primary);
+  margin-right: 0.5rem;
+}
+
+/* SRE Consultancy - Global Color System */
+.sre-consultancy .sp-hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 4rem 1rem;
+  text-align: center;
+  background: linear-gradient(135deg, var(--bg-hero-start) 0%, var(--bg-hero-end) 100%);
+  min-height: 60vh;
+  color: var(--heading-h1);
+  margin-bottom: 1rem;
+}
+
+.sre-consultancy .sp-hero .hero-content {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.sre-consultancy .sp-hero h1 {
+  color: var(--heading-h1);
+  font-size: clamp(2.3rem, 6.5vw, 3.4rem);
+  margin-bottom: 1rem;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 100%;
+}
+
+.sre-consultancy .sp-hero p {
+  font-size: 1.1rem;
+  color: var(--text-main);
+  font-weight: 400;
+  margin-bottom: 1.25rem;
+  max-width: 800px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sre-consultancy .sp-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: var(--card-shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sre-consultancy .sp-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px var(--card-shadow);
+}
+
+.sre-consultancy .sp-card h3 {
+  color: var(--heading-h3);
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.sre-consultancy .sp-card p {
+  color: var(--text-main);
+  line-height: 1.6;
+}
+
+.sre-consultancy .sp-btn {
+  background: var(--btn-primary);
+  border: none;
+  color: var(--btn-text);
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.sre-consultancy .sp-btn:hover {
+  background: var(--btn-primary-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3);
+}
+
+.sre-consultancy .sp-btn.sp-btn-secondary {
+  background: transparent;
+  border: 2px solid var(--btn-outline);
+  color: var(--btn-outline);
+}
+
+.sre-consultancy .sp-btn.sp-btn-secondary:hover {
+  background: var(--btn-primary);
+  color: var(--btn-text);
+}
+
+.sre-consultancy .sp-tech-item {
+  background: var(--card-bg-alt);
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  padding: 1rem;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.sre-consultancy .sp-tech-item:hover {
+  background: var(--btn-primary);
+  transform: translateY(-2px);
+}
+
+.sre-consultancy .sp-tech-item:hover i {
+  color: var(--btn-text);
+}
+
+.sre-consultancy .sp-tech-item:hover span {
+  color: var(--btn-text);
+}
+
+.sre-consultancy .sp-tech-item i {
+  color: var(--btn-primary);
+  margin-right: 0.75rem;
+  font-size: 1.2rem;
+}
+
+.sre-consultancy .sp-tech-item span {
+  color: var(--text-main);
+  font-weight: 500;
+}
+
+.sre-consultancy .sp-process-step .step-number {
+  background: var(--step-circle);
+  color: var(--step-number);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.sre-consultancy .sp-process-step h3 {
+  color: var(--step-title);
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.sre-consultancy .sp-process-step p {
+  color: var(--text-main);
+  line-height: 1.5;
+}
+
+.sre-consultancy .sp-benefit-item i {
+  color: var(--btn-primary);
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.sre-consultancy .sp-benefit-item h3 {
+  color: var(--heading-h3);
+  font-size: 1.2rem;
+  margin-bottom: 0.75rem;
+}
+
+.sre-consultancy .sp-benefit-item p {
+  color: var(--text-main);
+  line-height: 1.5;
+}
+
+.sre-consultancy .sp-reason-item i {
+  color: var(--btn-primary);
+  margin-right: 0.75rem;
+  font-size: 1.1rem;
+}
+
+.sre-consultancy .sp-feature-list li::before {
+  color: var(--btn-primary);
+  content: "✓";
+  margin-right: 0.5rem;
+  font-weight: bold;
+}
+
+/* Service Mesh Consulting - Global Color System */
+.service-mesh-consulting .sp-hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 4rem 1rem;
+  text-align: center;
+  background: linear-gradient(135deg, var(--bg-hero-start) 0%, var(--bg-hero-end) 100%);
+  min-height: 60vh;
+  color: var(--heading-h1);
+  margin-bottom: 1rem;
+}
+
+.service-mesh-consulting .sp-hero .hero-content {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.service-mesh-consulting .sp-hero h1 {
+  color: var(--heading-h1);
+  font-size: clamp(2.3rem, 6.5vw, 3.4rem);
+  margin-bottom: 1rem;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 100%;
+}
+
+.service-mesh-consulting .sp-hero p {
+  font-size: 1.1rem;
+  color: var(--text-main);
+  font-weight: 400;
+  margin-bottom: 1.25rem;
+  max-width: 800px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.service-mesh-consulting .sp-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: var(--card-shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-mesh-consulting .sp-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px var(--card-shadow);
+}
+
+.service-mesh-consulting .sp-card h3 {
+  color: var(--heading-h3);
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.service-mesh-consulting .sp-card p {
+  color: var(--text-main);
+  line-height: 1.6;
+}
+
+.service-mesh-consulting .sp-btn {
+  background: var(--btn-primary);
+  border: none;
+  color: var(--btn-text);
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.service-mesh-consulting .sp-btn:hover {
+  background: var(--btn-primary-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3);
+}
+
+.service-mesh-consulting .sp-btn.sp-btn-secondary {
+  background: transparent;
+  border: 2px solid var(--btn-outline);
+  color: var(--btn-outline);
+}
+
+.service-mesh-consulting .sp-btn.sp-btn-secondary:hover {
+  background: var(--btn-primary);
+  color: var(--btn-text);
+}
+
+.service-mesh-consulting .sp-tech-item {
+  background: var(--card-bg-alt);
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  padding: 1rem;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.service-mesh-consulting .sp-tech-item:hover {
+  background: var(--btn-primary);
+  transform: translateY(-2px);
+}
+
+.service-mesh-consulting .sp-tech-item:hover i {
+  color: var(--btn-text);
+}
+
+.service-mesh-consulting .sp-tech-item:hover span {
+  color: var(--btn-text);
+}
+
+.service-mesh-consulting .sp-tech-item i {
+  color: var(--btn-primary);
+  margin-right: 0.75rem;
+  font-size: 1.2rem;
+}
+
+.service-mesh-consulting .sp-tech-item span {
+  color: var(--text-main);
+  font-weight: 500;
+}
+
+.service-mesh-consulting .sp-process-step .step-number {
+  background: var(--step-circle);
+  color: var(--step-number);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.service-mesh-consulting .sp-process-step h3 {
+  color: var(--step-title);
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.service-mesh-consulting .sp-process-step p {
+  color: var(--text-main);
+  line-height: 1.5;
+}
+
+.service-mesh-consulting .sp-benefit-item i {
+  color: var(--btn-primary);
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.service-mesh-consulting .sp-benefit-item h3 {
+  color: var(--heading-h3);
+  font-size: 1.2rem;
+  margin-bottom: 0.75rem;
+}
+
+.service-mesh-consulting .sp-benefit-item p {
+  color: var(--text-main);
+  line-height: 1.5;
+}
+
+.service-mesh-consulting .sp-reason-item i {
+  color: var(--btn-primary);
+  margin-right: 0.75rem;
+  font-size: 1.1rem;
+}
+
+.service-mesh-consulting .sp-feature-list li::before {
+  color: var(--btn-primary);
+  content: "✓";
+  margin-right: 0.5rem;
+  font-weight: bold;
+}
+
+/* Cloud Native Product Development - Global Color System */
+.cloud-native-product-development .sp-hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 4rem 1rem;
+  text-align: center;
+  background: linear-gradient(135deg, var(--bg-hero-start) 0%, var(--bg-hero-end) 100%);
+  min-height: 60vh;
+  color: var(--heading-h1);
+  margin-bottom: 1rem;
+}
+
+.cloud-native-product-development .sp-hero .hero-content {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.cloud-native-product-development .sp-hero h1 {
+  color: var(--heading-h1);
+  font-size: clamp(2.3rem, 6.5vw, 3.4rem);
+  margin-bottom: 1rem;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 100%;
+}
+
+.cloud-native-product-development .sp-hero p {
+  font-size: 1.1rem;
+  color: var(--text-main);
+  font-weight: 400;
+  margin-bottom: 1.25rem;
+  max-width: 800px;
+  
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cloud-native-product-development .sp-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: var(--card-shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cloud-native-product-development .sp-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px var(--card-shadow);
+}
+
+.cloud-native-product-development .sp-card h3 {
+  color: var(--heading-h3);
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.cloud-native-product-development .sp-card p {
+  color: var(--text-main);
+  line-height: 1.6;
+}
+
+.cloud-native-product-development .sp-btn {
+  background: var(--btn-primary);
+  border: none;
+  color: var(--btn-text);
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.cloud-native-product-development .sp-btn:hover {
+  background: var(--btn-primary-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3);
+}
+
+.cloud-native-product-development .sp-btn.sp-btn-secondary {
+  background: transparent;
+  border: 2px solid var(--btn-outline);
+  color: var(--btn-outline);
+}
+
+.cloud-native-product-development .sp-btn.sp-btn-secondary:hover {
+  background: var(--btn-primary);
+  color: var(--btn-text);
+}
+
+.cloud-native-product-development .sp-tech-item {
+  background: var(--card-bg-alt);
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  padding: 1rem;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.cloud-native-product-development .sp-tech-item:hover {
+  background: var(--bg-light);
+  transform: translateY(-2px);
+}
+
+.cloud-native-product-development .sp-tech-item i {
+  color: var(--btn-primary);
+  margin-right: 0.75rem;
+  font-size: 1.2rem;
+}
+
+.cloud-native-product-development .sp-tech-item span {
+  color: var(--text-main);
+  font-weight: 500;
+}
+
+.cloud-native-product-development .sp-process-step .step-number {
+  background: var(--step-circle);
+  color: var(--step-number);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.cloud-native-product-development .sp-process-step h3 {
+  color: var(--step-title);
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.cloud-native-product-development .sp-process-step p {
+  color: var(--text-main);
+  line-height: 1.5;
+}
+
+.cloud-native-product-development .sp-benefit-item i {
+  color: var(--btn-primary);
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.cloud-native-product-development .sp-benefit-item h3 {
+  color: var(--heading-h3);
+  font-size: 1.2rem;
+  margin-bottom: 0.75rem;
+}
+
+.cloud-native-product-development .sp-benefit-item p {
+  color: var(--text-main);
+  line-height: 1.5;
+}
+
+.cloud-native-product-development .sp-reason-item i {
+  color: var(--btn-primary);
+  margin-right: 0.75rem;
+  font-size: 1.1rem;
+}
+
+.cloud-native-product-development .sp-feature-list li::before {
+  color: var(--btn-primary);
+  content: "✓";
+  margin-right: 0.5rem;
+  font-weight: bold;
+}
+
+.cloud-native-product-development .sp-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: var(--card-shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-left: 4px solid var(--btn-primary);
+}
+
+.cloud-native-product-development .sp-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(37, 99, 235, 0.15);
+  border-left-color: var(--btn-primary-hover);
+}
+
+.cloud-native-product-development .sp-btn {
+  background: var(--btn-primary);
+  border: none;
+  color: var(--btn-text);
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.cloud-native-product-development .sp-btn:hover {
+  background: var(--btn-primary-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3);
+}
+
+.cloud-native-product-development .sp-tech-item {
+  background: var(--card-bg-alt);
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  padding: 1rem;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.cloud-native-product-development .sp-tech-item:hover {
+  background: var(--btn-primary);
+  transform: translateY(-2px);
+}
+
+.cloud-native-product-development .sp-tech-item:hover i {
+  color: var(--btn-text);
+}
+
+.cloud-native-product-development .sp-tech-item:hover span {
+  color: var(--btn-text);
+}
+
+.cloud-native-product-development .sp-tech-item i {
+  color: var(--btn-primary);
+  margin-right: 0.75rem;
+  font-size: 1.2rem;
+}
+
+.cloud-native-product-development .sp-tech-item span {
+  color: var(--text-main);
+  font-weight: 500;
+}
+
+.cloud-native-product-development .sp-btn.sp-btn-secondary {
+  background: transparent;
+  border: 2px solid var(--btn-outline);
+  color: var(--btn-outline);
+}
+
+.cloud-native-product-development .sp-btn.sp-btn-secondary:hover {
+  background: var(--btn-primary);
+  color: var(--btn-text);
+}
+
+.cloud-native-product-development .sp-process-step .step-number {
+  background: var(--step-circle);
+  color: var(--step-number);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.cloud-native-product-development .sp-process-step h3 {
+  color: var(--step-title);
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.cloud-native-product-development .sp-process-step p {
+  color: var(--text-main);
+  line-height: 1.5;
+}
+
+.cloud-native-product-development .sp-benefit-item i {
+  color: var(--btn-primary);
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.cloud-native-product-development .sp-benefit-item h3 {
+  color: var(--heading-h3);
+  font-size: 1.2rem;
+  margin-bottom: 0.75rem;
+}
+
+.cloud-native-product-development .sp-benefit-item p {
+  color: var(--text-main);
+  line-height: 1.5;
+}
+
+.cloud-native-product-development .sp-reason-item i {
+  color: var(--btn-primary);
+  margin-right: 0.75rem;
+  font-size: 1.1rem;
+}
+
+.cloud-native-product-development .sp-feature-list li::before {
+  color: var(--btn-primary);
+  content: "✓";
+  margin-right: 0.5rem;
+  font-weight: bold;
+}
+
+/* Feature Lists */
+.sp-feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0 0;
+}
+
+.sp-feature-list li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  font-size: 0.9rem;
+}
+
+.sp-feature-list li:before {
+  content: "✓";
+  color: #4CAF50;
+  margin-right: 0.5rem;
+  font-weight: bold;
+}
+
+/* Technology Grid */
+.sp-tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.sp-tech-item {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background: rgba(255,255,255,0.05);
+  border-radius: 8px;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.sp-tech-item:hover {
+  transform: translateY(-2px);
+  background: rgba(255,255,255,0.1);
+}
+
+.sp-tech-item i {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  color: #4CAF50;
+}
+
+.sp-tech-item span {
+  font-weight: 500;
+}
+
+/* Process Steps */
+.sp-process {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.sp-process-step {
+  text-align: center;
+  position: relative;
+  padding: 1.5rem;
+  background: var(--sp-surface);
+  border-radius: 12px;
+  box-shadow: var(--sp-shadow);
+  transition: transform 0.3s ease;
+}
+
+.sp-process-step:hover {
+  transform: translateY(-5px);
+}
+
+.step-number {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #4CAF50, #45a049);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  box-shadow: 0 4px 12px rgba(76, 175, 80, 0.3);
+}
+
+.sp-process-step h3 {
+  margin: 0 0 0.5rem 0;
+  color: var(--sp-primary);
+  font-size: 1.2rem;
+}
+
+.sp-process-step p {
+  margin: 0;
+  color: var(--sp-muted);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* Benefits */
+.sp-benefits {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.sp-benefit-item {
+  text-align: center;
+  padding: 2rem;
+  background: var(--sp-surface);
+  border-radius: 12px;
+  box-shadow: var(--sp-shadow);
+  transition: transform 0.3s ease;
+}
+
+.sp-benefit-item:hover {
+  transform: translateY(-5px);
+}
+
+.sp-benefit-item i {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #4CAF50;
+}
+
+.sp-benefit-item h3 {
+  margin: 0 0 1rem 0;
+  color: var(--sp-primary);
+  font-size: 1.2rem;
+}
+
+.sp-benefit-item p {
+  margin: 0;
+  color: var(--sp-muted);
+  line-height: 1.5;
+}
+
+/* CTA Actions */
+.sp-cta-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.sp-btn-secondary {
+  background: transparent;
+  border: 2px solid var(--sp-primary);
+  color: var(--sp-primary);
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.sp-btn-secondary:hover {
+  background: var(--sp-primary);
+  color: white;
+  transform: translateY(-2px);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text-main);
+  background: var(--bg-main);
+}
+
+#main {
+  min-height: 100vh;
+  padding-top: 10vh;
+}
+
+.sp-shell {
+  width: min(1140px, 92%);
+  margin: 0 auto;
+}
+
+.sp-breadcrumb {
+  padding: 1.2rem 0 0;
+  color: #5c6c85;
+  font-size: 0.95rem;
+}
+
+.sp-breadcrumb a {
+  color: var(--sp-primary);
+  text-decoration: none;
+}
+
+.sp-breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.sp-hero {
+  padding: 2rem 0;
+}
+
+.sp-eyebrow {
+  display: inline-flex;
+  padding: 0.35rem 0.72rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #5ca6e2;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  line-height: 1.12;
+  max-width: 18ch;
+}
+
+.sp-hero h1 {
+  margin: 0.9rem 0 0;
+  font-size: clamp(2rem, 4.4vw, 3.1rem);
+  line-height: 1.12;
+  max-width: 18ch;
+}
+
+.sp-hero p {
+  margin: 1rem 0 0;
+  max-width: 72ch;
+  color: #5ca6e2;
+  line-height: 1.58;
+}
+
+.sp-chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-top: 1rem;
+}
+
+.sp-chip {
+  border: 1px solid rgba(255, 255, 255, 0.27);
+  border-radius: 999px;
+  padding: 0.4rem 0.7rem;
+  font-size: 0.84rem;
+  color: #e9f6ff;
+}
+
+.sp-section {
+  padding: 0.95rem 0 1.2rem;
+}
+
+.sp-title {
+  margin: 0 0 0.65rem;
+  font-size: clamp(1.25rem, 2.2vw, 1.7rem);
+}
+
+.sp-subtitle {
+  margin: 0 0 1rem;
+  color: var(--sp-muted);
+  max-width: 75ch;
+  line-height: 1.6;
+}
+
+.sp-grid,
+.sp-metric-grid,
+.sp-step-grid,
+.sp-list-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.sp-metric-grid {
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+}
+
+.sp-grid {
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+}
+
+.sp-step-grid {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.sp-list-grid {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.sp-card,
+.sp-metric,
+.sp-step,
+.sp-list {
+  background: var(--sp-surface);
+  border: 1px solid var(--sp-border);
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.05);
+}
+
+.sp-metric {
+  padding: 1rem;
+}
+
+.sp-metric strong {
+  display: block;
+  color: var(--sp-primary);
+  font-size: 1.45rem;
+}
+
+.sp-metric span {
+  color: #61718a;
+  font-size: 0.93rem;
+}
+
+.sp-card {
+  padding: 1.05rem;
+}
+
+.sp-card h3 {
+  margin: 0 0 0.45rem;
+  font-size: 1.05rem;
+}
+
+.sp-card p {
+  margin: 0;
+  color: var(--sp-muted);
+  line-height: 1.5;
+}
+
+.sp-links {
+  margin-top: 0.85rem;
+}
+
+.sp-links a {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.52rem 0.8rem;
+  border-radius: 999px;
+  border: 1px solid #b9dbf2;
+  color: var(--sp-primary);
+  text-decoration: none;
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+.sp-links a:hover {
+  background: #eaf6ff;
+}
+
+.sp-step {
+  padding: 1rem;
+}
+
+.sp-step .num {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--sp-primary), var(--sp-primary-soft));
+  margin-bottom: 0.65rem;
+}
+
+.sp-step h3 {
+  margin: 0 0 0.35rem;
+}
+
+.sp-step p {
+  margin: 0;
+  color: var(--sp-muted);
+  line-height: 1.5;
+}
+
+.sp-list {
+  padding: 1rem;
+}
+
+.sp-list h3 {
+  margin: 0 0 0.65rem;
+}
+
+.sp-list ul {
+  margin: 0;
+  padding-left: 1.05rem;
+  color: var(--sp-muted);
+  line-height: 1.5;
+}
+
+.sp-cta {
+  padding: 0.8rem 0 3rem;
+}
+
+.sp-cta .box {
+  background: linear-gradient(135deg, #082f4b, #0b5584 60%, #126c9f);
+  color: #fff;
+  border-radius: 20px;
+  padding: clamp(1rem, 2.4vw, 1.6rem);
+  box-shadow: var(--sp-shadow);
+}
+
+.sp-cta p {
+  margin: 0.6rem 0 1rem;
+  color: #d9eeff;
+  max-width: 72ch;
+}
+
+.sp-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #0c3e63;
+  background: #fff;
+  padding: 0.6rem 1rem;
+  border-radius: 999px;
+  font-weight: 700;
+}
+
+.sp-btn:hover {
+  background: #f2f9ff;
+}
+
+@media (max-width: 768px) {
+  .sp-hero {
+    padding-top: 1.6rem;
+  }
+
+  .sp-hero-wrap {
+    border-radius: 18px;
+  }
+}
+
+/* DevSecOps Consult - Global Color System */
+.observability-devsecops-consult .sp-hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 4rem 1rem;
+  text-align: center;
+  background: linear-gradient(135deg, var(--bg-hero-start) 0%, var(--bg-hero-end) 100%);
+  min-height: 60vh;
+  color: var(--heading-h1);
+  margin-bottom: 1rem;
+}
+
+.observability-devsecops-consult .sp-hero .hero-content {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.observability-devsecops-consult .sp-hero h1 {
+  color: var(--heading-h1);
+  font-size: clamp(2.3rem, 6.5vw, 3.4rem);
+  margin-bottom: 1rem;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.observability-devsecops-consult .sp-hero p {
+  font-size: 1.1rem;
+  color: var(--text-main);
+  font-weight: 400;
+  margin-bottom: 1.25rem;
+  max-width: 800px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.observability-devsecops-consult .sp-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: var(--card-shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.observability-devsecops-consult .sp-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px var(--card-shadow);
+}
+
+.observability-devsecops-consult .sp-card h3 {
+  color: var(--heading-h3);
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.observability-devsecops-consult .sp-card p {
+  color: var(--text-main);
+  line-height: 1.6;
+}
+
+.observability-devsecops-consult .sp-btn {
+  background: var(--btn-primary);
+  border: none;
+  color: var(--btn-text);
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.observability-devsecops-consult .sp-btn:hover {
+  background: #070D5E;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(7, 13, 94, 0.3);
+}
+
+.observability-devsecops-consult .sp-btn.sp-btn-secondary {
+  background: transparent;
+  border: 2px solid var(--btn-outline);
+  color: var(--btn-outline);
+}
+
+.observability-devsecops-consult .sp-btn.sp-btn-secondary:hover {
+  background: #070D5E;
+  color: var(--btn-text);
+}
+
+.observability-devsecops-consult .sp-tech-item {
+  background: var(--card-bg-alt);
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  padding: 1rem;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.observability-devsecops-consult .sp-tech-item:hover {
+  background: var(--btn-primary);
+  transform: translateY(-2px);
+}
+
+.observability-devsecops-consult .sp-tech-item:hover i {
+  color: var(--btn-text);
+}
+
+.observability-devsecops-consult .sp-tech-item:hover span {
+  color: var(--btn-text);
+}
+
+.observability-devsecops-consult .sp-tech-item i {
+  color: var(--btn-primary);
+  margin-right: 0.75rem;
+  font-size: 1.2rem;
+}
+
+.observability-devsecops-consult .sp-tech-item span {
+  color: var(--text-main);
+  font-weight: 500;
+}
+
+.observability-devsecops-consult .sp-process-step .step-number {
+  background: var(--step-circle);
+  color: var(--step-number);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.observability-devsecops-consult .sp-process-step h3 {
+  color: var(--step-title);
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.observability-devsecops-consult .sp-process-step p {
+  color: var(--text-main);
+  line-height: 1.5;
+}
+
+.observability-devsecops-consult .sp-benefit-item i {
+  color: var(--btn-primary);
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.observability-devsecops-consult .sp-benefit-item h3 {
+  color: var(--heading-h3);
+  font-size: 1.2rem;
+  margin-bottom: 0.75rem;
+}
+
+.observability-devsecops-consult .sp-benefit-item p {
+  color: var(--text-main);
+  line-height: 1.5;
+}
+
+.observability-devsecops-consult .sp-reason-item i {
+  color: var(--btn-primary);
+  margin-right: 0.75rem;
+  font-size: 1.1rem;
+}
+
+.observability-devsecops-consult .sp-feature-list li::before {
+  color: var(--btn-primary);
+  content: "✓";
+  margin-right: 0.5rem;
+  font-weight: bold;
+}
+.cloud-native-product-development .sp-hero p{
+  color:#fff;
+}
+.linkerd-consulting .sp-hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 4rem 1rem;
+  text-align: center;
+  background: linear-gradient(135deg, var(--bg-hero-start) 0%, var(--bg-hero-end) 100%);
+  min-height: 60vh;
+  color: var(--heading-h1);
+  margin-bottom: 1rem;
+}
+
+.linkerd-consulting .sp-hero .hero-content {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.linkerd-consulting .sp-hero h1 {
+  color: var(--heading-h1);
+  font-size: clamp(2.3rem, 6.5vw, 3.4rem);
+  margin-bottom: 1rem;
+ 
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.linkerd-consulting .sp-hero p {
+  font-size: 1.1rem;
+  color: var(--text-main);
+  font-weight: 400;
+  margin-bottom: 1.25rem;
+  max-width: 800px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.linkerd-consulting .sp-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: var(--card-shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.linkerd-consulting .sp-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px var(--card-shadow);
+}
+
+.linkerd-consulting .sp-card h3 {
+  color: var(--heading-h3);
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.linkerd-consulting .sp-card p {
+  color: var(--text-main);
+  line-height: 1.6;
+}
+
+.linkerd-consulting .sp-btn {
+  background: var(--btn-primary);
+  border: none;
+  color: var(--btn-text);
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.linkerd-consulting .sp-btn:hover {
+  background: var(--btn-primary-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3);
+}
+
+.linkerd-consulting .sp-btn.sp-btn-secondary {
+  background: transparent;
+  border: 2px solid var(--btn-outline);
+  color: var(--btn-outline);
+}
+
+.linkerd-consulting .sp-btn.sp-btn-secondary:hover {
+  background: var(--btn-primary);
+  color: var(--btn-text);
+}
+
+.linkerd-consulting .sp-tech-item {
+  background: var(--card-bg-alt);
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  padding: 1rem;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.linkerd-consulting .sp-tech-item:hover {
+  background: var(--btn-primary);
+  transform: translateY(-2px);
+}
+
+.linkerd-consulting .sp-tech-item:hover i {
+  color: var(--btn-text);
+}
+
+.linkerd-consulting .sp-tech-item:hover span {
+  color: var(--btn-text);
+}
+
+.linkerd-consulting .sp-tech-item i {
+  color: var(--btn-primary);
+  margin-right: 0.75rem;
+  font-size: 1.2rem;
+}
+
+.linkerd-consulting .sp-tech-item span {
+  color: var(--text-main);
+  font-weight: 500;
+}
+
+.linkerd-consulting .sp-process-step .step-number {
+  background: var(--step-circle);
+  color: var(--step-number);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.linkerd-consulting .sp-process-step h3 {
+  color: var(--step-title);
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.linkerd-consulting .sp-process-step p {
+  color: var(--text-main);
+  line-height: 1.5;
+}
+
+.linkerd-consulting .sp-benefit-item i {
+  color: var(--btn-primary);
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.linkerd-consulting .sp-benefit-item h3 {
+  color: var(--heading-h3);
+  font-size: 1.2rem;
+  margin-bottom: 0.75rem;
+}
+
+.linkerd-consulting .sp-benefit-item p {
+  color: var(--text-main);
+  line-height: 1.5;
+}
+
+.linkerd-consulting .sp-reason-item i {
+  color: var(--btn-primary);
+  margin-right: 0.75rem;
+  font-size: 1.1rem;
+}
+
+.linkerd-consulting .sp-feature-list li::before {
+  color: var(--btn-primary);
+  content: "✓";
+  margin-right: 0.5rem;
+  font-weight: bold;
+}
+
+.linkerd-consulting .sp-hero p{
+  color:black;
+}
+/* Terraform Consulting - Global Color System */
+.terraform-consulting .sp-hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 4rem 1rem;
+  text-align: center;
+  background: linear-gradient(135deg, var(--bg-hero-start) 0%, var(--bg-hero-end) 100%);
+  min-height: 60vh;
+  color: var(--heading-h1);
+  margin-bottom: 1rem;
+}
+
+.terraform-consulting .sp-hero .hero-content {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.terraform-consulting .sp-hero h1 {
+  color: var(--heading-h1);
+  font-size: clamp(2.3rem, 6.5vw, 3.4rem);
+  margin-bottom: 1rem;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.terraform-consulting .sp-hero p {
+  font-size: 1.1rem;
+  color: var(--text-main);
+  font-weight: 400;
+  margin-bottom: 1.25rem;
+  max-width: 800px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.terraform-consulting .sp-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: var(--card-shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.terraform-consulting .sp-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px var(--card-shadow);
+}
+
+.terraform-consulting .sp-card h3 {
+  color: var(--heading-h3);
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.terraform-consulting .sp-card p {
+  color: var(--text-main);
+  line-height: 1.6;
+}
+
+.terraform-consulting .sp-btn {
+  background: var(--btn-primary);
+  border: none;
+  color: var(--btn-text);
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.terraform-consulting .sp-btn:hover {
+  background: var(--btn-primary-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3);
+}
+
+.terraform-consulting .sp-btn.sp-btn-secondary {
+  background: transparent;
+  border: 2px solid var(--btn-outline);
+  color: var(--btn-outline);
+}
+
+.terraform-consulting .sp-btn.sp-btn-secondary:hover {
+  background: var(--btn-primary);
+  color: var(--btn-text);
+}
+
+.terraform-consulting .sp-tech-item {
+  background: var(--card-bg-alt);
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  padding: 1rem;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.terraform-consulting .sp-tech-item:hover {
+  background: var(--btn-primary);
+  transform: translateY(-2px);
+}
+
+.terraform-consulting .sp-tech-item:hover i {
+  color: var(--btn-text);
+}
+
+.terraform-consulting .sp-tech-item:hover span {
+  color: var(--btn-text);
+}
+
+.terraform-consulting .sp-tech-item i {
+  color: var(--btn-primary);
+  margin-right: 0.75rem;
+  font-size: 1.2rem;
+}
+
+.terraform-consulting .sp-tech-item span {
+  color: var(--text-main);
+  font-weight: 500;
+}
+
+.terraform-consulting .sp-process-step .step-number {
+  background: var(--step-circle);
+  color: var(--step-number);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.terraform-consulting .sp-process-step h3 {
+  color: var(--step-title);
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.terraform-consulting .sp-process-step p {
+  color: var(--text-main);
+  line-height: 1.5;
+}
+
+.terraform-consulting .sp-benefit-item i {
+  color: var(--btn-primary);
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.terraform-consulting .sp-benefit-item h3 {
+  color: var(--heading-h3);
+  font-size: 1.2rem;
+  margin-bottom: 0.75rem;
+}
+
+.terraform-consulting .sp-benefit-item p {
+  color: var(--text-main);
+  line-height: 1.5;
+}
+
+.terraform-consulting .sp-reason-item i {
+  color: var(--btn-primary);
+  margin-right: 0.75rem;
+  font-size: 1.1rem;
+}
+
+.terraform-consulting .sp-feature-list li::before {
+  color: var(--btn-primary);
+  content: "✓";
+  margin-right: 0.5rem;
+  font-weight: bold;
+}
+/* Observability Adoption - Global Color System */
+.observability-adoption .sp-hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 4rem 1rem;
+  text-align: center;
+  background: linear-gradient(135deg, var(--bg-hero-start) 0%, var(--bg-hero-end) 100%);
+  min-height: 60vh;
+  color: var(--heading-h1);
+  margin-bottom: 1rem;
+}
+
+.observability-adoption .sp-hero .hero-content {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.observability-adoption .sp-hero h1 {
+  color: var(--heading-h1);
+  font-size: clamp(2.3rem, 6.5vw, 3.4rem);
+  margin-bottom: 1rem;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.observability-adoption .sp-hero p {
+  font-size: 1.1rem;
+  color: var(--text-main);
+  font-weight: 400;
+  margin-bottom: 1.25rem;
+  max-width: 800px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.observability-adoption .sp-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: var(--card-shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.observability-adoption .sp-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px var(--card-shadow);
+}
+
+.observability-adoption .sp-card h3 {
+  color: var(--heading-h3);
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.observability-adoption .sp-card p {
+  color: var(--text-main);
+  line-height: 1.6;
+}
+
+.observability-adoption .sp-btn {
+  background: var(--btn-primary);
+  border: none;
+  color: var(--btn-text);
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.observability-adoption .sp-btn:hover {
+  background: #070D5E;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(7, 13, 94, 0.3);
+}
+
+.observability-adoption .sp-btn.sp-btn-secondary {
+  background: transparent;
+  border: 2px solid var(--btn-outline);
+  color: var(--btn-outline);
+}
+
+.observability-adoption .sp-btn.sp-btn-secondary:hover {
+  background: #070D5E;
+  color: var(--btn-text);
+}
+
+.observability-adoption .sp-tech-item {
+  background: var(--card-bg-alt);
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  padding: 1rem;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.observability-adoption .sp-tech-item:hover {
+  background: var(--btn-primary);
+  transform: translateY(-2px);
+}
+
+.observability-adoption .sp-tech-item:hover i {
+  color: var(--btn-text);
+}
+
+.observability-adoption .sp-tech-item:hover span {
+  color: var(--btn-text);
+}
+
+.observability-adoption .sp-tech-item i {
+  color: var(--btn-primary);
+  margin-right: 0.75rem;
+  font-size: 1.2rem;
+}
+
+.observability-adoption .sp-tech-item span {
+  color: var(--text-main);
+  font-weight: 500;
+}
+
+.observability-adoption .sp-process-step .step-number {
+  background: var(--step-circle);
+  color: var(--step-number);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.observability-adoption .sp-process-step h3 {
+  color: var(--step-title);
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.observability-adoption .sp-process-step p {
+  color: var(--text-main);
+  line-height: 1.5;
+}
+
+.observability-adoption .sp-benefit-item i {
+  color: var(--btn-primary);
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.observability-adoption .sp-benefit-item h3 {
+  color: var(--heading-h3);
+  font-size: 1.2rem;
+  margin-bottom: 0.75rem;
+}
+
+.observability-adoption .sp-benefit-item p {
+  color: var(--text-main);
+  line-height: 1.5;
+}
+
+.observability-adoption .sp-reason-item i {
+  color: var(--btn-primary);
+  margin-right: 0.75rem;
+  font-size: 1.1rem;
+}
+
+.observability-adoption .sp-feature-list li::before {
+  color: var(--btn-primary);
+  content: "✓";
+  margin-right: 0.5rem;
+  font-weight: bold;
+}
+/* Grafana Consulting - Global Color System */
+.grafana-consulting .sp-hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 4rem 1rem;
+  text-align: center;
+  background: linear-gradient(135deg, var(--bg-hero-start) 0%, var(--bg-hero-end) 100%);
+  min-height: 60vh;
+  color: var(--heading-h1);
+  margin-bottom: 1rem;
+}
+
+.grafana-consulting .sp-hero .hero-content {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.grafana-consulting .sp-hero h1 {
+  color: var(--heading-h1);
+  font-size: clamp(2.3rem, 6.5vw, 3.4rem);
+  margin-bottom: 1rem;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.grafana-consulting .sp-hero p {
+  font-size: 1.1rem;
+  color: var(--text-main);
+  font-weight: 400;
+  margin-bottom: 1.25rem;
+  max-width: 800px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grafana-consulting .sp-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: var(--card-shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.grafana-consulting .sp-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px var(--card-shadow);
+}
+
+.grafana-consulting .sp-card h3 {
+  color: var(--heading-h3);
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.grafana-consulting .sp-card p {
+  color: var(--text-main);
+  line-height: 1.6;
+}
+
+.grafana-consulting .sp-btn {
+  background: var(--btn-primary);
+  border: none;
+  color: var(--btn-text);
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.grafana-consulting .sp-btn:hover {
+  background: #070D5E;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(7, 13, 94, 0.3);
+}
+
+.grafana-consulting .sp-btn.sp-btn-secondary {
+  background: transparent;
+  border: 2px solid var(--btn-outline);
+  color: var(--btn-outline);
+}
+
+.grafana-consulting .sp-btn.sp-btn-secondary:hover {
+  background: #070D5E;
+  color: var(--btn-text);
+}
+
+.grafana-consulting .sp-tech-item {
+  background: var(--card-bg-alt);
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  padding: 1rem;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.grafana-consulting .sp-tech-item:hover {
+  background: var(--btn-primary);
+  transform: translateY(-2px);
+}
+
+.grafana-consulting .sp-tech-item:hover i {
+  color: var(--btn-text);
+}
+
+.grafana-consulting .sp-tech-item:hover span {
+  color: var(--btn-text);
+}
+
+.grafana-consulting .sp-tech-item i {
+  color: var(--btn-primary);
+  margin-right: 0.75rem;
+  font-size: 1.2rem;
+}
+
+.grafana-consulting .sp-tech-item span {
+  color: var(--text-main);
+  font-weight: 500;
+}
+
+.grafana-consulting .sp-process-step .step-number {
+  background: var(--step-circle);
+  color: var(--step-number);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.grafana-consulting .sp-process-step h3 {
+  color: var(--step-title);
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.grafana-consulting .sp-process-step p {
+  color: var(--text-main);
+  line-height: 1.5;
+}
+
+.grafana-consulting .sp-benefit-item i {
+  color: var(--btn-primary);
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.grafana-consulting .sp-benefit-item h3 {
+  color: var(--heading-h3);
+  font-size: 1.2rem;
+  margin-bottom: 0.75rem;
+}
+
+.grafana-consulting .sp-benefit-item p {
+  color: var(--text-main);
+  line-height: 1.5;
+}
+
+.grafana-consulting .sp-reason-item i {
+  color: var(--btn-primary);
+  margin-right: 0.75rem;
+  font-size: 1.1rem;
+}
+
+.grafana-consulting .sp-feature-list li::before {
+  color: var(--btn-primary);
+  content: "✓";
+  margin-right: 0.5rem;
+  font-weight: bold;
+}
+/* Prometheus Consulting - Global Color System */
+.prometheus-consulting .sp-hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 4rem 1rem;
+  text-align: center;
+  background: linear-gradient(135deg, var(--bg-hero-start) 0%, var(--bg-hero-end) 100%);
+  min-height: 60vh;
+  color: var(--heading-h1);
+  margin-bottom: 1rem;
+}
+
+.prometheus-consulting .sp-hero .hero-content {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.prometheus-consulting .sp-hero h1 {
+  color: var(--heading-h1);
+  font-size: clamp(2.3rem, 6.5vw, 3.4rem);
+  margin-bottom: 1rem;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.prometheus-consulting .sp-hero p {
+  font-size: 1.1rem;
+  color: var(--text-main);
+  font-weight: 400;
+  margin-bottom: 1.25rem;
+  max-width: 800px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.prometheus-consulting .sp-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: var(--card-shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.prometheus-consulting .sp-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px var(--card-shadow);
+}
+
+.prometheus-consulting .sp-card h3 {
+  color: var(--heading-h3);
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.prometheus-consulting .sp-card p {
+  color: var(--text-main);
+  line-height: 1.6;
+}
+
+.prometheus-consulting .sp-btn {
+  background: var(--btn-primary);
+  border: none;
+  color: var(--btn-text);
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.prometheus-consulting .sp-btn:hover {
+  background: #070D5E;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(7, 13, 94, 0.3);
+}
+
+.prometheus-consulting .sp-btn.sp-btn-secondary {
+  background: transparent;
+  border: 2px solid var(--btn-outline);
+  color: var(--btn-outline);
+}
+
+.prometheus-consulting .sp-btn.sp-btn-secondary:hover {
+  background: #070D5E;
+  color: var(--btn-text);
+}
+
+.prometheus-consulting .sp-tech-item {
+  background: var(--card-bg-alt);
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  padding: 1rem;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.prometheus-consulting .sp-tech-item:hover {
+  background: var(--btn-primary);
+  transform: translateY(-2px);
+}
+
+.prometheus-consulting .sp-tech-item:hover i {
+  color: var(--btn-text);
+}
+
+.prometheus-consulting .sp-tech-item:hover span {
+  color: var(--btn-text);
+}
+
+.prometheus-consulting .sp-tech-item i {
+  color: var(--btn-primary);
+  margin-right: 0.75rem;
+  font-size: 1.2rem;
+}
+
+.prometheus-consulting .sp-tech-item span {
+  color: var(--text-main);
+  font-weight: 500;
+}
+
+.prometheus-consulting .sp-process-step .step-number {
+  background: var(--step-circle);
+  color: var(--step-number);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.prometheus-consulting .sp-process-step h3 {
+  color: var(--step-title);
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.prometheus-consulting .sp-process-step p {
+  color: var(--text-main);
+  line-height: 1.5;
+}
+
+.prometheus-consulting .sp-benefit-item i {
+  color: var(--btn-primary);
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.prometheus-consulting .sp-benefit-item h3 {
+  color: var(--heading-h3);
+  font-size: 1.2rem;
+  margin-bottom: 0.75rem;
+}
+
+.prometheus-consulting .sp-benefit-item p {
+  color: var(--text-main);
+  line-height: 1.5;
+}
+
+.prometheus-consulting .sp-reason-item i {
+  color: var(--btn-primary);
+  margin-right: 0.75rem;
+  font-size: 1.1rem;
+}
+
+.prometheus-consulting .sp-feature-list li::before {
+  color: var(--btn-primary);
+  content: "✓";
+  margin-right: 0.5rem;
+  font-weight: bold;
+}
+.terraform-consulting  .sp-btn-secondary:hover{
+  background-color: #1e6183;
+  color: white;
+}
+.linkerd-consulting .sp-hero p{
+  color:black;
+}
+.cloud-native-product-development .sp-hero p{
+  color:black;
+}
