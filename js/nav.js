@@ -9,6 +9,39 @@
 
 // Global click handler for dropdowns - single listener to prevent conflicts
 let globalClickHandler = null;
+let lockedScrollY = 0;
+
+function setPageScrollLock(locked) {
+    const html = document.documentElement;
+    const body = document.body;
+
+    if (locked) {
+        lockedScrollY = window.scrollY || window.pageYOffset || 0;
+        html.classList.add('nav-open');
+        body.classList.add('nav-open');
+        body.style.position = 'fixed';
+        body.style.top = `-${lockedScrollY}px`;
+        body.style.left = '0';
+        body.style.right = '0';
+        body.style.width = '100%';
+        body.style.overflow = 'hidden';
+        return;
+    }
+
+    html.classList.remove('nav-open');
+    body.classList.remove('nav-open');
+    body.style.position = '';
+    body.style.top = '';
+    body.style.left = '';
+    body.style.right = '';
+    body.style.width = '';
+    body.style.overflow = '';
+
+    if (lockedScrollY) {
+        window.scrollTo(0, lockedScrollY);
+        lockedScrollY = 0;
+    }
+}
 
 function initializeNavigation() {
     // Remove existing global click handler if it exists
@@ -27,7 +60,7 @@ function initializeNavigation() {
         mobileMenuBtn.setAttribute('type', 'button');
 
         const setMenuOpen = (open) => {
-            document.body.classList.toggle('nav-open', open);
+            setPageScrollLock(open);
             mobileMenuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
             mobileMenuBtn.classList.toggle('is-open', open);
             mobileMenuBtn.textContent = open ? '✕' : '☰';
@@ -906,7 +939,7 @@ function handleGlobalClick(e) {
         if (!clickedInsideNav) {
             const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
             if (mobileMenuBtn) {
-                document.body.classList.remove('nav-open');
+                setPageScrollLock(false);
                 mobileMenuBtn.setAttribute('aria-expanded', 'false');
                 mobileMenuBtn.classList.remove('is-open');
                 mobileMenuBtn.textContent = '☰';
