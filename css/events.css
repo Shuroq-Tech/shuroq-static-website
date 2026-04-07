@@ -1,3 +1,6 @@
+/* Import Navigation Styles */
+@import url('nav.css');
+
 * {
   box-sizing: border-box;
 }
@@ -57,7 +60,7 @@ body {
   font-size: 18px;
   line-height: 1.7;
   opacity: 0.95;
-  color:BLACK;
+  color:rgb(235, 235, 235);
 }
 
 .events-section {

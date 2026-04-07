@@ -38,7 +38,7 @@
     // Update language button
     const langBtn = document.getElementById('langBtn');
     if (langBtn) {
-      langBtn.textContent = currentLang === 'ar' ? '🌐ar' : '🌐en';
+      langBtn.textContent = currentLang === '~AR' ? '🌐~AR' : '🌐~EN';
     }
   };
 

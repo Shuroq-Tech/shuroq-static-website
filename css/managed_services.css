@@ -277,7 +277,8 @@ body {
   border: none;
   background: #2f5a8f;
   box-shadow: none;
-  padding: 0;
+  
+  padding:20px;
   opacity: 1 !important;
   transform: none !important;
 }

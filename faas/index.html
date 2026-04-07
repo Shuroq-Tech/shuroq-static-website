@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
   <title>FaaS — Function as a Service - Shuroq</title>
   <link rel="icon" href="../logo.png" sizes="44x44" type="image/png">
-  <link rel="stylesheet" href="../css/faas.css">
   <link rel="stylesheet" href="../css/nav.css">
+  <link rel="stylesheet" href="../css/faas.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
@@ -323,9 +323,26 @@
   <!-- Dynamic Footer Component -->
   <script src="../js/footer.js"></script>
   <link rel="stylesheet" href="../css/footer.css">
-  <script src="../js/faas.js"></script>
+
+  <script src="../js/nav.js"></script>
   <script src="../js/nav_lang.js"></script>
   <script src="../js/faas_lang.js"></script>
-  <script src="../js/nav.js"></script>
+  
+  
+  <script>
+    // Load navigation
+    fetch('../nav.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('nav-container').innerHTML = html;
+        // Initialize navigation after loading
+        if (typeof initializeNavigation === 'function') {
+          initializeNavigation();
+        }
+        if (typeof changeLanguage === 'function') {
+          changeLanguage('en');
+        }
+      });
+  </script>
 </body>
 </html>

@@ -240,8 +240,8 @@ function showServicesSubmenu() {
                         <a href="/automate" class="submenu-item">
                             <i class="fas fa-cogs"></i> Automate
                         </a>
-                        <a href="/vision/" class="submenu-item">
-                            <i class="fas fa-chart-line"></i> Vision
+                        <a href="/Data Analytics/" class="submenu-item">
+                            <i class="fas fa-chart-line"></i> Data Analytics
                         </a>
                     </div>
                 </div>
@@ -381,6 +381,9 @@ function showServicesSubmenu() {
     // Add active class for styling
     navLinks.classList.add('submenu-active');
     
+    // Add class to body for CSS targeting
+    document.body.classList.add('submenu-active');
+    
     // Add event listener to back button
     const backBtn = document.getElementById('services-back-btn');
     if (backBtn) {
@@ -463,6 +466,9 @@ function hideServicesSubmenu() {
     // Remove active class
     navLinks.classList.remove('submenu-active');
     
+    // Remove class from body for CSS targeting
+    document.body.classList.remove('submenu-active');
+    
     // Re-initialize only dropdowns, not full navigation
     initializeDropdowns();
     
@@ -539,6 +545,9 @@ function showCompanySubmenu() {
     // Add active class for styling
     navLinks.classList.add('submenu-active');
     
+    // Add class to body for CSS targeting
+    document.body.classList.add('submenu-active');
+    
     // Add event listener to back button
     const backBtn = document.getElementById('company-back-btn');
     if (backBtn) {
@@ -564,6 +573,9 @@ function hideCompanySubmenu() {
     
     // Remove active class
     navLinks.classList.remove('submenu-active');
+    
+    // Remove class from body for CSS targeting
+    document.body.classList.remove('submenu-active');
     
     // Re-initialize only dropdowns, not full navigation
     initializeDropdowns();
@@ -616,7 +628,7 @@ function showSolutionsSubmenu() {
             </div>
             <div class="submenu-items">
                 <a href="/fission/" class="submenu-item">
-                    <i class="fas fa-atom"></i> Fission Enterprise
+                    <i class="fas fa-atom"></i> AI Marketplace
                 </a>
                 <a href="/botkube/" class="submenu-item">
                     <i class="fas fa-robot"></i> Botkube Enterprise
@@ -637,6 +649,9 @@ function showSolutionsSubmenu() {
     
     // Add active class for styling
     navLinks.classList.add('submenu-active');
+    
+    // Add class to body for CSS targeting
+    document.body.classList.add('submenu-active');
     
     // Add event listener to back button
     const backBtn = document.getElementById('solutions-back-btn');
@@ -663,6 +678,9 @@ function hideSolutionsSubmenu() {
     
     // Remove active class
     navLinks.classList.remove('submenu-active');
+    
+    // Remove class from body for CSS targeting
+    document.body.classList.remove('submenu-active');
     
     // Re-initialize only dropdowns, not full navigation
     initializeDropdowns();
@@ -740,6 +758,9 @@ function showResourcesSubmenu() {
     // Add active class for styling
     navLinks.classList.add('submenu-active');
     
+    // Add class to body for CSS targeting
+    document.body.classList.add('submenu-active');
+    
     // Add event listener to back button
     const backBtn = document.getElementById('resources-back-btn');
     if (backBtn) {
@@ -765,6 +786,9 @@ function hideResourcesSubmenu() {
     
     // Remove active class
     navLinks.classList.remove('submenu-active');
+    
+    // Remove class from body for CSS targeting
+    document.body.classList.remove('submenu-active');
     
     // Re-initialize only dropdowns, not full navigation
     initializeDropdowns();
@@ -810,7 +834,7 @@ function initializeLanguage() {
     const langMenu = document.getElementById('langMenu');
     
     if (langBtn && langMenu) {
-        // Always re-attach the event listener for mobile menu
+        // Always re-attach event listener for mobile menu
         // Remove any existing listeners to prevent duplicates
         const newLangBtn = langBtn.cloneNode(true);
         langBtn.parentNode.replaceChild(newLangBtn, langBtn);
@@ -818,13 +842,56 @@ function initializeLanguage() {
         // Add fresh event listener
         newLangBtn.addEventListener('click', function(e) {
             e.stopPropagation();
-            langMenu.style.display = langMenu.style.display === 'block' ? 'none' : 'block';
+            
+            // Toggle dropdown visibility
+            const isVisible = langMenu.style.display === 'block';
+            langMenu.style.display = isVisible ? 'none' : 'block';
+            
+            // Toggle active class for mobile styling
+            if (isMobileViewport()) {
+                const langContainer = document.querySelector('.lang-btn-container');
+                if (langContainer) {
+                    langContainer.classList.toggle('active', !isVisible);
+                }
+            }
+        });
+        
+        // Add click listeners to language options
+        const langOptions = langMenu.querySelectorAll('div');
+        langOptions.forEach(option => {
+            option.addEventListener('click', function(e) {
+                e.stopPropagation();
+                const lang = this.getAttribute('onclick').match(/changeLanguage\('(.+?)'\)/)[1];
+                if (lang && typeof window.changeLanguage === 'function') {
+                    window.changeLanguage(lang);
+                }
+                langMenu.style.display = 'none';
+                
+                // Remove active class when selection is made
+                if (isMobileViewport()) {
+                    const langContainer = document.querySelector('.lang-btn-container');
+                    if (langContainer) {
+                        langContainer.classList.remove('active');
+                    }
+                }
+            });
         });
         
         // Re-attach menu click listener
         langMenu.addEventListener('click', function(e) {
             e.stopPropagation();
         });
+        
+        // Close language menu when clicking outside (only for mobile)
+        if (isMobileViewport()) {
+            document.addEventListener('click', function closeLangMenu(e) {
+                const langContainer = document.querySelector('.lang-btn-container');
+                if (langContainer && !langContainer.contains(e.target)) {
+                    langMenu.style.display = 'none';
+                    langContainer.classList.remove('active');
+                }
+            });
+        }
     }
 }
 
@@ -848,35 +915,37 @@ function handleGlobalClick(e) {
         }
     }
     
-    // Handle dropdown close when clicking outside
-    const dropdowns = [
-        { selector: '.services-dropdown', menuSelector: '.dropdown-menu', linkSelector: '.services-link' },
-        { selector: '.company-dropdown', menuSelector: '.company-dropdown-menu', linkSelector: '.company-link' },
-        { selector: '.solutions-dropdown', menuSelector: '.solutions-dropdown-menu', linkSelector: '.solutions-link' },
-        { selector: '.resources-dropdown', menuSelector: '.resources-dropdown-menu', linkSelector: '.resources-link' }
-    ];
-    
-    dropdowns.forEach(dropdown => {
-        const element = document.querySelector(dropdown.selector);
-        if (element && !element.contains(target)) {
-            const menu = document.querySelector(dropdown.menuSelector);
-            const link = document.querySelector(dropdown.linkSelector);
-            
-            if (menu) {
-                menu.style.display = 'none';
-            }
-            if (element) {
-                element.classList.remove('submenu-open');
-            }
-            if (link) {
-                link.setAttribute('aria-expanded', 'false');
-                const chevron = link.querySelector('i');
-                if (chevron) {
-                    chevron.style.transform = 'rotate(0)';
+    // Handle dropdown close when clicking outside - ONLY in mobile view
+    if (isMobileViewport()) {
+        const dropdowns = [
+            { selector: '.services-dropdown', menuSelector: '.dropdown-menu', linkSelector: '.services-link' },
+            { selector: '.company-dropdown', menuSelector: '.company-dropdown-menu', linkSelector: '.company-link' },
+            { selector: '.solutions-dropdown', menuSelector: '.solutions-dropdown-menu', linkSelector: '.solutions-link' },
+            { selector: '.resources-dropdown', menuSelector: '.resources-dropdown-menu', linkSelector: '.resources-link' }
+        ];
+        
+        dropdowns.forEach(dropdown => {
+            const element = document.querySelector(dropdown.selector);
+            if (element && !element.contains(target)) {
+                const menu = document.querySelector(dropdown.menuSelector);
+                const link = document.querySelector(dropdown.linkSelector);
+                
+                if (menu) {
+                    menu.style.display = 'none';
+                }
+                if (element) {
+                    element.classList.remove('submenu-open');
+                }
+                if (link) {
+                    link.setAttribute('aria-expanded', 'false');
+                    const chevron = link.querySelector('i');
+                    if (chevron) {
+                        chevron.style.transform = 'rotate(0)';
+                    }
                 }
             }
-        }
-    });
+        });
+    }
     
     // Handle language menu close
     const langBtn = document.getElementById('langBtn');

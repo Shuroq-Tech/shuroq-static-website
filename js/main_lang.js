@@ -44,6 +44,19 @@ const translations = {
     nav_blogs: "Blogs",
     nav_events: "Events",
     nav_skillrubrics: "Skill Rubrics",
+    
+    // AI Automation Section
+    ai_title: "Intelligent Automation for the Modern Core",
+    ai_subtitle: "Empower your business with self-learning systems, predictive capabilities, and autonomous workflows to drive efficiency and innovation.",
+    ai_getstarted: "Get Started",
+    ai_watchdemo: "Learn More",
+    
+    // DevOps Section
+    devops_title: "Accelerate Your Digital Velocity",
+    devops_subtitle: "Empower your software delivery with intelligent automation, scalable infrastructure, and analytics-driven governance.",
+    devops_exploresolutions: "Explore DevOps Solutions",
+    devops_watchdemo: "Get Started",
+    
     herotitle: "Redefining Technology For Modern Enterprises ",
     whatwedo: "Our Services",
     Delivery: "Delivering Trusted Technology Solutions for Modern Enterprises",
@@ -179,6 +192,19 @@ const translations = {
     nav_blogs: "المدونات",
     nav_events: "الفعاليات",
     nav_skillrubrics: "معايير المهارات",
+    
+    // AI Automation Section
+    ai_title: "الأتمتة الذكية للأساس الحديث",
+    ai_subtitle: "مكّن أعمالك بأنظمة ذاتية التعلم، وقدرات تنبؤية، وسير عمل ذاتية لدفع الكفاءة والابتكار.",
+    ai_getstarted: "ابدأ الآن",
+    ai_watchdemo: "شاهد العرض",
+    
+    // DevOps Section
+    devops_title: "تسريع سرعتك الرقمية",
+    devops_subtitle: "مكّن تسليم البرامج الخاصة بك بالأتمتة الذكية، والبنية التحتية القابلة للتوسع، والحوكمة القائمة على التحليلات.",
+    devops_exploresolutions: "استكشف حلول DevOps",
+    devops_watchdemo: "شاهد العرض التوضيحي",
+    
     herotitle: "إعادة تعريف التكنولوجيا للمؤسسات الحديثة",
     
     whatwedo: "ما نقدمه",

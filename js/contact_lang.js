@@ -6,6 +6,7 @@
     nav_resources: "Resources",
     nav_careers: "Careers",
     nav_contact: "Contact-Us",
+    nav_langbtn:"",
     company_tagline: "Tech Redefined",
     hero_description: "Transforming ideas into innovative digital solutions",
     get_in_touch: "Get in Touch",
@@ -26,6 +27,8 @@
     visit_us: "Visit Us",
     get_directions: "Get Directions",
     view_larger_map: "View Larger Map",
+    innovation_title: "Innovation Driven",
+    innovation_text: "Transforming ideas into digital excellence with cutting-edge technology solutions",
     },
     ar:{
     nav_aboutus: "معلومات عنا",
@@ -54,6 +57,8 @@
     visit_us: "زرنا",
     get_directions: "احصل على الاتجاهات",
     view_larger_map: "عرض خريطة أكبر",
+    innovation_title: "مدفوع بالابتكار",
+    innovation_text: "تحويل الأفكار إلى التميز الرقمي مع حلول التكنولوجيا المتطورة",
     }
 }
 

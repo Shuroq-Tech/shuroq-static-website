@@ -349,3 +349,12 @@
     transition: none !important;
   }
 }
+.card p{
+  color:rgb(59, 58, 58);
+}
+.step p{
+  color:black;
+}
+.container p{
+  color:black;
+}

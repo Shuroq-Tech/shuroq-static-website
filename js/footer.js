@@ -62,30 +62,9 @@ const footerTranslations = {
  * Generate footer links dynamically
  */
 function generateFooterLinks() {
-    // Generate links for each section
-    Object.keys(footerData).forEach(section => {
-        const container = document.getElementById(`footer-${section}-links`);
-        if (container) {
-            container.innerHTML = '';
-            
-            footerData[section].forEach(link => {
-                const li = document.createElement('li');
-                const a = document.createElement('a');
-                
-                a.href = link.href;
-                a.textContent = link.text;
-                
-                if (link.icon) {
-                    const icon = document.createElement('i');
-                    icon.className = link.icon;
-                    a.prepend(icon);
-                }
-                
-                li.appendChild(a);
-                container.appendChild(li);
-            });
-        }
-    });
+    // Links generation disabled - footer now shows only main topics
+    // The dynamic link lists have been removed from footer.html
+    console.log('Footer links generation disabled - showing main topics only');
 }
 
 /**

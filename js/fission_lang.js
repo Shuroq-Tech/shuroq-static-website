@@ -11,9 +11,8 @@ const translations = {
         "nav_language": "Language",
         
         // Hero Section
-        "fission_hero_title": "Fission Enterprise Platform",
-        "fission_hero_subtitle": "A unified enterprise platform designed to streamline operations, enhance productivity, and enable intelligent decision-making across organizations.",
-        "fission_hero_description": "Transform your business with our comprehensive enterprise solution that integrates resource management, workflow automation, analytics, and employee management into a single powerful platform.",
+        "marketplace_hero_title": "AI Marketplace",
+        "marketplace_hero_subtitle": "Connect with trusted professionals instantly - Smart matching, transparent pricing, seamless booking",
         
         // Features Section
         "fission_features_title": "Powerful Features",
@@ -28,50 +27,30 @@ const translations = {
         "fission_employee_management_desc": "Manage your workforce effectively with integrated HR tools and performance tracking.",
         
         // Capabilities Section
-        "capabilities_title": "Key Capabilities",
-        "capability_1_title": "Enterprise Resource Management",
-        "capability_1_feature_1": "Centralized employee data management",
-        "capability_1_feature_2": "Role-based access control",
-        "capability_1_feature_3": "Department and hierarchy structuring",
-        "capability_2_title": "Intelligent Analytics",
-        "capability_2_feature_1": "Real-time dashboards",
-        "capability_2_feature_2": "KPI tracking",
-        "capability_2_feature_3": "Predictive insights using AI",
-        "capability_3_title": "Workflow Automation",
-        "capability_3_feature_1": "Task assignment and tracking",
-        "capability_3_feature_2": "Approval systems",
-        "capability_3_feature_3": "Automated notifications",
-        "capability_4_title": "Security & Compliance",
-        "capability_4_feature_1": "Multi-layer authentication",
-        "capability_4_feature_2": "Data encryption",
-        "capability_4_feature_3": "Audit logs and compliance tracking",
-        "capability_5_title": "Cloud Integration",
-        "capability_5_feature_1": "Scalable cloud infrastructure",
-        "capability_5_feature_2": "API integrations with third-party tools",
-        "capability_5_feature_3": "Remote accessibility",
+        "benefits_title": "Key Benefits",
+        "benefit_1_title": "Find the right professionals quickly",
+        "benefit_1_description": "Our AI intelligently matches you with the perfect service provider for your specific needs",
+        "benefit_2_title": "Get transparent pricing upfront",
+        "benefit_2_description": "No hidden fees - see clear pricing and service details before you book",
+        "benefit_3_title": "Easy and fast booking process",
+        "benefit_3_description": "Book services in minutes with our streamlined, user-friendly platform",
+        "benefit_4_title": "Trusted and verified service providers",
+        "benefit_4_description": "All professionals are thoroughly vetted and reviewed for your peace of mind",
+        "benefit_5_title": "Seamless and secure experience",
+        "benefit_5_description": "End-to-end encrypted platform with secure payments and data protection",
         
-        // Modules Section
-        "modules_title": "Core Modules",
-        "module_1_title": "Employee Management System",
-        "module_1_feature_1": "Employee onboarding & records",
-        "module_1_feature_2": "Attendance & leave tracking",
-        "module_1_feature_3": "Performance evaluation",
-        "module_2_title": "Project Management",
-        "module_2_feature_1": "Task creation and assignment",
-        "module_2_feature_2": "Deadline tracking",
-        "module_2_feature_3": "Team collaboration",
-        "module_3_title": "Finance & Reporting",
-        "module_3_feature_1": "Expense tracking",
-        "module_3_feature_2": "Budget management",
-        "module_3_feature_3": "Financial analytics",
-        "module_4_title": "Communication Hub",
-        "module_4_feature_1": "Internal messaging",
-        "module_4_feature_2": "Notifications & alerts",
-        "module_4_feature_3": "Team announcements",
-        "module_5_title": "AI Insights Engine",
-        "module_5_feature_1": "Data-driven recommendations",
-        "module_5_feature_2": "Trend analysis",
-        "module_5_feature_3": "Smart forecasting",
+        // How It Works Section
+        "howitworks_title": "How It Works",
+        "step_1_title": "Describe your need",
+        "step_1_description": "Tell us what you need help with in simple terms",
+        "step_2_title": "Get matched with the right expert",
+        "step_2_description": "Our AI finds the perfect professional for your requirements",
+        "step_3_title": "View pricing and details",
+        "step_3_description": "See transparent pricing and provider information upfront",
+        "step_4_title": "Book instantly",
+        "step_4_description": "Confirm your booking with just a few clicks",
+        "step_5_title": "Get the job done",
+        "step_5_description": "Enjoy professional service and track your progress",
         
         // Users Section
         "users_title": "Who Uses Fission Enterprise?",
@@ -120,10 +99,10 @@ const translations = {
         "why_4_description": "Enterprise-grade architecture with 99.9% uptime guarantee",
         
         // CTA Section
-        "cta_title": "Transform your enterprise operations with Fission.",
-        "cta_subtitle": "Start building smarter, faster, and more efficiently today.",
+        "cta_title": "Find the perfect service provider today.",
+        "cta_subtitle": "Experience smart matching, transparent pricing, and seamless booking.",
         "cta_getStarted": "Get Started",
-        "cta_requestDemo": "Request Demo",
+        "cta_requestDemo": "Try AI Assistant",
         
         // CTA Section
         "fission_cta_title": "Ready to Transform Your Enterprise?",
@@ -131,17 +110,7 @@ const translations = {
         "fission_cta_button": "Get Started",
         "fission_demo_button": "Request Demo",
         
-        // Footer
-        "footer_about_title": "About Shuroq",
-        "footer_about_desc": "Leading provider of innovative enterprise solutions and digital transformation services.",
-        "footer_contact_title": "Contact Us",
-        "footer_email": "info@shuroq.com",
-        "footer_phone": "+966 50 123 4567",
-        "footer_address": "Riyadh, Saudi Arabia",
-        "footer_social_title": "Follow Us",
-        "footer_copyright": "© 2026 Shuroq. All rights reserved.",
-        "footer_privacy": "Privacy Policy",
-        "footer_terms": "Terms of Service"
+        //  
     },
     
     ar: {
@@ -156,9 +125,8 @@ const translations = {
         "nav_language": "اللغة",
         
         // Hero Section
-        "fission_hero_title": "منصة فيزيون للمؤسسات",
-        "fission_hero_subtitle": "منصة مؤسسية موحدة مصممة لتبسيط العمليات وتعزيز الإنتاجية وتمكين اتخاذ القرارات الذكية عبر المنظمات.",
-        "fission_hero_description": "حول أعمالك مع حلنا المؤسسي الشامل الذي يدمج إدارة الموارد وأتمتة سير العمل والتحليلات وإدارة الموظفين في منصة واحدة قوية.",
+        "marketplace_hero_title": "سوق الذكاء الاصطناعي",
+        "marketplace_hero_subtitle": "تواصل مع المحترفين الموثوقين فوراً - مطابقة ذكية، تسعير شفاف، حجز سلس",
         
         // Features Section
         "fission_features_title": "ميزات قوية",
@@ -173,50 +141,30 @@ const translations = {
         "fission_employee_management_desc": "إدارة قوتك العاملة بفعالية مع أدوات الموارد البشرية المتكاملة وتتبع الأداء.",
         
         // Capabilities Section
-        "capabilities_title": "القدرات الرئيسية",
-        "capability_1_title": "إدارة موارد المؤسسات",
-        "capability_1_feature_1": "إدارة بيانات الموظفين المركزية",
-        "capability_1_feature_2": "التحكم في الوصول بناءً على الدور",
-        "capability_1_feature_3": "هيكلة الأقسام والتسلسل الهرمي",
-        "capability_2_title": "التحليلات الذكية",
-        "capability_2_feature_1": "لوحات المعلومات في الوقت الفعلي",
-        "capability_2_feature_2": "تتبع مؤشرات الأداء الرئيسية",
-        "capability_2_feature_3": "رؤى تنبؤية باستخدام الذكاء الاصطناعي",
-        "capability_3_title": "أتمتة سير العمل",
-        "capability_3_feature_1": "تخصيص وتتبع المهام",
-        "capability_3_feature_2": "أنظمة الموافقة",
-        "capability_3_feature_3": "إشعارات تلقائية",
-        "capability_4_title": "الأمان والامتثال",
-        "capability_4_feature_1": "مصادقة متعددة الطبقات",
-        "capability_4_feature_2": "تشفير البيانات",
-        "capability_4_feature_3": "سجلات التدقيق وتتبع الامتثال",
-        "capability_5_title": "تكامل السحابة",
-        "capability_5_feature_1": "بنية تحتية سحابية قابلة للتوسع",
-        "capability_5_feature_2": "تكاملات API مع أدوات الطرف الثالث",
-        "capability_5_feature_3": "إمكانية الوصول عن بعد",
+        "benefits_title": "الفوائد الرئيسية",
+        "benefit_1_title": "اعثر على المحترفين المناسبين بسرعة",
+        "benefit_1_description": "ذكاؤنا الاصطناعي يطابقك مع مزود الخدمة المثالي لاحتياجاتك المحددة",
+        "benefit_2_title": "احصل على تسعير شفاف مقدماً",
+        "benefit_2_description": "لا توجد رسوم خفية - شاهد تسعيراً واضحاً وتفاصيل الخدمة قبل الحجز",
+        "benefit_3_title": "عملية حجز سهلة وسريعة",
+        "benefit_3_description": "احجز الخدمات في دقائق مع منصتنا المبسطة وسهلة الاستخدام",
+        "benefit_4_title": "مزودو خدمات موثوقون ومتحقق منهم",
+        "benefit_4_description": "جميع المحترفين يتم فحصهم وتقييمهم بدقة لراحة بالك",
+        "benefit_5_title": "تجربة سلسة وآمنة",
+        "benefit_5_description": "منصة مشفرة من طرف إلى طرف مع دفعات آمنة وحماية البيانات",
         
-        // Modules Section
-        "modules_title": "الوحدات الأساسية",
-        "module_1_title": "نظام إدارة الموظفين",
-        "module_1_feature_1": "توظيف الموظفين وسجلاتهم",
-        "module_1_feature_2": "تتبع الحضور والإجازات",
-        "module_1_feature_3": "تقييم الأداء",
-        "module_2_title": "إدارة المشاريع",
-        "module_2_feature_1": "إنشاء وتخصيص المهام",
-        "module_2_feature_2": "تتبع المواعيد النهائية",
-        "module_2_feature_3": "التعاون الفريق",
-        "module_3_title": "التمويل والتقارير",
-        "module_3_feature_1": "تتبع النفقات",
-        "module_3_feature_2": "إدارة الميزانية",
-        "module_3_feature_3": "التحليلات المالية",
-        "module_4_title": "مركز الاتصالات",
-        "module_4_feature_1": "المراسلة الداخلية",
-        "module_4_feature_2": "الإشعارات والتنبيهات",
-        "module_4_feature_3": "الإعلانات الفريقية",
-        "module_5_title": "محرك رؤى الذكاء الاصطناعي",
-        "module_5_feature_1": "توصيات مدفوعة بالبيانات",
-        "module_5_feature_2": "تحليل الاتجاهات",
-        "module_5_feature_3": "التوقعات الذكية",
+        // How It Works Section
+        "howitworks_title": "كيف يعمل",
+        "step_1_title": "صف احتياجك",
+        "step_1_description": "أخبرنا بما تحتاج المساعدة فيه ببساطة",
+        "step_2_title": "احصل على تطابق مع الخبير المناسب",
+        "step_2_description": "ذكاؤنا الاصطناعي يجد المحترف المثالي لمتطلباتك",
+        "step_3_title": "شاهد التسعير والتفاصيل",
+        "step_3_description": "شاهد تسعيراً شفافاً ومعلومات مزود الخدمة مقدماً",
+        "step_4_title": "احجز فوراً",
+        "step_4_description": "أكد حجزك بنقرة قليلة",
+        "step_5_title": "إنجاز المهمة",
+        "step_5_description": "استمتع بالخدمة الاحترافية وتتبع تقدمك",
         
         // Users Section
         "users_title": "من يستخدم منصة فيزيون للمؤسسات؟",
@@ -265,10 +213,10 @@ const translations = {
         "why_4_description": "بنية مؤسسية مع ضمان وقت تشغيل 99.9%",
         
         // CTA Section
-        "cta_title": "حول عمليات مؤسستك مع فيزيون.",
-        "cta_subtitle": "ابدأ البناء بذكاء وسرعة وكفاءة أكبر اليوم.",
+        "cta_title": "اعثر على مزود الخدمة المثالي اليوم.",
+        "cta_subtitle": "جرب المطابقة الذكية والتسعير الشفاف والحجز السلس.",
         "cta_getStarted": "ابدأ الآن",
-        "cta_requestDemo": "اطلب عرضًا توضيحيًا",
+        "cta_requestDemo": "جرب مساعد الذكاء الاصطناعي",
         
         // CTA Section
         "fission_cta_title": "هل أنت مستعد لتحويل مؤسستك؟",

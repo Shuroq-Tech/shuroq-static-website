@@ -246,6 +246,22 @@
   <script src="../js/nav.js"></script>
   <script src="../js/platformengineering.js"></script>
   <script src="../js/footer.js"></script>
+  
+   <script>
+    // Load navigation
+    fetch('../nav.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('nav-container').innerHTML = html;
+        // Initialize navigation after loading
+        if (typeof initializeNavigation === 'function') {
+          initializeNavigation();
+        }
+        if (typeof changeLanguage === 'function') {
+          changeLanguage('en');
+        }
+      });
+  </script>
 
   </body>
 </html>

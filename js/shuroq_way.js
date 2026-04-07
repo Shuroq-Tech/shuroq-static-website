@@ -124,45 +124,43 @@ const translations = {
   }
 };
 
-// Language change function
-function changeLanguage(lang) {
-  // Update content translations
-  document.querySelectorAll('[data-i18n]').forEach(element => {
-    const key = element.getAttribute('data-i18n');
+// Change language function
+function changeLanguage(lang){
+  // Update text content based on selected language
+  document.querySelectorAll("[data-i18n]").forEach(element=>{
+    const key = element.getAttribute("data-i18n");
     if (translations[lang] && translations[lang][key]) {
-      element.textContent = translations[lang][key];
+      // Preserve Font Awesome icons by updating only the text content
+      const icon = element.querySelector('i.fas, i.fab, i.fa, i.far, i.fal');
+      if (icon) {
+        // Keep the icon and update the text after it
+        const iconHTML = icon.outerHTML;
+        element.innerHTML = iconHTML + ' ' + translations[lang][key];
+      } else {
+        // No icon, just update the text
+        element.textContent = translations[lang][key];
+      }
     }
   });
-  
-  // Update HTML lang attribute
-  document.documentElement.lang = lang;
-  
-  // Update language button
-  const langBtn = document.getElementById('langBtn');
-  if (langBtn) {
-    langBtn.textContent = lang === 'ar' ? '🌐ar' : '🌐en';
-  }
-  
-  // Store language preference
-  localStorage.setItem('preferredLanguage', lang);
-  
-  // Toggle RTL for Arabic
-  if (lang === 'ar') {
-    document.body.classList.add('rtl');
-    document.body.classList.remove('ltr');
+
+  // Apply RTL for Arabic
+  if (lang === "ar") {
+    document.body.classList.add("rtl");
   } else {
-    document.body.classList.add('ltr');
-    document.body.classList.remove('rtl');
+    document.body.classList.remove("rtl");
   }
-  
-  // Re-initialize navigation with new language
-  if (typeof translateNavigation === 'function') {
-    translateNavigation(lang);
+
+  // Close dropdown after selection
+  const langMenu = document.getElementById("langMenu");
+  if (langMenu) {
+    langMenu.style.display = "none";
   }
 }
 
-// Initialize language from localStorage or browser preference
+// Load English by default
 document.addEventListener('DOMContentLoaded', function() {
-  const savedLanguage = localStorage.getItem('preferredLanguage') || 'en';
-  changeLanguage(savedLanguage);
+  changeLanguage("en");
 });
+
+// Make translations available globally
+window.translations = translations;
