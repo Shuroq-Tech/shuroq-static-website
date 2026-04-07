@@ -34,8 +34,7 @@ const footerData = {
 const footerTranslations = {
     en: {
         company: 'Company',
-        services: 'Services',
-        solutions: 'Solutions',
+        services: 'Services', 
         resources: 'Resources',
         contact: 'Contact',
         title: 'Technology Services & Digital Engineering Company',
@@ -73,15 +72,33 @@ function generateFooterLinks() {
  */
 function updateFooterTranslations(lang = 'en') {
     const translations = footerTranslations[lang] || footerTranslations.en;
-
-    const footerLinks = document.querySelectorAll('.footer-link');
-    if (footerLinks[0]) footerLinks[0].textContent = translations.company;
-    if (footerLinks[1]) footerLinks[1].textContent = translations.services;
-    if (footerLinks[2]) footerLinks[2].textContent = translations.solutions || 'Solutions';
-    if (footerLinks[3]) footerLinks[3].textContent = translations.resources;
-
+    
+    // Update section titles
+    Object.keys(translations).forEach(key => {
+        if (key !== 'title' && key !== 'description' && key !== 'copyright' && 
+            key !== 'privacy' && key !== 'terms' && key !== 'cookies') {
+            const element = document.querySelector(`.footer-section-title`);
+            if (element && element.textContent.toLowerCase().includes(key)) {
+                element.textContent = translations[key];
+            }
+        }
+    });
+    
+    // Update brand section
+    const titleElement = document.querySelector('.footer-title');
+    if (titleElement) titleElement.textContent = translations.title;
+    
+    const descElement = document.querySelector('.footer-description');
+    if (descElement) descElement.textContent = translations.description;
+    
     const copyrightElement = document.querySelector('.footer-copyright');
     if (copyrightElement) copyrightElement.textContent = translations.copyright;
+    
+    // Update legal links
+    const legalLinks = document.querySelectorAll('.footer-legal a');
+    if (legalLinks[0]) legalLinks[0].textContent = translations.privacy;
+    if (legalLinks[1]) legalLinks[1].textContent = translations.terms;
+    if (legalLinks[2]) legalLinks[2].textContent = translations.cookies;
 }
 
 /**

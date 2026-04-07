@@ -232,7 +232,9 @@ p {
 
   align-items: center;
 }
-
+.ai-automation-buttons a{
+  text-decoration: none;
+}
 .ai-automation-btn {
   padding: 1rem 2rem;
 
@@ -253,10 +255,6 @@ p {
   position: relative;
 
   overflow: hidden;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
 }
 
 .ai-automation-btn.primary {
@@ -423,7 +421,9 @@ p {
 
   align-items: center;
 }
-
+.devops-buttons a{
+  text-decoration: none;
+}
 .devops-btn {
   padding: 1rem 2rem;
 
@@ -444,10 +444,6 @@ p {
   position: relative;
 
   overflow: hidden;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
 }
 
 .devops-btn.primary {
@@ -794,10 +790,7 @@ body.home .hero {
 .stats h4:hover{
   color:white;
 }
-.floating-card:hover{
-  background-color:#75a3db;
-  color:white;
-}
+
 .hero-title {
   /* margin: 10rem; */
 
@@ -1428,14 +1421,11 @@ body.home .hero {
 
   border: 1px solid rgba(255, 255, 255, 0.8);
 
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
+  transition: all 0.3s ease;
 
   position: relative;
 
   overflow: hidden;
-  will-change: transform;
 }
 
 .vision-box::before,
@@ -3290,8 +3280,7 @@ h6 {
 #industries {
   width: 95vw;
 
-  height: auto;
-  min-height: 60px;
+  height: 60px;
 
   display: flex;
 
@@ -4102,8 +4091,7 @@ h6 {
   font-weight: 500;
 }
 
-#contactbox button,
-#contactbox .contactbox-btn {
+#contactbox button {
   width: 150px;
 
   height: 40px;
@@ -4121,14 +4109,9 @@ h6 {
   cursor: pointer;
 
   margin-top: 2rem;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
 }
 
-#contactbox button:hover,
-#contactbox .contactbox-btn:hover {
+#contactbox button:hover {
   background-color: #1d4ed8;
 
   color: white;
@@ -4355,7 +4338,7 @@ h6 {
   /* About Us Section */
 
   #third {
-    height: auto;
+    height: 80em;
 
     padding-bottom: 5vh;
   }
@@ -5248,8 +5231,7 @@ h6 {
     line-height: 1.4;
   }
 
-  #contactbox button,
-  #contactbox .contactbox-btn {
+  #contactbox button {
     width: clamp(130px, 40vw, 150px);
 
     height: 44px;
@@ -5553,8 +5535,7 @@ h6 {
       font-size: clamp(1.2rem, 6vw, 1.5rem);
     }
 
-    #contactbox button,
-    #contactbox .contactbox-btn {
+    #contactbox button {
       width: 120px;
 
       height: 42px;
@@ -5622,20 +5603,21 @@ h6 {
 }
 @media (max-width:480px){
   .hero-text, .hero-visual{
-   margin-top: 0;
+   margin-top: -25vh;
   
   }
   .hero-content{
      display:flex;
      padding: 20px;
-     gap:2rem;
+     gap:15vh;
    flex-direction:column-reverse;
   }
   
    .hero-subtitle {
-    width:100%;
-    margin-left:0;
-   margin-top:1rem;
-   padding-top:0;
+    width:100vh;
+    margin-left:-28vh;
+   margin-top:-1vh;
+   padding-top:5vh;
+   /* Increased from 100vh to fit both dashboard and Tech Redefined */
   }
 }

@@ -964,20 +964,7 @@ body {
   margin: 0 auto;
 }
 
-.sp-breadcrumb {
-  padding: 1.2rem 0 0;
-  color: #5c6c85;
-  font-size: 0.95rem;
-}
 
-.sp-breadcrumb a {
-  color: var(--sp-primary);
-  text-decoration: none;
-}
-
-.sp-breadcrumb a:hover {
-  text-decoration: underline;
-}
 
 .sp-hero {
   padding: 2rem 0;

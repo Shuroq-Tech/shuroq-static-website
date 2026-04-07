@@ -12,31 +12,9 @@ body{
     padding: 20px;
 }
 
-/* ================================
-   BREADCRUMB
-   ================================ */
-
-.breadcrumb {
-    padding: 20px;
-    margin-bottom: 20px;
-    font-size: 0.9rem;
-    color: #666;
+#main {
+    padding:5vh;
 }
-
-.breadcrumb a {
-    color: #3b82f6;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.breadcrumb a:hover {
-    color: #8b5cf6;
-}
-
-.breadcrumb span {
-    color: #999;
-}
-
 /* ================================
    HERO SECTION
    ================================ */
@@ -46,7 +24,7 @@ body{
     min-height: 60vh;
     display: flex;
     align-items: center;
-    background: #ffffff
+    background: #ffffff;
     padding-top: 80px;
     overflow: hidden;
     margin-top: -20px;

@@ -22,27 +22,8 @@ body{
 #main {
     margin-top: 80px;
 }
-
-/* Breadcrumb */
-.breadcrumb {
-    padding: 15px 0;
-    margin-bottom: 30px;
-    font-size: 14px;
-    color: #64748B;
-}
-
-.breadcrumb a {
-    color: #2563EB;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.breadcrumb a:hover {
-    color: #1D4ED8;
-}
-
-.breadcrumb span {
-    color: #64748B;
+#main{
+    padding:3vh;
 }
 
 /* Hero Section */

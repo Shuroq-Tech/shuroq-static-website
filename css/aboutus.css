@@ -85,24 +85,17 @@ body{
 
 .about-hero {
 
-    position: relative;
-
-    min-height: 60vh;
-
+     position: relative;
+     min-height: 60vh;
     display: flex;
-
     align-items: center;
-
-  background: linear-gradient(135deg, var(--bg-hero-start) 0%, var(--bg-hero-end) 100%);
+    justify-content: center;
+   background: linear-gradient(135deg, var(--bg-hero-start) 0%, var(--bg-hero-end) 100%);
 
     padding-top: 80px;
-
     overflow: hidden;
-
     margin-top: -20px;
-
     margin-left: -20px;
-
     margin-right: -20px;
 
 }
