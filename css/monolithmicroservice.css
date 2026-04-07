@@ -14,16 +14,7 @@ body{
     max-width: 100%;
 }
 
-/* ================================
-   BREADCRUMB
-   ================================ */
 
-.breadcrumb {
-    padding: 20px;
-    margin-bottom: 20px;
-    font-size: 0.9rem;
-    color: #666;
-}
 
 /* ================================
    REDUCE SERVICES DROPDOWN WIDTH FOR MONOLITH MICROSERVICE PAGE

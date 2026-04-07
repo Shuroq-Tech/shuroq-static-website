@@ -26,42 +26,6 @@ body{
 }
 
 
-/* Breadcrumb */
-
-.breadcrumb {
-
-    padding: 80px 20px 20px;
-
-    font-size: 0.9rem;
-
-    color: #666;
-
-}
-
-
-.breadcrumb a {
-
-    color: #3b82f6;
-
-    text-decoration: none;
-
-}
-
-
-.breadcrumb a:hover {
-
-    text-decoration: underline;
-
-}
-
-
-.breadcrumb span {
-
-    color: #666;
-
-}
-
-
 /* Hero Section */
 
 .cuttingedge-hero {

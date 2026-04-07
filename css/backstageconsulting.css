@@ -15,6 +15,7 @@ body{
 /* Main Content */
 #main {
     margin-top: 80px;
+    padding-top:4vh;
 }
 
 /* ================================
@@ -24,28 +25,7 @@ body.backstage-consulting-page #nav-container .dropdown-menu {
     min-width: 320px !important;
 }
 
-/* Breadcrumb */
-.breadcrumb {
-    padding: 15px 0;
-    margin-bottom: 30px;
-    font-size: 14px;
-    color: #64748B;
-    
-}
 
-.breadcrumb a {
-    color: #3B82F6;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.breadcrumb a:hover {
-    color: #2563EB;
-}
-
-.breadcrumb span {
-    color: #64748B;
-}
 
 /* Hero Section */
 .backstage-hero {
@@ -58,6 +38,7 @@ body.backstage-consulting-page #nav-container .dropdown-menu {
     overflow: hidden;
     width:90%;
     margin: 0 auto;
+    margin-bottom:5vh;
 }
 
 .backstage-hero::before {
