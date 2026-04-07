@@ -556,6 +556,10 @@ body {
   cursor: pointer;
 
   transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
 }
 
 .service-btn:hover {
@@ -565,10 +569,9 @@ body {
   box-shadow: 0 10px 25px rgba(37, 99, 235, 0.4);
 }
 
-.service-btn a {
+.service-btn,
+.service-btn:visited {
   color: white;
-
-  text-decoration: none;
 }
 
 /* Different colors for each service card */

@@ -253,6 +253,10 @@ p {
   position: relative;
 
   overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
 }
 
 .ai-automation-btn.primary {
@@ -440,6 +444,10 @@ p {
   position: relative;
 
   overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
 }
 
 .devops-btn.primary {
@@ -1420,11 +1428,14 @@ body.home .hero {
 
   border: 1px solid rgba(255, 255, 255, 0.8);
 
-  transition: all 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 
   position: relative;
 
   overflow: hidden;
+  will-change: transform;
 }
 
 .vision-box::before,
@@ -3279,7 +3290,8 @@ h6 {
 #industries {
   width: 95vw;
 
-  height: 60px;
+  height: auto;
+  min-height: 60px;
 
   display: flex;
 
@@ -4090,7 +4102,8 @@ h6 {
   font-weight: 500;
 }
 
-#contactbox button {
+#contactbox button,
+#contactbox .contactbox-btn {
   width: 150px;
 
   height: 40px;
@@ -4108,9 +4121,14 @@ h6 {
   cursor: pointer;
 
   margin-top: 2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
 }
 
-#contactbox button:hover {
+#contactbox button:hover,
+#contactbox .contactbox-btn:hover {
   background-color: #1d4ed8;
 
   color: white;
@@ -4337,7 +4355,7 @@ h6 {
   /* About Us Section */
 
   #third {
-    height: 80em;
+    height: auto;
 
     padding-bottom: 5vh;
   }
@@ -5230,7 +5248,8 @@ h6 {
     line-height: 1.4;
   }
 
-  #contactbox button {
+  #contactbox button,
+  #contactbox .contactbox-btn {
     width: clamp(130px, 40vw, 150px);
 
     height: 44px;
@@ -5534,7 +5553,8 @@ h6 {
       font-size: clamp(1.2rem, 6vw, 1.5rem);
     }
 
-    #contactbox button {
+    #contactbox button,
+    #contactbox .contactbox-btn {
       width: 120px;
 
       height: 42px;
@@ -5602,21 +5622,20 @@ h6 {
 }
 @media (max-width:480px){
   .hero-text, .hero-visual{
-   margin-top: -25vh;
+   margin-top: 0;
   
   }
   .hero-content{
      display:flex;
      padding: 20px;
-     gap:15vh;
+     gap:2rem;
    flex-direction:column-reverse;
   }
   
    .hero-subtitle {
-    width:100vh;
-    margin-left:-28vh;
-   margin-top:-1vh;
-   padding-top:5vh;
-   /* Increased from 100vh to fit both dashboard and Tech Redefined */
+    width:100%;
+    margin-left:0;
+   margin-top:1rem;
+   padding-top:0;
   }
 }
