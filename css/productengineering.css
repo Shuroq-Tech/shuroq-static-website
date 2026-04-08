@@ -256,6 +256,7 @@ body{
     color:#1d4ed8;
     line-height: 1.6;
     padding: 20px;
+    overflow-x:hidden;
 }
 
 /* ================================
@@ -265,6 +266,7 @@ body{
 /* Main Content */
 #main {
     margin-top: 80px;
+    
 }
 
 .productengineering-hero {
@@ -272,6 +274,7 @@ body{
     min-height: 50vh;
     display: flex;
     align-items: center;
+    justify-content:center;
     background: #ffffff;
     overflow: hidden;
 }

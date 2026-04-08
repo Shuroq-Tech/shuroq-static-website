@@ -18,10 +18,7 @@ nav {
   background-color: #eaf2ff;
 }
 
-html.nav-open,
-body.nav-open {
-  overflow: hidden; /* Prevent main page scrolling when nav is open */
-}
+
 
 .nav-container {
   width: 89%;
@@ -998,7 +995,7 @@ body.nav-open {
 
     height: calc(100dvh - 60px);
 
-    /* overflow-y: auto; Removed to prevent double scroll bars */
+    overflow-y: auto; /* Scroll if needed */
 
     opacity: 0;
 
@@ -1587,7 +1584,7 @@ body.nav-open {
 
     max-height: 300px !important; /* Make scrollable */
 
-    /* overflow-y: auto !important; Removed to prevent scroll bars */
+    overflow-y: auto !important; /* Enable scrolling */
 
     margin: 4px 0 0 0 !important; /* Further reduced from 8px to 4px */
 
