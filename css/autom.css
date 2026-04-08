@@ -17,9 +17,10 @@ body{
     overflow-x: hidden;
 }
 
-#main{
-    padding-top:10vh;
+#main {
+    padding:10vh;
 }
+
 /* Hero Section */
 .automate-hero {
     position: relative;
