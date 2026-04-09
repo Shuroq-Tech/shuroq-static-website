@@ -110,7 +110,7 @@ const translations = {
     // CTA Section
     cta_title: "Ready to Transform Your Platform Engineering?",
     cta_description: "Let's discuss how our platform engineering services can accelerate your development velocity and enhance developer experience",
-    cta_button: "Get Started Today"
+    cta_button: "Get Started"
   },
   
   ar: {

@@ -162,7 +162,7 @@ body.monolith-microservice-page #nav-container .dropdown-menu {
    ================================ */
 
 .overview-section {
-    padding: 80px 20px;
+    padding: 80px 35px;
     background-color: #ffffff;
     margin: 0 -20px;
 }
@@ -223,6 +223,8 @@ body.monolith-microservice-page #nav-container .dropdown-menu {
     font-weight: 600;
     color: #333;
     margin-bottom: 1rem;
+    margin-bottom: 2rem;
+    
 }
 
 .content-left p {
@@ -231,6 +233,7 @@ body.monolith-microservice-page #nav-container .dropdown-menu {
     color: #555;
     font-family: "inter", sans-serif;
     margin-bottom: 2rem;
+    
 }
 
 .key-benefits {

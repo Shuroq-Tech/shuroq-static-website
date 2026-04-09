@@ -370,6 +370,7 @@ body{
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
+    width:11rem;
 }
 
 .cta-section button:hover {
@@ -489,6 +490,9 @@ footer {
     
     #footnav {
         gap: 20px;
+    }
+    .cta-section button{
+        padding:13px;
     }
 }
 

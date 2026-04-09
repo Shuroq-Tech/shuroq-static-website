@@ -371,6 +371,7 @@ body.backstage-consulting-page #nav-container .dropdown-menu {
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
+    width:12rem;
 }
 
 .cta-section button:hover {

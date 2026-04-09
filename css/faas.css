@@ -422,6 +422,9 @@ body{
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
     transition: all 0.3s ease;
+    min-width:0;
+    overflow-wrap: break-word;
+    word-break: break-word;
 }
 
 .tech-category:hover {
@@ -435,6 +438,7 @@ body{
     color: #333;
     margin-bottom: 1.5rem;
     color: #1e3a8a;
+    
 }
 
 .tech-items {
