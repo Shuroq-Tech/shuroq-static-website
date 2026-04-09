@@ -909,7 +909,14 @@ footer{
     body.faas-page .social-icons {
     margin-bottom: 2rem !important;
     
+    
 }
+    .section-title p{
+        padding: 0 1rem;
+    }
+    .content-left{
+        padding: 0 1rem;
+    }
 }
 
 /* ================================

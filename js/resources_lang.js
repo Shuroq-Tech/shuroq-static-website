@@ -105,8 +105,8 @@
             
             blog_cta_title: "Stay Updated with Latest Insights",
             blog_cta_description: "Get the latest technology trends and expert advice delivered directly to your inbox",
-            blog_cta_button1: "Explore All Blogs",
-            blog_cta_button2: "Subscribe to Updates",
+            blog_cta_button1: "Explore Blogs",
+            blog_cta_button2: "Subscribe",
             
             case_studies_title: "Case Studies & Success Stories",
             case_studies_description1: "Discover how Shuroq has helped organizations across industries overcome complex technology challenges, achieve digital transformation goals, and drive measurable business outcomes. Our case studies provide detailed, transparent accounts of real-world projects, showcasing the methodologies, technologies, and innovative solutions we've deployed to deliver exceptional results.",
@@ -192,8 +192,8 @@
             
             case_studies_cta_title: "Explore Real-World Success Stories",
             case_studies_cta_description: "See how we've helped organizations like yours achieve their digital transformation goals",
-            case_studies_cta_button1: "View All Case Studies",
-            case_studies_cta_button2: "Request Custom Consultation",
+            case_studies_cta_button1: "Case Studies",
+            case_studies_cta_button2: "Request Consultation",
             
             additional_resources_title: "Additional Resources",
             resource1_title: "Whitepapers & Research Reports",

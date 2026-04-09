@@ -859,9 +859,17 @@ footer {
         padding: 1.5rem;
     }
     
-    .use-case {
-        padding: 1.5rem;
-    }
+   
+ .use-cases-grid{
+    width:100%!important;
+   
+ } 
+.use-case {
+    padding: 1.5rem;
+    width:fit-content;
+            /* Increased from default */
+       /* Centered alignment */
+}
     
     .use-case-icon {
         width: 60px;
@@ -871,53 +879,16 @@ footer {
     .use-case-icon i {
         font-size: 1.5rem;
     }
-    
-    #footbox{
-        height: 70vh;
+    .use-case p{
+        padding:4px;
     }
-    
-    #footbox h2{
-        margin-left: -50px;
+    .cta-section{
+        width:95%;
+        margin-left: auto;
+        margin-right: auto;
     }
-    
-    #footnav{
-        margin-left:45vw ;
+    .cta-section a{
+        padding:5px;
     }
-    
-    #footnav{
-        display: flex;
-        flex-direction: column;
-    }
-    
-    #footbox {
-        margin-left: 0;
-        width: 100%;
-        height: auto;
-        padding: 30px clamp(15px, 4vw, 30px);
-    }
-    
-    #footabout {
-        width: 100%;
-        flex-direction: column;
-        gap: 2rem;
-        text-align: center;
-    }
-    
-    #footlogo {
-        width: auto;
-        margin-top: 0;
-        font-size: clamp(18px, 4vw, 22px);
-    }
-    
-    #footabout_title {
-        width: 100%;
-        max-width: 400px;
-        font-size: clamp(0.9rem, 3vw, 1rem);
-    }
-    
-    #footnav {
-        width: 100%;
-        margin-left: 0;
-        flex-wrap: wrap;
-    }
+   
 }

@@ -672,6 +672,14 @@ footer{
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    
+    #main {
+        padding: 5vh 10px;
+    }
+    
     .nav-container {
         padding-left: 20px;
     }
@@ -690,48 +698,248 @@ footer{
         margin-top: 0;
     }
     
+    .assurance-hero {
+        min-height: 50vh;
+        padding-top: 60px;
+        margin: -10px;
+    }
+    
+    .hero-content {
+        padding: 0 15px;
+    }
+    
     .hero-content h1 {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
+        line-height: 1.2;
+        margin-bottom: 1rem;
     }
     
     .hero-content p {
-        font-size: 1.1rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        margin-bottom: 1.5rem;
     }
     
     .hero-stats {
         flex-direction: column;
-        gap: 1.5rem;
+        gap: 1rem;
+        margin-top: 2rem;
+    }
+    
+    .stat {
+        padding: 1rem;
+        background: rgba(255, 255, 255, 0.8);
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .stat h3 {
+        font-size: 2rem;
+    }
+    
+    .stat p {
+        font-size: 0.85rem;
     }
     
     .section-header {
         flex-direction: column;
         text-align: center;
         gap: 1rem;
+        padding: 2rem 0;
+    }
+    
+    .section-icon {
+        width: 70px;
+        height: 70px;
+        margin: 0 auto;
+    }
+    
+    .section-icon i {
+        font-size: 1.8rem;
+    }
+    
+    .section-title h2 {
+        font-size: 2rem;
+        line-height: 1.3;
+    }
+    
+    .section-title p {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+    
+    .philosophy-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        margin-top: 2rem;
+    }
+    
+    .philosophy-item {
+        padding: 2rem 1.5rem;
+        text-align: center;
+        background: rgba(255, 255, 255, 0.8);
+        border-radius: 15px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+    
+    .philosophy-item:hover {
+        transform: translateY(-5px);
+    }
+    
+    .philosophy-item i {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        color: #10b981;
+    }
+    
+    .philosophy-item h3 {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+        color: #132C6F;
+    }
+    
+    .philosophy-item p {
+        font-size: 0.95rem;
+        line-height: 1.5;
+        color: #5A6473;
     }
     
     .testing-grid {
         grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .testing-service {
+        padding: 2rem 1.5rem;
+        margin: 0;
+    }
+    
+    .testing-service h3 {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
+    
+    .testing-service p {
+        font-size: 0.95rem;
+        line-height: 1.5;
+        margin-bottom: 1rem;
+    }
+    
+    .testing-service ul {
+        margin-bottom: 1rem;
+    }
+    
+    .testing-service li {
+        font-size: 0.9rem;
+        margin-bottom: 0.5rem;
+        line-height: 1.4;
     }
     
     .process-step {
         flex-direction: column;
         text-align: center;
+        padding: 2rem 1rem;
     }
     
     .step-number {
-        margin: 0 auto;
+        margin: 0 auto 1rem;
+        width: 50px;
+        height: 50px;
+        font-size: 1.2rem;
+    }
+    
+    .step-content h3 {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .step-content p {
+        font-size: 0.9rem;
+        line-height: 1.5;
     }
     
     .tools-grid {
         grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .tool-item {
+        padding: 1.5rem;
+        text-align: center;
+    }
+    
+    .tool-item i {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .tool-item h4 {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .tool-item p {
+        font-size: 0.85rem;
+        line-height: 1.4;
     }
     
     .benefits-grid {
         grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .benefit-item {
+        padding: 1.5rem;
+        text-align: center;
+    }
+    
+    .benefit-item i {
+        font-size: 1.8rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .benefit-item h4 {
+        font-size: 1.1rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .benefit-item p {
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+    
+    .cta-content {
+        padding: 2rem 1rem;
+        width: 100%;
+        max-width: none;
+        margin: 0 auto;
+        text-align: center;
     }
     
     .cta-content h2 {
-        font-size: 2rem;
+        font-size: 1.8rem;
+        line-height: 1.3;
+        margin-bottom: 1rem;
+    }
+    
+    .cta-content p {
+        font-size: 1rem;
+        line-height: 1.5;
+        margin-bottom: 2rem;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+    
+    .cta-content button {
+        width: 100%;
+        max-width: 250px;
+        height: 50px;
+        font-size: 1rem;
     }
 
     .nav-open .nav-links {
@@ -760,8 +968,32 @@ footer{
 
 @media (max-width: 480px) {
 
+    body {
+        padding: 5px;
+       overflow-x:hidden;
+
+    }
+    
+    #main {
+        padding: 3vh 5px;
+        padding-top:5vh;
+         overflow-x:hidden;
+    }
+
+    .assurance-hero {
+        min-height: 45vh;
+        padding-top: 50px;
+        margin: -5px;
+    }
+    
+    .hero-content {
+        padding: 0 10px;
+    }
+
     .hero-content h1 {
-        font-size: 2rem;
+        font-size: 1.8rem;
+        line-height: 1.2;
+        margin-bottom: 0.8rem;
     }
     
     .section-icon {
@@ -775,10 +1007,39 @@ footer{
     
     .section-title h2 {
         font-size: 1.8rem;
+        line-height: 1.3;
+    }
+    
+    .section-title p {
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+    
+    .philosophy-grid {
+        gap: 1rem;
+    }
+    
+    .philosophy-item {
+        padding: 1.5rem 1rem;
+    }
+    
+    .philosophy-item i {
+        font-size: 2rem;
+        margin-bottom: 0.8rem;
+    }
+    
+    .philosophy-item h3 {
+        font-size: 1.2rem;
+        margin-bottom: 0.8rem;
+    }
+    
+    .philosophy-item p {
+        font-size: 0.9rem;
+        line-height: 1.4;
     }
     
     .testing-service {
-        padding: 1.5rem;
+        padding: 1.5rem 1rem;
     }
     
     .service-icon {
@@ -794,13 +1055,88 @@ footer{
         font-size: 1.2rem;
     }
     
+    .testing-service p {
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+    
+    .testing-service li {
+        font-size: 0.85rem;
+        line-height: 1.3;
+    }
+    
     .service-metrics {
         flex-direction: column;
         gap: 0.5rem;
     }
     
-    .cta-content h2 {
+    .process-step {
+        padding: 1.5rem 0.8rem;
+    }
+    
+    .step-number {
+        width: 45px;
+        height: 45px;
+        font-size: 1.1rem;
+    }
+    
+    .step-content h3 {
+        font-size: 1.1rem;
+    }
+    
+    .step-content p {
+        font-size: 0.85rem;
+        line-height: 1.4;
+    }
+    
+    .tool-item {
+        padding: 1rem;
+    }
+    
+    .tool-item i {
         font-size: 1.8rem;
+    }
+    
+    .tool-item h4 {
+        font-size: 0.95rem;
+    }
+    
+    .tool-item p {
+        font-size: 0.8rem;
+        line-height: 1.3;
+    }
+    
+    .benefit-item {
+        padding: 1rem;
+    }
+    
+    .benefit-item i {
+        font-size: 1.5rem;
+    }
+    
+    .benefit-item h4 {
+        font-size: 1rem;
+    }
+    
+    .benefit-item p {
+        font-size: 0.85rem;
+        line-height: 1.3;
+    }
+    
+    .cta-content {
+       
+        padding: 2rem 1rem;
+    }
+    
+    .cta-content h2 {
+        font-size: 1.6rem;
+        line-height: 1.3;
+    }
+    
+    .cta-content p {
+        font-size: 0.95rem;
+        line-height: 1.4;
+        margin-bottom: 1.5rem;
     }
     
     .cta-content button {

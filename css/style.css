@@ -4156,7 +4156,15 @@ h6 {
   .hero-content h1 {
     font-size: 2rem;
   }
-  
+  .hero-content{
+    
+   
+    margin:4px;
+    
+  }
+  .hero-subtitle{
+   font-size: 1.5rem !important;
+  }
   
 }
 

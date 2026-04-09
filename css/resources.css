@@ -592,8 +592,9 @@ body {
     margin: 60px -20;
     padding: 60px 20px;
     text-align: center;
-    width:80%;
-    margin-left:12%;
+    width:85%;
+    margin-left:auto;
+    margin-right:auto;
      
 }
 
@@ -725,6 +726,17 @@ footer{
     .impact-metrics,
     .resources-grid {
         grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .category-item,
+    .industry-card,
+    .tech-card,
+    .impact-item,
+    .resource-item {
+        width: 95%;
+        margin: 0 auto;
+        padding: 1.5rem;
     }
 
     .format-list {
@@ -740,11 +752,17 @@ footer{
         width: 100%;
         max-width: 300px;
     }
+    
+    .case-studies-cta {
+        margin: 20px auto;
+        width: 95%;
+        padding: 2rem;
+    }
 }
 
 @media (max-width: 480px) {
     .hero-content h1 {
-       padding-left:3vw;;
+       padding-left:3vw;
     }
 
     .hero-content p {
@@ -753,6 +771,33 @@ footer{
     }
     .section-header h2 {
         font-size: 2rem;
+    }
+    
+    .category-item,
+    .industry-card,
+    .tech-card,
+    .impact-item,
+    .resource-item {
+        width: 98%;
+        margin: 0 auto;
+        padding: 1.2rem;
+    }
+    
+    .blogs-section,
+    .case-studies-section {
+        margin: 10px;
+        padding: 20px 10px;
+    }
+    
+    .resources-hero {
+        margin: 10px;
+        padding-top: 60px;
+    }
+    
+    .case-studies-cta {
+        margin: 15px auto;
+        width: 98%;
+        padding: 1.5rem;
     }
 
     .format-list {
@@ -783,5 +828,12 @@ footer{
     #footnav{
         display: flex;
         flex-direction: column;
+    }
+    .cta-buttons .primary-btn{
+        padding:15px;
+    }
+    .cta-content button{
+        font-size: 1rem;
+        font-weight: 600;
     }
 }

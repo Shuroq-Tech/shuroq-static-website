@@ -563,7 +563,14 @@ footer {
     #footnav {
         gap: 20px;
     }
+    .cta-section{
+        width:90%;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    
 }
+
 
 @media (min-width: 769px) and (max-width: 1024px) {
     .content-grid {

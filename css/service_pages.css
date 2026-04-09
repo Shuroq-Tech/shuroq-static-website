@@ -1195,6 +1195,19 @@ body {
   .sp-hero-wrap {
     border-radius: 18px;
   }
+  
+  .sp-cta-actions {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .sp-btn, .sp-btn-secondary {
+    width: 70%;
+    max-width: 280px;
+    text-align: center;
+  }
+  
 }
 
 /* DevSecOps Consult - Global Color System */
@@ -2324,3 +2337,7 @@ body {
 .cloud-native-product-development .sp-hero p{
   color:black;
 }
+.sp-btn{
+    padding: 15px!important;
+   
+  }

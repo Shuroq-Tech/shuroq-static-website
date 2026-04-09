@@ -492,6 +492,9 @@ footer {
     #footnav {
         gap: 20px;
     }
+    .cta-content button{
+        padding:10px;
+    }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {

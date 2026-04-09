@@ -447,6 +447,8 @@ footer {
     
     .cicd-hero {
         padding: 60px 0;
+        width: 95%;
+        margin: 0 auto;
     }
     
     .hero-features {
@@ -467,10 +469,23 @@ footer {
     
     .benefits-grid {
         grid-template-columns: 1fr;
+        gap: 20px;
     }
     
     .service-section:nth-child(even) {
         margin: 0 0 40px;
+    }
+    
+    .key-features, .tech-stack {
+        width: 95%;
+        margin: 0 auto;
+        padding: 25px 20px;
+    }
+    
+    .benefit-card {
+        width: 95%;
+        margin: 0 auto;
+        padding: 25px 20px;
     }
     
     #footbox {
@@ -495,6 +510,64 @@ footer {
     
     .benefits-grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 5px;
+    }
+    
+    #main {
+        margin-top: 50px;
+    }
+    
+    .cicd-hero {
+        padding: 40px 0;
+        width: 98%;
+        margin: 0 auto;
+    }
+    
+    .hero-features {
+        gap: 15px;
+    }
+    
+    .section-header {
+        gap: 15px;
+    }
+    
+    .content-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .benefits-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .key-features, .tech-stack {
+        width: 98%;
+        padding: 20px 15px;
+    }
+    
+    .benefit-card {
+        width: 98%;
+        padding: 20px 15px;
+    }
+    
+    .service-section {
+        padding: 40px 0;
+        margin-bottom: 30px;
+    }
+    
+    .container {
+        padding: 0 15px;
+    }
+    .cta-section{
+        width:90%;
+        margin-left:auto;
+        margin-right:auto;
     }
 }
 

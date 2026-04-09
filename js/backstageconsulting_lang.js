@@ -2,6 +2,13 @@
 const translations = {
   en: {
     // Hero Section
+    nav_company: "Company",
+    nav_services: "Services",
+    nav_industries: "Industries",
+    nav_resources: "Resources",
+    nav_careers: "Careers",
+    nav_solutions:"Solutions",
+    nav_contact: "Contact",
     herotitle: "Backstage Consulting Excellence",
     heropara: "Transform your internal developer platform with expert Backstage consulting services for enhanced developer experience and platform governance",
     platformpan: "Platform Modernization",
@@ -142,11 +149,18 @@ const translations = {
     // CTA Section
     ctatitle: "Ready to Transform Your Developer Platform?",
     ctadesc: "Let's discuss how our Backstage consulting expertise can help you create a world-class internal developer platform",
-    ctabutton: "Start Your Platform Journey",
+    ctabutton: "Start Your Journey",
     ctabutton2: "Back to Consulting"
   },
   ar: {
     // Hero Section
+    nav_company: "الشركة",
+    nav_services:"الخدمات",
+    nav_industries:"الصناعات",
+    nav_resources: "الموارد",
+    nav_solutions: "الحلول",
+    nav_careers:"وظائف",
+    nav_contact: "اتصل بنا",
     herotitle: "تميز استشارات Backstage",
     heropara: "حول منصة المطور الداخلية مع خدمات استشارات Backstage الخبيرة لتعزيز تجربة المطور وحوكمة المنصة",
     platformpan: "تحديث المنصة",

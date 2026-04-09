@@ -1155,6 +1155,21 @@ footer {
 }
 
 @media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    
+    #main {
+        padding: 5vh 10px;
+        margin-top: 60px;
+    }
+    
+    .automate-hero {
+        margin: -10px;
+        padding: 60px 10px;
+        min-height: 50vh;
+    }
+    
     .hero-content h1 {
         font-size: 2.5rem;
     }
@@ -1167,41 +1182,209 @@ footer {
         flex-direction: column;
         gap: 1rem;
     }
+    
+    .devops-section,
+    .agile-section,
+    .process-automation-section {
+        padding: 60px 10px;
+        margin: 0 -10px;
+    }
+    
+    .section-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+    
+    .devops-content,
+    .agile-content,
+    .automation-content {
+        padding: 30px 20px;
+        border-radius: 15px;
+    }
+    
+    .devops-pillars {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .pillar {
+        padding: 1.5rem;
+    }
+    
+    .pipeline-stages {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .stage {
+        width: 100%;
+        max-width: 280px;
+        margin: 0 auto;
+    }
+    
+    .stage-arrow {
+        transform: rotate(90deg);
+    }
+    
+    .container {
+        padding: 0 10px;
+    }
 }
 
 @media (max-width: 480px) {
+    body {
+        padding: 5px;
+    }
+    
+    #main {
+        padding: 3vh 5px;
+        margin-top: 50px;
+    }
+    
+    .automate-hero {
+        margin: -5px;
+        padding: 40px 5px;
+        min-height: 45vh;
+    }
+    
     .hero-content h1 {
         font-size: 2rem;
     }
 
-    .devops-content,
-    .agile-content,
-    .automation-content {
-        padding: 20px;
+    .hero-content p {
+        font-size: 1rem;
     }
-   
+
+    .hero-features {
+        gap: 0.8rem;
+    }
+    
+    .feature {
+        font-size: 0.9rem;
+    }
+    
+    .devops-section,
+    .agile-section,
+    .process-automation-section {
+        padding: 40px 5px;
+        margin: 0 -5px;
+    }
+    
+    .section-header {
+        gap: 0.8rem;
+    }
+    
     .section-icon {
-        width: 60px;
-        height: 60px;
+        width: 50px;
+        height: 50px;
     }
 
     .section-icon i {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 
     .section-title h2 {
+        font-size: 1.6rem;
+    }
+    
+    .section-title p {
+        font-size: 1rem;
+    }
+    
+    .devops-content,
+    .agile-content,
+    .automation-content {
+        padding: 20px 15px;
+        border-radius: 12px;
+    }
+    
+    .devops-content h3,
+    .agile-content h3,
+    .automation-content h3 {
+        font-size: 1.3rem;
+    }
+    
+    .devops-content p,
+    .agile-content p,
+    .automation-content p {
+        font-size: 0.95rem;
+    }
+    
+    .devops-pillars {
+        grid-template-columns: 1fr;
+        gap: 0.8rem;
+    }
+    
+    .pillar {
+        padding: 1.2rem;
+    }
+    
+    .pillar i {
         font-size: 1.8rem;
+    }
+    
+    .pillar h4 {
+        font-size: 1rem;
+    }
+    
+    .pillar p {
+        font-size: 0.85rem;
+    }
+    
+    .pipeline-stages {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+    
+    .stage {
+        width: 100%;
+        max-width: 250px;
+        padding: 1rem;
+    }
+    
+    .stage-icon {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .stage h4 {
+        font-size: 0.9rem;
+    }
+    
+    .stage p {
+        font-size: 0.8rem;
+    }
+    
+    .stage-arrow {
+        transform: rotate(90deg);
+        font-size: 1.2rem;
+    }
+    
+    .container {
+        padding: 0 5px;
+    }
+    
+    .cta-section {
+        margin: 40px -5px;
+        padding: 40px 15px;
+        width: 95%;
+        margin-left: 2.5%;
     }
 
     .cta-content h2 {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
+    }
+
+    .cta-content p {
+        font-size: 1rem;
     }
 
     .cta-content button {
-        width: 170px;
-        height: 45px;
-        font-size: 1rem;
-        margin: 0.5rem 0.2rem;
+        width: 150px;
+        height: 40px;
+        font-size: 0.9rem;
+        margin: 0.3rem 0.1rem;
     }
 
     #footlogo {

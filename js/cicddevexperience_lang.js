@@ -125,7 +125,7 @@ const translations = {
     // CTA Section
     cta_title: "Ready to Transform Your CI/CD & Developer Experience?",
     cta_description: "Let's discuss how our CI/CD and DevEx expertise can accelerate your delivery and delight your developers",
-    cta_button: "Optimize Your Development Workflow"
+    cta_button: "Optimize  Workflow"
   },
   ar: {
     // Hero Section
