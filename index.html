@@ -43,6 +43,14 @@
 
     <div id="slider-container" class="slider-container">
 
+      <!-- Slider Arrow Buttons -->
+      <button class="slider-arrow slider-arrow-left" onclick="slideToPrev()" aria-label="Previous slide">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      <button class="slider-arrow slider-arrow-right" onclick="slideToNext()" aria-label="Next slide">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+
       <div id="slider-wrapper" class="slider-wrapper">
 
         
@@ -1441,11 +1449,6 @@
 
     const indicators = document.querySelectorAll('.slider-indicator');
 
-    let autoSlideInterval;
-
-    let userInteracted = false;
-
-    
 
     // Update slider position
 
@@ -1504,30 +1507,6 @@
 
     
 
-    // Start auto-slide
-
-    function startAutoSlide() {
-
-      autoSlideInterval = setInterval(() => {
-
-        if (!userInteracted) {
-
-          slideToNext();
-
-        }
-
-      }, 5000);
-
-    }
-
-    
-
-    // Reset auto-slide (user interaction)
-
-    
-
-    
-
     // Keyboard navigation (arrow keys only)
 
     document.addEventListener('keydown', (e) => {
@@ -1549,8 +1528,6 @@
     // Initialize slider
 
     updateSliderPosition();
-
-    startAutoSlide();
 
   </script>
 

@@ -484,6 +484,45 @@ p {
   box-shadow: 0 8px 25px rgba(37, 99, 235, 0.3);
 }
 
+/* Slider Arrow Buttons */
+
+.slider-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 100;
+  background: rgba(223, 235, 241, 0.2);
+  border: 2px solid #dadfe4;
+  border-radius: 50%;
+  width: 52px;
+  height: 52px;
+  cursor: pointer;
+  color: #c9d0d7;
+  font-size: 1.2rem;
+  
+  justify-content: center;
+  transition: background 0.3s ease, transform 0.3s ease;
+  backdrop-filter: blur(4px);
+}
+
+.slider-arrow:hover {
+  background: rgba(255, 255, 255, 0.4);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.slider-arrow-left  { left: 1.5rem; }
+.slider-arrow-right { right: 1.5rem; }
+
+@media (max-width: 768px) {
+  .slider-arrow {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+  .slider-arrow-left  { left: 0.75rem; }
+  .slider-arrow-right { right: 0.75rem; }
+}
+
 /* Slider Indicators - Fixed Position */
 
 .slider-indicators {
