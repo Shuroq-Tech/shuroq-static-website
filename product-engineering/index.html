@@ -3,193 +3,136 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
-  <title>Product Engineering - Shuroq</title>
+  <title>Enterprise Software Development - Shuroq</title>
   <link rel="icon" href="../logo.png" sizes="44x44" type="image/png">
-  <link rel="stylesheet" href="../css/productengineering.css">
   <link rel="stylesheet" href="../css/nav.css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="../css/enterprise.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
-<body class="product-engineering-page">
+<body>
 
-  <!-- Scroll Progress Indicator -->
-  <div class="productengineering-scroll-progress"></div>
-
-  <!-- Navigation will be fetched here -->
   <div id="nav-container"></div>
 
-  <!-- Main Content -->
   <div id="main">
+
     <!-- Hero Section -->
-    <section class="productengineering-hero">
+    <section class="enterprise-hero">
       <div class="hero-content">
-        <h1 data-i18n="hero_title">Product Engineering</h1>
-        <p data-i18n="hero_subtitle">Engineering tomorrow's products with today's best practices</p>
-      </div>
-    </section>
-
-    <!-- Introduction Section -->
-    <section class="introduction-section">
-      <div class="container">
-        <div class="intro-content">
-          <h2 data-i18n="intro_title">Transform Your Ideas into Scalable Products</h2>
-          <p data-i18n="intro_description">At Shuroq, we specialize in building robust, scalable, and cloud-native products that drive business growth. Our comprehensive product engineering services span from initial concept to deployment and ongoing optimization, ensuring your products are built with modern best practices and cutting-edge technologies.</p>
-          
-          <div class="key-highlights">
-            <div class="highlight">
-              <i class="fas fa-rocket"></i>
-              <h3 data-i18n="highlight1_title">Fast Time-to-Market</h3>
-              <p data-i18n="highlight1_desc">Accelerated development cycles with agile methodologies</p>
-            </div>
-            <div class="highlight">
-              <i class="fas fa-expand-arrows-alt"></i>
-              <h3 data-i18n="highlight2_title">Scalable Architecture</h3>
-              <p data-i18n="highlight2_desc">Future-proof solutions that grow with your business</p>
-            </div>
-            <div class="highlight">
-              <i class="fas fa-cloud"></i>
-              <h3 data-i18n="highlight3_title">Cloud-Native First</h3>
-              <p data-i18n="highlight3_desc">Built for the cloud from day one</p>
-            </div>
-            <div class="highlight">
-              <i class="fas fa-shield-alt"></i>
-              <h3 data-i18n="highlight4_title">Enterprise Security</h3>
-              <p data-i18n="highlight4_desc">Security and compliance built into every layer</p>
-            </div>
-          </div>
+        <span class="hero-label">Enterprise Operations</span>
+        <h1>Build Products Users Actually Want to Use</h1>
+        <p>A successful product is not built only for stakeholders. It is built for the people using it every day. Our team combines creativity, research, and business understanding to deliver experiences that improve customer satisfaction and product adoption.</p>
+        <div class="hero-features">
+          <div class="feature"><i class="fas fa-laptop-code"></i><span>Custom Built</span></div>
+          <div class="feature"><i class="fas fa-shield-alt"></i><span>Secure & Reliable</span></div>
+          <div class="feature"><i class="fas fa-expand-arrows-alt"></i><span>Scalable Systems</span></div>
         </div>
       </div>
     </section>
 
-    <!-- Services Overview -->
-    <section class="services-overview">
+    <!-- Overview Section -->
+    <section class="overview-section">
       <div class="container">
-        
-        <!-- Cloud Native Product Engineering Section -->
-        <div class="service-card cloud-native">
-          <div class="service-icon">
-            <i class="fas fa-cloud"></i>
-          </div>
-          <div class="service-content">
-            <h2 data-i18n="cloud_native_title">Cloud Native Product Engineering</h2>
-            <h3 data-i18n="cloud_native_subtitle">Design and build products from the ground up using cloud-native principles</h3>
-            <p data-i18n="cloud_native_description">Design and build products from the ground up using cloud-native principles — containers, Kubernetes, and scalable microservices architectures that maximize performance and resilience.</p>
-            
-            <div class="sub-services">
-              <div class="sub-service">
-                <i class="fas fa-dharmachakra"></i>
-                <h4 data-i18n="cloud_native_k8s">Kubernetes</h4>
-                <p data-i18n="cloud_native_k8s_desc">Container orchestration at scale</p>
-              </div>
-              <div class="sub-service">
-                <i class="fas fa-cubes"></i>
-                <h4 data-i18n="cloud_native_microservices">Microservices</h4>
-                <p data-i18n="cloud_native_microservices_desc">Distributed, resilient architectures</p>
-              </div>
-              <div class="sub-service">
-                <i class="fas fa-infinity"></i>
-                <h4 data-i18n="cloud_native_cicd">CI/CD</h4>
-                <p data-i18n="cloud_native_cicd_desc">Automated deployment pipelines</p>
-              </div>
-            </div>
-            
-            <button class="service-btn"><a href="/cloud-native/" data-i18n="cloud_native_button">Explore Cloud Native</a></button>
-          </div>
+        <div class="overview-header">
+          <h2>Enterprise Software Development</h2>
+          <h3>Building Scalable Software for Modern Enterprises</h3>
         </div>
-
-        <!-- FaaS Section -->
-        <div class="service-card faas">
-          <div class="service-icon">
-            <i class="fas fa-bolt"></i>
-          </div>
-          <div class="service-content">
-            <h2 data-i18n="faas_title">FaaS — Function as a Service</h2>
-            <h3 data-i18n="faas_subtitle">Serverless Architecture for Infinite Scale and Zero Operational Overhead</h3>
-            <p data-i18n="faas_description">Embrace serverless computing with event-driven, auto-scaling functions that eliminate infrastructure overhead and reduce operational costs significantly.</p>
-            
-            <div class="sub-services">
-              <div class="sub-service">
-                <i class="fas fa-code"></i>
-                <h4 data-i18n="faas_functions">Serverless Functions</h4>
-                <p data-i18n="faas_functions_desc">Event-driven, auto-scaling code</p>
-              </div>
-              <div class="sub-service">
-                <i class="fas fa-project-diagram"></i>
-                <h4 data-i18n="faas_events">Event Architecture</h4>
-                <p data-i18n="faas_events_desc">Loosely coupled, event-driven systems</p>
-              </div>
-              <div class="sub-service">
-                <i class="fas fa-dollar-sign"></i>
-                <h4 data-i18n="faas_cost">Cost Optimization</h4>
-                <p data-i18n="faas_cost_desc">Pay-per-execution pricing model</p>
-              </div>
-            </div>
-            
-            <button class="service-btn"><a href="/faas/" data-i18n="faas_button">Explore FaaS</a></button>
-          </div>
+        <div class="overview-body">
+          <p>At Shuroq, we develop enterprise-grade software solutions engineered for scalability, performance, security, and long-term business growth.</p>
+          <p>Many organizations struggle because their systems are fragmented, outdated, or unable to scale with operational demands. We solve that by building robust digital solutions tailored to enterprise workflows and business objectives.</p>
+          <p class="overview-focus">Our focus is not just development. It is building software that improves operational efficiency and supports strategic growth.</p>
         </div>
-
-        <!-- Monolith to Microservice Section -->
-        <div class="service-card monolith-microservice">
-          <div class="service-icon">
-            <i class="fas fa-cubes"></i>
-          </div>
-          <div class="service-content">
-            <h2 data-i18n="monolith_title">Monolith to Microservice Migration</h2>
-            <h3 data-i18n="monolith_subtitle">Modernize Legacy Systems with Confidence and Precision</h3>
-            <p data-i18n="monolith_description">Transform legacy monolithic applications into agile, independently deployable microservices — enabling faster releases, better scalability, and improved fault isolation.</p>
-            
-            <div class="sub-services">
-              <div class="sub-service">
-                <i class="fas fa-exchange-alt"></i>
-                <h4 data-i18n="monolith_migration">Migration Strategy</h4>
-                <p data-i18n="monolith_migration_desc">Phased, risk-managed transformation</p>
-              </div>
-              <div class="sub-service">
-                <i class="fas fa-network-wired"></i>
-                <h4 data-i18n="monolith_decomposition">Domain Decomposition</h4>
-                <p data-i18n="monolith_decomposition_desc">DDD-based service boundaries</p>
-              </div>
-              <div class="sub-service">
-                <i class="fas fa-link"></i>
-                <i class="fas fa-plug"></i>
-                <h4 data-i18n="monolith_integration">Service Integration</h4>
-                <p data-i18n="monolith_integration_desc">Seamless inter-service communication</p>
-              </div>
-            </div>
-            
-            <button class="service-btn"><a href="/monolith/" data-i18n="monolith_button">Explore Migration</a></button>
-          </div>
-        </div>
-
       </div>
     </section>
 
-    <!-- Why Choose Shuroq Section -->
-    <section class="why-choose-section">
+    <!-- Services Section -->
+    <section class="dev-services-section">
       <div class="container">
-        <h2 data-i18n="why_choose_title">Why Choose Shuroq for Product Engineering?</h2>
-        <div class="benefits-grid">
-          <div class="benefit-card">
-            <i class="fas fa-users"></i>
-            <h3 data-i18n="benefit1_title">Expert Team</h3>
-            <p data-i18n="benefit1_desc">Seasoned engineers with deep expertise in modern technologies and best practices</p>
+        <div class="section-title-block">
+          <h2>Our Enterprise Development Services</h2>
+        </div>
+        <div class="dev-services-grid">
+
+          <div class="dev-service-card">
+            <div class="dev-service-icon"><i class="fas fa-cogs"></i></div>
+            <h3>Custom Enterprise Applications</h3>
+            <p>Tailored software solutions built around unique business operations, internal processes, and organizational requirements.</p>
           </div>
-          <div class="benefit-card">
-            <i class="fas fa-cogs"></i>
-            <h3 data-i18n="benefit2_title">Agile Process</h3>
-            <p data-i18n="benefit2_desc">Iterative development with continuous feedback and rapid adaptation</p>
+
+          <div class="dev-service-card">
+            <div class="dev-service-icon"><i class="fas fa-users-cog"></i></div>
+            <h3>CRM & ERP Solutions</h3>
+            <p>Integrated systems that streamline operations, customer management, resource planning, and reporting.</p>
           </div>
-          <div class="benefit-card">
-            <i class="fas fa-chart-line"></i>
-            <h3 data-i18n="benefit3_title">Proven Track Record</h3>
-            <p data-i18n="benefit3_desc">Successful delivery of complex products across various industries</p>
+
+          <div class="dev-service-card">
+            <div class="dev-service-icon"><i class="fas fa-cloud"></i></div>
+            <h3>SaaS Product Development</h3>
+            <p>Cloud-based software products designed for scalability, performance, and multi-user environments.</p>
           </div>
-          <div class="benefit-card">
-            <i class="fas fa-handshake"></i>
-            <h3 data-i18n="benefit4_title">Partnership Approach</h3>
-            <p data-i18n="benefit4_desc">We work as an extension of your team, committed to your success</p>
+
+          <div class="dev-service-card">
+            <div class="dev-service-icon"><i class="fas fa-plug"></i></div>
+            <h3>API Development & Integration</h3>
+            <p>Secure API architecture and third-party integrations that connect enterprise systems efficiently.</p>
           </div>
+
+          <div class="dev-service-card">
+            <div class="dev-service-icon"><i class="fas fa-robot"></i></div>
+            <h3>Workflow Automation</h3>
+            <p>Automating repetitive processes to improve productivity, reduce manual effort, and minimize operational errors.</p>
+          </div>
+
+          <div class="dev-service-card">
+            <div class="dev-service-icon"><i class="fas fa-dharmachakra"></i></div>
+            <h3>Cloud-Native Development</h3>
+            <p>Modern cloud applications designed for flexibility, scalability, and high availability.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Technology Approach Section -->
+    <section class="tech-approach-section">
+      <div class="container">
+        <div class="tech-approach-inner">
+          <div class="tech-approach-text">
+            <h2>Technology Approach</h2>
+            <p>We build enterprise solutions using modern development frameworks, scalable architectures, secure deployment pipelines, and agile methodologies.</p>
+            <p class="tech-focus-label">Our engineering teams focus on:</p>
+            <ul class="tech-focus-list">
+              <li><i class="fas fa-check-circle"></i><span>Scalability</span></li>
+              <li><i class="fas fa-check-circle"></i><span>Security</span></li>
+              <li><i class="fas fa-check-circle"></i><span>Performance optimization</span></li>
+              <li><i class="fas fa-check-circle"></i><span>Maintainability</span></li>
+              <li><i class="fas fa-check-circle"></i><span>Integration readiness</span></li>
+              <li><i class="fas fa-check-circle"></i><span>Future-proof architecture</span></li>
+            </ul>
+          </div>
+          <div class="tech-approach-visual">
+            <div class="tech-item"><i class="fab fa-react"></i><span>React</span></div>
+            <div class="tech-item"><i class="fab fa-node-js"></i><span>Node.js</span></div>
+            <div class="tech-item"><i class="fab fa-python"></i><span>Python</span></div>
+            <div class="tech-item"><i class="fab fa-aws"></i><span>AWS</span></div>
+            <div class="tech-item"><i class="fas fa-dharmachakra"></i><span>Kubernetes</span></div>
+            <div class="tech-item"><i class="fas fa-database"></i><span>PostgreSQL</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Shuroq Section -->
+    <section class="why-section">
+      <div class="container">
+        <h2>Why Enterprises Work With Shuroq</h2>
+        <div class="why-grid">
+          <div class="why-item"><i class="fas fa-check-circle"></i><span>Business-first development strategy</span></div>
+          <div class="why-item"><i class="fas fa-check-circle"></i><span>Scalable and secure architectures</span></div>
+          <div class="why-item"><i class="fas fa-check-circle"></i><span>Agile delivery methodology</span></div>
+          <div class="why-item"><i class="fas fa-check-circle"></i><span>Dedicated technical expertise</span></div>
+          <div class="why-item"><i class="fas fa-check-circle"></i><span>Long-term support and optimization</span></div>
+          <div class="why-item"><i class="fas fa-check-circle"></i><span>Focus on measurable business outcomes</span></div>
         </div>
       </div>
     </section>
@@ -197,41 +140,38 @@
     <!-- CTA Section -->
     <section class="cta-section">
       <div class="cta-content">
-        <h2 data-i18n="cta_title">Ready to Build Your Next Product?</h2>
-        <p data-i18n="cta_description">Let's discuss how our product engineering expertise can help bring your vision to life</p>
-        <button><a href="/contact/" data-i18n="cta_button">Get in Touch</a></button>
+        <h2>Transform Operations With Intelligent Software</h2>
+        <p>Enterprise software should simplify operations, not create complexity. We help businesses modernize systems, improve efficiency, and build digital infrastructures capable of supporting long-term growth.</p>
+        <button><a href="/contact/">Get in Touch</a></button>
+        <button class="secondary-btn"><a href="/services/">Back to Services</a></button>
       </div>
     </section>
-  </div>
-  
-  <!-- Footer Container -->
-  <div id="footer-container"></div>
 
-  <!-- Dynamic Footer Component -->
+  </div>
+
   <script src="../js/footer.js"></script>
   <link rel="stylesheet" href="../css/footer.css">
+  <script src="../js/nav.js"></script>
   <script src="../js/nav_lang.js"></script>
-  <script src="../js/i18n_helper.js"></script>
   <script src="../js/productengineering_lang.js"></script>
   <script src="../js/nav.js"></script>
-  <script src="../js/nav_loader.js"></script>
   <script src="../js/productengineering.js"></script>
   
   <script>
-    // Load navigation
-    fetch('../nav.html')
-      .then(response => response.text())
-      .then(html => {
-        document.getElementById('nav-container').innerHTML = html;
-        // Initialize navigation after loading
-        if (typeof initializeNavigation === 'function') {
-          initializeNavigation();
-        }
-        if (typeof changeLanguage === 'function') {
-          changeLanguage('en');
-        }
-      });
+    async function loadNavigation() {
+      try {
+        const response = await fetch('../nav.html');
+        if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+        const navHTML = await response.text();
+        const nav = document.getElementById('nav-container');
+        if (nav) nav.innerHTML = navHTML;
+        setTimeout(() => { initializeNavigation(); }, 300);
+      } catch (error) {
+        console.error('Error loading navigation:', error);
+      }
+    }
+    document.addEventListener('DOMContentLoaded', loadNavigation);
   </script>
 
-  </body>
+</body>
 </html>

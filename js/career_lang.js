@@ -6,8 +6,8 @@ const translations = {
     nav_resources: "Resources",
     nav_careers: "Careers",
     nav_contact: "Contact",
-    hero_title: "Join Our Team",
-  hero_subtitle: "Build your career with Shuroq and be part of innovative technology solutions that shape the future",
+    hero_title: "Build Your Career With Shuroq",
+  hero_subtitle: "At Shuroq, we are building a collaborative environment where talented professionalscan work on impactful projects, modern technologies, and scalable digital solutions.We believe innovation starts with strong teams, continuous learning, and practicalproblem-solving.",
   
   why_work_title: "Why Work With Shuroq",
   why_work_para1: "At Shuroq, we believe that our greatest asset is our people. We're a dynamic technology company that's passionate about innovation, excellence, and making a real impact in the digital landscape. When you join our team, you become part of a collaborative environment where creativity thrives, ideas are valued, and professional growth is not just encouraged—it's expected.",
@@ -22,6 +22,13 @@ const translations = {
   benefit3_desc: "Learn from industry experts and experienced professionals",
   benefit4_title: "Global Impact",
   benefit4_desc: "Work on projects that serve clients across multiple industries globally",
+
+  why_join_title: "Why Join Shuroq",
+  why_join_1: "Work on real-world business solutions",
+  why_join_2: "Exposure to modern technologies",
+  why_join_3: "Collaborative work culture",
+  why_join_4: "Career growth opportunities",
+  why_join_5: "Innovation-focused environment",
   
   application_process_title: "Application Process",
   step1_title: "Submit Application",
@@ -66,6 +73,13 @@ const translations = {
   benefit3_desc: "تعلم من خبراء الصناعة والمحترفين ذوي الخبرة",
   benefit4_title: "تأثير عالمي",
   benefit4_desc: "اعمل على مشاريع تخدم عملاء عبر قطاعات متعددة عالميًا",
+
+  why_join_title: "Why Join Shuroq",
+  why_join_1: "Work on real-world business solutions",
+  why_join_2: "Exposure to modern technologies",
+  why_join_3: "Collaborative work culture",
+  why_join_4: "Career growth opportunities",
+  why_join_5: "Innovation-focused environment",
   
   application_process_title: "عملية التقديم",
   step1_title: "تقديم الطلب",

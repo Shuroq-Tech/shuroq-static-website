@@ -211,10 +211,88 @@ function updateFooterLanguage(lang) {
     updateFooterTranslations(lang);
 }
 
+/**
+ * Floating Contact CTA — injected on every page except /contact/
+ */
+function injectFloatingCTA() {
+    const path = window.location.pathname.replace(/\\/g, '/');
+    if (path.includes('/contact')) return;
+
+    const style = document.createElement('style');
+    style.textContent = `
+        .floating-cta-wrap {
+            position: fixed;
+            right: 0;
+            bottom: 90px;
+            z-index: 9000;
+        }
+        .floating-cta-link {
+            display: flex;
+            align-items: center;
+            background: linear-gradient(135deg, #2563eb 0%, #1e3a8a 100%);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 10px 0 0 10px;
+            box-shadow: -3px 0 18px rgba(37,99,235,0.4);
+            overflow: hidden;
+            max-width: 52px;
+            transition: max-width 0.35s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease;
+            white-space: nowrap;
+        }
+        .floating-cta-link:hover {
+            max-width: 170px;
+            box-shadow: -5px 0 26px rgba(37,99,235,0.55);
+        }
+        .floating-cta-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 52px;
+            height: 52px;
+            flex-shrink: 0;
+        }
+        .floating-cta-icon i {
+            font-size: 1.35rem;
+        }
+        .floating-cta-text {
+            font-family: 'Poppins', sans-serif;
+            font-size: 0.85rem;
+            font-weight: 600;
+            padding-right: 16px;
+            opacity: 0;
+            transition: opacity 0.2s ease 0.15s;
+        }
+        .floating-cta-link:hover .floating-cta-text {
+            opacity: 1;
+        }
+        @media (max-width: 480px) {
+            .floating-cta-icon {
+                min-width: 44px;
+                height: 44px;
+            }
+            .floating-cta-link {
+                max-width: 44px;
+            }
+        }
+    `;
+    document.head.appendChild(style);
+
+    const wrap = document.createElement('div');
+    wrap.className = 'floating-cta-wrap';
+    wrap.innerHTML = `
+        <a href="/contact/" class="floating-cta-link" aria-label="Contact Us">
+            <span class="floating-cta-icon"><i class="fas fa-comment-dots"></i></span>
+            <span class="floating-cta-text">Contact Us</span>
+        </a>
+    `;
+    document.body.appendChild(wrap);
+}
+
 // Initialize footer when DOM is ready
 document.addEventListener('DOMContentLoaded', function() {
     // Small delay to ensure other components are loaded
     setTimeout(loadFooterComponent, 100);
+    injectFloatingCTA();
 });
 
 // Make functions globally available

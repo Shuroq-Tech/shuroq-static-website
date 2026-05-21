@@ -76,7 +76,7 @@ const translations = {
     mission_title: "Our Mission",
     mission_description: "Our mission is to bridge the gap between complex engineering and practical execution by delivering scalable cloud infrastructure, robust DevOps practices, and high-performance platform engineering solutions. We work closely with founders and product teams to design, automate, and optimize systems that reduce operational overhead, enhance reliability, and accelerate innovation — transforming ideas into production-ready platforms that support sustainable growth.",
     industriesheading:"Industries We Serve",
-    industry1:"Telecom Industry ",
+    industry1:"Cloud & DevOps",
     industry1_data:"We support telecom providers with scalable digital solutions that enhance network operations, optimize customer experiences, and enable data-driven decision-making",
     industry2:"Automotive Industry",
     industry2_data:"We enable greater efficiency, visibility, and agility throughout the automotive value chain",
@@ -127,14 +127,16 @@ const translations = {
     // About Section
     about_mission_title: "About Shuroq & Company Mission",
     about_mission_desc: "We empower organizations with future-ready technology solutions and strategic insights to drive sustainable growth and innovation.",
-    about_values_title: "Our Values",
+    about_values_title: "Our Core Values",
     about_innovation_title: "Innovation",
-    about_innovation_desc: "Constantly pushing boundaries and exploring new technologies to deliver cutting-edge solutions.",
+    about_innovation_desc: "We continuously adopt modern technologies and scalable engineering practices tosolve evolving business challenges.",
     about_collaboration_title: "Collaboration",
-    about_collaboration_desc: "Building strong partnerships and working closely with clients to achieve shared success.",
+    about_collaboration_desc: "We work closely with clients to build solutions aligned with operational and strategicgoals.",
     about_integrity_title: "Integrity",
-    about_integrity_desc: "Upholding the highest ethical standards and transparency in all our actions and decisions.",
-    
+    about_integrity_desc: "We maintain transparency, accountability, and trust across every client engagement..",
+    about_excellence_title:"Excellence",
+    about_excellence_title:"We prioritize quality, reliability, and long-term business impact in every solution wedeliver."
+
     // Expertise Section
     expertise_title: "Our Expertise",
     expertise_devops: "Devops Engineering",
