@@ -1,0 +1,107 @@
+.ux-overview-section,
+.ux-capabilities-section,
+.ux-outcomes-section {
+  padding: 80px 20px;
+  background: #f4f8ff;
+}
+
+.ux-capabilities-section {
+  background: #ffffff;
+}
+
+.ux-mini-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.4rem;
+}
+
+.ux-mini-card {
+  position: relative;
+  min-height: 245px;
+  background: #ffffff;
+  border: 1px solid rgba(37, 99, 235, 0.12);
+  border-radius: 18px;
+  padding: 1.6rem;
+  box-shadow: 0 14px 34px rgba(15, 23, 42, 0.08);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+  overflow: hidden;
+}
+
+.ux-mini-card::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: 5px;
+  background: linear-gradient(90deg, #2563eb, #38bdf8);
+}
+
+.ux-mini-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(37, 99, 235, 0.35);
+  box-shadow: 0 22px 42px rgba(37, 99, 235, 0.16);
+}
+
+.ux-card-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 16px;
+  background: #eef4ff;
+  color: #2563eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  margin-bottom: 1.1rem;
+}
+
+.ux-mini-card h3 {
+  font-size: 1.15rem;
+  line-height: 1.35;
+  color: #132c6f;
+  margin-bottom: 0.65rem;
+  font-weight: 700;
+}
+
+.ux-mini-card p {
+  color: #5a6473;
+  font-family: "inter", sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+.ux-highlight-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.ux-highlight-box {
+  background: #eef4ff;
+  border: 1px solid rgba(37, 99, 235, 0.12);
+  border-radius: 16px;
+  padding: 1rem 1.1rem;
+}
+
+.ux-highlight-box strong {
+  display: block;
+  color: #2563eb;
+  font-size: 1.02rem;
+  margin-bottom: 0.25rem;
+}
+
+.ux-highlight-box span {
+  color: #5a6473;
+  font-family: "inter", sans-serif;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 480px) {
+  .ux-mini-card {
+    min-height: auto;
+    padding: 1.35rem;
+  }
+}
