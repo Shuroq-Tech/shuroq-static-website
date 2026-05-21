@@ -1032,11 +1032,149 @@ footer{
 }
 
 /* =============================================
+   Mission & Vision Side-by-Side Section
+   ============================================= */
+
+.mission-vision-section {
+    padding: 30px;
+    margin: 0 -20px;
+    margin-bottom: 3rem;
+    background: var(--bg-light);
+}
+
+.mv-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+.mv-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.mv-card {
+    border-radius: 20px;
+    padding: 2.5rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mv-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.mission-card {
+    background: linear-gradient(135deg, #e2f3ff 0%, #e1faff 100%);
+}
+
+.vision-card {
+    background: linear-gradient(135deg, var(--bg-highlight-start) 0%, var(--card-bg-alt) 100%);
+}
+
+.mv-card-icon {
+    width: 56px;
+    height: 56px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.mv-card-icon i {
+    font-size: 1.5rem;
+}
+
+.mission-card .mv-card-icon i {
+    color: #7C3AED;
+}
+
+.vision-card .mv-card-icon i {
+    color: #0ea5e9;
+}
+
+.mv-card h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.mv-card h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    border-radius: 2px;
+}
+
+.mission-card h2 {
+    color: #7C3AED;
+}
+
+.mission-card h2::after {
+    background: linear-gradient(135deg, #7C3AED 0%, #a855f7 100%);
+}
+
+.vision-card h2 {
+    color: #0ea5e9;
+}
+
+.vision-card h2::after {
+    background: linear-gradient(135deg, #0ea5e9 0%, #38bdf8 100%);
+}
+
+.mv-card p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: var(--text-main);
+    font-family: "inter", sans-serif;
+    font-weight: 400;
+    margin-top: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .mv-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .mv-container {
+        padding: 40px 15px;
+    }
+
+    .mv-card {
+        padding: 2rem;
+    }
+
+    .mv-card h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .mv-card {
+        padding: 1.5rem;
+    }
+
+    .mv-card h2 {
+        font-size: 1.3rem;
+    }
+}
+
+/* =============================================
    Why Businesses Choose Shuroq Section
    ============================================= */
 
 .why-choose-section {
-    background: linear-gradient(135deg, #e0f2fe 0%, #f0fcfd 100%);
+    background: linear-gradient(135deg, #eef4ff 0%, #f4f8ff 100%);
     padding: 30px;
     margin: 0 -20px;
     margin-bottom: 3rem;
@@ -1052,7 +1190,7 @@ footer{
 }
 
 .why-choose-section .section-header h2::after {
-    background: linear-gradient(135deg, #0284c7 0%, #10b981 100%);
+    background: linear-gradient(135deg, #2563eb 0%, #1e3a8a 100%);
 }
 
 .why-choose-grid {
@@ -1235,8 +1373,10 @@ footer{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
+    width: 100%;
     max-width: 800px;
     margin: 0 auto;
+    box-sizing: border-box;
 }
 
 .outcome-item {
@@ -1253,6 +1393,8 @@ footer{
     font-weight: 600;
     font-size: 0.95rem;
     color: var(--heading-h3);
+    min-width: 0;
+    overflow: hidden;
 }
 
 .outcome-item:hover {
@@ -1445,6 +1587,7 @@ footer{
 @media (max-width: 768px) {
     .results-outcomes-grid {
         grid-template-columns: repeat(2, 1fr);
+        width: 100%;
     }
 
     .case-study-header,
@@ -1477,13 +1620,15 @@ footer{
     }
 
     .results-outcomes-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
         gap: 0.75rem;
+        width: 100%;
     }
 
     .outcome-item {
         padding: 0.75rem 1rem;
         font-size: 0.85rem;
+        width: 100%;
     }
 
     .results-cta-banner {
