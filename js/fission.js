@@ -81,9 +81,8 @@ function changeLanguage(lang) {
     applyTranslations();
     
     // Update language button text
-    const langBtn = document.getElementById('langBtn');
-    if (langBtn) {
-        langBtn.textContent = lang === 'en' ? '🌐~en' : '🌐~ar';
+    if (window.ShuroqI18n && typeof window.ShuroqI18n.updateLanguageButton === 'function') {
+        window.ShuroqI18n.updateLanguageButton(lang);
     }
     
     // Close language menu

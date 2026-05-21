@@ -1,4 +1,4 @@
-﻿const translations = {
+const translations = {
     en:{
     nav_aboutus:"About Us",
     nav_services:"Services",
@@ -70,45 +70,12 @@ document.getElementById("langBtn").addEventListener("click", () => {
 
 // Change language function
 function changeLanguage(lang){
-  // Update text content based on selected language
-  document.querySelectorAll("[data-i18n]").forEach(element=>{
-    const key = element.getAttribute("data-i18n");
-    // Preserve Font Awesome icons by updating only the text content
-    const icon = element.querySelector('i.fas, i.fab, i.fa, i.far, i.fal');
-    if (icon) {
-      // Keep the icon and update the text after it
-      const iconHTML = icon.outerHTML;
-      element.innerHTML = iconHTML + ' ' + translations[lang][key];
-    } else {
-      // No icon, just update the text
-      element.textContent = translations[lang][key];
-    }
-  });
-
-  // Update navigation translations
-  if (typeof translateNavigation === 'function') {
-    translateNavigation(lang);
-  }
-
-  // Apply RTL for Arabic
-  if (lang === "ar") {
-    document.body.classList.add("rtl");
-  } else {
-    document.body.classList.remove("rtl");
-  }
-
-  // Update language button text
-  const langBtn = document.getElementById("langBtn");
-  if (langBtn) {
-    langBtn.textContent = lang === "ar" ? "ar" : "en";
-  }
-
+  // Refactored: shared i18n DOM update logic lives in js/i18n_helper.js.
+  window.ShuroqI18n.applyLanguage(lang, translations, { updateNavigation: true, skipMissing: false });
   // Store language preference
   localStorage.setItem('preferredLanguage', lang);
-
-  // Close dropdown after selection
-  document.getElementById("langMenu").style.display = "none";
 }
 
+
 // Load English by default
-changeLanguage("en");
+changeLanguage(window.ShuroqI18n.getSavedLanguage());

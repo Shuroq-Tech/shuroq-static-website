@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Small delay to ensure DOM is ready and navigation is loaded
         setTimeout(() => {
             console.log('Applying English translations...');
-            changeLanguage('en');
+            changeLanguage(window.ShuroqI18n.getSavedLanguage());
             console.log('English translations applied');
         }, 1000); // Increased delay to 1 second for debugging
     } else {

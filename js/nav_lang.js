@@ -262,32 +262,33 @@ function changeLanguage(lang) {
   document.documentElement.lang = lang;
   
   // Update language button
-  const langBtn = document.getElementById('langBtn');
-  if (langBtn) {
-    langBtn.textContent = lang === 'ar' ? '🌐ar' : '🌐en';
+  if (window.ShuroqI18n && typeof window.ShuroqI18n.updateLanguageButton === 'function') {
+    window.ShuroqI18n.updateLanguageButton(activeLang);
   }
   
   // Store language preference
-  localStorage.setItem('preferredLanguage', lang);
+  localStorage.setItem('preferredLanguage', activeLang);
   
   // Toggle RTL for Arabic
-  if (lang === 'ar') {
+  if (activeLang === 'ar') {
     document.body.classList.add('rtl');
     document.body.classList.remove('ltr');
+    document.documentElement.dir = 'rtl';
   } else {
     document.body.classList.add('ltr');
     document.body.classList.remove('rtl');
+    document.documentElement.dir = 'ltr';
   }
   
   // Translate navigation
-  translateNavigation(lang);
+  translateNavigation(activeLang);
   
   // Translate page content if page-specific translations are available
-  if (typeof translations !== 'undefined' && translations[lang]) {
+  if (typeof translations !== 'undefined' && translations[activeLang]) {
     document.querySelectorAll('[data-i18n]').forEach(element => {
       const key = element.getAttribute('data-i18n');
-      if (translations[lang] && translations[lang][key]) {
-        element.textContent = translations[lang][key];
+      if (translations[activeLang] && translations[activeLang][key]) {
+        element.textContent = translations[activeLang][key];
       }
     });
   }
