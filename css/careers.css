@@ -313,6 +313,63 @@ body {
   line-height: 1.6;
 }
 
+/* Why Join Shuroq Section */
+
+.why-join-section {
+  margin: 20px;
+}
+
+.why-join-section .section-container {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.why-join-card {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2.5rem;
+  background: #ffffff;
+  border: 1px solid #dbeafe;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(37, 99, 235, 0.12);
+}
+
+.why-join-card h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #070d5e;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.why-join-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem 1.25rem;
+}
+
+.why-join-list li {
+  position: relative;
+  padding-left: 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.55;
+  color: #1e3a8a;
+}
+
+.why-join-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.75em;
+  width: 8px;
+  height: 8px;
+  background: #2563eb;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+
 /* Application Process Section */
 
 .application-process {
@@ -622,6 +679,23 @@ body {
     margin: 10px;
 
     border-radius: 15px;
+  }
+
+  .why-join-section {
+    margin: 10px;
+  }
+
+  .why-join-card {
+    padding: 1.5rem;
+    border-radius: 15px;
+  }
+
+  .why-join-card h2 {
+    font-size: 1.7rem;
+  }
+
+  .why-join-list {
+    grid-template-columns: 1fr;
   }
 
   .cta-section {
