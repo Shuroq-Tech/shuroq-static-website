@@ -223,8 +223,7 @@ function injectFloatingCTA() {
         .floating-cta-wrap {
             position: fixed;
             right: 0;
-            top: 65%;
-            transform: translateY(-50%);
+            bottom: 90px;
             z-index: 9000;
         }
         .floating-cta-link {

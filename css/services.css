@@ -602,6 +602,14 @@ body {
   background: #1e3a8a;
 }
 
+.enterprise .service-icon {
+  background: #1d4ed8;
+}
+
+.enterprise::before {
+  background: #1d4ed8;
+}
+
 .vision .service-icon {
   background: #2563eb;
 }
