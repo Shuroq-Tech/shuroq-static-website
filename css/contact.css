@@ -78,15 +78,13 @@ body{
 
 .contact-hero {
 
-   background: linear-gradient(135deg, var(--bg-hero-start) 0%, var(--bg-hero-end) 100%);
+    background: none;
 
-    padding: 80px 20px;
+    padding: 140px 20px 60px;
 
     text-align: center;
 
     position: relative;
-
-    overflow: hidden;
 
 }
 
@@ -108,7 +106,7 @@ body{
 
     pointer-events: none;
 
-}x
+}
 
 
 
@@ -318,15 +316,17 @@ body{
 
 .company-tagline {
 
-    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-size: clamp(1.8rem, 4vw, 3rem);
 
     font-weight: 700;
 
-    color: rgb(217, 219, 221);
+    color: #1e3a8a;
 
-    margin-bottom: 1rem;
+    margin-bottom: 1.25rem;
 
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    line-height: 1.25;
+
+    letter-spacing: -0.02em;
 
     animation: fadeInUp 1s ease;
 
@@ -336,13 +336,17 @@ body{
 
 .hero-description {
 
-    font-size: clamp(1.1rem, 2vw, 1.4rem);
+    font-size: clamp(1rem, 1.8vw, 1.15rem);
 
-    color: rgba(255, 255, 255, 0.9);
+    color: #475569;
 
-    max-width: 600px;
+    max-width: 620px;
 
     margin: 0 auto;
+
+    line-height: 1.8;
+
+    font-weight: 400;
 
     animation: fadeInUp 1s ease 0.2s both;
 
@@ -2083,7 +2087,7 @@ font-size: 16px;
 
 #contactForm button[onclick="submitForm()"] {
 
-    background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+    background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
 
     color: white;
 
@@ -2093,9 +2097,11 @@ font-size: 16px;
 
 #contactForm button[onclick="submitForm()"]:hover {
 
+    background: linear-gradient(135deg, #1d4ed8 0%, #60a5fa 100%);
+
     transform: translateY(-2px);
 
-    box-shadow: 0 5px 15px rgba(59, 130, 246, 0.4);
+    box-shadow: 0 5px 15px rgba(59, 130, 246, 0.5);
 
 }
 
@@ -2333,10 +2339,4 @@ font-size: 16px;
     color: var(--btn-primary);
     margin-bottom: 20px;
     text-align: center;
-}
-.company-tagline{
-    color:rgb(45, 45, 181);
-}
-.hero-description {
-    color:blue;
 }

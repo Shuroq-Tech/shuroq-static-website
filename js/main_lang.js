@@ -72,9 +72,9 @@ const translations = {
     Learnabout:"LEARN ABOUT SHUROQ",
     aboutuspara:"Shuroq is a service-based technology company delivering reliable, scalable, and future-ready digital solutions for enterprises and growing businesses. We specialize in DevOps, Cloud, AI, data, and digital engineering services that enable organizations to modernize platforms, automate operations, and accelerate innovation.",
     vision_title: "Our Vision",
-    vision_description: "At Shuroq, our vision is to become a trusted engineering partner for ambitious startups and growing enterprises worldwide — enabling them to scale with confidence through resilient, intelligent, and future-ready technology foundations. We envision a digital ecosystem where businesses are empowered by infrastructure that is secure, automated, and built for long-term sustainability rather than short-term survival.",
+    vision_description: "To become a trusted global technology partner helping organizations scale through intelligent automation, cloud modernization, and business-focused digital transformation.",
     mission_title: "Our Mission",
-    mission_description: "Our mission is to bridge the gap between complex engineering and practical execution by delivering scalable cloud infrastructure, robust DevOps practices, and high-performance platform engineering solutions. We work closely with founders and product teams to design, automate, and optimize systems that reduce operational overhead, enhance reliability, and accelerate innovation — transforming ideas into production-ready platforms that support sustainable growth.",
+    mission_description: "To deliver scalable, reliable, and performance-driven technology solutions that improve operational efficiency, accelerate business growth, and enable long-term digital success.",
     industriesheading:"Industries We Serve",
     industry1:"Cloud & DevOps",
     industry1_data:"We support telecom providers with scalable digital solutions that enhance network operations, optimize customer experiences, and enable data-driven decision-making",
@@ -135,7 +135,7 @@ const translations = {
     about_integrity_title: "Integrity",
     about_integrity_desc: "We maintain transparency, accountability, and trust across every client engagement..",
     about_excellence_title:"Excellence",
-    about_excellence_title:"We prioritize quality, reliability, and long-term business impact in every solution wedeliver."
+    about_excellence_desc:"We prioritize quality, reliability, and long-term business impact in every solution we deliver.",
 
     // Expertise Section
     expertise_title: "Our Expertise",

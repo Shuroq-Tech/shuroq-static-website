@@ -222,18 +222,18 @@ function injectFloatingCTA() {
     style.textContent = `
         .floating-cta-wrap {
             position: fixed;
-            right: 0;
+            right: 16px;
             bottom: 90px;
             z-index: 9000;
         }
         .floating-cta-link {
             display: flex;
             align-items: center;
-            background: linear-gradient(135deg, #2563eb 0%, #1e3a8a 100%);
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
             color: #fff;
             text-decoration: none;
-            border-radius: 10px 0 0 10px;
-            box-shadow: -3px 0 18px rgba(37,99,235,0.4);
+            border-radius: 10px;
+            box-shadow: 0 4px 18px rgba(30,58,138,0.4);
             overflow: hidden;
             max-width: 52px;
             transition: max-width 0.35s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease;
@@ -241,7 +241,7 @@ function injectFloatingCTA() {
         }
         .floating-cta-link:hover {
             max-width: 170px;
-            box-shadow: -5px 0 26px rgba(37,99,235,0.55);
+            box-shadow: 0 6px 26px rgba(59,130,246,0.55);
         }
         .floating-cta-icon {
             display: flex;

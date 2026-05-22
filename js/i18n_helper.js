@@ -3,6 +3,10 @@
 // and any page-specific extras remain in the original files.
 window.ShuroqI18n = window.ShuroqI18n || {};
 
+window.ShuroqI18n.getSavedLanguage = function getSavedLanguage() {
+  return localStorage.getItem('preferredLanguage') || 'en';
+};
+
 window.ShuroqI18n.applyLanguage = function applyLanguage(lang, translations, options) {
   const settings = Object.assign({
     updateNavigation: false,
@@ -14,7 +18,7 @@ window.ShuroqI18n.applyLanguage = function applyLanguage(lang, translations, opt
     const key = element.getAttribute("data-i18n");
     const value = translations[lang] ? translations[lang][key] : undefined;
 
-    if (settings.skipMissing && value === undefined) {
+    if (value === undefined) {
       return;
     }
 
@@ -31,11 +35,13 @@ window.ShuroqI18n.applyLanguage = function applyLanguage(lang, translations, opt
     translateNavigation(lang);
   }
 
-  if (lang === "ar") {
+  if (lang === 'ar') {
     document.body.classList.add("rtl");
   } else {
     document.body.classList.remove("rtl");
   }
+
+  localStorage.setItem('preferredLanguage', lang);
 
   if (settings.updateLanguageButton) {
     window.ShuroqI18n.updateLanguageButton(lang);
@@ -48,10 +54,9 @@ window.ShuroqI18n.applyLanguage = function applyLanguage(lang, translations, opt
 };
 
 window.ShuroqI18n.updateLanguageButton = function updateLanguageButton(lang) {
+  const label = lang === 'ar' ? 'AR' : 'EN';
   const langBtn = document.getElementById("langBtn");
   if (langBtn) {
-    langBtn.innerHTML = lang === "ar"
-      ? '🌐 ~ AR <i class="fas fa-chevron-down"></i>'
-      : '🌐 ~ EN <i class="fas fa-chevron-down"></i>';
+    langBtn.innerHTML = `🌐 ~ ${label} <i class="fas fa-chevron-down"></i>`;
   }
 };

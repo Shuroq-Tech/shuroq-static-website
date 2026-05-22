@@ -260,39 +260,37 @@ function translateNavigation(lang) {
 function changeLanguage(lang) {
   // Update HTML lang attribute
   document.documentElement.lang = lang;
-  
+
   // Update language button
   if (window.ShuroqI18n && typeof window.ShuroqI18n.updateLanguageButton === 'function') {
-    window.ShuroqI18n.updateLanguageButton(activeLang);
+    window.ShuroqI18n.updateLanguageButton(lang);
   }
-  
+
   // Store language preference
-  localStorage.setItem('preferredLanguage', activeLang);
-  
+  localStorage.setItem('preferredLanguage', lang);
+
   // Toggle RTL for Arabic
-  if (activeLang === 'ar') {
+  if (lang === 'ar') {
     document.body.classList.add('rtl');
     document.body.classList.remove('ltr');
-    document.documentElement.dir = 'rtl';
   } else {
     document.body.classList.add('ltr');
     document.body.classList.remove('rtl');
-    document.documentElement.dir = 'ltr';
   }
-  
+
   // Translate navigation
-  translateNavigation(activeLang);
-  
+  translateNavigation(lang);
+
   // Translate page content if page-specific translations are available
-  if (typeof translations !== 'undefined' && translations[activeLang]) {
+  if (typeof translations !== 'undefined' && translations[lang]) {
     document.querySelectorAll('[data-i18n]').forEach(element => {
       const key = element.getAttribute('data-i18n');
-      if (translations[activeLang] && translations[activeLang][key]) {
-        element.textContent = translations[activeLang][key];
+      if (translations[lang] && translations[lang][key]) {
+        element.textContent = translations[lang][key];
       }
     });
   }
-  
+
   // Automatically close language dropdown after selection
   const langMenu = document.getElementById('langMenu');
   if (langMenu) {
