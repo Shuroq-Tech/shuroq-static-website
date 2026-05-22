@@ -74,13 +74,13 @@ const translations = {
   benefit4_title: "تأثير عالمي",
   benefit4_desc: "اعمل على مشاريع تخدم عملاء عبر قطاعات متعددة عالميًا",
 
-  why_join_title: "Why Join Shuroq",
-  why_join_1: "Work on real-world business solutions",
-  why_join_2: "Exposure to modern technologies",
-  why_join_3: "Collaborative work culture",
-  why_join_4: "Career growth opportunities",
-  why_join_5: "Innovation-focused environment",
-  
+  why_join_title: "لماذا تنضم إلى شروق",
+  why_join_1: "العمل على حلول أعمال واقعية",
+  why_join_2: "التعرض للتقنيات الحديثة",
+  why_join_3: "ثقافة عمل تعاونية",
+  why_join_4: "فرص النمو المهني",
+  why_join_5: "بيئة تركز على الابتكار",
+
   application_process_title: "عملية التقديم",
   step1_title: "تقديم الطلب",
   step1_desc: "أرسل سيرتك الذاتية وخطاب التغطية إلى بريد الوظائف الخاص بنا مع عنوان الوظيفة في سطر الموضوع",
