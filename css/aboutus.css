@@ -619,7 +619,7 @@ body{
 
     background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
 
-    border: none;
+    border: 2px solid rgba(255, 255, 255, 0.5);
 
     border-radius: 25px;
 
@@ -1564,13 +1564,9 @@ footer{
 
 .results-cta-btn {
     display: inline-block;
-<<<<<<< HEAD
-    background: #ffffff;
-    color: #132c6f;
-=======
     background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
     color: #ffffff;
->>>>>>> 0138c7cbaba7b7a3f7f64153b07a91b4e007f75b
+    border: 2px solid rgba(255, 255, 255, 0.5);
     font-size: 1rem;
     font-weight: 700;
     padding: 0.9rem 2.5rem;
@@ -1582,13 +1578,8 @@ footer{
 }
 
 .results-cta-btn:hover {
-<<<<<<< HEAD
-    background: #dbeafe;
-    color: #132c6f;
-=======
     background: linear-gradient(135deg, #1d4ed8 0%, #60a5fa 100%);
     color: #ffffff;
->>>>>>> 0138c7cbaba7b7a3f7f64153b07a91b4e007f75b
     transform: translateY(-2px);
     box-shadow: 0 8px 24px rgba(59, 130, 246, 0.5);
 }

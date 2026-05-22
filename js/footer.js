@@ -232,6 +232,7 @@ function injectFloatingCTA() {
             background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
             color: #fff;
             text-decoration: none;
+            border: 2px solid rgba(255,255,255,0.5);
             border-radius: 10px;
             box-shadow: 0 4px 18px rgba(30,58,138,0.4);
             overflow: hidden;

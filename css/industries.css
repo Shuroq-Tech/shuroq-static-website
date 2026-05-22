@@ -304,6 +304,7 @@ body{
     display: inline-block;
     background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
     color: #ffffff;
+    border: 2px solid rgba(255, 255, 255, 0.5);
     padding: 15px 30px;
     border-radius: 30px;
     text-decoration: none;
@@ -312,7 +313,6 @@ body{
     transition: all 0.3s ease;
     position: relative;
     z-index: 1;
-    border: none;
     cursor: pointer;
     box-shadow: 0 4px 15px rgba(30, 58, 138, 0.3);
 }

@@ -266,6 +266,8 @@ p {
 
   color: #ffffff;
 
+  border: 2px solid rgba(255, 255, 255, 0.5);
+
   box-shadow: 0 4px 20px rgba(30, 58, 138, 0.3);
 }
 
@@ -282,7 +284,7 @@ p {
 
   color: #ffffff;
 
-  border: 2px solid rgba(96, 165, 250, 0.6);
+  border: 2px solid rgba(255, 255, 255, 0.5);
 
   backdrop-filter: blur(10px);
 }
@@ -455,6 +457,8 @@ p {
 
   color: #ffffff;
 
+  border: 2px solid rgba(255, 255, 255, 0.5);
+
   box-shadow: 0 4px 20px rgba(30, 58, 138, 0.3);
 }
 
@@ -471,7 +475,7 @@ p {
 
   color: #ffffff;
 
-  border: 2px solid rgba(96, 165, 250, 0.6);
+  border: 2px solid rgba(255, 255, 255, 0.5);
 
   backdrop-filter: blur(10px);
 
@@ -1232,7 +1236,7 @@ body.home .hero {
 
   height: 40px;
 
-  border: none;
+  border: 2px solid rgba(255, 255, 255, 0.5);
 
   border-radius: 20px;
 
@@ -1344,7 +1348,7 @@ body.home .hero {
 
   background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
 
-  border: none;
+  border: 2px solid rgba(255, 255, 255, 0.5);
 
   border-radius: 20px;
 
@@ -3029,6 +3033,8 @@ body.home .hero {
 
   color: #ffffff;
 
+  border: 2px solid rgba(255, 255, 255, 0.5);
+
   text-decoration: none;
 
   border-radius: 25px;
@@ -3425,7 +3431,7 @@ h6 {
 
   background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
 
-  border: none;
+  border: 2px solid rgba(255, 255, 255, 0.5);
 
   border-radius: 20px;
 
@@ -4094,7 +4100,7 @@ h6 {
 
   background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
 
-  border: none;
+  border: 2px solid rgba(255, 255, 255, 0.5);
 
   border-radius: 20px;
 
