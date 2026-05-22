@@ -1,4 +1,4 @@
-﻿const translations = {
+const translations = {
   en: {
     nav_aboutus: "About Us",
     nav_services: "Services",
@@ -212,48 +212,6 @@
   finance_impact2: "زادنا كفاءة التداول بنسبة 70% من خلال التحسين الخوارزمي",
   finance_impact3: "خفضنا تكاليف الامتثال بنسبة 50% بالمراقبة المؤتمتة",
   finance_impact4: "حسّنا عوائد محفظة العملاء بنسبة 25% من خلال رؤى مدعومة بالذكاء الاصطناعي",
-  cloud_title: "السحابة وDevOps لشركات SaaS",
-  cloud_description: "نبني بنية سحابية قابلة للتوسع، ونحسن سرعة النشر، ونرفع موثوقية التشغيل لمنصات SaaS المتنامية.",
-  cloud_solution1_title: "البنية السحابية:",
-  cloud_solution1_desc: "بنية تحتية قابلة للتوسع مصممة لنمو SaaS موثوق",
-  cloud_solution2_title: "أتمتة CI/CD:",
-  cloud_solution2_desc: "مسارات نشر تقلل دورات الإصدار والجهد اليدوي",
-  cloud_solution3_title: "موثوقية المنصة:",
-  cloud_solution3_desc: "مراقبة وقابلية ملاحظة واستجابة للحوادث لتشغيل مستقر",
-  cloud_solution4_title: "تحسين التكلفة:",
-  cloud_solution4_desc: "تخطيط موارد سحابية يحسن الأداء ويتحكم في الإنفاق",
-  cloud_impact1: "دعمنا فرق SaaS بأسس سحابية قابلة للتوسع وجاهزة للإنتاج",
-  cloud_impact2: "حسّنا سرعة الإصدار من خلال workflows DevOps مؤتمتة",
-  cloud_impact3: "قللنا مخاطر التوقف بالمراقبة الاستباقية وممارسات الموثوقية",
-  cloud_impact4: "حسّنا تكاليف السحابة مع الحفاظ على أداء التطبيقات",
-  retail_title: "تحليلات البيانات لأعمال التجزئة",
-  retail_description: "نحسن رؤى العملاء وكفاءة التقارير ووضوح المخزون والأداء التشغيلي من خلال منصات تحليلات قابلة للتوسع.",
-  retail_solution1_title: "رؤى العملاء:",
-  retail_solution1_desc: "تحليلات تكشف سلوك الشراء والتفضيلات وفرص الاحتفاظ بالعملاء",
-  retail_solution2_title: "وضوح المخزون:",
-  retail_solution2_desc: "لوحات مخزون فورية تقلل النقص والتكدس",
-  retail_solution3_title: "تقارير المبيعات:",
-  retail_solution3_desc: "تقارير أداء مؤتمتة للمتاجر والقنوات وفئات المنتجات",
-  retail_solution4_title: "التنبؤ بالطلب:",
-  retail_solution4_desc: "نماذج بيانات تدعم قرارات شراء وتسويق أكثر ذكاء",
-  retail_impact1: "حسّنا اتخاذ القرار من خلال عروض موحدة لتحليلات التجزئة",
-  retail_impact2: "قللنا وقت التقارير اليدوية عبر لوحات مؤتمتة",
-  retail_impact3: "زدنا دقة المخزون ببيانات أوضح عن المخزون والحركة",
-  retail_impact4: "عززنا استهداف العملاء من خلال تقسيم قائم على البيانات",
-  recruitment_title: "حلول الأتمتة لفرق التوظيف",
-  recruitment_description: "نبسط فرز المرشحين وتنسيق المقابلات والتقارير وسير عمل التوظيف من خلال منصات أتمتة قابلة للتوسع.",
-  recruitment_solution1_title: "فرز المرشحين:",
-  recruitment_solution1_desc: "سير عمل مؤتمت للقوائم المختصرة يساعد الفرق على تحديد المتقدمين المؤهلين بشكل أسرع",
-  recruitment_solution2_title: "جدولة المقابلات:",
-  recruitment_solution2_desc: "تدفقات جدولة منسقة تقلل المراسلات المتكررة",
-  recruitment_solution3_title: "تتبع مسار التوظيف:",
-  recruitment_solution3_desc: "وضوح مركزي لمراحل المرشحين والملاحظات والمتابعات",
-  recruitment_solution4_title: "تقارير التوظيف:",
-  recruitment_solution4_desc: "لوحات تعرض سرعة التوظيف وجودة المصادر وإنتاجية الفريق",
-  recruitment_impact1: "قللنا المهام المتكررة للموظفين عبر سير عمل مؤتمت",
-  recruitment_impact2: "حسّنا تجربة المرشحين من خلال تواصل أسرع",
-  recruitment_impact3: "زدنا وضوح التوظيف ببيانات منظمة لمسار المرشحين",
-  recruitment_impact4: "دعمنا قرارات توظيف أفضل بتقارير متسقة",
   cta_title: "حوّل قطاعك",
   cta_description: "لنتناقش حول كيف يمكن لحلولنا الخاصة بالقطاع دفع تحولك الرقمي",
   cta_button: "اتصل بنا",
@@ -271,47 +229,14 @@ document.getElementById("langBtn").addEventListener("click", () => {
 
 // Change language function
 function changeLanguage(lang){
-  // Update text content based on selected language
-  document.querySelectorAll("[data-i18n]").forEach(element=>{
-    const key = element.getAttribute("data-i18n");
-    // Preserve Font Awesome icons by updating only the text content
-    const icon = element.querySelector('i.fas, i.fab, i.fa, i.far, i.fal');
-    if (icon) {
-      // Keep the icon and update the text after it
-      const iconHTML = icon.outerHTML;
-      element.innerHTML = iconHTML + ' ' + translations[lang][key];
-    } else {
-      // No icon, just update the text
-      element.textContent = translations[lang][key];
-    }
-  });
-
-  // Update navigation translations
-  if (typeof translateNavigation === 'function') {
-    translateNavigation(lang);
-  }
-
-  // Apply RTL for Arabic
-  if (lang === "ar") {
-    document.body.classList.add("rtl");
-  } else {
-    document.body.classList.remove("rtl");
-  }
-
-  // Update language button text
-  const langBtn = document.getElementById("langBtn");
-  if (langBtn) {
-    langBtn.textContent = lang === "ar" ? "🌐ar" : "🌐en";
-  }
-
+  // Refactored: shared i18n DOM update logic lives in js/i18n_helper.js.
+  window.ShuroqI18n.applyLanguage(lang, translations, { updateNavigation: true, skipMissing: false });
   // Store language preference
   localStorage.setItem('preferredLanguage', lang);
-
-  // Close dropdown after selection
-  document.getElementById("langMenu").style.display = "none";
 }
 
 
+
 // Load English by default
-changeLanguage("en");
+changeLanguage(window.ShuroqI18n.getSavedLanguage());
 

@@ -543,8 +543,8 @@ body{
 
 /* CTA Section */
 .cta-section {
-    background: #070D5E;
-    border: 2px solid #070D5E;
+    background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+    border: 2px solid rgba(96, 165, 250, 0.4);
     border-radius: 30px;
     margin: 60px -20px;
     padding: 60px 20px;

@@ -36,9 +36,8 @@
     }
     
     // Update language button
-    const langBtn = document.getElementById('langBtn');
-    if (langBtn) {
-      langBtn.textContent = currentLang === '~AR' ? '🌐~AR' : '🌐~EN';
+    if (window.ShuroqI18n && typeof window.ShuroqI18n.updateLanguageButton === 'function') {
+      window.ShuroqI18n.updateLanguageButton(currentLang === '~AR' ? 'ar' : currentLang);
     }
   };
 

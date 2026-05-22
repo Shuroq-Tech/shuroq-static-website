@@ -307,17 +307,22 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Initialize on load
+    let mobileToggleInitialized = false;
     if (isMobile()) {
         initMobileToggle();
+        mobileToggleInitialized = true;
     }
 
-    // Handle window resize
+    // Handle window resize — guard against stacking duplicate listeners
     let resizeTimer;
     window.addEventListener('resize', function() {
         clearTimeout(resizeTimer);
         resizeTimer = setTimeout(function() {
-            if (isMobile()) {
+            if (isMobile() && !mobileToggleInitialized) {
                 initMobileToggle();
+                mobileToggleInitialized = true;
+            } else if (!isMobile()) {
+                mobileToggleInitialized = false;
             }
         }, 250);
     });

@@ -260,16 +260,15 @@ function translateNavigation(lang) {
 function changeLanguage(lang) {
   // Update HTML lang attribute
   document.documentElement.lang = lang;
-  
+
   // Update language button
-  const langBtn = document.getElementById('langBtn');
-  if (langBtn) {
-    langBtn.textContent = lang === 'ar' ? '🌐ar' : '🌐en';
+  if (window.ShuroqI18n && typeof window.ShuroqI18n.updateLanguageButton === 'function') {
+    window.ShuroqI18n.updateLanguageButton(lang);
   }
-  
+
   // Store language preference
   localStorage.setItem('preferredLanguage', lang);
-  
+
   // Toggle RTL for Arabic
   if (lang === 'ar') {
     document.body.classList.add('rtl');
@@ -278,10 +277,10 @@ function changeLanguage(lang) {
     document.body.classList.add('ltr');
     document.body.classList.remove('rtl');
   }
-  
+
   // Translate navigation
   translateNavigation(lang);
-  
+
   // Translate page content if page-specific translations are available
   if (typeof translations !== 'undefined' && translations[lang]) {
     document.querySelectorAll('[data-i18n]').forEach(element => {
@@ -291,7 +290,7 @@ function changeLanguage(lang) {
       }
     });
   }
-  
+
   // Automatically close language dropdown after selection
   const langMenu = document.getElementById('langMenu');
   if (langMenu) {

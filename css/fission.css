@@ -498,7 +498,7 @@ body {
 /* CTA Section */
 .cta-section {
     padding: 60px 20px;
-    background: linear-gradient(#2161a0 0%, #1c4398 100%);
+    background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
     text-align: center;
     border: 2px solid rgba(255,255,255,0.15);
     border-radius: 30px;

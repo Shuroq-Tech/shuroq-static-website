@@ -17,9 +17,9 @@ const translations = {
   specialize_4: "Enterprise Software Development",
   specialize_5: "Scalable Digital Platforms",
   mission_title: "Our Mission",
-  mission_description: "Our mission is to bridge the gap between complex engineering and practical execution by delivering scalable cloud infrastructure, robust DevOps practices, and high-performance platform engineering solutions. We work closely with founders and product teams to design, automate, and optimize systems that reduce operational overhead, enhance reliability, and accelerate innovation — transforming ideas into production-ready platforms that support sustainable growth",
+  mission_description: "To deliver scalable, reliable, and performance-driven technology solutions that improve operational efficiency, accelerate business growth, and enable long-term digital success.",
   vision_title:"Our Vision",
-  vision_description: "Our vision is to become a trusted engineering partner for ambitious startups and growing enterprises worldwide — enabling them to scale with confidence through resilient, intelligent, and future-ready technology foundations. We envision a digital ecosystem where businesses are empowered by infrastructure that is secure, automated, and built for long-term sustainability rather than short-term survival.",
+  vision_description: "To become a trusted global technology partner helping organizations scale through intelligent automation, cloud modernization, and business-focused digital transformation.",
   cta_title: "Ready to Transform Your Business?",
   cta_description: "Let's discuss how we can help you achieve your digital transformation goals",
   cta_button: "Contact Us",
@@ -144,40 +144,14 @@ document.getElementById("langBtn").addEventListener("click", () => {
 
 // Change language function
 function changeLanguage(lang){
-  // Update text content based on selected language
-  document.querySelectorAll("[data-i18n]").forEach(element=>{
-    const key = element.getAttribute("data-i18n");
-    // Preserve Font Awesome icons by updating only the text content
-    const icon = element.querySelector('i.fas, i.fab, i.fa, i.far, i.fal');
-    if (icon) {
-      // Keep the icon and update the text after it
-      const iconHTML = icon.outerHTML;
-      element.innerHTML = iconHTML + ' ' + translations[lang][key];
-    } else {
-      // No icon, just update the text
-      element.textContent = translations[lang][key];
-    }
-  });
-
-  // Update navigation translations
-  if (typeof translateNavigation === 'function') {
-    translateNavigation(lang);
-  }
-
-  // Apply RTL for Arabic
-  if (lang === "ar") {
-    document.body.classList.add("rtl");
-  } else {
-    document.body.classList.remove("rtl");
-  }
-
-  // Close dropdown after selection
-  document.getElementById("langMenu").style.display = "none";
+  // Refactored: shared i18n DOM update logic lives in js/i18n_helper.js.
+  window.ShuroqI18n.applyLanguage(lang, translations, { updateNavigation: true, skipMissing: false });
 }
 
 
+
 // Load English by default
-changeLanguage("en");
+changeLanguage(window.ShuroqI18n.getSavedLanguage());
 
 (() => {
   const init = () => {
